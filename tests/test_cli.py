@@ -88,19 +88,23 @@ class TestMonitorCommand:
                 # Check output file was created
                 assert (Path(tmpdir) / "report.md").exists()
 
-    @pytest.mark.skip(reason="toon-format encoder not yet implemented")
     def test_monitor_toon_format_only(self, mock_repository):
-        """Test monitor with TOON format only."""
+        """Test monitor with TOON format only (falls back to JSON)."""
+        import warnings
+
         with patch("gh_monitor.cli.ProjectMonitor") as MockMonitor:
             mock_instance = MagicMock()
             mock_instance.collect_all_data.return_value = [mock_repository]
             MockMonitor.return_value = mock_instance
 
             with tempfile.TemporaryDirectory() as tmpdir:
-                result = runner.invoke(
-                    app,
-                    ["monitor", "test-owner", "--output", tmpdir, "--format", "toon"],
-                )
+                # Suppress the expected warning about TOON encoder
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore", UserWarning)
+                    result = runner.invoke(
+                        app,
+                        ["monitor", "test-owner", "--output", tmpdir, "--format", "toon"],
+                    )
 
                 assert result.exit_code == 0
                 assert (Path(tmpdir) / "report.toon").exists()

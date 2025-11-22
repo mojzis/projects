@@ -103,29 +103,39 @@ def empty_report():
 class TestToonGenerator:
     """Tests for TOON format generator."""
 
-    @pytest.mark.skip(reason="toon-format encoder not yet implemented")
-    def test_generate_toon_report(self, sample_report):
-        """Test TOON report generation."""
+    def test_generate_toon_report_fallback_to_json(self, sample_report):
+        """Test TOON report generation falls back to JSON when encoder not implemented."""
+        import json
+
         with tempfile.TemporaryDirectory() as tmpdir:
             output_path = Path(tmpdir) / "report.toon"
-            generate_toon_report(sample_report, output_path)
+            # Should emit a warning but still generate output
+            with pytest.warns(UserWarning, match="TOON encoder not implemented"):
+                generate_toon_report(sample_report, output_path)
 
             assert output_path.exists()
             content = output_path.read_text()
             assert len(content) > 0
-            # TOON format should contain report data
-            assert "test-repo" in content or "test_repo" in content.lower()
+            # Should be valid JSON as fallback
+            data = json.loads(content)
+            assert "repositories" in data
+            assert len(data["repositories"]) == 1
+            assert data["repositories"][0]["name"] == "test-repo"
 
-    @pytest.mark.skip(reason="toon-format encoder not yet implemented")
-    def test_generate_toon_report_empty(self, empty_report):
-        """Test TOON report with empty repositories."""
+    def test_generate_toon_report_empty_fallback(self, empty_report):
+        """Test TOON report with empty repositories falls back to JSON."""
+        import json
+
         with tempfile.TemporaryDirectory() as tmpdir:
             output_path = Path(tmpdir) / "report.toon"
-            generate_toon_report(empty_report, output_path)
+            with pytest.warns(UserWarning, match="TOON encoder not implemented"):
+                generate_toon_report(empty_report, output_path)
 
             assert output_path.exists()
             content = output_path.read_text()
             assert len(content) > 0
+            data = json.loads(content)
+            assert data["repositories"] == []
 
 
 class TestMarkdownGenerator:
