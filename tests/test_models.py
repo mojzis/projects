@@ -1,6 +1,6 @@
 """Tests for data models."""
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import pytest
 
@@ -35,7 +35,7 @@ class TestCommit:
             sha="abc123def456",
             message="Add feature X",
             author="John Doe",
-            date=datetime(2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc),
+            date=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
         )
         assert commit.sha == "abc123def456"
         assert commit.message == "Add feature X"
@@ -61,7 +61,7 @@ class TestCommit:
             sha="abc123",
             message="Test commit",
             author="Test Author",
-            date=datetime(2025, 1, 1, 12, 0, 0, tzinfo=timezone.utc),
+            date=datetime(2025, 1, 1, 12, 0, 0, tzinfo=UTC),
         )
         data = commit.to_dict()
         assert "2025-01-01T12:00:00" in data["date"]
@@ -75,7 +75,7 @@ class TestPullRequest:
         pr = PullRequest(
             number=42,
             title="Fix bug in parser",
-            created_at=datetime(2025, 1, 10, 10, 0, 0, tzinfo=timezone.utc),
+            created_at=datetime(2025, 1, 10, 10, 0, 0, tzinfo=UTC),
             author="janedoe",
             age_days=5,
             url="https://github.com/owner/repo/pull/42",
@@ -113,7 +113,7 @@ class TestCIRun:
             name="Build",
             status="completed",
             conclusion="success",
-            created_at=datetime(2025, 1, 15, 8, 0, 0, tzinfo=timezone.utc),
+            created_at=datetime(2025, 1, 15, 8, 0, 0, tzinfo=UTC),
         )
         assert run.name == "Build"
         assert run.status == "completed"
@@ -125,7 +125,7 @@ class TestCIRun:
             name="Test",
             status="in_progress",
             conclusion=None,
-            created_at=datetime(2025, 1, 15, 8, 0, 0, tzinfo=timezone.utc),
+            created_at=datetime(2025, 1, 15, 8, 0, 0, tzinfo=UTC),
         )
         assert run.conclusion is None
 
@@ -154,7 +154,7 @@ class TestRepository:
             sha="abc123",
             message="Latest commit",
             author="Author",
-            date=datetime(2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc),
+            date=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
         )
 
     @pytest.fixture
@@ -163,7 +163,7 @@ class TestRepository:
         return PullRequest(
             number=1,
             title="Test PR",
-            created_at=datetime(2025, 1, 10, 10, 0, 0, tzinfo=timezone.utc),
+            created_at=datetime(2025, 1, 10, 10, 0, 0, tzinfo=UTC),
             author="author",
             age_days=5,
             url="https://github.com/owner/repo/pull/1",
@@ -176,7 +176,7 @@ class TestRepository:
             name="CI",
             status="completed",
             conclusion="success",
-            created_at=datetime(2025, 1, 15, 8, 0, 0, tzinfo=timezone.utc),
+            created_at=datetime(2025, 1, 15, 8, 0, 0, tzinfo=UTC),
         )
 
     def test_repository_creation(self, sample_commit, sample_pr, sample_ci_run):
@@ -194,7 +194,7 @@ class TestRepository:
             ci_status=CIStatus.SUCCESS,
             ci_recent_runs=[sample_ci_run],
             ci_success_rate=0.95,
-            last_updated=datetime.now(timezone.utc),
+            last_updated=datetime.now(UTC),
             stars=100,
             forks=20,
             open_issues=5,
@@ -221,7 +221,7 @@ class TestRepository:
             ci_status=CIStatus.NO_CI,
             ci_recent_runs=[],
             ci_success_rate=0.0,
-            last_updated=datetime.now(timezone.utc),
+            last_updated=datetime.now(UTC),
         )
         assert repo.last_commit is None
         assert repo.stars == 0
@@ -242,7 +242,7 @@ class TestRepository:
             ci_status=CIStatus.SUCCESS,
             ci_recent_runs=[sample_ci_run],
             ci_success_rate=0.95,
-            last_updated=datetime(2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc),
+            last_updated=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
             stars=100,
             forks=20,
             open_issues=5,
@@ -274,7 +274,7 @@ class TestRepository:
             ci_status=CIStatus.NO_CI,
             ci_recent_runs=[],
             ci_success_rate=0.0,
-            last_updated=datetime.now(timezone.utc),
+            last_updated=datetime.now(UTC),
         )
         data = repo.to_dict()
         assert data["last_commit"] is None
@@ -297,7 +297,7 @@ class TestMonitorReport:
                     PullRequest(
                         number=1,
                         title="PR 1",
-                        created_at=datetime.now(timezone.utc),
+                        created_at=datetime.now(UTC),
                         author="author",
                         age_days=1,
                         url="https://github.com/owner/repo1/pull/1",
@@ -305,7 +305,7 @@ class TestMonitorReport:
                     PullRequest(
                         number=2,
                         title="PR 2",
-                        created_at=datetime.now(timezone.utc),
+                        created_at=datetime.now(UTC),
                         author="author",
                         age_days=2,
                         url="https://github.com/owner/repo1/pull/2",
@@ -317,7 +317,7 @@ class TestMonitorReport:
                 ci_status=CIStatus.SUCCESS,
                 ci_recent_runs=[],
                 ci_success_rate=1.0,
-                last_updated=datetime.now(timezone.utc),
+                last_updated=datetime.now(UTC),
             ),
             Repository(
                 name="repo2",
@@ -329,7 +329,7 @@ class TestMonitorReport:
                     PullRequest(
                         number=3,
                         title="PR 3",
-                        created_at=datetime.now(timezone.utc),
+                        created_at=datetime.now(UTC),
                         author="author",
                         age_days=3,
                         url="https://github.com/owner/repo2/pull/3",
@@ -341,14 +341,14 @@ class TestMonitorReport:
                 ci_status=CIStatus.FAILURE,
                 ci_recent_runs=[],
                 ci_success_rate=0.5,
-                last_updated=datetime.now(timezone.utc),
+                last_updated=datetime.now(UTC),
             ),
         ]
 
     def test_monitor_report_aggregation(self, sample_repositories):
         """Test report aggregation of multiple repositories."""
         report = MonitorReport(
-            generated_at=datetime.now(timezone.utc),
+            generated_at=datetime.now(UTC),
             scan_period_days=30,
             repositories=sample_repositories,
         )
@@ -360,7 +360,7 @@ class TestMonitorReport:
     def test_monitor_report_empty(self):
         """Test report with no repositories."""
         report = MonitorReport(
-            generated_at=datetime.now(timezone.utc),
+            generated_at=datetime.now(UTC),
             scan_period_days=30,
             repositories=[],
         )
@@ -372,7 +372,7 @@ class TestMonitorReport:
     def test_monitor_report_to_dict(self, sample_repositories):
         """Test report serialization."""
         report = MonitorReport(
-            generated_at=datetime(2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc),
+            generated_at=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
             scan_period_days=30,
             repositories=sample_repositories,
         )

@@ -1,8 +1,7 @@
 """Tests for GitHub CLI collector."""
 
 import json
-import subprocess
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -103,7 +102,7 @@ class TestGetRepositories:
 
     def test_get_repositories_filters_by_date(self, collector):
         """Test that repositories are filtered by pushed date."""
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
         recent = (now - timedelta(days=5)).isoformat()
         old = (now - timedelta(days=60)).isoformat()
 

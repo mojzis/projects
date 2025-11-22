@@ -1,7 +1,7 @@
 """Tests for CLI interface."""
 
 import tempfile
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -43,7 +43,7 @@ class TestMonitorCommand:
             ci_status=CIStatus.SUCCESS,
             ci_recent_runs=[],
             ci_success_rate=1.0,
-            last_updated=datetime.now(timezone.utc),
+            last_updated=datetime.now(UTC),
         )
 
     def test_monitor_no_repositories(self):
@@ -151,7 +151,16 @@ class TestMonitorCommand:
             with tempfile.TemporaryDirectory() as tmpdir:
                 result = runner.invoke(
                     app,
-                    ["monitor", "test-owner", "--output", tmpdir, "--days", "60", "--format", "markdown"],
+                    [
+                        "monitor",
+                        "test-owner",
+                        "--output",
+                        tmpdir,
+                        "--days",
+                        "60",
+                        "--format",
+                        "markdown",
+                    ],
                 )
 
                 assert result.exit_code == 0
@@ -167,7 +176,15 @@ class TestMonitorCommand:
             with tempfile.TemporaryDirectory() as tmpdir:
                 result = runner.invoke(
                     app,
-                    ["monitor", "test-owner", "--output", tmpdir, "--verbose", "--format", "markdown"],
+                    [
+                        "monitor",
+                        "test-owner",
+                        "--output",
+                        tmpdir,
+                        "--verbose",
+                        "--format",
+                        "markdown",
+                    ],
                 )
 
                 assert result.exit_code == 0
@@ -184,7 +201,14 @@ class TestMonitorCommand:
                 output_dir = Path(tmpdir) / "nested" / "output"
                 result = runner.invoke(
                     app,
-                    ["monitor", "test-owner", "--output", str(output_dir), "--format", "markdown"],
+                    [
+                        "monitor",
+                        "test-owner",
+                        "--output",
+                        str(output_dir),
+                        "--format",
+                        "markdown",
+                    ],
                 )
 
                 assert result.exit_code == 0
@@ -209,7 +233,9 @@ class TestErrorHandling:
 
                 assert result.exit_code == 1
                 # Error is printed to stderr (check output or exception)
-                output = result.output + (result.stderr if hasattr(result, 'stderr') and result.stderr else "")
+                output = result.output + (
+                    result.stderr if hasattr(result, "stderr") and result.stderr else ""
+                )
                 assert "Error" in output or "Test error" in str(result.exception)
 
     def test_monitor_exception_with_verbose(self):
@@ -222,12 +248,22 @@ class TestErrorHandling:
             with tempfile.TemporaryDirectory() as tmpdir:
                 result = runner.invoke(
                     app,
-                    ["monitor", "test-owner", "--output", tmpdir, "--verbose", "--format", "markdown"],
+                    [
+                        "monitor",
+                        "test-owner",
+                        "--output",
+                        tmpdir,
+                        "--verbose",
+                        "--format",
+                        "markdown",
+                    ],
                 )
 
                 assert result.exit_code == 1
                 # Traceback is printed to stderr (check output or exception)
-                output = result.output + (result.stderr if hasattr(result, 'stderr') and result.stderr else "")
+                output = result.output + (
+                    result.stderr if hasattr(result, "stderr") and result.stderr else ""
+                )
                 assert "Traceback" in output or "Test error" in str(result.exception)
 
 

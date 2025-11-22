@@ -1,7 +1,7 @@
 """Tests for report generators."""
 
 import tempfile
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
@@ -28,7 +28,7 @@ def sample_commit():
         sha="abc123def456",
         message="Fix critical bug",
         author="John Doe",
-        date=datetime(2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc),
+        date=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
     )
 
 
@@ -38,7 +38,7 @@ def sample_pr():
     return PullRequest(
         number=42,
         title="Add new feature",
-        created_at=datetime(2025, 1, 10, 10, 0, 0, tzinfo=timezone.utc),
+        created_at=datetime(2025, 1, 10, 10, 0, 0, tzinfo=UTC),
         author="janedoe",
         age_days=5,
         url="https://github.com/owner/repo/pull/42",
@@ -52,7 +52,7 @@ def sample_ci_run():
         name="Build",
         status="completed",
         conclusion="success",
-        created_at=datetime(2025, 1, 15, 8, 0, 0, tzinfo=timezone.utc),
+        created_at=datetime(2025, 1, 15, 8, 0, 0, tzinfo=UTC),
     )
 
 
@@ -72,7 +72,7 @@ def sample_repository(sample_commit, sample_pr, sample_ci_run):
         ci_status=CIStatus.SUCCESS,
         ci_recent_runs=[sample_ci_run],
         ci_success_rate=0.95,
-        last_updated=datetime(2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc),
+        last_updated=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
         stars=100,
         forks=25,
         open_issues=5,
@@ -84,7 +84,7 @@ def sample_repository(sample_commit, sample_pr, sample_ci_run):
 def sample_report(sample_repository):
     """Create a sample monitor report."""
     return MonitorReport(
-        generated_at=datetime(2025, 1, 15, 14, 0, 0, tzinfo=timezone.utc),
+        generated_at=datetime(2025, 1, 15, 14, 0, 0, tzinfo=UTC),
         scan_period_days=30,
         repositories=[sample_repository],
     )
@@ -94,7 +94,7 @@ def sample_report(sample_repository):
 def empty_report():
     """Create an empty monitor report."""
     return MonitorReport(
-        generated_at=datetime(2025, 1, 15, 14, 0, 0, tzinfo=timezone.utc),
+        generated_at=datetime(2025, 1, 15, 14, 0, 0, tzinfo=UTC),
         scan_period_days=30,
         repositories=[],
     )
@@ -186,10 +186,10 @@ class TestMarkdownGenerator:
             ci_status=CIStatus.NO_CI,
             ci_recent_runs=[],
             ci_success_rate=0.0,
-            last_updated=datetime.now(timezone.utc),
+            last_updated=datetime.now(UTC),
         )
         report = MonitorReport(
-            generated_at=datetime.now(timezone.utc),
+            generated_at=datetime.now(UTC),
             scan_period_days=30,
             repositories=[repo],
         )
@@ -217,10 +217,10 @@ class TestMarkdownGenerator:
             ci_status=CIStatus.NO_CI,
             ci_recent_runs=[],
             ci_success_rate=0.0,
-            last_updated=datetime.now(timezone.utc),
+            last_updated=datetime.now(UTC),
         )
         report = MonitorReport(
-            generated_at=datetime.now(timezone.utc),
+            generated_at=datetime.now(UTC),
             scan_period_days=30,
             repositories=[repo],
         )
@@ -284,7 +284,7 @@ class TestHTMLGenerator:
                 ci_status=CIStatus.SUCCESS,
                 ci_recent_runs=[],
                 ci_success_rate=1.0,
-                last_updated=datetime.now(timezone.utc),
+                last_updated=datetime.now(UTC),
             ),
             Repository(
                 name="failing-repo",
@@ -299,11 +299,11 @@ class TestHTMLGenerator:
                 ci_status=CIStatus.FAILURE,
                 ci_recent_runs=[],
                 ci_success_rate=0.0,
-                last_updated=datetime.now(timezone.utc),
+                last_updated=datetime.now(UTC),
             ),
         ]
         report = MonitorReport(
-            generated_at=datetime.now(timezone.utc),
+            generated_at=datetime.now(UTC),
             scan_period_days=30,
             repositories=repos,
         )
@@ -335,12 +335,12 @@ class TestMultipleRepositories:
             ci_status=CIStatus.FAILURE,
             ci_recent_runs=[],
             ci_success_rate=0.5,
-            last_updated=datetime.now(timezone.utc),
+            last_updated=datetime.now(UTC),
             primary_language="JavaScript",
         )
 
         report = MonitorReport(
-            generated_at=datetime.now(timezone.utc),
+            generated_at=datetime.now(UTC),
             scan_period_days=30,
             repositories=[sample_repository, repo2],
         )

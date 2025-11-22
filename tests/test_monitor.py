@@ -1,6 +1,5 @@
 """Tests for ProjectMonitor orchestration."""
 
-from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -44,22 +43,15 @@ class TestCollectAllData:
             "url": "https://github.com/test-owner/test-repo",
         }
 
-        with patch.object(
-            monitor.collector, "get_repositories", return_value=[repo_info]
-        ), patch.object(
-            monitor.collector, "get_last_commit", return_value=None
-        ), patch.object(
-            monitor.collector, "get_open_prs", return_value=[]
-        ), patch.object(
-            monitor.collector, "get_branches", return_value=["main"]
-        ), patch.object(
-            monitor.collector, "get_pr_branches", return_value=set()
-        ), patch.object(
-            monitor.collector, "get_github_pages", return_value=None
-        ), patch.object(
-            monitor.collector, "get_ci_runs", return_value=[]
-        ), patch.object(
-            monitor.collector, "get_repo_details", return_value={}
+        with (
+            patch.object(monitor.collector, "get_repositories", return_value=[repo_info]),
+            patch.object(monitor.collector, "get_last_commit", return_value=None),
+            patch.object(monitor.collector, "get_open_prs", return_value=[]),
+            patch.object(monitor.collector, "get_branches", return_value=["main"]),
+            patch.object(monitor.collector, "get_pr_branches", return_value=set()),
+            patch.object(monitor.collector, "get_github_pages", return_value=None),
+            patch.object(monitor.collector, "get_ci_runs", return_value=[]),
+            patch.object(monitor.collector, "get_repo_details", return_value={}),
         ):
             result = monitor.collect_all_data()
 
@@ -81,22 +73,15 @@ class TestCollectAllData:
         def track_progress(p):
             progress_values.append(p)
 
-        with patch.object(
-            monitor.collector, "get_repositories", return_value=repos
-        ), patch.object(
-            monitor.collector, "get_last_commit", return_value=None
-        ), patch.object(
-            monitor.collector, "get_open_prs", return_value=[]
-        ), patch.object(
-            monitor.collector, "get_branches", return_value=[]
-        ), patch.object(
-            monitor.collector, "get_pr_branches", return_value=set()
-        ), patch.object(
-            monitor.collector, "get_github_pages", return_value=None
-        ), patch.object(
-            monitor.collector, "get_ci_runs", return_value=[]
-        ), patch.object(
-            monitor.collector, "get_repo_details", return_value={}
+        with (
+            patch.object(monitor.collector, "get_repositories", return_value=repos),
+            patch.object(monitor.collector, "get_last_commit", return_value=None),
+            patch.object(monitor.collector, "get_open_prs", return_value=[]),
+            patch.object(monitor.collector, "get_branches", return_value=[]),
+            patch.object(monitor.collector, "get_pr_branches", return_value=set()),
+            patch.object(monitor.collector, "get_github_pages", return_value=None),
+            patch.object(monitor.collector, "get_ci_runs", return_value=[]),
+            patch.object(monitor.collector, "get_repo_details", return_value={}),
         ):
             monitor.collect_all_data(progress_callback=track_progress)
 
@@ -119,9 +104,7 @@ class TestGetLastCommit:
             },
         }
 
-        with patch.object(
-            monitor.collector, "get_last_commit", return_value=commit_data
-        ):
+        with patch.object(monitor.collector, "get_last_commit", return_value=commit_data):
             result = monitor._get_last_commit("test-repo")
 
             assert result is not None
@@ -191,12 +174,13 @@ class TestGetBranchesWithoutPRs:
         """Test finding branches without PRs."""
         monitor = ProjectMonitor(owner="test-owner", days=30)
 
-        with patch.object(
-            monitor.collector,
-            "get_branches",
-            return_value=["main", "feature-1", "feature-2", "bugfix-1"],
-        ), patch.object(
-            monitor.collector, "get_pr_branches", return_value={"feature-1"}
+        with (
+            patch.object(
+                monitor.collector,
+                "get_branches",
+                return_value=["main", "feature-1", "feature-2", "bugfix-1"],
+            ),
+            patch.object(monitor.collector, "get_pr_branches", return_value={"feature-1"}),
         ):
             result = monitor._get_branches_without_prs("test-repo")
 
@@ -209,11 +193,14 @@ class TestGetBranchesWithoutPRs:
         """Test that main and master are always excluded."""
         monitor = ProjectMonitor(owner="test-owner", days=30)
 
-        with patch.object(
-            monitor.collector,
-            "get_branches",
-            return_value=["main", "master", "feature-1"],
-        ), patch.object(monitor.collector, "get_pr_branches", return_value=set()):
+        with (
+            patch.object(
+                monitor.collector,
+                "get_branches",
+                return_value=["main", "master", "feature-1"],
+            ),
+            patch.object(monitor.collector, "get_pr_branches", return_value=set()),
+        ):
             result = monitor._get_branches_without_prs("test-repo")
 
             assert "main" not in result
@@ -230,9 +217,7 @@ class TestGetGitHubPages:
 
         pages_data = {"html_url": "https://test-owner.github.io/repo"}
 
-        with patch.object(
-            monitor.collector, "get_github_pages", return_value=pages_data
-        ):
+        with patch.object(monitor.collector, "get_github_pages", return_value=pages_data):
             enabled, url = monitor._get_github_pages("test-repo")
 
             assert enabled is True
@@ -360,20 +345,14 @@ class TestCollectRepoData:
             "primaryLanguage": {"name": "Python"},
         }
 
-        with patch.object(
-            monitor.collector, "get_last_commit", return_value=commit_data
-        ), patch.object(
-            monitor.collector, "get_open_prs", return_value=[]
-        ), patch.object(
-            monitor.collector, "get_branches", return_value=["main"]
-        ), patch.object(
-            monitor.collector, "get_pr_branches", return_value=set()
-        ), patch.object(
-            monitor.collector, "get_github_pages", return_value=None
-        ), patch.object(
-            monitor.collector, "get_ci_runs", return_value=[]
-        ), patch.object(
-            monitor.collector, "get_repo_details", return_value=repo_details
+        with (
+            patch.object(monitor.collector, "get_last_commit", return_value=commit_data),
+            patch.object(monitor.collector, "get_open_prs", return_value=[]),
+            patch.object(monitor.collector, "get_branches", return_value=["main"]),
+            patch.object(monitor.collector, "get_pr_branches", return_value=set()),
+            patch.object(monitor.collector, "get_github_pages", return_value=None),
+            patch.object(monitor.collector, "get_ci_runs", return_value=[]),
+            patch.object(monitor.collector, "get_repo_details", return_value=repo_details),
         ):
             result = monitor._collect_repo_data("test-repo", repo_info)
 
