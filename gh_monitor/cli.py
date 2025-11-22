@@ -1,5 +1,7 @@
 """CLI interface for GitHub project monitor."""
 
+import shutil
+import subprocess
 from datetime import datetime
 from pathlib import Path
 from typing import Annotated
@@ -90,6 +92,116 @@ def _generate_reports(
     return outputs, errors
 
 
+def _publish_to_gh_pages(html_path: Path, verbose: bool = False) -> None:
+    """Publish HTML report to gh-pages branch.
+
+    Args:
+        html_path: Path to the HTML report file
+        verbose: Enable verbose output
+
+    Raises:
+        RuntimeError: If git operations fail
+    """
+
+    def run_git(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
+        result = subprocess.run(
+            ["git", *args],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if check and result.returncode != 0:
+            raise RuntimeError(f"git {args[0]} failed: {result.stderr.strip()}")
+        return result
+
+    # Get current branch to return to later
+    result = run_git("rev-parse", "--abbrev-ref", "HEAD")
+    original_branch = result.stdout.strip()
+
+    # Get repository root
+    result = run_git("rev-parse", "--show-toplevel")
+    repo_root = Path(result.stdout.strip())
+
+    # Check if gh-pages exists locally or remotely
+    local_exists = run_git("rev-parse", "--verify", "gh-pages", check=False).returncode == 0
+    remote_exists = (
+        run_git("ls-remote", "--heads", "origin", "gh-pages", check=False).stdout.strip() != ""
+    )
+
+    try:
+        if local_exists:
+            run_git("checkout", "gh-pages")
+        elif remote_exists:
+            run_git("checkout", "-b", "gh-pages", "origin/gh-pages")
+        else:
+            # Create orphan branch
+            run_git("checkout", "--orphan", "gh-pages")
+            run_git("rm", "-rf", ".")
+            run_git("clean", "-fd")
+
+        # Copy HTML report as index.html
+        dest_path = repo_root / "index.html"
+        shutil.copy2(html_path, dest_path)
+
+        # Check if there are changes to commit
+        run_git("add", "index.html")
+        status = run_git("status", "--porcelain")
+
+        if status.stdout.strip():
+            run_git("commit", "-m", f"Update report - {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+            run_git("push", "-u", "origin", "gh-pages")
+        elif verbose:
+            console.print("[dim]No changes to publish[/dim]")
+
+    finally:
+        # Always return to original branch
+        run_git("checkout", original_branch, check=False)
+
+
+def _display_and_publish_results(
+    report: MonitorReport,
+    outputs: list[tuple[str, Path]],
+    errors: list[tuple[str, Exception]],
+    output_dir: Path,
+    publish: bool,
+    verbose: bool,
+) -> None:
+    """Display report results and optionally publish to gh-pages."""
+    # Display results
+    console.print(
+        f"\n[bold green]Successfully monitored {len(report.repositories)} repositories[/bold green]"
+    )
+    console.print(f"  • {report.total_open_prs} open PRs")
+    console.print(f"  • {report.total_branches_without_prs} branches without PRs\n")
+
+    if outputs:
+        console.print("[bold]Generated reports:[/bold]")
+        for format_name, path in outputs:
+            console.print(f"  [green]✓[/green] {format_name}: {path}")
+
+    if errors:
+        error_console.print("\n[bold yellow]Warnings during report generation:[/bold yellow]")
+        for format_name, err in errors:
+            error_console.print(f"  [yellow]![/yellow] {format_name}: {err}")
+
+    if not outputs and errors:
+        error_console.print("[bold red]Error:[/bold red] No reports were generated")
+        raise typer.Exit(1)
+
+    # Publish to gh-pages if requested
+    if publish:
+        html_path = output_dir / "report.html"
+        if html_path.exists():
+            console.print("\n[bold blue]Publishing to gh-pages...[/bold blue]")
+            try:
+                _publish_to_gh_pages(html_path, verbose)
+                console.print("[green]✓[/green] Published to gh-pages branch")
+            except RuntimeError as e:
+                error_console.print(f"[yellow]Warning:[/yellow] Failed to publish: {e}")
+        else:
+            error_console.print("[yellow]Warning:[/yellow] HTML report not found, skipping publish")
+
+
 @app.command()
 def monitor(
     owner: Annotated[str, typer.Argument(help="GitHub organization or user")],
@@ -104,6 +216,10 @@ def monitor(
         str,
         typer.Option("--format", "-f", help="Output format: toon, markdown, html, list, or all"),
     ] = "all",
+    publish: Annotated[
+        bool,
+        typer.Option("--publish/--no-publish", "-p", help="Publish HTML report to gh-pages branch"),
+    ] = True,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Enable verbose output")] = False,
 ):
     """Monitor GitHub projects and generate reports."""
@@ -140,26 +256,8 @@ def monitor(
         # Output based on format
         outputs, errors = _generate_reports(report, output_dir, fmt)
 
-        # Display results
-        console.print(
-            f"\n[bold green]Successfully monitored {len(repositories)} repositories[/bold green]"
-        )
-        console.print(f"  • {report.total_open_prs} open PRs")
-        console.print(f"  • {report.total_branches_without_prs} branches without PRs\n")
-
-        if outputs:
-            console.print("[bold]Generated reports:[/bold]")
-            for format_name, path in outputs:
-                console.print(f"  [green]✓[/green] {format_name}: {path}")
-
-        if errors:
-            error_console.print("\n[bold yellow]Warnings during report generation:[/bold yellow]")
-            for format_name, err in errors:
-                error_console.print(f"  [yellow]![/yellow] {format_name}: {err}")
-
-        if not outputs and errors:
-            error_console.print("[bold red]Error:[/bold red] No reports were generated")
-            raise typer.Exit(1)
+        # Display results and optionally publish
+        _display_and_publish_results(report, outputs, errors, output_dir, publish, verbose)
 
     except (SystemExit, click.exceptions.Exit):
         # Re-raise exit exceptions without modification
