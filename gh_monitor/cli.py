@@ -9,7 +9,12 @@ import typer
 from rich.console import Console
 from rich.progress import Progress
 
-from .generators import generate_html_report, generate_markdown_report, generate_toon_report
+from .generators import (
+    generate_html_report,
+    generate_list_report,
+    generate_markdown_report,
+    generate_toon_report,
+)
 from .models import MonitorReport, SyncReport
 from .monitor import ProjectMonitor
 from .syncer import GitSyncer
@@ -70,6 +75,7 @@ def _generate_reports(
         ("toon", ["toon", "all"], "report.toon", generate_toon_report),
         ("Markdown", ["markdown", "md", "all"], "report.md", generate_markdown_report),
         ("HTML", ["html", "all"], "report.html", generate_html_report),
+        ("List", ["list", "all"], "list.txt", generate_list_report),
     ]
 
     for name, formats, filename, generator in format_configs:
@@ -96,7 +102,7 @@ def monitor(
     ] = 30,
     fmt: Annotated[
         str,
-        typer.Option("--format", "-f", help="Output format: toon, markdown, html, or all"),
+        typer.Option("--format", "-f", help="Output format: toon, markdown, html, list, or all"),
     ] = "all",
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Enable verbose output")] = False,
 ):
