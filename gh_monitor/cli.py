@@ -2,16 +2,53 @@
 
 from datetime import datetime
 from pathlib import Path
+from typing import Annotated
 
 import typer
 from rich.console import Console
 from rich.progress import Progress
-from typing_extensions import Annotated
 
 from .generators import generate_html_report, generate_markdown_report, generate_toon_report
-from .models import MonitorReport
+from .models import MonitorReport, SyncReport
 from .monitor import ProjectMonitor
 from .syncer import GitSyncer
+
+
+def _print_sync_report(report: SyncReport) -> None:
+    """Print sync report summary to console."""
+    if report.cloned:
+        console.print(f"[bold green]Cloned ({len(report.cloned)}):[/bold green]")
+        for name in report.cloned:
+            console.print(f"  [green]+[/green] {name}")
+
+    if report.pulled:
+        console.print(f"[bold blue]Updated ({len(report.pulled)}):[/bold blue]")
+        for name in report.pulled:
+            console.print(f"  [blue]↓[/blue] {name}")
+
+    if report.already_current:
+        console.print(f"[dim]Already current ({len(report.already_current)})[/dim]")
+
+    if report.skipped_dirty:
+        console.print(
+            f"[bold yellow]Skipped - dirty ({len(report.skipped_dirty)}):[/bold yellow]"
+        )
+        for name in report.skipped_dirty:
+            console.print(f"  [yellow]![/yellow] {name}")
+
+    if report.skipped_error:
+        console.print(f"[bold red]Errors ({len(report.skipped_error)}):[/bold red]")
+        for name in report.skipped_error:
+            console.print(f"  [red]✗[/red] {name}")
+
+    total = (
+        len(report.cloned)
+        + len(report.pulled)
+        + len(report.already_current)
+        + len(report.skipped_dirty)
+        + len(report.skipped_error)
+    )
+    console.print(f"\n[bold]Total: {total} repositories[/bold]")
 
 app = typer.Typer(
     help="Monitor GitHub project status and generate reports", no_args_is_help=True
@@ -105,7 +142,7 @@ def monitor(
             import traceback
 
             console.print(traceback.format_exc(), err=True)
-        raise typer.Exit(1)
+        raise typer.Exit(1) from None
 
 
 @app.command()
@@ -144,47 +181,8 @@ def sync(
                 progress_callback=lambda p: progress.update(task, completed=p)
             )
 
-        # Summary output
         console.print()
-
-        if report.cloned:
-            console.print(f"[bold green]Cloned ({len(report.cloned)}):[/bold green]")
-            for name in report.cloned:
-                console.print(f"  [green]+[/green] {name}")
-
-        if report.pulled:
-            console.print(f"[bold blue]Updated ({len(report.pulled)}):[/bold blue]")
-            for name in report.pulled:
-                console.print(f"  [blue]↓[/blue] {name}")
-
-        if report.already_current:
-            console.print(
-                f"[dim]Already current ({len(report.already_current)})[/dim]"
-            )
-
-        if report.skipped_dirty:
-            console.print(
-                f"[bold yellow]Skipped - dirty ({len(report.skipped_dirty)}):[/bold yellow]"
-            )
-            for name in report.skipped_dirty:
-                console.print(f"  [yellow]![/yellow] {name}")
-
-        if report.skipped_error:
-            console.print(
-                f"[bold red]Errors ({len(report.skipped_error)}):[/bold red]"
-            )
-            for name in report.skipped_error:
-                console.print(f"  [red]✗[/red] {name}")
-
-        # Final summary line
-        total = (
-            len(report.cloned)
-            + len(report.pulled)
-            + len(report.already_current)
-            + len(report.skipped_dirty)
-            + len(report.skipped_error)
-        )
-        console.print(f"\n[bold]Total: {total} repositories[/bold]")
+        _print_sync_report(report)
 
     except Exception as e:
         console.print(f"[bold red]Error:[/bold red] {e}", err=True)
@@ -192,7 +190,7 @@ def sync(
             import traceback
 
             console.print(traceback.format_exc(), err=True)
-        raise typer.Exit(1)
+        raise typer.Exit(1) from None
 
 
 def main():

@@ -1,8 +1,8 @@
 """Git repository synchronization with local filesystem."""
 
 import subprocess
+from collections.abc import Callable
 from pathlib import Path
-from typing import Callable
 
 from .collector import GitHubCollector
 from .models import SyncAction, SyncReport, SyncResult

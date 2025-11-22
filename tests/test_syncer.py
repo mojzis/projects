@@ -1,9 +1,7 @@
 """Tests for git syncer functionality."""
 
 from pathlib import Path
-from unittest.mock import MagicMock, patch
-
-import pytest
+from unittest.mock import patch
 
 from gh_monitor.models import SyncAction, SyncReport, SyncResult
 from gh_monitor.syncer import GitSyncer
