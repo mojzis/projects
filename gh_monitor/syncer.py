@@ -11,17 +11,19 @@ from .models import SyncAction, SyncReport, SyncResult
 class GitSyncer:
     """Syncs GitHub repositories with a local directory."""
 
-    def __init__(self, owner: str, git_dir: Path, verbose: bool = False):
+    def __init__(self, owner: str, git_dir: Path, verbose: bool = False, days: int | None = None):
         """Initialize syncer.
 
         Args:
             owner: GitHub organization or user to sync
             git_dir: Local directory to sync repos to (e.g., ~/git)
             verbose: Enable verbose output
+            days: Only sync repos modified in the last N days. If None, sync all repos.
         """
         self.owner = owner
         self.git_dir = git_dir.expanduser().resolve()
         self.verbose = verbose
+        self.days = days
         self.collector = GitHubCollector(verbose=verbose)
 
     def _run_git(self, args: list[str], cwd: Path | None = None) -> tuple[bool, str]:
@@ -131,18 +133,8 @@ class GitSyncer:
         # Ensure git directory exists
         self.git_dir.mkdir(parents=True, exist_ok=True)
 
-        # Get list of repos from GitHub (all repos, no date filter)
-        repos = self.collector._run_gh(
-            [
-                "repo",
-                "list",
-                self.owner,
-                "--json",
-                "name,url,sshUrl",
-                "--limit",
-                "1000",
-            ]
-        )
+        # Get list of repos from GitHub, optionally filtered by activity date
+        repos = self.collector.get_repositories_for_sync(self.owner, self.days)
 
         if not repos:
             return SyncReport()
