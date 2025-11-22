@@ -11,6 +11,7 @@ from typing_extensions import Annotated
 from .generators import generate_html_report, generate_markdown_report, generate_toon_report
 from .models import MonitorReport
 from .monitor import ProjectMonitor
+from .syncer import GitSyncer
 
 app = typer.Typer(
     help="Monitor GitHub project status and generate reports", no_args_is_help=True
@@ -111,6 +112,87 @@ def monitor(
 def version():
     """Show version information."""
     console.print("gh-project-monitor version 0.1.0")
+
+
+@app.command()
+def sync(
+    owner: Annotated[str, typer.Argument(help="GitHub organization or user to sync")],
+    git_dir: Annotated[
+        Path, typer.Option("--dir", "-d", help="Local git directory")
+    ] = Path("~/git"),
+    verbose: Annotated[
+        bool, typer.Option("--verbose", "-v", help="Enable verbose output")
+    ] = False,
+):
+    """Sync GitHub repositories to local directory.
+
+    Compares repositories from GitHub with local ~/git directory:
+    - Missing repos are cloned
+    - Existing clean repos are pulled
+    - Dirty repos (uncommitted changes) are skipped
+    """
+    try:
+        syncer = GitSyncer(owner, git_dir, verbose)
+
+        console.print(
+            f"[bold blue]Syncing repositories for {owner} to {syncer.git_dir}...[/bold blue]"
+        )
+
+        with Progress() as progress:
+            task = progress.add_task("[cyan]Syncing...", total=100)
+            report = syncer.sync_all(
+                progress_callback=lambda p: progress.update(task, completed=p)
+            )
+
+        # Summary output
+        console.print()
+
+        if report.cloned:
+            console.print(f"[bold green]Cloned ({len(report.cloned)}):[/bold green]")
+            for name in report.cloned:
+                console.print(f"  [green]+[/green] {name}")
+
+        if report.pulled:
+            console.print(f"[bold blue]Updated ({len(report.pulled)}):[/bold blue]")
+            for name in report.pulled:
+                console.print(f"  [blue]↓[/blue] {name}")
+
+        if report.already_current:
+            console.print(
+                f"[dim]Already current ({len(report.already_current)})[/dim]"
+            )
+
+        if report.skipped_dirty:
+            console.print(
+                f"[bold yellow]Skipped - dirty ({len(report.skipped_dirty)}):[/bold yellow]"
+            )
+            for name in report.skipped_dirty:
+                console.print(f"  [yellow]![/yellow] {name}")
+
+        if report.skipped_error:
+            console.print(
+                f"[bold red]Errors ({len(report.skipped_error)}):[/bold red]"
+            )
+            for name in report.skipped_error:
+                console.print(f"  [red]✗[/red] {name}")
+
+        # Final summary line
+        total = (
+            len(report.cloned)
+            + len(report.pulled)
+            + len(report.already_current)
+            + len(report.skipped_dirty)
+            + len(report.skipped_error)
+        )
+        console.print(f"\n[bold]Total: {total} repositories[/bold]")
+
+    except Exception as e:
+        console.print(f"[bold red]Error:[/bold red] {e}", err=True)
+        if verbose:
+            import traceback
+
+            console.print(traceback.format_exc(), err=True)
+        raise typer.Exit(1)
 
 
 def main():

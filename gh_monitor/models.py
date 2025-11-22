@@ -160,3 +160,47 @@ class MonitorReport:
             },
             "repositories": [repo.to_dict() for repo in self.repositories],
         }
+
+
+class SyncAction(Enum):
+    """Action taken during sync."""
+
+    CLONED = "cloned"
+    PULLED = "pulled"
+    SKIPPED_DIRTY = "skipped_dirty"
+    SKIPPED_ERROR = "skipped_error"
+    ALREADY_CURRENT = "already_current"
+
+
+@dataclass
+class SyncResult:
+    """Result of syncing a single repository."""
+
+    repo_name: str
+    action: SyncAction
+    message: str
+    branch: str | None = None
+
+
+@dataclass
+class SyncReport:
+    """Summary of sync operation."""
+
+    cloned: list[str] = field(default_factory=list)
+    pulled: list[str] = field(default_factory=list)
+    already_current: list[str] = field(default_factory=list)
+    skipped_dirty: list[str] = field(default_factory=list)
+    skipped_error: list[str] = field(default_factory=list)
+
+    def add_result(self, result: SyncResult) -> None:
+        """Add a sync result to the appropriate list."""
+        if result.action == SyncAction.CLONED:
+            self.cloned.append(result.repo_name)
+        elif result.action == SyncAction.PULLED:
+            self.pulled.append(result.repo_name)
+        elif result.action == SyncAction.ALREADY_CURRENT:
+            self.already_current.append(result.repo_name)
+        elif result.action == SyncAction.SKIPPED_DIRTY:
+            self.skipped_dirty.append(result.repo_name)
+        elif result.action == SyncAction.SKIPPED_ERROR:
+            self.skipped_error.append(result.repo_name)
