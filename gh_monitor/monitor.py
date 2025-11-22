@@ -1,7 +1,7 @@
 """Main orchestration logic for GitHub project monitoring."""
 
-from datetime import datetime, timezone
-from typing import Callable
+from collections.abc import Callable
+from datetime import UTC, datetime
 
 from .collector import GitHubCollector
 from .models import CIRun, CIStatus, Commit, PullRequest, Repository
@@ -78,7 +78,7 @@ class ProjectMonitor:
             ci_status=ci_status,
             ci_recent_runs=ci_runs,
             ci_success_rate=ci_success_rate,
-            last_updated=datetime.now(timezone.utc),
+            last_updated=datetime.now(UTC),
             stars=details.get("stargazerCount", 0),
             forks=details.get("forkCount", 0),
             open_issues=details.get("openIssues", {}).get("totalCount", 0),
@@ -101,9 +101,7 @@ class ProjectMonitor:
             message=commit_info.get("message", "").split("\n")[0],  # First line only
             author=author_info.get("name", "Unknown"),
             date=datetime.fromisoformat(
-                author_info.get("date", datetime.now(timezone.utc).isoformat()).replace(
-                    "Z", "+00:00"
-                )
+                author_info.get("date", datetime.now(UTC).isoformat()).replace("Z", "+00:00")
             ),
         )
 
@@ -114,14 +112,17 @@ class ProjectMonitor:
 
         for pr in prs_data:
             created_at = datetime.fromisoformat(pr["createdAt"].replace("Z", "+00:00"))
-            age_days = (datetime.now(timezone.utc) - created_at).days
+            age_days = (datetime.now(UTC) - created_at).days
+
+            author_data = pr.get("author")
+            author = author_data.get("login", "Unknown") if author_data else "Unknown"
 
             prs.append(
                 PullRequest(
                     number=pr["number"],
                     title=pr["title"],
                     created_at=created_at,
-                    author=pr.get("author", {}).get("login", "Unknown"),
+                    author=author,
                     age_days=age_days,
                     url=pr["url"],
                 )
@@ -135,11 +136,7 @@ class ProjectMonitor:
         pr_branches = self.collector.get_pr_branches(self.owner, repo_name)
 
         # Filter out main/master and branches with PRs
-        return [
-            b
-            for b in all_branches
-            if b not in {"main", "master"} and b not in pr_branches
-        ]
+        return [b for b in all_branches if b not in {"main", "master"} and b not in pr_branches]
 
     def _get_github_pages(self, repo_name: str) -> tuple[bool, str | None]:
         """Get GitHub Pages status and URL."""
@@ -165,9 +162,7 @@ class ProjectMonitor:
                     status=run.get("status", "unknown"),
                     conclusion=run.get("conclusion"),
                     created_at=datetime.fromisoformat(
-                        run.get("createdAt", datetime.now(timezone.utc).isoformat()).replace(
-                            "Z", "+00:00"
-                        )
+                        run.get("createdAt", datetime.now(UTC).isoformat()).replace("Z", "+00:00")
                     ),
                 )
             )

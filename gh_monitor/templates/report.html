@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Project Monitor Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f6f8fa;
+            color: #24292f;
+        }
+        h1, h2, h3 { color: #1f2328; }
+        .header { border-bottom: 1px solid #d0d7de; padding-bottom: 16px; margin-bottom: 24px; }
+        .summary { background: white; padding: 20px; border-radius: 6px; margin-bottom: 24px; border: 1px solid #d0d7de; }
+        .repo-card { background: white; padding: 20px; border-radius: 6px; margin-bottom: 16px; border: 1px solid #d0d7de; }
+        .status-pass { color: #1a7f37; }
+        .status-fail { color: #cf222e; }
+        .status-pending { color: #bf8700; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #d0d7de; }
+        th { background-color: #f6f8fa; }
+        a { color: #0969da; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+        .badge-success { background-color: #dafbe1; color: #1a7f37; }
+        .badge-failure { background-color: #ffebe9; color: #cf222e; }
+        code { background-color: #f6f8fa; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+        .stats { display: flex; gap: 20px; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-value { font-size: 24px; font-weight: bold; }
+        .stat-label { font-size: 12px; color: #57606a; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>GitHub Project Monitor Report</h1>
+        <p><strong>Generated:</strong> {{ timestamp }}</p>
+        <p><strong>Scan Period:</strong> Last {{ scan_days }} days</p>
+    </div>
+
+    <div class="summary">
+        <h2>Summary Statistics</h2>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">{{ total_repos }}</div>
+                <div class="stat-label">Repositories</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">{{ total_prs }}</div>
+                <div class="stat-label">Open PRs</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">{{ total_branches }}</div>
+                <div class="stat-label">Orphaned Branches</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value status-pass">{{ passing_ci }}</div>
+                <div class="stat-label">CI Passing</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value status-fail">{{ failing_ci }}</div>
+                <div class="stat-label">CI Failing</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">{{ pages_enabled }}</div>
+                <div class="stat-label">GitHub Pages</div>
+            </div>
+        </div>
+    </div>
+
+    {% for repo in repositories %}
+    <div class="repo-card">
+        <h2><a href="{{ repo.url }}">{{ repo.owner }}/{{ repo.name }}</a></h2>
+        <p>
+            <strong>Language:</strong> {{ repo.language or 'N/A' }} |
+            <strong>Stars:</strong> {{ repo.stars }} |
+            <strong>Forks:</strong> {{ repo.forks }} |
+            <strong>Issues:</strong> {{ repo.open_issues }}
+        </p>
+
+        <h3>Last Commit on Main</h3>
+        {% if repo.last_commit %}
+        <ul>
+            <li><strong>SHA:</strong> <code>{{ repo.last_commit.sha[:8] }}</code></li>
+            <li><strong>Message:</strong> {{ repo.last_commit.message }}</li>
+            <li><strong>Author:</strong> {{ repo.last_commit.author }}</li>
+            <li><strong>Date:</strong> {{ repo.last_commit.date }}</li>
+        </ul>
+        {% else %}
+        <p>No commit information available</p>
+        {% endif %}
+
+        <h3>Open Pull Requests ({{ repo.open_prs|length }})</h3>
+        {% if repo.open_prs %}
+        <table>
+            <thead>
+                <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
+            </thead>
+            <tbody>
+            {% for pr in repo.open_prs %}
+                <tr>
+                    <td><a href="{{ pr.url }}">#{{ pr.number }}</a></td>
+                    <td>{{ pr.title }}</td>
+                    <td>@{{ pr.author }}</td>
+                    <td>{{ pr.age_days }}d</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No open pull requests</p>
+        {% endif %}
+
+        <h3>Branches Without PRs ({{ repo.branches_without_prs|length }})</h3>
+        {% if repo.branches_without_prs %}
+        <ul>
+        {% for branch in repo.branches_without_prs %}
+            <li><code>{{ branch }}</code></li>
+        {% endfor %}
+        </ul>
+        {% else %}
+        <p>All branches have associated PRs</p>
+        {% endif %}
+
+        <h3>GitHub Pages</h3>
+        {% if repo.github_pages_enabled %}
+        <p class="status-pass">Enabled - <a href="{{ repo.github_pages_url }}">Visit Site</a></p>
+        {% else %}
+        <p>Disabled</p>
+        {% endif %}
+
+        <h3>CI/CD Pipeline</h3>
+        <p>
+            <strong>Status:</strong>
+            {% if repo.ci_status == 'success' %}
+            <span class="badge badge-success">PASS</span>
+            {% elif repo.ci_status == 'failure' %}
+            <span class="badge badge-failure">FAIL</span>
+            {% elif repo.ci_status == 'pending' %}
+            <span class="badge">PENDING</span>
+            {% else %}
+            <span class="badge">{{ repo.ci_status|upper }}</span>
+            {% endif %}
+            |
+            <strong>Success Rate:</strong> {{ (repo.ci_success_rate * 100)|round(1) }}%
+        </p>
+        {% if repo.ci_recent_runs %}
+        <p><strong>Recent Runs:</strong></p>
+        <ul>
+        {% for run in repo.ci_recent_runs[:5] %}
+            <li>{{ run.name }}: {{ run.status }} ({{ run.conclusion or 'in progress' }})</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    <footer style="text-align: center; padding: 20px; color: #57606a;">
+        <em>Generated by GitHub Project Monitor</em>
+    </footer>
+</body>
+</html>
