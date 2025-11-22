@@ -6,7 +6,7 @@
 **Version:** 0.1.0
 **Python:** >=3.11
 
-A CLI tool that monitors GitHub project status using the GitHub CLI (`gh`) and generates reports in TOON (token-optimized), Markdown, and HTML formats. Designed for tracking repository activity, pull requests, CI/CD status, and GitHub Pages across organizations.
+A CLI tool that monitors GitHub project status using the GitHub CLI (`gh`) and generates reports in TOON (token-optimized), Markdown, and HTML formats. Also provides repository synchronization to keep local clones up-to-date.
 
 ## Quick Start
 
@@ -14,8 +14,11 @@ A CLI tool that monitors GitHub project status using the GitHub CLI (`gh`) and g
 # Install dependencies
 uv sync
 
-# Run the tool
-uv run gh-monitor <owner> --days 30 --format all --output reports/
+# Monitor repositories and generate reports
+uv run gh-monitor monitor <owner> --days 30 --format all --output reports/
+
+# Sync repositories to local directory
+uv run gh-monitor sync <owner> --dir ~/git
 
 # Run tests
 uv run pytest
@@ -31,21 +34,34 @@ uv run ruff format .
 gh_monitor/
 ├── __init__.py           # Package init, exports version
 ├── __main__.py           # Entry point for `python -m gh_monitor`
-├── cli.py                # Typer CLI interface (main command: monitor)
+├── cli.py                # Typer CLI interface (commands: monitor, sync, version)
 ├── collector.py          # GitHub CLI wrapper (subprocess-based)
 ├── monitor.py            # Orchestration logic for data collection
-├── models.py             # Type-safe dataclasses (Commit, PR, Repository, etc.)
+├── syncer.py             # Git repository synchronization
+├── models.py             # Type-safe dataclasses (Commit, PR, Repository, Sync*, etc.)
 ├── generators/
 │   ├── __init__.py       # Exports all generators
 │   ├── toon_gen.py       # TOON format output (uses toon_format library)
 │   ├── markdown_gen.py   # Markdown output (Jinja2 templates)
 │   └── html_gen.py       # HTML output (Jinja2 templates)
 ├── templates/
-│   └── report.md         # Jinja2 markdown template
+│   ├── report.md         # Jinja2 markdown template
+│   └── report.html       # Jinja2 HTML template
 └── py.typed              # PEP 561 marker
+
 tests/
 ├── __init__.py
-└── test_models.py        # Basic model tests
+├── test_cli.py           # CLI command tests
+├── test_collector.py     # GitHub collector tests
+├── test_generators.py    # Report generator tests
+├── test_models.py        # Data model tests
+├── test_monitor.py       # Monitor orchestration tests
+└── test_syncer.py        # Git syncer tests
+
+.github/
+└── workflows/
+    └── ci.yml            # GitHub Actions CI pipeline
+
 plans/
 └── gh-project-monitor-plan.md  # Original implementation plan
 ```
@@ -53,13 +69,13 @@ plans/
 ## Architecture
 
 ```
-CLI (Typer) -> ProjectMonitor -> GitHubCollector -> gh CLI (subprocess)
-                   |
-                   v
-              Data Models (dataclasses)
-                   |
-                   v
-              Report Generators (TOON/MD/HTML)
+CLI (Typer)
+    ├── monitor command -> ProjectMonitor -> GitHubCollector -> gh CLI
+    │                           |
+    │                           v
+    │                      Data Models -> Report Generators (TOON/MD/HTML)
+    │
+    └── sync command -> GitSyncer -> git CLI (clone/pull)
 ```
 
 ### Key Components
@@ -77,23 +93,34 @@ CLI (Typer) -> ProjectMonitor -> GitHubCollector -> gh CLI (subprocess)
    - `collect_all_data()`: Main loop with progress callback
    - `_collect_repo_data()`: Per-repository data assembly
 
-3. **Data Models** (`models.py`): Type-safe dataclasses
+3. **GitSyncer** (`syncer.py`): Syncs GitHub repos with local directory
+   - `sync_all()`: Clone missing repos, pull existing clean repos
+   - `_clone_repo()`: Clone a new repository
+   - `_pull_repo()`: Pull updates (skips dirty repos)
+   - `_is_git_clean()`: Check for uncommitted changes
+   - `_needs_pull()`: Check if behind remote
+
+4. **Data Models** (`models.py`): Type-safe dataclasses
    - `CIStatus` (enum): success/failure/pending/no_ci/unknown
    - `Commit`: sha, message, author, date
    - `PullRequest`: number, title, author, age_days, url
    - `CIRun`: name, status, conclusion, created_at
    - `Repository`: Full repo metrics with nested models
    - `MonitorReport`: Aggregated report with auto-calculated totals
+   - `SyncAction` (enum): cloned/pulled/skipped_dirty/skipped_error/already_current
+   - `SyncResult`: Single repo sync result
+   - `SyncReport`: Aggregated sync summary
 
-4. **Report Generators** (`generators/`):
+5. **Report Generators** (`generators/`):
    - `generate_toon_report()`: Uses `toon_format.encode()`
    - `generate_markdown_report()`: Jinja2 with `report.md` template
    - `generate_html_report()`: Jinja2 with `report.html` template
 
 ## CLI Interface
 
+### Monitor Command
 ```bash
-gh-monitor OWNER [OPTIONS]
+gh-monitor monitor OWNER [OPTIONS]
 
 Arguments:
   OWNER    GitHub organization or user (required)
@@ -103,6 +130,29 @@ Options:
   -d, --days INT       Monitor repos changed in last N days (1-365, default: 30)
   -f, --format TEXT    Output format: toon, markdown, html, all (default: all)
   -v, --verbose        Enable verbose output with tracebacks
+```
+
+### Sync Command
+```bash
+gh-monitor sync OWNER [OPTIONS]
+
+Arguments:
+  OWNER    GitHub organization or user to sync (required)
+
+Options:
+  -d, --dir PATH       Local git directory (default: ~/git)
+  -v, --verbose        Enable verbose output
+```
+
+Sync behavior:
+- Missing repos are cloned (using SSH URL)
+- Existing clean repos are pulled
+- Dirty repos (uncommitted changes) are skipped
+- Reports summary of actions taken
+
+### Version Command
+```bash
+gh-monitor version
 ```
 
 ## Dependencies
@@ -120,6 +170,7 @@ Options:
 
 **External:**
 - GitHub CLI (`gh`) must be installed and authenticated
+- Git must be installed (for sync command)
 
 ## Code Style
 
@@ -134,45 +185,25 @@ Options:
 uv run pytest                    # Run all tests
 uv run pytest --cov=gh_monitor   # With coverage
 uv run pytest -v                 # Verbose output
+uv run pytest tests/test_cli.py  # Single test file
 ```
 
-Current test coverage is minimal - see "What's Missing" section.
+Test files:
+- `test_cli.py` - CLI command tests with mocked dependencies
+- `test_collector.py` - GitHub CLI wrapper tests with subprocess mocking
+- `test_generators.py` - Report generator tests (TOON, Markdown, HTML)
+- `test_models.py` - Data model serialization and aggregation tests
+- `test_monitor.py` - Monitor orchestration tests
+- `test_syncer.py` - Git sync operation tests
 
----
+## CI/CD
 
-## Implementation Status
-
-### Fully Implemented
-
-| Component | File | Status |
-|-----------|------|--------|
-| CLI interface | `cli.py` | Complete |
-| GitHub collector | `collector.py` | Complete |
-| Monitor orchestration | `monitor.py` | Complete |
-| Data models | `models.py` | Complete |
-| TOON generator | `generators/toon_gen.py` | Complete |
-| Markdown generator | `generators/markdown_gen.py` | Complete |
-| HTML generator code | `generators/html_gen.py` | Complete |
-| Markdown template | `templates/report.md` | Complete |
-| README | `README.md` | Complete |
-| Package config | `pyproject.toml` | Complete |
-
-### What's Missing
-
-| Item | Priority | Notes |
-|------|----------|-------|
-| **HTML template** | HIGH | `templates/report.html` is missing - `html_gen.py:14` references it but file doesn't exist. HTML generation will fail. |
-| **Comprehensive tests** | HIGH | Only 2 basic model tests exist. Missing: test_cli.py, test_collector.py, test_generators.py, conftest.py with fixtures |
-| **CI/CD workflow** | MEDIUM | No `.github/workflows/ci.yml` - mentioned in plan but not implemented |
-| **Rate limiting** | LOW | No explicit handling of GitHub API rate limits |
-| **Retry logic** | LOW | No retry mechanism for transient failures |
-| **conftest.py** | MEDIUM | No shared fixtures for tests |
-
-### Known Issues
-
-1. **HTML generation broken**: Will raise `TemplateNotFound` for `report.html`
-2. **No integration tests**: Collector tests would need mocking of subprocess calls
-3. **Subprocess security**: Uses `subprocess.run` with shell=False (safe), but S603/S607 are explicitly ignored in ruff config
+GitHub Actions workflow (`.github/workflows/ci.yml`):
+- Runs on push/PR to main/master
+- Tests on Python 3.11 and 3.12
+- Linting with ruff
+- Format checking
+- Test coverage with codecov upload
 
 ## GitHub CLI Commands Used
 
@@ -181,6 +212,9 @@ The collector executes these `gh` commands:
 ```bash
 # List repositories
 gh repo list OWNER --json name,pushedAt,updatedAt,stargazerCount,forkCount,url --limit 1000
+
+# List repos for sync (includes SSH URL)
+gh repo list OWNER --json name,url,sshUrl --limit 1000
 
 # Last commit (tries main, falls back to master)
 gh api repos/OWNER/REPO/commits/main
@@ -216,7 +250,12 @@ Human-readable report using Jinja2 template at `templates/report.md`. Includes:
 - Repository overview grid
 
 ### HTML Format
-Clean web visualization (template missing - needs `templates/report.html`).
+Clean web visualization using Jinja2 template at `templates/report.html`. Features:
+- GitHub-style CSS styling
+- Summary statistics dashboard with large numbers
+- Repository cards with all metrics
+- Status badges (pass/fail/pending)
+- Responsive design
 
 ## Common Tasks
 
@@ -227,46 +266,27 @@ Clean web visualization (template missing - needs `templates/report.html`).
 3. Collect the data in `monitor.py:_collect_repo_data()`
 4. Add to template context in `markdown_gen.py` and `html_gen.py`
 5. Update Jinja2 templates to display the field
+6. Add tests in `test_models.py`
 
-### Adding a new CLI option
+### Adding a new CLI command
 
-1. Add parameter to `monitor()` function in `cli.py`
-2. Use `typer.Option()` annotation
-3. Pass to `ProjectMonitor` or use in report generation
+1. Add command function with `@app.command()` decorator in `cli.py`
+2. Use `typer.Argument()` and `typer.Option()` annotations
+3. Add tests in `test_cli.py`
 
-### Writing tests
+### Adding a new report format
 
-Tests go in `tests/` directory. Use pytest fixtures for common setup:
-
-```python
-# tests/conftest.py (needs to be created)
-import pytest
-from datetime import datetime
-from gh_monitor.models import Repository, CIStatus
-
-@pytest.fixture
-def sample_repository():
-    return Repository(
-        name="test-repo",
-        owner="test-owner",
-        full_name="test-owner/test-repo",
-        url="https://github.com/test-owner/test-repo",
-        last_commit=None,
-        open_prs=[],
-        branches_without_prs=[],
-        github_pages_enabled=False,
-        github_pages_url=None,
-        ci_status=CIStatus.NO_CI,
-        ci_recent_runs=[],
-        ci_success_rate=0.0,
-        last_updated=datetime.now(),
-    )
-```
+1. Create new generator in `generators/` directory
+2. Export from `generators/__init__.py`
+3. Add format option handling in `cli.py:_generate_reports()`
+4. Add template if needed in `templates/`
+5. Add tests in `test_generators.py`
 
 ## Notes for Development
 
 - **Package layout**: Flat layout (gh_monitor/ at root, not src/gh_monitor/)
 - **Entry point**: `gh-monitor` command defined in `pyproject.toml`
 - **Verbose mode**: Use `-v` flag to see full tracebacks on errors
-- **Progress tracking**: CLI uses Rich progress bars during collection
+- **Progress tracking**: CLI uses Rich progress bars during collection/sync
 - **Error handling**: GitHubCLIError exception for gh command failures
+- **Sync safety**: Dirty repos are never modified, always skipped
