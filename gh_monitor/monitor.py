@@ -116,12 +116,15 @@ class ProjectMonitor:
             created_at = datetime.fromisoformat(pr["createdAt"].replace("Z", "+00:00"))
             age_days = (datetime.now(timezone.utc) - created_at).days
 
+            author_data = pr.get("author")
+            author = author_data.get("login", "Unknown") if author_data else "Unknown"
+
             prs.append(
                 PullRequest(
                     number=pr["number"],
                     title=pr["title"],
                     created_at=created_at,
-                    author=pr.get("author", {}).get("login", "Unknown"),
+                    author=author,
                     age_days=age_days,
                     url=pr["url"],
                 )
