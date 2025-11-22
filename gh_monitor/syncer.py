@@ -44,9 +44,7 @@ class GitSyncer:
 
     def _get_current_branch(self, repo_path: Path) -> str | None:
         """Get the current branch name."""
-        success, output = self._run_git(
-            ["rev-parse", "--abbrev-ref", "HEAD"], cwd=repo_path
-        )
+        success, output = self._run_git(["rev-parse", "--abbrev-ref", "HEAD"], cwd=repo_path)
         return output if success else None
 
     def _needs_pull(self, repo_path: Path) -> bool:
@@ -55,9 +53,7 @@ class GitSyncer:
         self._run_git(["fetch"], cwd=repo_path)
 
         # Check if we're behind
-        success, output = self._run_git(
-            ["rev-list", "--count", "HEAD..@{upstream}"], cwd=repo_path
-        )
+        success, output = self._run_git(["rev-list", "--count", "HEAD..@{upstream}"], cwd=repo_path)
         if success:
             try:
                 return int(output) > 0
@@ -123,9 +119,7 @@ class GitSyncer:
                 branch=branch,
             )
 
-    def sync_all(
-        self, progress_callback: Callable[[int], None] | None = None
-    ) -> SyncReport:
+    def sync_all(self, progress_callback: Callable[[int], None] | None = None) -> SyncReport:
         """Sync all repositories.
 
         Args:
@@ -138,15 +132,17 @@ class GitSyncer:
         self.git_dir.mkdir(parents=True, exist_ok=True)
 
         # Get list of repos from GitHub (all repos, no date filter)
-        repos = self.collector._run_gh([
-            "repo",
-            "list",
-            self.owner,
-            "--json",
-            "name,url,sshUrl",
-            "--limit",
-            "1000",
-        ])
+        repos = self.collector._run_gh(
+            [
+                "repo",
+                "list",
+                self.owner,
+                "--json",
+                "name,url,sshUrl",
+                "--limit",
+                "1000",
+            ]
+        )
 
         if not repos:
             return SyncReport()

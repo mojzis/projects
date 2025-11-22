@@ -31,9 +31,7 @@ def _print_sync_report(report: SyncReport) -> None:
         console.print(f"[dim]Already current ({len(report.already_current)})[/dim]")
 
     if report.skipped_dirty:
-        console.print(
-            f"[bold yellow]Skipped - dirty ({len(report.skipped_dirty)}):[/bold yellow]"
-        )
+        console.print(f"[bold yellow]Skipped - dirty ({len(report.skipped_dirty)}):[/bold yellow]")
         for name in report.skipped_dirty:
             console.print(f"  [yellow]![/yellow] {name}")
 
@@ -50,6 +48,7 @@ def _print_sync_report(report: SyncReport) -> None:
         + len(report.skipped_error)
     )
     console.print(f"\n[bold]Total: {total} repositories[/bold]")
+
 
 app = typer.Typer(help="Monitor GitHub project status and generate reports", no_args_is_help=True)
 console = Console()
@@ -153,12 +152,10 @@ def version():
 @app.command()
 def sync(
     owner: Annotated[str, typer.Argument(help="GitHub organization or user to sync")],
-    git_dir: Annotated[
-        Path, typer.Option("--dir", "-d", help="Local git directory")
-    ] = Path("~/git"),
-    verbose: Annotated[
-        bool, typer.Option("--verbose", "-v", help="Enable verbose output")
-    ] = False,
+    git_dir: Annotated[Path, typer.Option("--dir", "-d", help="Local git directory")] = Path(
+        "~/git"
+    ),
+    verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Enable verbose output")] = False,
 ):
     """Sync GitHub repositories to local directory.
 
@@ -176,9 +173,7 @@ def sync(
 
         with Progress() as progress:
             task = progress.add_task("[cyan]Syncing...", total=100)
-            report = syncer.sync_all(
-                progress_callback=lambda p: progress.update(task, completed=p)
-            )
+            report = syncer.sync_all(progress_callback=lambda p: progress.update(task, completed=p))
 
         console.print()
         _print_sync_report(report)
