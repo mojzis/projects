@@ -162,3 +162,41 @@ class GitHubCollector:
             return details if isinstance(details, dict) else {}
         except GitHubCLIError:
             return {}
+
+    def get_repositories_for_sync(self, owner: str, since_days: int | None = None) -> list[dict]:
+        """Get repositories for syncing, optionally filtered by activity.
+
+        Args:
+            owner: GitHub organization or user
+            since_days: If provided, only return repos modified in the last N days.
+                       If None, return all repos.
+
+        Returns:
+            List of repo dicts with name, url, sshUrl fields
+        """
+        repos = self._run_gh(
+            [
+                "repo",
+                "list",
+                owner,
+                "--json",
+                "name,url,sshUrl,pushedAt",
+                "--limit",
+                "1000",
+            ]
+        )
+
+        if not repos:
+            return []
+
+        # Filter by date if since_days is specified
+        if since_days is not None:
+            cutoff = datetime.now(UTC) - timedelta(days=since_days)
+            filtered = []
+            for repo in repos:
+                pushed_at = datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
+                if pushed_at > cutoff:
+                    filtered.append(repo)
+            return filtered
+
+        return repos
