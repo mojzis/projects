@@ -11,14 +11,14 @@ from .models import SyncAction, SyncReport, SyncResult
 class GitSyncer:
     """Syncs GitHub repositories with a local directory."""
 
-    def __init__(self, owner: str, git_dir: Path, verbose: bool = False, days: int | None = None):
+    def __init__(self, owner: str, git_dir: Path, verbose: bool = False, days: int = 45):
         """Initialize syncer.
 
         Args:
             owner: GitHub organization or user to sync
             git_dir: Local directory to sync repos to (e.g., ~/git)
             verbose: Enable verbose output
-            days: Only sync repos modified in the last N days. If None, sync all repos.
+            days: Only sync repos modified in the last N days (default: 45)
         """
         self.owner = owner
         self.git_dir = git_dir.expanduser().resolve()

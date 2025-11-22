@@ -178,11 +178,11 @@ def sync(
     owner: Annotated[str, typer.Argument(help="GitHub organization or user to sync")],
     git_dir: Annotated[Path, typer.Option("--dir", help="Local git directory")] = Path("~/git"),
     days: Annotated[
-        int | None,
+        int,
         typer.Option(
             "--days", "-d", help="Only sync repos modified in last N days", min=1, max=365
         ),
-    ] = None,
+    ] = 45,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Enable verbose output")] = False,
 ):
     """Sync GitHub repositories to local directory.
@@ -197,8 +197,9 @@ def sync(
     try:
         syncer = GitSyncer(owner, git_dir, verbose, days)
 
-        days_msg = f" (active in last {days} days)" if days else ""
-        msg = f"Syncing repositories for {owner}{days_msg} to {syncer.git_dir}..."
+        msg = (
+            f"Syncing repositories for {owner} (active in last {days} days) to {syncer.git_dir}..."
+        )
         console.print(f"[bold blue]{msg}[/bold blue]")
 
         with Progress() as progress:
