@@ -2,7 +2,7 @@
 
 import json
 import subprocess
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from typing import Any
 
 
@@ -34,18 +34,20 @@ class GitHubCollector:
 
     def get_repositories(self, owner: str, since_days: int = 30) -> list[dict]:
         """Get repositories modified in the last N days."""
-        repos = self._run_gh([
-            "repo",
-            "list",
-            owner,
-            "--json",
-            "name,pushedAt,updatedAt,stargazerCount,forkCount,url",
-            "--limit",
-            "1000",
-        ])
+        repos = self._run_gh(
+            [
+                "repo",
+                "list",
+                owner,
+                "--json",
+                "name,pushedAt,updatedAt,stargazerCount,forkCount,url",
+                "--limit",
+                "1000",
+            ]
+        )
 
         # Filter by date
-        cutoff = datetime.now(timezone.utc) - timedelta(days=since_days)
+        cutoff = datetime.now(UTC) - timedelta(days=since_days)
         filtered = []
 
         for repo in repos:
@@ -71,18 +73,20 @@ class GitHubCollector:
     def get_open_prs(self, owner: str, repo: str) -> list[dict]:
         """Get all open pull requests."""
         try:
-            prs = self._run_gh([
-                "pr",
-                "list",
-                "--repo",
-                f"{owner}/{repo}",
-                "--state",
-                "open",
-                "--json",
-                "number,title,createdAt,author,url",
-                "--limit",
-                "100",
-            ])
+            prs = self._run_gh(
+                [
+                    "pr",
+                    "list",
+                    "--repo",
+                    f"{owner}/{repo}",
+                    "--state",
+                    "open",
+                    "--json",
+                    "number,title,createdAt,author,url",
+                    "--limit",
+                    "100",
+                ]
+            )
             return prs if isinstance(prs, list) else []
         except GitHubCLIError:
             return []
@@ -98,18 +102,20 @@ class GitHubCollector:
     def get_pr_branches(self, owner: str, repo: str) -> set[str]:
         """Get all branches that have PRs (open or closed)."""
         try:
-            prs = self._run_gh([
-                "pr",
-                "list",
-                "--repo",
-                f"{owner}/{repo}",
-                "--state",
-                "all",
-                "--json",
-                "headRefName",
-                "--limit",
-                "1000",
-            ])
+            prs = self._run_gh(
+                [
+                    "pr",
+                    "list",
+                    "--repo",
+                    f"{owner}/{repo}",
+                    "--state",
+                    "all",
+                    "--json",
+                    "headRefName",
+                    "--limit",
+                    "1000",
+                ]
+            )
             return {pr["headRefName"] for pr in prs} if isinstance(prs, list) else set()
         except GitHubCLIError:
             return set()
@@ -125,16 +131,18 @@ class GitHubCollector:
     def get_ci_runs(self, owner: str, repo: str, limit: int = 20) -> list[dict]:
         """Get recent CI/CD runs."""
         try:
-            runs = self._run_gh([
-                "run",
-                "list",
-                "--repo",
-                f"{owner}/{repo}",
-                "--limit",
-                str(limit),
-                "--json",
-                "status,conclusion,name,createdAt",
-            ])
+            runs = self._run_gh(
+                [
+                    "run",
+                    "list",
+                    "--repo",
+                    f"{owner}/{repo}",
+                    "--limit",
+                    str(limit),
+                    "--json",
+                    "status,conclusion,name,createdAt",
+                ]
+            )
             return runs if isinstance(runs, list) else []
         except GitHubCLIError:
             return []
@@ -142,13 +150,15 @@ class GitHubCollector:
     def get_repo_details(self, owner: str, repo: str) -> dict:
         """Get repository details (stars, forks, language, issues)."""
         try:
-            details = self._run_gh([
-                "repo",
-                "view",
-                f"{owner}/{repo}",
-                "--json",
-                "stargazerCount,forkCount,openIssues,primaryLanguage",
-            ])
+            details = self._run_gh(
+                [
+                    "repo",
+                    "view",
+                    f"{owner}/{repo}",
+                    "--json",
+                    "stargazerCount,forkCount,openIssues,primaryLanguage",
+                ]
+            )
             return details if isinstance(details, dict) else {}
         except GitHubCLIError:
             return {}

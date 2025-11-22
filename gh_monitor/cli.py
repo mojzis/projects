@@ -2,20 +2,20 @@
 
 from datetime import datetime
 from pathlib import Path
+from typing import Annotated
 
+import click.exceptions
 import typer
 from rich.console import Console
 from rich.progress import Progress
-from typing_extensions import Annotated
 
 from .generators import generate_html_report, generate_markdown_report, generate_toon_report
 from .models import MonitorReport
 from .monitor import ProjectMonitor
 
-app = typer.Typer(
-    help="Monitor GitHub project status and generate reports", no_args_is_help=True
-)
+app = typer.Typer(help="Monitor GitHub project status and generate reports", no_args_is_help=True)
 console = Console()
+error_console = Console(stderr=True)
 
 
 @app.command()
@@ -26,17 +26,13 @@ def monitor(
     ] = Path("reports"),
     days: Annotated[
         int,
-        typer.Option(
-            "--days", "-d", help="Monitor repos changed in last N days", min=1, max=365
-        ),
+        typer.Option("--days", "-d", help="Monitor repos changed in last N days", min=1, max=365),
     ] = 30,
     fmt: Annotated[
         str,
         typer.Option("--format", "-f", help="Output format: toon, markdown, html, or all"),
     ] = "all",
-    verbose: Annotated[
-        bool, typer.Option("--verbose", "-v", help="Enable verbose output")
-    ] = False,
+    verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Enable verbose output")] = False,
 ):
     """Monitor GitHub projects and generate reports."""
     try:
@@ -98,12 +94,15 @@ def monitor(
         for format_name, path in outputs:
             console.print(f"  [green]✓[/green] {format_name}: {path}")
 
+    except (SystemExit, click.exceptions.Exit):
+        # Re-raise exit exceptions without modification
+        raise
     except Exception as e:
-        console.print(f"[bold red]Error:[/bold red] {e}", err=True)
+        error_console.print(f"[bold red]Error:[/bold red] {e}")
         if verbose:
             import traceback
 
-            console.print(traceback.format_exc(), err=True)
+            error_console.print(traceback.format_exc())
         raise typer.Exit(1)
 
 
