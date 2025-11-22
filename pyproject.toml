@@ -39,6 +39,7 @@ ignore = ["B904"]
 [tool.ruff.lint.per-file-ignores]
 "tests/*" = ["S101", "N806"]
 "gh_monitor/collector.py" = ["S603", "S607"]
+"gh_monitor/syncer.py" = ["S603", "S607"]
 "gh_monitor/generators/*.py" = ["S701"]
 
 [tool.pytest.ini_options]
