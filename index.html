@@ -5,18 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Project Monitor Report</title>
     <style>
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f6f8fa;
             color: #24292f;
         }
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 240px;
+            background: white;
+            border-right: 1px solid #d0d7de;
+            padding: 16px 0;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            font-size: 14px;
+            padding: 8px 16px;
+            margin: 0;
+            color: #57606a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li a {
+            display: block;
+            padding: 8px 16px;
+            color: #24292f;
+            text-decoration: none;
+            font-size: 14px;
+            border-left: 3px solid transparent;
+        }
+        .sidebar li a:hover {
+            background-color: #f6f8fa;
+            border-left-color: #d0d7de;
+        }
+        .sidebar li a.has-prs {
+            font-weight: 600;
+        }
+        .sidebar .pr-count {
+            background: #0969da;
+            color: white;
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 10px;
+            margin-left: 4px;
+        }
+        .main {
+            margin-left: 240px;
+            flex: 1;
+            padding: 20px;
+            max-width: 960px;
+        }
         h1, h2, h3 { color: #1f2328; }
         .header { border-bottom: 1px solid #d0d7de; padding-bottom: 16px; margin-bottom: 24px; }
+        .header p { color: #57606a; margin: 4px 0; font-size: 14px; }
         .summary { background: white; padding: 20px; border-radius: 6px; margin-bottom: 24px; border: 1px solid #d0d7de; }
         .repo-card { background: white; padding: 20px; border-radius: 6px; margin-bottom: 16px; border: 1px solid #d0d7de; }
+        .repo-card h2 { margin-top: 0; }
         .status-pass { color: #1a7f37; }
         .status-fail { color: #cf222e; }
         .status-pending { color: #bf8700; }
@@ -28,1394 +85,1037 @@
         .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
         .badge-success { background-color: #dafbe1; color: #1a7f37; }
         .badge-failure { background-color: #ffebe9; color: #cf222e; }
-        code { background-color: #f6f8fa; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+        code { background-color: #f6f8fa; padding: 2px 6px; border-radius: 3px; font-family: monospace; font-size: 13px; }
         .stats { display: flex; gap: 20px; flex-wrap: wrap; }
         .stat { text-align: center; }
         .stat-value { font-size: 24px; font-weight: bold; }
         .stat-label { font-size: 12px; color: #57606a; }
+        .commit-line {
+            font-size: 14px;
+            color: #57606a;
+            margin: 8px 0;
+        }
+        .commit-line code { font-size: 12px; }
+        .section { margin: 16px 0; }
+        .section h3 { font-size: 14px; margin-bottom: 8px; }
+        .ci-status { display: inline-flex; align-items: center; gap: 8px; margin: 8px 0; }
+        .pages-link { margin: 8px 0; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>GitHub Project Monitor Report</h1>
-        <p><strong>Generated:</strong> 2025-11-22 23:44:52</p>
-        <p><strong>Scan Period:</strong> Last 70 days</p>
-    </div>
+    <div class="layout">
+        <nav class="sidebar">
+            <h2>Projects</h2>
+            <ul>
+            
+                <li>
+                    <a href="#slalom" class="has-prs">
+                        slalom
+                        <span class="pr-count">1</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#projects">
+                        projects
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#susconf" class="has-prs">
+                        susconf
+                        <span class="pr-count">1</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#chameleon" class="has-prs">
+                        chameleon
+                        <span class="pr-count">1</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#esl" class="has-prs">
+                        esl
+                        <span class="pr-count">1</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#wild-wings">
+                        wild-wings
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#ty-find">
+                        ty-find
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#traingame">
+                        traingame
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#claude-skill-manager">
+                        claude-skill-manager
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#marimo-template">
+                        marimo-template
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#cteni">
+                        cteni
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#happytube">
+                        happytube
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#bounceflow">
+                        bounceflow
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#volby_check">
+                        volby_check
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#svatba">
+                        svatba
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#alma" class="has-prs">
+                        alma
+                        <span class="pr-count">1</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#sketchpy">
+                        sketchpy
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#md2pdf">
+                        md2pdf
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#pronounce">
+                        pronounce
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#shopping">
+                        shopping
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#logseq-triage">
+                        logseq-triage
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#logseq">
+                        logseq
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#newsparser">
+                        newsparser
+                        
+                    </a>
+                </li>
+            
+            </ul>
+        </nav>
 
-    <div class="summary">
-        <h2>Summary Statistics</h2>
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-value">23</div>
-                <div class="stat-label">Repositories</div>
+        <main class="main">
+            <div class="header">
+                <h1>GitHub Project Monitor</h1>
+                <p>2025-11-23 00:52:34 | Last 70 days</p>
             </div>
-            <div class="stat">
-                <div class="stat-value">4</div>
-                <div class="stat-label">Open PRs</div>
+
+            <div class="summary">
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-value">23</div>
+                        <div class="stat-label">Repositories</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Open PRs</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">16</div>
+                        <div class="stat-label">Orphaned Branches</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value status-pass">11</div>
+                        <div class="stat-label">CI Passing</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value status-fail">3</div>
+                        <div class="stat-label">CI Failing</div>
+                    </div>
+                </div>
             </div>
-            <div class="stat">
-                <div class="stat-value">13</div>
-                <div class="stat-label">Orphaned Branches</div>
+
+            
+            <div class="repo-card" id="slalom">
+                <h2><a href="https://github.com/mojzis/slalom">slalom</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/slalom/commit/fbd92fb28432be0059106438915dbcdb5ca3fca7"><code>fbd92fb</code></a>
+                    Merge pull request #6 from mojzis/claude/add-tests-01YAGwhQZ...
+                    &middot; Mojzis
+                    &middot; 2025-11-22
+                </div>
+                
+
+                
+                <div class="section">
+                    <h3>Open Pull Requests (1)</h3>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td><a href="https://github.com/mojzis/slalom/pull/4">#4</a></td>
+                                <td>Implement Phase 2 Plans</td>
+                                <td>@mojzis</td>
+                                <td>0d</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (2)</h3>
+                    <ul>
+                    
+                        <li><code>claude/add-github-action-016f26BkY6Fr4bNFWAz9aSgs</code></li>
+                    
+                        <li><code>claude/implement-phases-with-tests-01VokWinegnJNw1du7YzCtnd</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/slalom/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
             </div>
-            <div class="stat">
-                <div class="stat-value status-pass">10</div>
-                <div class="stat-label">CI Passing</div>
+            
+            <div class="repo-card" id="projects">
+                <h2><a href="https://github.com/mojzis/projects">projects</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/projects/commit/2fd1e887d2d3a6d8fa8d7467090ebe053dd83ac9"><code>2fd1e88</code></a>
+                    Merge pull request #11 from mojzis/claude/auto-publish-gh-pa...
+                    &middot; Mojzis
+                    &middot; 2025-11-22
+                </div>
+                
+
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (1)</h3>
+                    <ul>
+                    
+                        <li><code>gh-pages</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/projects/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
             </div>
-            <div class="stat">
-                <div class="stat-value status-fail">3</div>
-                <div class="stat-label">CI Failing</div>
+            
+            <div class="repo-card" id="susconf">
+                <h2><a href="https://github.com/mojzis/susconf">susconf</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/susconf/commit/458f63b14f2ed08b4b006e5fd6b849f1e98f2e04"><code>458f63b</code></a>
+                    Merge pull request #30 from mojzis/claude/fix-apt-key-deprec...
+                    &middot; Mojzis
+                    &middot; 2025-11-22
+                </div>
+                
+
+                
+                <div class="section">
+                    <h3>Open Pull Requests (1)</h3>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td><a href="https://github.com/mojzis/susconf/pull/16">#16</a></td>
+                                <td>Setup GitHub Action for Ansible</td>
+                                <td>@mojzis</td>
+                                <td>10d</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (1)</h3>
+                    <ul>
+                    
+                        <li><code>claude/add-cd-deploy-script-011CV1ncZm7jWA2XFEy21PMd</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
             </div>
-            <div class="stat">
-                <div class="stat-value">7</div>
-                <div class="stat-label">GitHub Pages</div>
+            
+            <div class="repo-card" id="chameleon">
+                <h2><a href="https://github.com/mojzis/chameleon">chameleon</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/chameleon/commit/e8569bd3a4a465610b8a423af5c4b16ab58416d8"><code>e8569bd</code></a>
+                    Merge pull request #12 from mojzis/claude/fix-tongue-directi...
+                    &middot; Mojzis
+                    &middot; 2025-11-18
+                </div>
+                
+
+                
+                <div class="section">
+                    <h3>Open Pull Requests (1)</h3>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td><a href="https://github.com/mojzis/chameleon/pull/13">#13</a></td>
+                                <td>Fix insect selection alignment with message bubble</td>
+                                <td>@mojzis</td>
+                                <td>0d</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+                
+
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/chameleon/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-failure">FAIL</span>
+                    
+                </div>
+                
             </div>
-        </div>
+            
+            <div class="repo-card" id="esl">
+                <h2><a href="https://github.com/mojzis/esl">esl</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/esl/commit/ec1c06c5b41b71f967e06a3ef920b13fd72bd907"><code>ec1c06c</code></a>
+                    Merge pull request #22 from mojzis/claude/downgrade-python-v...
+                    &middot; Mojzis
+                    &middot; 2025-11-18
+                </div>
+                
+
+                
+                <div class="section">
+                    <h3>Open Pull Requests (1)</h3>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td><a href="https://github.com/mojzis/esl/pull/19">#19</a></td>
+                                <td>Fix module import order in alembic env</td>
+                                <td>@mojzis</td>
+                                <td>4d</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+                
+
+                
+
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-failure">FAIL</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="wild-wings">
+                <h2><a href="https://github.com/mojzis/wild-wings">wild-wings</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/wild-wings/commit/39565d0f5ffd1f68532878df67a3eeda13be4d82"><code>39565d0</code></a>
+                    Merge pull request #23 from mojzis/claude/add-new-plan-01LAa...
+                    &middot; Mojzis
+                    &middot; 2025-11-17
+                </div>
+                
+
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (2)</h3>
+                    <ul>
+                    
+                        <li><code>claude/add-claude-file-01TP4AoJnrVQz1wApkQweSbD</code></li>
+                    
+                        <li><code>claude/hand-drawn-game-assets-01QS3nyNo84PqRjvmMc5e7R6</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/wild-wings/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="ty-find">
+                <h2><a href="https://github.com/mojzis/ty-find">ty-find</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/ty-find/commit/935ca029ec374764f8430cfb61c74467a165c552"><code>935ca02</code></a>
+                    Merge pull request #4 from mojzis/claude/remove-windows-buil...
+                    &middot; Mojzis
+                    &middot; 2025-11-17
+                </div>
+                
+
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (1)</h3>
+                    <ul>
+                    
+                        <li><code>bumpver</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="traingame">
+                <h2><a href="https://github.com/mojzis/traingame">traingame</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/traingame/commit/0b8673fd94f2c11e01374c2b19c07e7f70527c06"><code>0b8673f</code></a>
+                    Merge pull request #4 from mojzis/claude/fix-refresh-plan-me...
+                    &middot; Mojzis
+                    &middot; 2025-11-17
+                </div>
+                
+
+                
+
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/traingame/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="claude-skill-manager">
+                <h2><a href="https://github.com/mojzis/claude-skill-manager">claude-skill-manager</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/claude-skill-manager/commit/62e70a774f895c2ca2a6231e6f4d7763cf0589c9"><code>62e70a7</code></a>
+                    Merge pull request #1 from mojzis/claude/review-plans-ai-018...
+                    &middot; Mojzis
+                    &middot; 2025-11-17
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+            
+            <div class="repo-card" id="marimo-template">
+                <h2><a href="https://github.com/mojzis/marimo-template">marimo-template</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/marimo-template/commit/144e9423a7f68c4cbfa34da3a53c654c8ed5e748"><code>144e942</code></a>
+                    Merge pull request #7 from mojzis/claude/fix-readme-01NGUqDe...
+                    &middot; Mojzis
+                    &middot; 2025-11-15
+                </div>
+                
+
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (1)</h3>
+                    <ul>
+                    
+                        <li><code>claude/add-skill-sharing-011CmgsoWuV3JQZyokhxBqKp</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+
+                
+            </div>
+            
+            <div class="repo-card" id="cteni">
+                <h2><a href="https://github.com/mojzis/cteni">cteni</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/cteni/commit/859154690a04020aa3aad5e94efa44473915ff12"><code>8591546</code></a>
+                    Merge pull request #2 from mojzis/claude/implement-phases-2-...
+                    &middot; Mojzis
+                    &middot; 2025-11-17
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+            
+            <div class="repo-card" id="happytube">
+                <h2><a href="https://github.com/mojzis/happytube">happytube</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/happytube/commit/a336adc13b020ac763210884b50ad72b071e08d0"><code>a336adc</code></a>
+                    Merge pull request #5 from mojzis/claude/convert-to-uv-0133y...
+                    &middot; Mojzis
+                    &middot; 2025-11-16
+                </div>
+                
+
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (1)</h3>
+                    <ul>
+                    
+                        <li><code>claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-failure">FAIL</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="bounceflow">
+                <h2><a href="https://github.com/mojzis/bounceflow">bounceflow</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/bounceflow/commit/8cb487867fb7e9caf282a3c42fb72e7f53bc94b4"><code>8cb4878</code></a>
+                    Merge pull request #2 from mojzis/claude/plan-second-world-0...
+                    &middot; Mojzis
+                    &middot; 2025-11-16
+                </div>
+                
+
+                
+
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/bounceflow/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="volby_check">
+                <h2><a href="https://github.com/mojzis/volby_check">volby_check</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/volby_check/commit/fbb6cf0b1a19e233536919e4af7c7a110a5fb0e9"><code>fbb6cf0</code></a>
+                    Merge pull request #21 from mojzis/claude/add-suspicious-zer...
+                    &middot; Mojzis
+                    &middot; 2025-11-15
+                </div>
+                
+
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (4)</h3>
+                    <ul>
+                    
+                        <li><code>claude/enlarge-bubble-chart-bubbles-011uH2ypRRnnYtCF35MfPRWy</code></li>
+                    
+                        <li><code>claude/enrich-suspicious-results-table-011zcLHg6xj6XrHciyMHPDZY</code></li>
+                    
+                        <li><code>claude/improve-marimo-election-data-011at4r9D2DxXrSc4B57xz6h</code></li>
+                    
+                        <li><code>claude/init-marimo-election-data-017E4azTiuMxzZzDGZS7JQ2Y</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/volby_check/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="svatba">
+                <h2><a href="https://github.com/mojzis/svatba">svatba</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/svatba/commit/740c100af0785c09450908086ec7a1165cac6b12"><code>740c100</code></a>
+                    Merge pull request #6 from mojzis/claude/fix-lysolaji-razsky...
+                    &middot; Mojzis
+                    &middot; 2025-11-15
+                </div>
+                
+
+                
+
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/svatba/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="alma">
+                <h2><a href="https://github.com/mojzis/alma">alma</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/alma/commit/3fd20ca1c3128099744c25687c3a4dfea3b5b571"><code>3fd20ca</code></a>
+                    Merge pull request #14 from mojzis/claude/fix-failing-tests-...
+                    &middot; Mojzis
+                    &middot; 2025-11-13
+                </div>
+                
+
+                
+                <div class="section">
+                    <h3>Open Pull Requests (1)</h3>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td><a href="https://github.com/mojzis/alma/pull/13">#13</a></td>
+                                <td>unify docker compose</td>
+                                <td>@mojzis</td>
+                                <td>10d</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (2)</h3>
+                    <ul>
+                    
+                        <li><code>claude/mobile-dictation-service-011CUyDt6BY8qDvjtAVm2ZLC</code></li>
+                    
+                        <li><code>design</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="sketchpy">
+                <h2><a href="https://github.com/mojzis/sketchpy">sketchpy</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/sketchpy/commit/1d46ed3732f7444377d6060c90a819d28dc57a28"><code>1d46ed3</code></a>
+                    Merge pull request #10 from mojzis/claude/improve-ocean-help...
+                    &middot; Mojzis
+                    &middot; 2025-11-10
+                </div>
+                
+
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (1)</h3>
+                    <ul>
+                    
+                        <li><code>claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/sketchpy/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="repo-card" id="md2pdf">
+                <h2><a href="https://github.com/mojzis/md2pdf">md2pdf</a></h2>
+
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+            
+            <div class="repo-card" id="pronounce">
+                <h2><a href="https://github.com/mojzis/pronounce">pronounce</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/pronounce/commit/5c4416206d0bcbb2b20608d3e15e4ca81eba977d"><code>5c44162</code></a>
+                    initial
+                    &middot; Mojzis Stupka
+                    &middot; 2025-10-24
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+            
+            <div class="repo-card" id="shopping">
+                <h2><a href="https://github.com/mojzis/shopping">shopping</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/shopping/commit/4d44db10489d75045cb17b9e13db220f93f41203"><code>4d44db1</code></a>
+                    init
+                    &middot; Mojzis Stupka
+                    &middot; 2025-10-24
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+            
+            <div class="repo-card" id="logseq-triage">
+                <h2><a href="https://github.com/mojzis/logseq-triage">logseq-triage</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/logseq-triage/commit/980c2a7d6d544a56b06afaac35eee17f52e9537f"><code>980c2a7</code></a>
+                    docs: document MVP limitations and future enhancements
+                    &middot; Mojzis
+                    &middot; 2025-10-13
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+            
+            <div class="repo-card" id="logseq">
+                <h2><a href="https://github.com/mojzis/logseq">logseq</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/logseq/commit/713c97bd582ae501182e168999e923ac77f53a3b"><code>713c97b</code></a>
+                    Auto saved by Logseq
+                    &middot; Mojzis Stupka
+                    &middot; 2025-10-08
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+            
+            <div class="repo-card" id="newsparser">
+                <h2><a href="https://github.com/mojzis/newsparser">newsparser</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/newsparser/commit/387fd9892b96e4d8f2156b473610eecfcc069bd3"><code>387fd98</code></a>
+                    update
+                    &middot; Mojzis Stupka
+                    &middot; 2025-10-02
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+            
+
+            <footer style="text-align: center; padding: 20px; color: #57606a;">
+                <em>Generated by GitHub Project Monitor</em>
+            </footer>
+        </main>
     </div>
-
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/projects">mojzis/projects</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>a1b2a6d8</code></li>
-            <li><strong>Message:</strong> Merge pull request #9 from mojzis/claude/concise-md-report-01JEPiWwz7nRCZ59y2URfVcU</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-22 22:37:11+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 70.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>CI: completed (success)</li>
-
-            <li>CI: completed (success)</li>
-
-            <li>CI: completed (success)</li>
-
-            <li>CI: completed (success)</li>
-
-            <li>CI: completed (success)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/susconf">mojzis/susconf</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>458f63b1</code></li>
-            <li><strong>Message:</strong> Merge pull request #30 from mojzis/claude/fix-apt-key-deprecation-01AueZkHvdBgaE7ottzMjbmu</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-22 22:12:36+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (1)</h3>
-
-        <table>
-            <thead>
-                <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
-            </thead>
-            <tbody>
-
-                <tr>
-                    <td><a href="https://github.com/mojzis/susconf/pull/16">#16</a></td>
-                    <td>Setup GitHub Action for Ansible</td>
-                    <td>@mojzis</td>
-                    <td>10d</td>
-                </tr>
-
-            </tbody>
-        </table>
-
-
-        <h3>Branches Without PRs (1)</h3>
-
-        <ul>
-
-            <li><code>claude/add-cd-deploy-script-011CV1ncZm7jWA2XFEy21PMd</code></li>
-
-        </ul>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 95.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Ansible Validation: completed (success)</li>
-
-            <li>Ansible Validation: completed (success)</li>
-
-            <li>Ansible Validation: completed (success)</li>
-
-            <li>Ansible Validation: completed (success)</li>
-
-            <li>Ansible Validation: completed (failure)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/chameleon">mojzis/chameleon</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>e8569bd3</code></li>
-            <li><strong>Message:</strong> Merge pull request #12 from mojzis/claude/fix-tongue-direction-01U5HdUJBAvqTdf19Npz3HFi</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-18 07:07:49+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (1)</h3>
-
-        <table>
-            <thead>
-                <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
-            </thead>
-            <tbody>
-
-                <tr>
-                    <td><a href="https://github.com/mojzis/chameleon/pull/13">#13</a></td>
-                    <td>Fix insect selection alignment with message bubble</td>
-                    <td>@mojzis</td>
-                    <td>0d</td>
-                </tr>
-
-            </tbody>
-        </table>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p class="status-pass">Enabled - <a href="https://mojzis.github.io/chameleon/">Visit Site</a></p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-failure">FAIL</span>
-
-            |
-            <strong>Success Rate:</strong> 35.7%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Test: completed (failure)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Test: completed (success)</li>
-
-            <li>Test: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/esl">mojzis/esl</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>ec1c06c5</code></li>
-            <li><strong>Message:</strong> Merge pull request #22 from mojzis/claude/downgrade-python-v13-01Y3xhJjMwjLVTDuJUGp1Gas</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-18 08:24:38+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (1)</h3>
-
-        <table>
-            <thead>
-                <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
-            </thead>
-            <tbody>
-
-                <tr>
-                    <td><a href="https://github.com/mojzis/esl/pull/19">#19</a></td>
-                    <td>Fix module import order in alembic env</td>
-                    <td>@mojzis</td>
-                    <td>4d</td>
-                </tr>
-
-            </tbody>
-        </table>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-failure">FAIL</span>
-
-            |
-            <strong>Success Rate:</strong> 10.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Tests: completed (failure)</li>
-
-            <li>Tests: completed (failure)</li>
-
-            <li>Tests: completed (failure)</li>
-
-            <li>Tests: completed (failure)</li>
-
-            <li>Tests: completed (failure)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/slalom">mojzis/slalom</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>5e3fc255</code></li>
-            <li><strong>Message:</strong> Merge pull request #3 from mojzis/claude/slalom-multi-agent-workflow-01BCKJswt6zGhxj2W7XBVmTj</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-17 22:16:48+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/wild-wings">mojzis/wild-wings</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>39565d0f</code></li>
-            <li><strong>Message:</strong> Merge pull request #23 from mojzis/claude/add-new-plan-01LAaNGk1aT7qfzPSyjhtAej</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-17 18:02:08+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (2)</h3>
-
-        <ul>
-
-            <li><code>claude/add-claude-file-01TP4AoJnrVQz1wApkQweSbD</code></li>
-
-            <li><code>claude/hand-drawn-game-assets-01QS3nyNo84PqRjvmMc5e7R6</code></li>
-
-        </ul>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p class="status-pass">Enabled - <a href="https://mojzis.github.io/wild-wings/">Visit Site</a></p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 90.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>PR Checks: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>PR Checks: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/ty-find">mojzis/ty-find</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>935ca029</code></li>
-            <li><strong>Message:</strong> Merge pull request #4 from mojzis/claude/remove-windows-build-01GAUJRpmebSYSE8L4b59TtW</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-17 17:27:42+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (1)</h3>
-
-        <ul>
-
-            <li><code>bumpver</code></li>
-
-        </ul>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 25.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Build and Test: completed (success)</li>
-
-            <li>Build and Test: completed (success)</li>
-
-            <li>Build and Test: completed (failure)</li>
-
-            <li>Build and Test: completed (failure)</li>
-
-            <li>Build and Test: completed (failure)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/traingame">mojzis/traingame</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>0b8673fd</code></li>
-            <li><strong>Message:</strong> Merge pull request #4 from mojzis/claude/fix-refresh-plan-merge-01Pp6hWgLVwbbW8nejG3cniz</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-17 14:54:55+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p class="status-pass">Enabled - <a href="https://mojzis.github.io/traingame/">Visit Site</a></p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 75.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (failure)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/claude-skill-manager">mojzis/claude-skill-manager</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>62e70a77</code></li>
-            <li><strong>Message:</strong> Merge pull request #1 from mojzis/claude/review-plans-ai-018Y2knaGewqcQuzhDTenbtA</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-17 11:54:16+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/marimo-template">mojzis/marimo-template</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>144e9423</code></li>
-            <li><strong>Message:</strong> Merge pull request #7 from mojzis/claude/fix-readme-01NGUqDekTFRRQwcQiw28vet</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-15 12:33:12+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (1)</h3>
-
-        <ul>
-
-            <li><code>claude/add-skill-sharing-011CmgsoWuV3JQZyokhxBqKp</code></li>
-
-        </ul>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/cteni">mojzis/cteni</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>85915469</code></li>
-            <li><strong>Message:</strong> Merge pull request #2 from mojzis/claude/implement-phases-2-plus-0158A2auaS9pCtRjm4s5oraM</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-17 10:26:34+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/happytube">mojzis/happytube</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>a336adc1</code></li>
-            <li><strong>Message:</strong> Merge pull request #5 from mojzis/claude/convert-to-uv-0133yXJk1P4RCNGbu7jFiwbW</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-16 23:31:58+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (1)</h3>
-
-        <ul>
-
-            <li><code>claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y</code></li>
-
-        </ul>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-failure">FAIL</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Deploy HappyTube to GitHub Pages: completed (failure)</li>
-
-            <li>Deploy HappyTube to GitHub Pages: completed (failure)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/bounceflow">mojzis/bounceflow</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>8cb48786</code></li>
-            <li><strong>Message:</strong> Merge pull request #2 from mojzis/claude/plan-second-world-012hcat332EDbTGRD8w1D44r</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-16 22:40:25+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p class="status-pass">Enabled - <a href="https://mojzis.github.io/bounceflow/">Visit Site</a></p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 100.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/volby_check">mojzis/volby_check</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>fbb6cf0b</code></li>
-            <li><strong>Message:</strong> Merge pull request #21 from mojzis/claude/add-suspicious-zeros-2021-01GeHeA9gtYUomE1AKLk6tKg</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-15 17:13:32+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (4)</h3>
-
-        <ul>
-
-            <li><code>claude/enlarge-bubble-chart-bubbles-011uH2ypRRnnYtCF35MfPRWy</code></li>
-
-            <li><code>claude/enrich-suspicious-results-table-011zcLHg6xj6XrHciyMHPDZY</code></li>
-
-            <li><code>claude/improve-marimo-election-data-011at4r9D2DxXrSc4B57xz6h</code></li>
-
-            <li><code>claude/init-marimo-election-data-017E4azTiuMxzZzDGZS7JQ2Y</code></li>
-
-        </ul>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p class="status-pass">Enabled - <a href="https://mojzis.github.io/volby_check/">Visit Site</a></p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 76.9%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Publish Marimo Notebooks to GitHub Pages: completed (success)</li>
-
-            <li>Publish Marimo Notebooks to GitHub Pages: completed (success)</li>
-
-            <li>Publish Marimo Notebooks to GitHub Pages: completed (success)</li>
-
-            <li>Publish Marimo Notebooks to GitHub Pages: completed (success)</li>
-
-            <li>Publish Marimo Notebooks to GitHub Pages: completed (success)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/svatba">mojzis/svatba</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>740c100a</code></li>
-            <li><strong>Message:</strong> Merge pull request #6 from mojzis/claude/fix-lysolaji-razskych-01N41BrrTxxr9kKuCuFT9S7n</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-15 14:41:14+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p class="status-pass">Enabled - <a href="https://mojzis.github.io/svatba/">Visit Site</a></p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 100.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/alma">mojzis/alma</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>3fd20ca1</code></li>
-            <li><strong>Message:</strong> Merge pull request #14 from mojzis/claude/fix-failing-tests-011CV4j5TyetbBz9yd2fQypp</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-13 01:47:25+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (1)</h3>
-
-        <table>
-            <thead>
-                <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
-            </thead>
-            <tbody>
-
-                <tr>
-                    <td><a href="https://github.com/mojzis/alma/pull/13">#13</a></td>
-                    <td>unify docker compose</td>
-                    <td>@mojzis</td>
-                    <td>10d</td>
-                </tr>
-
-            </tbody>
-        </table>
-
-
-        <h3>Branches Without PRs (2)</h3>
-
-        <ul>
-
-            <li><code>claude/mobile-dictation-service-011CUyDt6BY8qDvjtAVm2ZLC</code></li>
-
-            <li><code>design</code></li>
-
-        </ul>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 14.3%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Tests: completed (success)</li>
-
-            <li>Tests: completed (success)</li>
-
-            <li>Tests: completed (failure)</li>
-
-            <li>Tests: completed (failure)</li>
-
-            <li>Tests: completed (failure)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/sketchpy">mojzis/sketchpy</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>1d46ed37</code></li>
-            <li><strong>Message:</strong> Merge pull request #10 from mojzis/claude/improve-ocean-helper-shapes-011CUy5y31k78v6Fbf5ELwpy</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-11-10 07:23:07+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (1)</h3>
-
-        <ul>
-
-            <li><code>claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8</code></li>
-
-        </ul>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p class="status-pass">Enabled - <a href="https://mojzis.github.io/sketchpy/">Visit Site</a></p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge badge-success">PASS</span>
-
-            |
-            <strong>Success Rate:</strong> 25.0%
-        </p>
-
-        <p><strong>Recent Runs:</strong></p>
-        <ul>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-            <li>Run Tests: completed (failure)</li>
-
-            <li>Run Tests: completed (failure)</li>
-
-            <li>Run Tests: completed (failure)</li>
-
-            <li>Deploy to GitHub Pages: completed (success)</li>
-
-        </ul>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/md2pdf">mojzis/md2pdf</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <p>No commit information available</p>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/pronounce">mojzis/pronounce</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>5c441620</code></li>
-            <li><strong>Message:</strong> initial</li>
-            <li><strong>Author:</strong> Mojzis Stupka</li>
-            <li><strong>Date:</strong> 2025-10-24 17:58:58+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/shopping">mojzis/shopping</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>4d44db10</code></li>
-            <li><strong>Message:</strong> init</li>
-            <li><strong>Author:</strong> Mojzis Stupka</li>
-            <li><strong>Date:</strong> 2025-10-24 17:57:32+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/logseq-triage">mojzis/logseq-triage</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>980c2a7d</code></li>
-            <li><strong>Message:</strong> docs: document MVP limitations and future enhancements</li>
-            <li><strong>Author:</strong> Mojzis</li>
-            <li><strong>Date:</strong> 2025-10-13 00:02:38+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/logseq">mojzis/logseq</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>713c97bd</code></li>
-            <li><strong>Message:</strong> Auto saved by Logseq</li>
-            <li><strong>Author:</strong> Mojzis Stupka</li>
-            <li><strong>Date:</strong> 2025-10-08 19:00:44+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-    <div class="repo-card">
-        <h2><a href="https://github.com/mojzis/newsparser">mojzis/newsparser</a></h2>
-        <p>
-            <strong>Language:</strong> N/A |
-            <strong>Stars:</strong> 0 |
-            <strong>Forks:</strong> 0 |
-            <strong>Issues:</strong> 0
-        </p>
-
-        <h3>Last Commit on Main</h3>
-
-        <ul>
-            <li><strong>SHA:</strong> <code>387fd989</code></li>
-            <li><strong>Message:</strong> update</li>
-            <li><strong>Author:</strong> Mojzis Stupka</li>
-            <li><strong>Date:</strong> 2025-10-02 16:08:16+00:00</li>
-        </ul>
-
-
-        <h3>Open Pull Requests (0)</h3>
-
-        <p>No open pull requests</p>
-
-
-        <h3>Branches Without PRs (0)</h3>
-
-        <p>All branches have associated PRs</p>
-
-
-        <h3>GitHub Pages</h3>
-
-        <p>Disabled</p>
-
-
-        <h3>CI/CD Pipeline</h3>
-        <p>
-            <strong>Status:</strong>
-
-            <span class="badge">NO_CI</span>
-
-            |
-            <strong>Success Rate:</strong> 0.0%
-        </p>
-
-    </div>
-
-
-    <footer style="text-align: center; padding: 20px; color: #57606a;">
-        <em>Generated by GitHub Project Monitor</em>
-    </footer>
 </body>
 </html>
