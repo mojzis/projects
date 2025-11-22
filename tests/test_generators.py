@@ -145,13 +145,12 @@ class TestMarkdownGenerator:
             assert "Last 30 days" in content
 
             # Check repository info
-            assert "test-owner/test-repo" in content
+            assert "test-repo" in content
             assert "Python" in content
             assert "100" in content  # stars
 
             # Check PR info
             assert "#42" in content
-            assert "Add new feature" in content
 
             # Check branches
             assert "feature-x" in content
@@ -169,7 +168,7 @@ class TestMarkdownGenerator:
             assert output_path.exists()
             content = output_path.read_text()
             assert "GitHub Project Monitor Report" in content
-            assert "Total Repositories:** 0" in content
+            assert "Repos:** 0" in content
 
     def test_generate_markdown_report_no_commit(self):
         """Test Markdown report with repository without commit."""
@@ -200,7 +199,9 @@ class TestMarkdownGenerator:
 
             assert output_path.exists()
             content = output_path.read_text()
-            assert "No commit information available" in content
+            # Concise format omits commit section when no commit
+            assert "empty-repo" in content
+            assert "Last commit" not in content
 
     def test_generate_markdown_report_no_prs(self):
         """Test Markdown report with repository without PRs."""
@@ -230,7 +231,9 @@ class TestMarkdownGenerator:
             generate_markdown_report(report, output_path)
 
             content = output_path.read_text()
-            assert "No open pull requests" in content
+            # Concise format omits PR section when no PRs (but header still shows count)
+            assert "no-prs-repo" in content
+            assert "Open PRs (0)" not in content  # No per-repo PR section
 
 
 class TestHTMLGenerator:
