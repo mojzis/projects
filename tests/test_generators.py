@@ -256,7 +256,9 @@ class TestHTMLGenerator:
 
             # Check repository info
             assert "test-owner/test-repo" in content
-            assert "Python" in content
+            # Check sidebar nav exists
+            assert "Projects" in content
+            assert 'href="#test-repo"' in content
 
             # Check PR info
             assert "#42" in content
