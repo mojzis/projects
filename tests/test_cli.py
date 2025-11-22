@@ -1,5 +1,6 @@
 """Tests for CLI interface."""
 
+import re
 import tempfile
 from datetime import UTC, datetime
 from pathlib import Path
@@ -12,6 +13,12 @@ from gh_monitor.cli import app
 from gh_monitor.models import CIStatus, Repository
 
 runner = CliRunner()
+
+
+def strip_ansi(text: str) -> str:
+    """Remove ANSI escape codes from text."""
+    ansi_escape = re.compile(r"\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])")
+    return ansi_escape.sub("", text)
 
 
 class TestVersionCommand:
@@ -281,7 +288,8 @@ class TestHelpCommand:
         """Test monitor command help."""
         result = runner.invoke(app, ["monitor", "--help"])
         assert result.exit_code == 0
-        assert "--output" in result.stdout
-        assert "--days" in result.stdout
-        assert "--format" in result.stdout
-        assert "--verbose" in result.stdout
+        output = strip_ansi(result.stdout)
+        assert "--output" in output
+        assert "--days" in output
+        assert "--format" in output
+        assert "--verbose" in output
