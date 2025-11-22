@@ -88,7 +88,6 @@ class TestMonitorCommand:
                 # Check output file was created
                 assert (Path(tmpdir) / "report.md").exists()
 
-    @pytest.mark.skip(reason="toon-format encoder not yet implemented")
     def test_monitor_toon_format_only(self, mock_repository):
         """Test monitor with TOON format only."""
         with patch("gh_monitor.cli.ProjectMonitor") as MockMonitor:

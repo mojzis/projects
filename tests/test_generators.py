@@ -103,7 +103,6 @@ def empty_report():
 class TestToonGenerator:
     """Tests for TOON format generator."""
 
-    @pytest.mark.skip(reason="toon-format encoder not yet implemented")
     def test_generate_toon_report(self, sample_report):
         """Test TOON report generation."""
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -114,9 +113,9 @@ class TestToonGenerator:
             content = output_path.read_text()
             assert len(content) > 0
             # TOON format should contain report data
-            assert "test-repo" in content or "test_repo" in content.lower()
+            assert "test-repo" in content
+            assert "repositories" in content
 
-    @pytest.mark.skip(reason="toon-format encoder not yet implemented")
     def test_generate_toon_report_empty(self, empty_report):
         """Test TOON report with empty repositories."""
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -126,6 +125,7 @@ class TestToonGenerator:
             assert output_path.exists()
             content = output_path.read_text()
             assert len(content) > 0
+            assert "repositories" in content
 
 
 class TestMarkdownGenerator:

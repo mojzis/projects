@@ -50,9 +50,38 @@ def _print_sync_report(report: SyncReport) -> None:
     console.print(f"\n[bold]Total: {total} repositories[/bold]")
 
 
-app = typer.Typer(help="Monitor GitHub project status and generate reports", no_args_is_help=True)
+app = typer.Typer(
+    help="Monitor GitHub project status and generate reports",
+    no_args_is_help=True,
+    pretty_exceptions_show_locals=False,
+)
 console = Console()
 error_console = Console(stderr=True)
+
+
+def _generate_reports(
+    report: MonitorReport, output_dir: Path, fmt: str
+) -> tuple[list[tuple[str, Path]], list[tuple[str, Exception]]]:
+    """Generate reports in requested formats, collecting successes and errors."""
+    outputs: list[tuple[str, Path]] = []
+    errors: list[tuple[str, Exception]] = []
+
+    format_configs = [
+        ("toon", ["toon", "all"], "report.toon", generate_toon_report),
+        ("Markdown", ["markdown", "md", "all"], "report.md", generate_markdown_report),
+        ("HTML", ["html", "all"], "report.html", generate_html_report),
+    ]
+
+    for name, formats, filename, generator in format_configs:
+        if fmt in formats:
+            path = output_dir / filename
+            try:
+                generator(report, path)
+                outputs.append((name, path))
+            except Exception as e:
+                errors.append((name, e))
+
+    return outputs, errors
 
 
 @app.command()
@@ -103,22 +132,7 @@ def monitor(
         )
 
         # Output based on format
-        outputs = []
-
-        if fmt in ["toon", "all"]:
-            toon_path = output_dir / "report.toon"
-            generate_toon_report(report, toon_path)
-            outputs.append(("TOON", toon_path))
-
-        if fmt in ["markdown", "md", "all"]:
-            md_path = output_dir / "report.md"
-            generate_markdown_report(report, md_path)
-            outputs.append(("Markdown", md_path))
-
-        if fmt in ["html", "all"]:
-            html_path = output_dir / "report.html"
-            generate_html_report(report, html_path)
-            outputs.append(("HTML", html_path))
+        outputs, errors = _generate_reports(report, output_dir, fmt)
 
         # Display results
         console.print(
@@ -127,9 +141,19 @@ def monitor(
         console.print(f"  • {report.total_open_prs} open PRs")
         console.print(f"  • {report.total_branches_without_prs} branches without PRs\n")
 
-        console.print("[bold]Generated reports:[/bold]")
-        for format_name, path in outputs:
-            console.print(f"  [green]✓[/green] {format_name}: {path}")
+        if outputs:
+            console.print("[bold]Generated reports:[/bold]")
+            for format_name, path in outputs:
+                console.print(f"  [green]✓[/green] {format_name}: {path}")
+
+        if errors:
+            error_console.print("\n[bold yellow]Warnings during report generation:[/bold yellow]")
+            for format_name, err in errors:
+                error_console.print(f"  [yellow]![/yellow] {format_name}: {err}")
+
+        if not outputs and errors:
+            error_console.print("[bold red]Error:[/bold red] No reports were generated")
+            raise typer.Exit(1)
 
     except (SystemExit, click.exceptions.Exit):
         # Re-raise exit exceptions without modification

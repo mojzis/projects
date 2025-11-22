@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from toon_format import encode
+from toon import encode
 
 from ..models import MonitorReport
 
