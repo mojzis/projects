@@ -68,6 +68,59 @@
             padding: 20px;
             max-width: 960px;
         }
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: 16px;
+            left: 16px;
+            z-index: 1000;
+            background: white;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #24292f;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .mobile-toggle:hover {
+            background-color: #f6f8fa;
+        }
+        .sidebar-overlay {
+            display: none;
+        }
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                z-index: 999;
+                box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+            }
+            .sidebar.open {
+                transform: translateX(0);
+            }
+            .main {
+                margin-left: 0;
+                padding: 60px 16px 20px;
+            }
+            .mobile-toggle {
+                display: block;
+            }
+            .sidebar-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.5);
+                z-index: 998;
+            }
+            .sidebar-overlay.open {
+                display: block;
+            }
+        }
         h1, h2, h3 { color: #1f2328; }
         .header { border-bottom: 1px solid #d0d7de; padding-bottom: 16px; margin-bottom: 24px; }
         .header p { color: #57606a; margin: 4px 0; font-size: 14px; }
@@ -103,14 +156,23 @@
     </style>
 </head>
 <body>
+    <button class="mobile-toggle" id="sidebarToggle">☰ Projects</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <div class="layout">
-        <nav class="sidebar">
+        <nav class="sidebar" id="sidebar">
             <h2>Projects</h2>
             <ul>
             
                 <li>
                     <a href="#projects">
                         projects
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#slalom">
+                        slalom
                         
                     </a>
                 </li>
@@ -125,13 +187,6 @@
                 <li>
                     <a href="#as">
                         as
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="#slalom">
-                        slalom
                         
                     </a>
                 </li>
@@ -240,7 +295,7 @@
         <main class="main">
             <div class="header">
                 <h1>GitHub Project Monitor</h1>
-                <p>2025-11-25 06:03:46 | Last 70 days</p>
+                <p>2025-11-25 08:47:30 | Last 70 days</p>
             </div>
 
             <div class="summary">
@@ -254,7 +309,7 @@
                         <div class="stat-label">Open PRs</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-value">13</div>
+                        <div class="stat-value">15</div>
                         <div class="stat-label">Orphaned Branches</div>
                     </div>
                     <div class="stat">
@@ -274,10 +329,10 @@
 
                 
                 <div class="commit-line">
-                    <a href="https://github.com/mojzis/projects/commit/81d242d6748d80536afeacf41067d33b905479a8"><code>81d242d</code></a>
-                    Add scheduled GitHub Action to run monitor daily
-                    &middot; mojzis
-                    &middot; 2025-11-23
+                    <a href="https://github.com/mojzis/projects/commit/4ec1a0e2a76a43bb392fc5f33b02ec0c0c385b8b"><code>4ec1a0e</code></a>
+                    Merge pull request #12 from mojzis/claude/collapse-project-l...
+                    &middot; Mojzis
+                    &middot; 2025-11-25
                 </div>
                 
 
@@ -285,8 +340,10 @@
 
                 
                 <div class="section">
-                    <h3>Branches Without PRs (1)</h3>
+                    <h3>Branches Without PRs (2)</h3>
                     <ul>
+                    
+                        <li><code>claude/python-3.13-update-01Pzt1EuLBht9BhJpPEwpigx</code></li>
                     
                         <li><code>gh-pages</code></li>
                     
@@ -300,6 +357,47 @@
                 </div>
                 
 
+                
+            </div>
+            
+            <div class="repo-card" id="slalom">
+                <h2><a href="https://github.com/mojzis/slalom">slalom</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/slalom/commit/391f6d0af39631055fd74a74eecbfd76debef27e"><code>391f6d0</code></a>
+                    Merge pull request #17 from mojzis/claude/clarify-scene-cont...
+                    &middot; Mojzis
+                    &middot; 2025-11-25
+                </div>
+                
+
+                
+
+                
+                <div class="section">
+                    <h3>Branches Without PRs (1)</h3>
+                    <ul>
+                    
+                        <li><code>claude/update-dependencies-013ykKkJM943WGpHgFejSyZh</code></li>
+                    
+                    </ul>
+                </div>
+                
+
+                
+                <div class="pages-link">
+                    <a href="https://mojzis.github.io/slalom/">GitHub Pages</a>
+                </div>
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
                 
             </div>
             
@@ -384,38 +482,6 @@
                     CI:
                     
                     <span class="badge badge-failure">FAIL</span>
-                    
-                </div>
-                
-            </div>
-            
-            <div class="repo-card" id="slalom">
-                <h2><a href="https://github.com/mojzis/slalom">slalom</a></h2>
-
-                
-                <div class="commit-line">
-                    <a href="https://github.com/mojzis/slalom/commit/32b76258553022463eb1ccc8510aaba959ea6b11"><code>32b7625</code></a>
-                    Merge pull request #16 from mojzis/claude/fix-skier-items-re...
-                    &middot; Mojzis
-                    &middot; 2025-11-23
-                </div>
-                
-
-                
-
-                
-
-                
-                <div class="pages-link">
-                    <a href="https://mojzis.github.io/slalom/">GitHub Pages</a>
-                </div>
-                
-
-                
-                <div class="ci-status">
-                    CI:
-                    
-                    <span class="badge badge-success">PASS</span>
                     
                 </div>
                 
@@ -893,5 +959,30 @@
             </footer>
         </main>
     </div>
+
+    <script>
+        // Mobile sidebar toggle functionality
+        const sidebar = document.getElementById('sidebar');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('open');
+            sidebarOverlay.classList.toggle('open');
+        }
+
+        sidebarToggle.addEventListener('click', toggleSidebar);
+        sidebarOverlay.addEventListener('click', toggleSidebar);
+
+        // Close sidebar when clicking on a project link (mobile only)
+        const sidebarLinks = sidebar.querySelectorAll('a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    toggleSidebar();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
