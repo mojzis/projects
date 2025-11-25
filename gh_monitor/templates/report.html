@@ -68,6 +68,59 @@
             padding: 20px;
             max-width: 960px;
         }
+        .mobile-toggle {
+            display: none;
+            position: fixed;
+            top: 16px;
+            left: 16px;
+            z-index: 1000;
+            background: white;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #24292f;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .mobile-toggle:hover {
+            background-color: #f6f8fa;
+        }
+        .sidebar-overlay {
+            display: none;
+        }
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                z-index: 999;
+                box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+            }
+            .sidebar.open {
+                transform: translateX(0);
+            }
+            .main {
+                margin-left: 0;
+                padding: 60px 16px 20px;
+            }
+            .mobile-toggle {
+                display: block;
+            }
+            .sidebar-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.5);
+                z-index: 998;
+            }
+            .sidebar-overlay.open {
+                display: block;
+            }
+        }
         h1, h2, h3 { color: #1f2328; }
         .header { border-bottom: 1px solid #d0d7de; padding-bottom: 16px; margin-bottom: 24px; }
         .header p { color: #57606a; margin: 4px 0; font-size: 14px; }
@@ -103,8 +156,10 @@
     </style>
 </head>
 <body>
+    <button class="mobile-toggle" id="sidebarToggle">☰ Projects</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <div class="layout">
-        <nav class="sidebar">
+        <nav class="sidebar" id="sidebar">
             <h2>Projects</h2>
             <ul>
             {% for repo in repositories %}
@@ -220,5 +275,30 @@
             </footer>
         </main>
     </div>
+
+    <script>
+        // Mobile sidebar toggle functionality
+        const sidebar = document.getElementById('sidebar');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('open');
+            sidebarOverlay.classList.toggle('open');
+        }
+
+        sidebarToggle.addEventListener('click', toggleSidebar);
+        sidebarOverlay.addEventListener('click', toggleSidebar);
+
+        // Close sidebar when clicking on a project link (mobile only)
+        const sidebarLinks = sidebar.querySelectorAll('a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    toggleSidebar();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
