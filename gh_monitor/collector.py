@@ -46,13 +46,16 @@ class GitHubCollector:
             ]
         )
 
-        # Filter by date
+        # Filter by date - use the more recent of pushedAt and updatedAt
+        # so repos with any recent activity (issues, PRs, comments) are included
         cutoff = datetime.now(UTC) - timedelta(days=since_days)
         filtered = []
 
         for repo in repos:
             pushed_at = datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
-            if pushed_at > cutoff:
+            updated_at = datetime.fromisoformat(repo["updatedAt"].replace("Z", "+00:00"))
+            last_activity = max(pushed_at, updated_at)
+            if last_activity > cutoff:
                 filtered.append(repo)
 
         return filtered
@@ -180,7 +183,7 @@ class GitHubCollector:
                 "list",
                 owner,
                 "--json",
-                "name,url,sshUrl,pushedAt",
+                "name,url,sshUrl,pushedAt,updatedAt",
                 "--limit",
                 "1000",
             ]
@@ -190,12 +193,15 @@ class GitHubCollector:
             return []
 
         # Filter by date if since_days is specified
+        # Use the more recent of pushedAt and updatedAt for broader coverage
         if since_days is not None:
             cutoff = datetime.now(UTC) - timedelta(days=since_days)
             filtered = []
             for repo in repos:
                 pushed_at = datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
-                if pushed_at > cutoff:
+                updated_at = datetime.fromisoformat(repo["updatedAt"].replace("Z", "+00:00"))
+                last_activity = max(pushed_at, updated_at)
+                if last_activity > cutoff:
                     filtered.append(repo)
             return filtered
 
