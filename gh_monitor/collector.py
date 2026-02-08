@@ -40,7 +40,7 @@ class GitHubCollector:
                 "list",
                 owner,
                 "--json",
-                "name,pushedAt,updatedAt,stargazerCount,forkCount,url",
+                "name,pushedAt,stargazerCount,forkCount,url",
                 "--limit",
                 "1000",
             ]
