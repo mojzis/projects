@@ -210,8 +210,8 @@ def monitor(
     ] = Path("reports"),
     days: Annotated[
         int,
-        typer.Option("--days", "-d", help="Monitor repos changed in last N days", min=1, max=365),
-    ] = 30,
+        typer.Option("--days", "-d", help="Monitor repos changed in last N days", min=1, max=3650),
+    ] = 90,
     fmt: Annotated[
         str,
         typer.Option("--format", "-f", help="Output format: toon, markdown, html, list, or all"),
@@ -284,9 +284,9 @@ def sync(
     days: Annotated[
         int,
         typer.Option(
-            "--days", "-d", help="Only sync repos modified in last N days", min=1, max=365
+            "--days", "-d", help="Only sync repos modified in last N days", min=1, max=3650
         ),
-    ] = 45,
+    ] = 90,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Enable verbose output")] = False,
 ):
     """Sync GitHub repositories to local directory.

@@ -194,7 +194,7 @@ class TestMonitorCommand:
                 )
 
                 assert result.exit_code == 0
-                MockMonitor.assert_called_once_with("test-owner", 30, True)
+                MockMonitor.assert_called_once_with("test-owner", 90, True)
 
     def test_monitor_creates_output_directory(self, mock_repository):
         """Test that monitor creates output directory if it doesn't exist."""
