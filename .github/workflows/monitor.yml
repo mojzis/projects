@@ -42,4 +42,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          uv run gh-monitor monitor ${{ github.repository_owner }} --days 70
+          uv run gh-monitor monitor ${{ github.repository_owner }}

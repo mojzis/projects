@@ -40,22 +40,19 @@ class GitHubCollector:
                 "list",
                 owner,
                 "--json",
-                "name,pushedAt,updatedAt,stargazerCount,forkCount,url",
+                "name,pushedAt,stargazerCount,forkCount,url",
                 "--limit",
                 "1000",
             ]
         )
 
-        # Filter by date - use the more recent of pushedAt and updatedAt
-        # so repos with any recent activity (issues, PRs, comments) are included
+        # Filter by date
         cutoff = datetime.now(UTC) - timedelta(days=since_days)
         filtered = []
 
         for repo in repos:
             pushed_at = datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
-            updated_at = datetime.fromisoformat(repo["updatedAt"].replace("Z", "+00:00"))
-            last_activity = max(pushed_at, updated_at)
-            if last_activity > cutoff:
+            if pushed_at > cutoff:
                 filtered.append(repo)
 
         return filtered
@@ -183,7 +180,7 @@ class GitHubCollector:
                 "list",
                 owner,
                 "--json",
-                "name,url,sshUrl,pushedAt,updatedAt",
+                "name,url,sshUrl,pushedAt",
                 "--limit",
                 "1000",
             ]
@@ -193,15 +190,12 @@ class GitHubCollector:
             return []
 
         # Filter by date if since_days is specified
-        # Use the more recent of pushedAt and updatedAt for broader coverage
         if since_days is not None:
             cutoff = datetime.now(UTC) - timedelta(days=since_days)
             filtered = []
             for repo in repos:
                 pushed_at = datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
-                updated_at = datetime.fromisoformat(repo["updatedAt"].replace("Z", "+00:00"))
-                last_activity = max(pushed_at, updated_at)
-                if last_activity > cutoff:
+                if pushed_at > cutoff:
                     filtered.append(repo)
             return filtered
 

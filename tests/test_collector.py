@@ -101,24 +101,14 @@ class TestGetRepositories:
         return GitHubCollector()
 
     def test_get_repositories_filters_by_date(self, collector):
-        """Test that repositories are filtered by activity date."""
+        """Test that repositories are filtered by pushed date."""
         now = datetime.now(UTC)
         recent = (now - timedelta(days=5)).isoformat()
         old = (now - timedelta(days=60)).isoformat()
 
         repos = [
-            {
-                "name": "recent-repo",
-                "pushedAt": recent,
-                "updatedAt": recent,
-                "url": "https://github.com/o/r1",
-            },
-            {
-                "name": "old-repo",
-                "pushedAt": old,
-                "updatedAt": old,
-                "url": "https://github.com/o/r2",
-            },
+            {"name": "recent-repo", "pushedAt": recent, "url": "https://github.com/o/r1"},
+            {"name": "old-repo", "pushedAt": old, "url": "https://github.com/o/r2"},
         ]
 
         mock_result = MagicMock()
@@ -130,31 +120,6 @@ class TestGetRepositories:
 
             assert len(result) == 1
             assert result[0]["name"] == "recent-repo"
-
-    def test_get_repositories_includes_repo_with_recent_update_but_old_push(self, collector):
-        """Test that repos with recent updatedAt but old pushedAt are included."""
-        now = datetime.now(UTC)
-        recent = (now - timedelta(days=5)).isoformat()
-        old = (now - timedelta(days=60)).isoformat()
-
-        repos = [
-            {
-                "name": "updated-repo",
-                "pushedAt": old,
-                "updatedAt": recent,
-                "url": "https://github.com/o/r1",
-            },
-        ]
-
-        mock_result = MagicMock()
-        mock_result.returncode = 0
-        mock_result.stdout = json.dumps(repos)
-
-        with patch("subprocess.run", return_value=mock_result):
-            result = collector.get_repositories("test-owner", since_days=30)
-
-            assert len(result) == 1
-            assert result[0]["name"] == "updated-repo"
 
     def test_get_repositories_empty_list(self, collector):
         """Test getting empty repository list."""
