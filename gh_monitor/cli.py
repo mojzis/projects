@@ -6,7 +6,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Annotated
 
-import click.exceptions
 import typer
 from rich.console import Console
 from rich.progress import Progress
@@ -259,7 +258,7 @@ def monitor(
         # Display results and optionally publish
         _display_and_publish_results(report, outputs, errors, output_dir, publish, verbose)
 
-    except (SystemExit, click.exceptions.Exit):
+    except (SystemExit, typer.Exit):
         # Re-raise exit exceptions without modification
         raise
     except Exception as e:
@@ -313,7 +312,7 @@ def sync(
         console.print()
         _print_sync_report(report)
 
-    except (SystemExit, click.exceptions.Exit):
+    except (SystemExit, typer.Exit):
         raise
     except Exception as e:
         error_console.print(f"[bold red]Error:[/bold red] {e}")
