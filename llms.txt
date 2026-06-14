@@ -1,22 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-14 21:15:05 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 31
-
----
-
-
-## [svatba](https://github.com/mojzis/svatba)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
-
-
-**Last commit:** `b2ca145b` Bump actions/checkout from 4 to 6 (#8) (dependabot[bot], 2026-06-14 21:14:00+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
+**Generated:** 2026-06-14 21:35:17 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 19
 
 ---
 
@@ -26,14 +10,11 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-**Last commit:** `7757eab6` Bump astral-sh/setup-uv from 6 to 7 (#19) (dependabot[bot], 2026-06-14 21:13:48+00:00)
+**Last commit:** `28f046c9` Add merge-dependabot script + skill (#22) (Mojzis, 2026-06-14 21:34:17+00:00)
 
 
 
 **CI:** UNKNOWN
-
-
-**Open PRs (1):** [#22](https://github.com/mojzis/projects/pull/22)
 
 
 
@@ -43,16 +24,19 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [nolegend](https://github.com/mojzis/nolegend)
+## [pycoati](https://github.com/mojzis/pycoati)
 
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `3e540722` Bump astral-sh/setup-uv from 5 to 7 (#1) (dependabot[bot], 2026-06-14 21:14:05+00:00)
+**Last commit:** `b791bc8b` Release v0.2.0 (mojzis, 2026-06-14 21:30:38+00:00)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
+
+
+**Open PRs (1):** [#2](https://github.com/mojzis/pycoati/pull/2)
 
 
 
@@ -64,55 +48,15 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `80faa2bd` Bump multer from 1.4.5-lts.2 to 2.1.1 in /server (#5) (dependabot[bot], 2026-06-14 21:08:40+00:00)
+**Last commit:** `49a29a50` Bump archiver from 7.0.1 to 8.0.0 in /server (#7) (dependabot[bot], 2026-06-14 21:14:41+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (3):** [#7](https://github.com/mojzis/talkshape/pull/7), [#6](https://github.com/mojzis/talkshape/pull/6), [#4](https://github.com/mojzis/talkshape/pull/4)
+**Open PRs (2):** [#6](https://github.com/mojzis/talkshape/pull/6), [#4](https://github.com/mojzis/talkshape/pull/4)
 
-
-
----
-
-
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `278a1226` Bump actions/configure-pages from 4 to 6 (#3) (dependabot[bot], 2026-06-14 21:14:15+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `5ce79cca` Bump actions/download-artifact from 4 to 8 (#69) (dependabot[bot], 2026-06-14 21:14:20+00:00)
-
-
-> ⚠️ **Untagged release:** main has 4 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#68](https://github.com/mojzis/introspect/pull/68), [#67](https://github.com/mojzis/introspect/pull/67), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -123,14 +67,11 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `ee82e451` Update httpx requirement from >=0.27 to >=0.28.1 (#3) (dependabot[bot], 2026-06-14 21:08:11+00:00)
+**Last commit:** `e011430d` Update watchfiles requirement from >=0.21 to >=1.2.0 (#1) (dependabot[bot], 2026-06-14 21:15:07+00:00)
 
 
 
 **CI:** PASS
-
-
-**Open PRs (4):** [#7](https://github.com/mojzis/braindump/pull/7), [#4](https://github.com/mojzis/braindump/pull/4), [#2](https://github.com/mojzis/braindump/pull/2), [#1](https://github.com/mojzis/braindump/pull/1)
 
 
 
@@ -145,35 +86,30 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `43f641da` Bump astral-sh/setup-uv from 5 to 7 (#8) (dependabot[bot], 2026-06-14 21:08:17+00:00)
+**Last commit:** `f160d11d` Bump actions/checkout from 4 to 6 (#7) (dependabot[bot], 2026-06-14 21:14:54+00:00)
 
 
 
 **CI:** PASS
-
-
-**Open PRs (1):** [#7](https://github.com/mojzis/b3d-validate/pull/7)
 
 
 
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
+## [logogame](https://github.com/mojzis/logogame)
 
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `2834bb61` Bump softprops/action-gh-release from 2 to 3 (#1) (dependabot[bot], 2026-06-14 21:09:13+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
-> ⚠️ **Untagged release:** main has 4 commits without a tag.
+**Last commit:** `36911132` Bump actions/upload-pages-artifact from 3 to 5 (#6) (dependabot[bot], 2026-06-14 21:14:51+00:00)
+
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#2](https://github.com/mojzis/pycoati/pull/2)
+**Open PRs (1):** [#5](https://github.com/mojzis/logogame/pull/5)
 
 
 
@@ -185,14 +121,11 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
 
 
-**Last commit:** `31ac43db` build(deps): bump actions/checkout from 4 to 6 (#4) (dependabot[bot], 2026-06-14 21:14:33+00:00)
+**Last commit:** `8a15abbc` build(deps): bump actions/upload-pages-artifact from 3 to 5 (#3) (dependabot[bot], 2026-06-14 21:14:36+00:00)
 
 
 
 **CI:** PASS
-
-
-**Open PRs (1):** [#3](https://github.com/mojzis/ajina/pull/3)
 
 
 
@@ -202,19 +135,72 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
 ---
 
 
-## [logogame](https://github.com/mojzis/logogame)
+## [introspect](https://github.com/mojzis/introspect)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
+N/A | ★0 | 0 issues
 
 
-**Last commit:** `ea549b7b` Bump actions/checkout from 4 to 6 (#8) (dependabot[bot], 2026-06-14 21:08:23+00:00)
+**Last commit:** `b9b4a0ff` Bump actions/checkout from 4 to 6 (#67) (dependabot[bot], 2026-06-14 21:14:26+00:00)
+
+
+> ⚠️ **Untagged release:** main has 5 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `278a1226` Bump actions/configure-pages from 4 to 6 (#3) (dependabot[bot], 2026-06-14 21:14:15+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (3):** [#7](https://github.com/mojzis/logogame/pull/7), [#6](https://github.com/mojzis/logogame/pull/6), [#5](https://github.com/mojzis/logogame/pull/5)
+
+---
+
+
+## [nolegend](https://github.com/mojzis/nolegend)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3e540722` Bump astral-sh/setup-uv from 5 to 7 (#1) (dependabot[bot], 2026-06-14 21:14:05+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [svatba](https://github.com/mojzis/svatba)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
+
+
+**Last commit:** `b2ca145b` Bump actions/checkout from 4 to 6 (#8) (dependabot[bot], 2026-06-14 21:14:00+00:00)
+
+
+
+**CI:** PASS
 
 
 
