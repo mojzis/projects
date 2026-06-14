@@ -1,27 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-14 20:57:07 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 64
-
----
-
-
-## [tyreach](https://github.com/mojzis/tyreach)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `8b716f32` Add Dependabot configuration (mojzis, 2026-06-14 20:37:50+00:00)
-
-
-> ⚠️ **Untagged release:** main has 10 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (4):** [#4](https://github.com/mojzis/tyreach/pull/4), [#3](https://github.com/mojzis/tyreach/pull/3), [#2](https://github.com/mojzis/tyreach/pull/2), [#1](https://github.com/mojzis/tyreach/pull/1)
-
-
+**Generated:** 2026-06-14 21:11:07 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 42
 
 ---
 
@@ -31,14 +10,14 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `f7154177` Add Dependabot configuration (mojzis, 2026-06-14 20:37:27+00:00)
+**Last commit:** `ee82e451` Update httpx requirement from >=0.27 to >=0.28.1 (#3) (dependabot[bot], 2026-06-14 21:08:11+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (10):** [#10](https://github.com/mojzis/braindump/pull/10), [#9](https://github.com/mojzis/braindump/pull/9), [#8](https://github.com/mojzis/braindump/pull/8), [#7](https://github.com/mojzis/braindump/pull/7), [#6](https://github.com/mojzis/braindump/pull/6), [#5](https://github.com/mojzis/braindump/pull/5), [#4](https://github.com/mojzis/braindump/pull/4), [#3](https://github.com/mojzis/braindump/pull/3), [#2](https://github.com/mojzis/braindump/pull/2), [#1](https://github.com/mojzis/braindump/pull/1)
+**Open PRs (4):** [#7](https://github.com/mojzis/braindump/pull/7), [#4](https://github.com/mojzis/braindump/pull/4), [#2](https://github.com/mojzis/braindump/pull/2), [#1](https://github.com/mojzis/braindump/pull/1)
 
 
 
@@ -53,14 +32,179 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `6de4ba99` Add Dependabot configuration (mojzis, 2026-06-14 20:37:15+00:00)
+**Last commit:** `43f641da` Bump astral-sh/setup-uv from 5 to 7 (#8) (dependabot[bot], 2026-06-14 21:08:17+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#7](https://github.com/mojzis/b3d-validate/pull/7)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `196c7690` Bump actions/checkout from 5 to 6 (#21) (dependabot[bot], 2026-06-14 21:09:43+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (2):** [#8](https://github.com/mojzis/b3d-validate/pull/8), [#7](https://github.com/mojzis/b3d-validate/pull/7)
+**Open PRs (2):** [#20](https://github.com/mojzis/projects/pull/20), [#19](https://github.com/mojzis/projects/pull/19)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [svatba](https://github.com/mojzis/svatba)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
+
+
+**Last commit:** `0ea8f071` Bump actions/configure-pages from 4 to 6 (#11) (dependabot[bot], 2026-06-14 21:09:32+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#10](https://github.com/mojzis/svatba/pull/10), [#9](https://github.com/mojzis/svatba/pull/9), [#8](https://github.com/mojzis/svatba/pull/8)
+
+
+
+---
+
+
+## [nolegend](https://github.com/mojzis/nolegend)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `d0cb53a6` Bump actions/checkout from 4 to 6 (#2) (dependabot[bot], 2026-06-14 21:09:26+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#1](https://github.com/mojzis/nolegend/pull/1)
+
+
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `a11e8aa1` Bump actions/upload-pages-artifact from 3 to 5 (#6) (dependabot[bot], 2026-06-14 21:09:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#5](https://github.com/mojzis/bounceflow/pull/5), [#4](https://github.com/mojzis/bounceflow/pull/4), [#3](https://github.com/mojzis/bounceflow/pull/3)
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `2834bb61` Bump softprops/action-gh-release from 2 to 3 (#1) (dependabot[bot], 2026-06-14 21:09:13+00:00)
+
+
+> ⚠️ **Untagged release:** main has 4 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#2](https://github.com/mojzis/pycoati/pull/2)
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `052da393` Bump astral-sh/setup-uv from 5 to 7 (#70) (dependabot[bot], 2026-06-14 21:09:04+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (4):** [#69](https://github.com/mojzis/introspect/pull/69), [#68](https://github.com/mojzis/introspect/pull/68), [#67](https://github.com/mojzis/introspect/pull/67), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [ajina](https://github.com/mojzis/ajina)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
+
+
+**Last commit:** `1c42a4f3` build(deps): bump actions/deploy-pages from 4 to 5 (#6) (dependabot[bot], 2026-06-14 21:08:51+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#5](https://github.com/mojzis/ajina/pull/5), [#4](https://github.com/mojzis/ajina/pull/4), [#3](https://github.com/mojzis/ajina/pull/3)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `80faa2bd` Bump multer from 1.4.5-lts.2 to 2.1.1 in /server (#5) (dependabot[bot], 2026-06-14 21:08:40+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (3):** [#7](https://github.com/mojzis/talkshape/pull/7), [#6](https://github.com/mojzis/talkshape/pull/6), [#4](https://github.com/mojzis/talkshape/pull/4)
 
 
 
@@ -72,56 +216,33 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
-**Last commit:** `b48a3c0a` Add Dependabot configuration (mojzis, 2026-06-14 20:38:03+00:00)
+**Last commit:** `ea549b7b` Bump actions/checkout from 4 to 6 (#8) (dependabot[bot], 2026-06-14 21:08:23+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (4):** [#8](https://github.com/mojzis/logogame/pull/8), [#7](https://github.com/mojzis/logogame/pull/7), [#6](https://github.com/mojzis/logogame/pull/6), [#5](https://github.com/mojzis/logogame/pull/5)
+**Open PRs (3):** [#7](https://github.com/mojzis/logogame/pull/7), [#6](https://github.com/mojzis/logogame/pull/6), [#5](https://github.com/mojzis/logogame/pull/5)
 
 
 
 ---
 
 
-## [talkshape](https://github.com/mojzis/talkshape)
+## [tyreach](https://github.com/mojzis/tyreach)
 
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `9da2fae1` Add Dependabot configuration (mojzis, 2026-06-14 20:37:16+00:00)
+**Last commit:** `26b0ca76` Bump softprops/action-gh-release from 2 to 3 (#1) (dependabot[bot], 2026-06-14 21:07:48+00:00)
 
 
-
-**CI:** PASS
-
-
-**Open PRs (6):** [#9](https://github.com/mojzis/talkshape/pull/9), [#8](https://github.com/mojzis/talkshape/pull/8), [#7](https://github.com/mojzis/talkshape/pull/7), [#6](https://github.com/mojzis/talkshape/pull/6), [#5](https://github.com/mojzis/talkshape/pull/5), [#4](https://github.com/mojzis/talkshape/pull/4)
+> ⚠️ **Untagged release:** main has 14 commits without a tag.
 
 
+**CI:** UNKNOWN
 
----
-
-
-## [ajina](https://github.com/mojzis/ajina)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
-
-
-**Last commit:** `c3cb04d9` Add Dependabot configuration (mojzis, 2026-06-14 20:37:03+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (4):** [#6](https://github.com/mojzis/ajina/pull/6), [#5](https://github.com/mojzis/ajina/pull/5), [#4](https://github.com/mojzis/ajina/pull/4), [#3](https://github.com/mojzis/ajina/pull/3)
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -144,130 +265,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 **Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `01f2d888` Add Dependabot configuration (mojzis, 2026-06-14 20:37:02+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (5):** [#70](https://github.com/mojzis/introspect/pull/70), [#69](https://github.com/mojzis/introspect/pull/69), [#68](https://github.com/mojzis/introspect/pull/68), [#67](https://github.com/mojzis/introspect/pull/67), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `c9fe41fc` Add Dependabot configuration (mojzis, 2026-06-14 20:37:11+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#2](https://github.com/mojzis/pycoati/pull/2), [#1](https://github.com/mojzis/pycoati/pull/1)
-
-
-
----
-
-
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `af40946a` Add Dependabot configuration (mojzis, 2026-06-14 20:37:09+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (4):** [#6](https://github.com/mojzis/bounceflow/pull/6), [#5](https://github.com/mojzis/bounceflow/pull/5), [#4](https://github.com/mojzis/bounceflow/pull/4), [#3](https://github.com/mojzis/bounceflow/pull/3)
-
-
-
----
-
-
-## [nolegend](https://github.com/mojzis/nolegend)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `76b01b74` Add Dependabot configuration (mojzis, 2026-06-14 20:37:13+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#2](https://github.com/mojzis/nolegend/pull/2), [#1](https://github.com/mojzis/nolegend/pull/1)
-
-
-
----
-
-
-## [svatba](https://github.com/mojzis/svatba)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
-
-
-**Last commit:** `4c562397` Add Dependabot configuration (mojzis, 2026-06-14 20:37:05+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (4):** [#11](https://github.com/mojzis/svatba/pull/11), [#10](https://github.com/mojzis/svatba/pull/10), [#9](https://github.com/mojzis/svatba/pull/9), [#8](https://github.com/mojzis/svatba/pull/8)
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d4f125f3` Add Dependabot configuration (mojzis, 2026-06-14 20:36:59+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#21](https://github.com/mojzis/projects/pull/21), [#20](https://github.com/mojzis/projects/pull/20), [#19](https://github.com/mojzis/projects/pull/19)
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
