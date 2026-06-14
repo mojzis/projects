@@ -1,6 +1,8 @@
 """Tests for CLI interface."""
 
+import os
 import re
+import subprocess
 import tempfile
 from datetime import UTC, datetime
 from pathlib import Path
@@ -9,7 +11,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 from typer.testing import CliRunner
 
-from gh_monitor.cli import app
+from gh_monitor.cli import _publish_to_gh_pages, app
 from gh_monitor.models import CIStatus, Repository
 
 runner = CliRunner()
@@ -271,6 +273,87 @@ class TestErrorHandling:
                     result.stderr if hasattr(result, "stderr") and result.stderr else ""
                 )
                 assert "Traceback" in output or "Test error" in str(result.exception)
+
+
+class TestPublishToGhPages:
+    """Tests for publishing reports to the gh-pages branch."""
+
+    def _init_repo(self, path: Path, remote: Path) -> None:
+        """Initialize a git repo with an initial commit and a bare origin remote."""
+        env = {
+            **os.environ,
+            "GIT_AUTHOR_NAME": "Test",
+            "GIT_AUTHOR_EMAIL": "test@example.com",
+            "GIT_COMMITTER_NAME": "Test",
+            "GIT_COMMITTER_EMAIL": "test@example.com",
+        }
+
+        subprocess.run(
+            ["git", "init", "--bare", str(remote)], check=True, env=env, capture_output=True
+        )
+
+        def git(*args: str) -> None:
+            subprocess.run(["git", *args], cwd=path, check=True, env=env, capture_output=True)
+
+        git("init", "-b", "main")
+        git("config", "user.name", "Test")
+        git("config", "user.email", "test@example.com")
+        git("remote", "add", "origin", str(remote))
+        (path / "README.md").write_text("initial")
+        git("add", "README.md")
+        git("commit", "-m", "initial")
+
+    def test_publishes_html_and_markdown(self, tmp_path, monkeypatch):
+        """HTML is published as index.html, Markdown as index.md and llms.txt."""
+        repo = tmp_path / "repo"
+        repo.mkdir()
+        self._init_repo(repo, tmp_path / "remote.git")
+
+        html_path = tmp_path / "report.html"
+        html_path.write_text("<html><body>report</body></html>")
+        markdown_path = tmp_path / "report.md"
+        markdown_path.write_text("# Report\n\nbot-friendly content")
+
+        monkeypatch.chdir(repo)
+        _publish_to_gh_pages(html_path, markdown_path)
+
+        # Inspect the gh-pages branch contents without checking it out
+        def show(filename: str) -> str:
+            return subprocess.run(
+                ["git", "show", f"gh-pages:{filename}"],
+                cwd=repo,
+                check=True,
+                capture_output=True,
+                text=True,
+            ).stdout
+
+        assert "report" in show("index.html")
+        assert "bot-friendly content" in show("index.md")
+        assert "bot-friendly content" in show("llms.txt")
+
+    def test_publishes_html_only_when_no_markdown(self, tmp_path, monkeypatch):
+        """Markdown files are skipped when no Markdown report is available."""
+        repo = tmp_path / "repo"
+        repo.mkdir()
+        self._init_repo(repo, tmp_path / "remote.git")
+
+        html_path = tmp_path / "report.html"
+        html_path.write_text("<html><body>report</body></html>")
+
+        monkeypatch.chdir(repo)
+        _publish_to_gh_pages(html_path, markdown_path=None)
+
+        tracked = subprocess.run(
+            ["git", "ls-tree", "--name-only", "gh-pages"],
+            cwd=repo,
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.split()
+
+        assert "index.html" in tracked
+        assert "index.md" not in tracked
+        assert "llms.txt" not in tracked
 
 
 class TestHelpCommand:

@@ -91,11 +91,19 @@ def _generate_reports(
     return outputs, errors
 
 
-def _publish_to_gh_pages(html_path: Path, verbose: bool = False) -> None:
-    """Publish HTML report to gh-pages branch.
+def _publish_to_gh_pages(
+    html_path: Path, markdown_path: Path | None = None, verbose: bool = False
+) -> None:
+    """Publish HTML report (and optional Markdown version) to gh-pages branch.
+
+    The HTML report is published as ``index.html`` for browsers, and the
+    Markdown report is published as ``index.md`` (and ``llms.txt``, following
+    the llms.txt convention) so bots and LLMs can consume a token-friendly
+    version of the page.
 
     Args:
         html_path: Path to the HTML report file
+        markdown_path: Optional path to the Markdown report file
         verbose: Enable verbose output
 
     Raises:
@@ -138,12 +146,17 @@ def _publish_to_gh_pages(html_path: Path, verbose: bool = False) -> None:
             run_git("rm", "-rf", ".")
             run_git("clean", "-fd")
 
-        # Copy HTML report as index.html
-        dest_path = repo_root / "index.html"
-        shutil.copy2(html_path, dest_path)
+        # Copy HTML report as index.html (for browsers)
+        shutil.copy2(html_path, repo_root / "index.html")
+        run_git("add", "index.html")
+
+        # Copy Markdown report as index.md and llms.txt (for bots/LLMs)
+        if markdown_path is not None and markdown_path.exists():
+            for bot_filename in ("index.md", "llms.txt"):
+                shutil.copy2(markdown_path, repo_root / bot_filename)
+                run_git("add", bot_filename)
 
         # Check if there are changes to commit
-        run_git("add", "index.html")
         status = run_git("status", "--porcelain")
 
         if status.stdout.strip():
@@ -190,10 +203,11 @@ def _display_and_publish_results(
     # Publish to gh-pages if requested
     if publish:
         html_path = output_dir / "report.html"
+        markdown_path = output_dir / "report.md"
         if html_path.exists():
             console.print("\n[bold blue]Publishing to gh-pages...[/bold blue]")
             try:
-                _publish_to_gh_pages(html_path, verbose)
+                _publish_to_gh_pages(html_path, markdown_path, verbose)
                 console.print("[green]✓[/green] Published to gh-pages branch")
             except RuntimeError as e:
                 error_console.print(f"[yellow]Warning:[/yellow] Failed to publish: {e}")
