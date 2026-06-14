@@ -40,6 +40,8 @@ def generate_markdown_report(report: MonitorReport, output_path: Path) -> None:
                 "github_pages_url": r.github_pages_url,
                 "ci_status": r.ci_status.value,
                 "ci_last_failure": _get_last_failure(r),
+                "has_untagged_release_commits": r.has_untagged_release_commits,
+                "untagged_commits_on_main": r.untagged_commits_on_main,
             }
             for r in report.repositories
         ],

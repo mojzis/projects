@@ -379,3 +379,116 @@ class TestGetRepoDetails:
         with patch("subprocess.run", return_value=mock_result):
             result = collector.get_repo_details("owner", "repo")
             assert result == {}
+
+
+class TestHasReleaseWorkflow:
+    """Tests for has_release_workflow method."""
+
+    @pytest.fixture
+    def collector(self):
+        return GitHubCollector()
+
+    def test_has_release_workflow_present(self, collector):
+        """Test detecting an existing release workflow."""
+        mock_result = MagicMock()
+        mock_result.returncode = 0
+        mock_result.stdout = json.dumps({"name": "release.yml"})
+
+        with patch("subprocess.run", return_value=mock_result) as mock_run:
+            result = collector.has_release_workflow("owner", "repo")
+            assert result is True
+            args = mock_run.call_args[0][0]
+            assert ".github/workflows/release.yml" in args[-1]
+
+    def test_has_release_workflow_absent(self, collector):
+        """Test missing release workflow returns False."""
+        mock_result = MagicMock()
+        mock_result.returncode = 1
+        mock_result.stderr = "Not Found"
+
+        with patch("subprocess.run", return_value=mock_result):
+            result = collector.has_release_workflow("owner", "repo")
+            assert result is False
+
+
+class TestGetTags:
+    """Tests for get_tags method."""
+
+    @pytest.fixture
+    def collector(self):
+        return GitHubCollector()
+
+    def test_get_tags_success(self, collector):
+        """Test getting tags with commit SHAs."""
+        tags = [
+            {"name": "v1.0.0", "commit": {"sha": "abc"}},
+            {"name": "v0.9.0", "commit": {"sha": "def"}},
+        ]
+
+        mock_result = MagicMock()
+        mock_result.returncode = 0
+        mock_result.stdout = json.dumps(tags)
+
+        with patch("subprocess.run", return_value=mock_result):
+            result = collector.get_tags("owner", "repo")
+            assert len(result) == 2
+            assert result[0]["commit"]["sha"] == "abc"
+
+    def test_get_tags_error(self, collector):
+        """Test tag fetch error returns empty list."""
+        mock_result = MagicMock()
+        mock_result.returncode = 1
+        mock_result.stderr = "error"
+
+        with patch("subprocess.run", return_value=mock_result):
+            result = collector.get_tags("owner", "repo")
+            assert result == []
+
+
+class TestGetMainCommits:
+    """Tests for get_main_commits method."""
+
+    @pytest.fixture
+    def collector(self):
+        return GitHubCollector()
+
+    def test_get_main_commits_success(self, collector):
+        """Test getting commits from the main branch."""
+        commits = [{"sha": "c2"}, {"sha": "c1"}]
+
+        mock_result = MagicMock()
+        mock_result.returncode = 0
+        mock_result.stdout = json.dumps(commits)
+
+        with patch("subprocess.run", return_value=mock_result):
+            result = collector.get_main_commits("owner", "repo")
+            assert len(result) == 2
+            assert result[0]["sha"] == "c2"
+
+    def test_get_main_commits_fallback_to_master(self, collector):
+        """Test fallback to master when main is unavailable."""
+        commits = [{"sha": "m1"}]
+
+        def mock_run(*args, **kwargs):
+            mock_result = MagicMock()
+            if "sha=main" in args[0][-1]:
+                mock_result.returncode = 1
+                mock_result.stderr = "not found"
+            else:
+                mock_result.returncode = 0
+                mock_result.stdout = json.dumps(commits)
+            return mock_result
+
+        with patch("subprocess.run", side_effect=mock_run):
+            result = collector.get_main_commits("owner", "repo")
+            assert result == [{"sha": "m1"}]
+
+    def test_get_main_commits_error(self, collector):
+        """Test both branches failing returns empty list."""
+        mock_result = MagicMock()
+        mock_result.returncode = 1
+        mock_result.stderr = "error"
+
+        with patch("subprocess.run", return_value=mock_result):
+            result = collector.get_main_commits("owner", "repo")
+            assert result == []

@@ -322,6 +322,103 @@ class TestHTMLGenerator:
             assert "FAIL" in content
 
 
+class TestReleaseWarning:
+    """Tests for the untagged release warning in reports."""
+
+    def _make_report(self, has_workflow, untagged):
+        repo = Repository(
+            name="release-repo",
+            owner="owner",
+            full_name="owner/release-repo",
+            url="https://github.com/owner/release-repo",
+            last_commit=None,
+            open_prs=[],
+            branches_without_prs=[],
+            github_pages_enabled=False,
+            github_pages_url=None,
+            ci_status=CIStatus.SUCCESS,
+            ci_recent_runs=[],
+            ci_success_rate=1.0,
+            last_updated=datetime.now(UTC),
+            has_release_workflow=has_workflow,
+            untagged_commits_on_main=untagged,
+        )
+        return MonitorReport(
+            generated_at=datetime.now(UTC),
+            scan_period_days=30,
+            repositories=[repo],
+        )
+
+    def test_markdown_shows_warning(self):
+        """Test Markdown report shows the untagged release warning."""
+        report = self._make_report(has_workflow=True, untagged=3)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = Path(tmpdir) / "report.md"
+            generate_markdown_report(report, output_path)
+
+            content = output_path.read_text()
+            assert "Untagged release" in content
+            assert "3 commits" in content
+
+    def test_markdown_no_warning_when_tagged(self):
+        """Test Markdown omits the warning when everything is tagged."""
+        report = self._make_report(has_workflow=True, untagged=0)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = Path(tmpdir) / "report.md"
+            generate_markdown_report(report, output_path)
+
+            content = output_path.read_text()
+            assert "Untagged release" not in content
+
+    def test_markdown_no_warning_without_workflow(self):
+        """Test Markdown omits the warning when there is no release workflow."""
+        report = self._make_report(has_workflow=False, untagged=5)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = Path(tmpdir) / "report.md"
+            generate_markdown_report(report, output_path)
+
+            content = output_path.read_text()
+            assert "Untagged release" not in content
+
+    def test_markdown_singular_commit(self):
+        """Test singular wording for a single untagged commit."""
+        report = self._make_report(has_workflow=True, untagged=1)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = Path(tmpdir) / "report.md"
+            generate_markdown_report(report, output_path)
+
+            content = output_path.read_text()
+            assert "1 commit without a tag" in content
+
+    def test_html_shows_warning(self):
+        """Test HTML report shows the untagged release warning and summary count."""
+        report = self._make_report(has_workflow=True, untagged=2)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = Path(tmpdir) / "report.html"
+            generate_html_report(report, output_path)
+
+            content = output_path.read_text()
+            assert "Untagged release" in content
+            assert "Untagged Releases" in content  # summary stat label
+            assert '<div class="release-warning">' in content
+
+    def test_html_no_warning_when_tagged(self):
+        """Test HTML omits the per-repo warning when everything is tagged."""
+        report = self._make_report(has_workflow=True, untagged=0)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = Path(tmpdir) / "report.html"
+            generate_html_report(report, output_path)
+
+            content = output_path.read_text()
+            assert '<div class="release-warning">' not in content
+
+
 class TestMultipleRepositories:
     """Tests for reports with multiple repositories."""
 

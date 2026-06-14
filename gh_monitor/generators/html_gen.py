@@ -17,6 +17,7 @@ def generate_html_report(report: MonitorReport, output_path: Path) -> None:
     passing_ci = sum(1 for r in report.repositories if r.ci_status == CIStatus.SUCCESS)
     failing_ci = sum(1 for r in report.repositories if r.ci_status == CIStatus.FAILURE)
     pages_enabled = sum(1 for r in report.repositories if r.github_pages_enabled)
+    release_warnings = sum(1 for r in report.repositories if r.has_untagged_release_commits)
 
     html = template.render(
         timestamp=report.generated_at.strftime("%Y-%m-%d %H:%M:%S"),
@@ -27,6 +28,7 @@ def generate_html_report(report: MonitorReport, output_path: Path) -> None:
         passing_ci=passing_ci,
         failing_ci=failing_ci,
         pages_enabled=pages_enabled,
+        release_warnings=release_warnings,
         repositories=[
             {
                 "name": r.name,
@@ -45,6 +47,8 @@ def generate_html_report(report: MonitorReport, output_path: Path) -> None:
                 "ci_status": r.ci_status.value,
                 "ci_success_rate": r.ci_success_rate,
                 "ci_recent_runs": r.ci_recent_runs,
+                "has_untagged_release_commits": r.has_untagged_release_commits,
+                "untagged_commits_on_main": r.untagged_commits_on_main,
             }
             for r in report.repositories
         ],

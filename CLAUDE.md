@@ -88,6 +88,8 @@ CLI (Typer)
    - `get_github_pages()`: Pages status detection
    - `get_ci_runs()`: CI/CD workflow runs
    - `get_repo_details()`: Stars, forks, issues, language
+   - `has_release_workflow()`: Detects `.github/workflows/release.yml`
+   - `get_tags()` / `get_main_commits()`: Used to find untagged commits on main
 
 2. **ProjectMonitor** (`monitor.py`): Orchestrates collection across repos
    - `collect_all_data()`: Main loop with progress callback
@@ -105,7 +107,8 @@ CLI (Typer)
    - `Commit`: sha, message, author, date
    - `PullRequest`: number, title, author, age_days, url
    - `CIRun`: name, status, conclusion, created_at
-   - `Repository`: Full repo metrics with nested models
+   - `Repository`: Full repo metrics with nested models (incl. `has_release_workflow`,
+     `untagged_commits_on_main`, and the `has_untagged_release_commits` warning property)
    - `MonitorReport`: Aggregated report with auto-calculated totals
    - `SyncAction` (enum): cloned/pulled/skipped_dirty/skipped_error/already_current
    - `SyncResult`: Single repo sync result
@@ -236,7 +239,24 @@ gh run list --repo OWNER/REPO --limit 20 --json status,conclusion,name,createdAt
 
 # Repo details
 gh repo view OWNER/REPO --json stargazerCount,forkCount,openIssues,primaryLanguage
+
+# Release workflow detection (for untagged-commit warning)
+gh api repos/OWNER/REPO/contents/.github/workflows/release.yml
+
+# Tags and recent main commits (to count untagged commits on main)
+gh api repos/OWNER/REPO/tags --paginate
+gh api "repos/OWNER/REPO/commits?sha=main&per_page=100"
 ```
+
+## Release Tagging Warning
+
+Repositories that contain a release workflow (`.github/workflows/release.yml`) are
+checked for commits on `main` that have not yet been tagged. The number of commits
+at the tip of `main` since the most recent tagged commit is recorded in
+`Repository.untagged_commits_on_main`, and `has_untagged_release_commits` is true
+when a release workflow exists and that count is greater than zero. The Markdown and
+HTML reports render a warning for such repositories (the HTML summary also shows an
+"Untagged Releases" count). Repositories without a release workflow are never flagged.
 
 ## Output Formats
 

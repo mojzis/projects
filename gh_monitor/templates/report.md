@@ -12,6 +12,9 @@
 {% if repo.last_commit %}
 **Last commit:** `{{ repo.last_commit.sha[:8]}}` {{ repo.last_commit.message }} ({{ repo.last_commit.author }}, {{ repo.last_commit.date }})
 {% endif %}
+{% if repo.has_untagged_release_commits %}
+> ⚠️ **Untagged release:** main has {{ repo.untagged_commits_on_main }} commit{{ 's' if repo.untagged_commits_on_main != 1 else '' }} without a tag.
+{% endif %}
 {% if repo.ci_status == 'failure' %}
 **CI: FAIL** {% if repo.ci_last_failure %}({{ repo.ci_last_failure }}){% endif %}
 {% elif repo.ci_status == 'success' %}

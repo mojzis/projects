@@ -259,6 +259,83 @@ class TestRepository:
         assert data["stats"]["stars"] == 100
         assert data["stats"]["language"] == "Python"
 
+    def test_repository_release_defaults(self):
+        """Test release fields default to no workflow / no untagged commits."""
+        repo = Repository(
+            name="repo",
+            owner="owner",
+            full_name="owner/repo",
+            url="https://github.com/owner/repo",
+            last_commit=None,
+            open_prs=[],
+            branches_without_prs=[],
+            github_pages_enabled=False,
+            github_pages_url=None,
+            ci_status=CIStatus.NO_CI,
+            ci_recent_runs=[],
+            ci_success_rate=0.0,
+            last_updated=datetime.now(UTC),
+        )
+        assert repo.has_release_workflow is False
+        assert repo.untagged_commits_on_main == 0
+        assert repo.has_untagged_release_commits is False
+
+    def test_repository_has_untagged_release_commits(self):
+        """Test the warning property requires both workflow and untagged commits."""
+        base_kwargs = dict(
+            name="repo",
+            owner="owner",
+            full_name="owner/repo",
+            url="https://github.com/owner/repo",
+            last_commit=None,
+            open_prs=[],
+            branches_without_prs=[],
+            github_pages_enabled=False,
+            github_pages_url=None,
+            ci_status=CIStatus.NO_CI,
+            ci_recent_runs=[],
+            ci_success_rate=0.0,
+            last_updated=datetime.now(UTC),
+        )
+
+        # Workflow + untagged commits -> warning
+        warned = Repository(**base_kwargs, has_release_workflow=True, untagged_commits_on_main=3)
+        assert warned.has_untagged_release_commits is True
+
+        # Workflow but everything tagged -> no warning
+        tagged = Repository(**base_kwargs, has_release_workflow=True, untagged_commits_on_main=0)
+        assert tagged.has_untagged_release_commits is False
+
+        # Untagged commits but no release workflow -> no warning
+        no_workflow = Repository(
+            **base_kwargs, has_release_workflow=False, untagged_commits_on_main=3
+        )
+        assert no_workflow.has_untagged_release_commits is False
+
+    def test_repository_to_dict_release_section(self):
+        """Test release info is serialized."""
+        repo = Repository(
+            name="repo",
+            owner="owner",
+            full_name="owner/repo",
+            url="https://github.com/owner/repo",
+            last_commit=None,
+            open_prs=[],
+            branches_without_prs=[],
+            github_pages_enabled=False,
+            github_pages_url=None,
+            ci_status=CIStatus.NO_CI,
+            ci_recent_runs=[],
+            ci_success_rate=0.0,
+            last_updated=datetime.now(UTC),
+            has_release_workflow=True,
+            untagged_commits_on_main=2,
+        )
+        data = repo.to_dict()
+        assert data["release"]["has_workflow"] is True
+        assert data["release"]["untagged_commits_on_main"] == 2
+        assert data["release"]["has_untagged_release_commits"] is True
+
     def test_repository_to_dict_without_commit(self):
         """Test repository serialization without last commit."""
         repo = Repository(
