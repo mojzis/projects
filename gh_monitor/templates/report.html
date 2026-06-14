@@ -138,6 +138,16 @@
         .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
         .badge-success { background-color: #dafbe1; color: #1a7f37; }
         .badge-failure { background-color: #ffebe9; color: #cf222e; }
+        .status-warn { color: #bf8700; }
+        .release-warning {
+            background-color: #fff8c5;
+            border: 1px solid #d4a72c;
+            border-radius: 6px;
+            padding: 10px 12px;
+            margin: 12px 0;
+            font-size: 14px;
+            color: #633c01;
+        }
         code { background-color: #f6f8fa; padding: 2px 6px; border-radius: 3px; font-family: monospace; font-size: 13px; }
         .stats { display: flex; gap: 20px; flex-wrap: wrap; }
         .stat { text-align: center; }
@@ -201,6 +211,10 @@
                         <div class="stat-value status-fail">{{ failing_ci }}</div>
                         <div class="stat-label">CI Failing</div>
                     </div>
+                    <div class="stat">
+                        <div class="stat-value status-warn">{{ release_warnings }}</div>
+                        <div class="stat-label">Untagged Releases</div>
+                    </div>
                 </div>
             </div>
 
@@ -214,6 +228,14 @@
                     {{ repo.last_commit.message.split('\n')[0][:60] }}{% if repo.last_commit.message|length > 60 %}...{% endif %}
                     &middot; {{ repo.last_commit.author }}
                     &middot; {{ repo.last_commit.date.strftime('%Y-%m-%d') if repo.last_commit.date.strftime else repo.last_commit.date[:10] }}
+                </div>
+                {% endif %}
+
+                {% if repo.has_untagged_release_commits %}
+                <div class="release-warning">
+                    ⚠️ <strong>Untagged release:</strong> main has
+                    {{ repo.untagged_commits_on_main }} commit{{ 's' if repo.untagged_commits_on_main != 1 else '' }}
+                    without a tag.
                 </div>
                 {% endif %}
 

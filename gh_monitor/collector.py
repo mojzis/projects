@@ -163,6 +163,35 @@ class GitHubCollector:
         except GitHubCLIError:
             return {}
 
+    def has_release_workflow(self, owner: str, repo: str) -> bool:
+        """Check whether the repo has a release workflow (.github/workflows/release.yml)."""
+        try:
+            self._run_gh(["api", f"repos/{owner}/{repo}/contents/.github/workflows/release.yml"])
+            return True
+        except GitHubCLIError:
+            return False
+
+    def get_tags(self, owner: str, repo: str) -> list[dict]:
+        """Get all tags with their target commit SHAs."""
+        try:
+            tags = self._run_gh(["api", f"repos/{owner}/{repo}/tags", "--paginate"])
+            return tags if isinstance(tags, list) else []
+        except GitHubCLIError:
+            return []
+
+    def get_main_commits(self, owner: str, repo: str, limit: int = 100) -> list[dict]:
+        """Get recent commits on the default branch (main, falling back to master)."""
+        for branch in ("main", "master"):
+            try:
+                commits = self._run_gh(
+                    ["api", f"repos/{owner}/{repo}/commits?sha={branch}&per_page={limit}"]
+                )
+                if isinstance(commits, list):
+                    return commits
+            except GitHubCLIError:
+                continue
+        return []
+
     def get_repositories_for_sync(self, owner: str, since_days: int | None = None) -> list[dict]:
         """Get repositories for syncing, optionally filtered by activity.
 

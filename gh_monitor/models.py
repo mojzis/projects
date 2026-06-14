@@ -97,6 +97,13 @@ class Repository:
     forks: int = 0
     open_issues: int = 0
     primary_language: str | None = None
+    has_release_workflow: bool = False
+    untagged_commits_on_main: int = 0
+
+    @property
+    def has_untagged_release_commits(self) -> bool:
+        """Whether a release workflow exists but main has untagged commits."""
+        return self.has_release_workflow and self.untagged_commits_on_main > 0
 
     def to_dict(self) -> dict:
         """Convert to dictionary for serialization."""
@@ -118,6 +125,11 @@ class Repository:
                 "status": self.ci_status.value,
                 "recent_runs": [run.to_dict() for run in self.ci_recent_runs],
                 "success_rate": self.ci_success_rate,
+            },
+            "release": {
+                "has_workflow": self.has_release_workflow,
+                "untagged_commits_on_main": self.untagged_commits_on_main,
+                "has_untagged_release_commits": self.has_untagged_release_commits,
             },
             "last_updated": self.last_updated.isoformat(),
             "stats": {

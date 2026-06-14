@@ -65,6 +65,9 @@ class ProjectMonitor:
         # Get repository details
         details = self.collector.get_repo_details(self.owner, repo_name)
 
+        # Check for untagged commits on main when a release workflow exists
+        has_release_workflow, untagged_commits = self._get_release_info(repo_name)
+
         return Repository(
             name=repo_name,
             owner=self.owner,
@@ -85,6 +88,8 @@ class ProjectMonitor:
             primary_language=details.get("primaryLanguage", {}).get("name")
             if details.get("primaryLanguage")
             else None,
+            has_release_workflow=has_release_workflow,
+            untagged_commits_on_main=untagged_commits,
         )
 
     def _get_last_commit(self, repo_name: str) -> Commit | None:
@@ -188,3 +193,31 @@ class ProjectMonitor:
                 ci_status = CIStatus.UNKNOWN
 
         return ci_status, ci_runs, success_rate
+
+    def _get_release_info(self, repo_name: str) -> tuple[bool, int]:
+        """Detect untagged commits on main for repos with a release workflow.
+
+        Returns a tuple of (has_release_workflow, untagged_commits_on_main).
+        The commit count reflects how many commits at the tip of main are not
+        yet covered by a tag. It is only computed when a release workflow exists.
+        """
+        if not self.collector.has_release_workflow(self.owner, repo_name):
+            return False, 0
+
+        tags = self.collector.get_tags(self.owner, repo_name)
+        tagged_shas = {
+            tag["commit"]["sha"]
+            for tag in tags
+            if isinstance(tag.get("commit"), dict) and tag["commit"].get("sha")
+        }
+
+        commits = self.collector.get_main_commits(self.owner, repo_name)
+
+        # Count commits from the tip of main until we reach a tagged commit.
+        untagged = 0
+        for commit in commits:
+            if commit.get("sha") in tagged_shas:
+                break
+            untagged += 1
+
+        return True, untagged

@@ -52,6 +52,7 @@ class TestCollectAllData:
             patch.object(monitor.collector, "get_github_pages", return_value=None),
             patch.object(monitor.collector, "get_ci_runs", return_value=[]),
             patch.object(monitor.collector, "get_repo_details", return_value={}),
+            patch.object(monitor.collector, "has_release_workflow", return_value=False),
         ):
             result = monitor.collect_all_data()
 
@@ -82,6 +83,7 @@ class TestCollectAllData:
             patch.object(monitor.collector, "get_github_pages", return_value=None),
             patch.object(monitor.collector, "get_ci_runs", return_value=[]),
             patch.object(monitor.collector, "get_repo_details", return_value={}),
+            patch.object(monitor.collector, "has_release_workflow", return_value=False),
         ):
             monitor.collect_all_data(progress_callback=track_progress)
 
@@ -321,6 +323,75 @@ class TestGetCIInfo:
             assert rate == 0.0
 
 
+class TestGetReleaseInfo:
+    """Tests for _get_release_info method."""
+
+    def test_no_release_workflow(self):
+        """Test repos without a release workflow are not flagged."""
+        monitor = ProjectMonitor(owner="test-owner", days=30)
+
+        with patch.object(monitor.collector, "has_release_workflow", return_value=False):
+            has_workflow, untagged = monitor._get_release_info("test-repo")
+
+            assert has_workflow is False
+            assert untagged == 0
+
+    def test_untagged_commits_on_main(self):
+        """Test counting commits at the tip of main that lack a tag."""
+        monitor = ProjectMonitor(owner="test-owner", days=30)
+
+        tags = [{"name": "v1.0.0", "commit": {"sha": "tagged-sha"}}]
+        commits = [
+            {"sha": "new-2"},
+            {"sha": "new-1"},
+            {"sha": "tagged-sha"},
+            {"sha": "old-1"},
+        ]
+
+        with (
+            patch.object(monitor.collector, "has_release_workflow", return_value=True),
+            patch.object(monitor.collector, "get_tags", return_value=tags),
+            patch.object(monitor.collector, "get_main_commits", return_value=commits),
+        ):
+            has_workflow, untagged = monitor._get_release_info("test-repo")
+
+            assert has_workflow is True
+            assert untagged == 2
+
+    def test_tip_is_tagged(self):
+        """Test no untagged commits when the latest commit is tagged."""
+        monitor = ProjectMonitor(owner="test-owner", days=30)
+
+        tags = [{"name": "v1.0.0", "commit": {"sha": "tip-sha"}}]
+        commits = [{"sha": "tip-sha"}, {"sha": "old-1"}]
+
+        with (
+            patch.object(monitor.collector, "has_release_workflow", return_value=True),
+            patch.object(monitor.collector, "get_tags", return_value=tags),
+            patch.object(monitor.collector, "get_main_commits", return_value=commits),
+        ):
+            has_workflow, untagged = monitor._get_release_info("test-repo")
+
+            assert has_workflow is True
+            assert untagged == 0
+
+    def test_no_tags_all_untagged(self):
+        """Test that all commits count as untagged when no tags exist."""
+        monitor = ProjectMonitor(owner="test-owner", days=30)
+
+        commits = [{"sha": "c3"}, {"sha": "c2"}, {"sha": "c1"}]
+
+        with (
+            patch.object(monitor.collector, "has_release_workflow", return_value=True),
+            patch.object(monitor.collector, "get_tags", return_value=[]),
+            patch.object(monitor.collector, "get_main_commits", return_value=commits),
+        ):
+            has_workflow, untagged = monitor._get_release_info("test-repo")
+
+            assert has_workflow is True
+            assert untagged == 3
+
+
 class TestCollectRepoData:
     """Tests for _collect_repo_data method."""
 
@@ -353,6 +424,7 @@ class TestCollectRepoData:
             patch.object(monitor.collector, "get_github_pages", return_value=None),
             patch.object(monitor.collector, "get_ci_runs", return_value=[]),
             patch.object(monitor.collector, "get_repo_details", return_value=repo_details),
+            patch.object(monitor.collector, "has_release_workflow", return_value=False),
         ):
             result = monitor._collect_repo_data("test-repo", repo_info)
 
@@ -362,3 +434,5 @@ class TestCollectRepoData:
             assert result.primary_language == "Python"
             assert result.last_commit is not None
             assert result.last_commit.sha == "abc123"
+            assert result.has_release_workflow is False
+            assert result.untagged_commits_on_main == 0
