@@ -1,16 +1,85 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-14 19:48:48 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 12
+**Generated:** 2026-06-14 20:37:55 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 2
 
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
+## [pycoati](https://github.com/mojzis/pycoati)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+N/A | ★0 | 0 issues
 
 
-**Last commit:** `1d27ee76` Merge pull request #18 from mojzis/claude/epic-faraday-1z4cwi (Mojzis, 2026-06-14 19:47:35+00:00)
+**Last commit:** `c9fe41fc` Add Dependabot configuration (mojzis, 2026-06-14 20:37:11+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `af40946a` Add Dependabot configuration (mojzis, 2026-06-14 20:37:09+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [svatba](https://github.com/mojzis/svatba)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
+
+
+**Last commit:** `4c562397` Add Dependabot configuration (mojzis, 2026-06-14 20:37:05+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [ajina](https://github.com/mojzis/ajina)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
+
+
+**Last commit:** `c3cb04d9` Add Dependabot configuration (mojzis, 2026-06-14 20:37:03+00:00)
 
 
 
@@ -24,67 +93,18 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `2300fce6` docs: explain reinstalling global bd from local repo (mojzis, 2026-06-14 19:11:12+00:00)
-
-
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `65c526c3` Build: include skills/comicforge in sdist so wheel build from sdist works (mojzis, 2026-06-14 18:22:11+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `5ed39b96` Merge pull request #22 from mojzis/claude/biston-cli-comment-help-w2tti3 (Mojzis, 2026-06-14 11:00:17+00:00)
-
-
-> ⚠️ **Untagged release:** main has 8 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (5):** [#21](https://github.com/mojzis/biston/pull/21), [#17](https://github.com/mojzis/biston/pull/17), [#16](https://github.com/mojzis/biston/pull/16), [#8](https://github.com/mojzis/biston/pull/8), [#2](https://github.com/mojzis/biston/pull/2)
-
-
-
----
-
-
 ## [introspect](https://github.com/mojzis/introspect)
 
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `acb285f5` Release v0.2.0 (mojzis, 2026-06-11 17:50:02+00:00)
+**Last commit:** `01f2d888` Add Dependabot configuration (mojzis, 2026-06-14 20:37:02+00:00)
 
 
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
-**CI:** PASS
+
+**CI:** UNKNOWN
 
 
 **Open PRs (1):** [#48](https://github.com/mojzis/introspect/pull/48)
@@ -97,19 +117,55 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [zorilla](https://github.com/mojzis/zorilla)
+## [comicforge](https://github.com/mojzis/comicforge)
 
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `07343925` Release v{{version}} (mojzis, 2026-05-15 04:16:58+00:00)
+**Last commit:** `1f534115` Add Dependabot configuration (mojzis, 2026-06-14 20:37:00+00:00)
 
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d4f125f3` Add Dependabot configuration (mojzis, 2026-06-14 20:36:59+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `3c150df3` Merge pull request #16 from dependabot: bump actions/deploy-pages from 4 to 5 (mojzis, 2026-06-14 20:34:29+00:00)
+
+
+> ⚠️ **Untagged release:** main has 17 commits without a tag.
 
 
 **CI:** PASS
-
-
-**Open PRs (2):** [#3](https://github.com/mojzis/zorilla/pull/3), [#1](https://github.com/mojzis/zorilla/pull/1)
 
 
 
@@ -121,16 +177,13 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
-**Last commit:** `8c42cc1d` Merge pull request #114 from mojzis/claude/dotted-notation-symbols-OIbH4 (Mojzis, 2026-04-02 17:28:46+00:00)
+**Last commit:** `cda1468f` Merge pull request #115 from dependabot: bump actions/deploy-pages from 4 to 5 (mojzis, 2026-06-14 20:34:06+00:00)
 
 
-> ⚠️ **Untagged release:** main has 5 commits without a tag.
+> ⚠️ **Untagged release:** main has 11 commits without a tag.
 
 
 **CI:** PASS
-
-
-**Open PRs (3):** [#118](https://github.com/mojzis/ty-find/pull/118), [#117](https://github.com/mojzis/ty-find/pull/117), [#115](https://github.com/mojzis/ty-find/pull/115)
 
 
 
@@ -140,82 +193,12 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 ---
 
 
-## [ajina](https://github.com/mojzis/ajina)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
-
-
-**Last commit:** `a39c4fad` Add week 2026-W21 (Čas a cestování / Time and Travel) (mojzis, 2026-06-04 05:55:18+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [svatba](https://github.com/mojzis/svatba)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
-
-
-**Last commit:** `fc77048b` Reword Šeniglovým to Šeniglům (mojzis, 2026-05-30 20:50:40+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `5e4d2045` Fix theme-5 starters and mark unmarked browser tests (mojzis, 2026-05-15 20:09:44+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `3e6e7e44` ignore cf (mojzis, 2026-05-15 19:45:14+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
+## [zorilla](https://github.com/mojzis/zorilla)
 
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `61dafcac` Phase 1 review fix: reject `*` outside trailing segment loudly (mojzis, 2026-05-15 18:32:46+00:00)
+**Last commit:** `8b8597c9` Merge pull request #1 from mojzis/dependabot/github_actions/softprops/action-gh-release-3 (Mojzis, 2026-06-14 20:32:50+00:00)
 
 
 > ⚠️ **Untagged release:** main has 2 commits without a tag.
@@ -223,6 +206,25 @@ N/A | ★0 | 0 issues
 
 **CI:** PASS
 
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `f7154177` Add Dependabot configuration (mojzis, 2026-06-14 20:37:27+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `feat/project-area-and-entry-edit`
 
 
 ---
@@ -251,11 +253,11 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `9c075500` release v0.1.2 (mojzis, 2026-04-14 00:22:22+00:00)
+**Last commit:** `76b01b74` Add Dependabot configuration (mojzis, 2026-06-14 20:37:13+00:00)
 
 
 
-**CI:** PASS
+**CI:** UNKNOWN
 
 
 
@@ -300,11 +302,11 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `0a92c12d` Merge pull request #6 from mojzis/claude/fix-elliptical-edge-rendering-YHhye (Mojzis, 2026-04-07 22:56:10+00:00)
+**Last commit:** `6de4ba99` Add Dependabot configuration (mojzis, 2026-06-14 20:37:15+00:00)
 
 
 
-**CI:** PASS
+**CI:** UNKNOWN
 
 
 
@@ -316,9 +318,11 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `87fd7ae3` Merge pull request #3 from mojzis/claude/update-phase-3-docs-6egpK (Mojzis, 2026-04-04 07:35:15+00:00)
+**Last commit:** `9da2fae1` Add Dependabot configuration (mojzis, 2026-06-14 20:37:16+00:00)
 
 
+
+**CI:** UNKNOWN
 
 
 
@@ -330,9 +334,11 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `da94be52` Merge pull request #1 from mojzis/claude/python-project-template-E5Cqx (Mojzis, 2026-03-27 13:02:31+00:00)
+**Last commit:** `dfb519de` Add Dependabot configuration (mojzis, 2026-06-14 20:37:18+00:00)
 
 
+
+**CI:** UNKNOWN
 
 
 
