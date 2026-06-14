@@ -296,6 +296,8 @@ class TestPublishToGhPages:
             subprocess.run(["git", *args], cwd=path, check=True, env=env, capture_output=True)
 
         git("init", "-b", "main")
+        git("config", "user.name", "Test")
+        git("config", "user.email", "test@example.com")
         git("remote", "add", "origin", str(remote))
         (path / "README.md").write_text("initial")
         git("add", "README.md")
