@@ -1,6 +1,119 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-14 21:11:07 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 42
+**Generated:** 2026-06-14 21:15:05 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 31
+
+---
+
+
+## [svatba](https://github.com/mojzis/svatba)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
+
+
+**Last commit:** `b2ca145b` Bump actions/checkout from 4 to 6 (#8) (dependabot[bot], 2026-06-14 21:14:00+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `7757eab6` Bump astral-sh/setup-uv from 6 to 7 (#19) (dependabot[bot], 2026-06-14 21:13:48+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#22](https://github.com/mojzis/projects/pull/22)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [nolegend](https://github.com/mojzis/nolegend)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3e540722` Bump astral-sh/setup-uv from 5 to 7 (#1) (dependabot[bot], 2026-06-14 21:14:05+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `80faa2bd` Bump multer from 1.4.5-lts.2 to 2.1.1 in /server (#5) (dependabot[bot], 2026-06-14 21:08:40+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#7](https://github.com/mojzis/talkshape/pull/7), [#6](https://github.com/mojzis/talkshape/pull/6), [#4](https://github.com/mojzis/talkshape/pull/4)
+
+
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `278a1226` Bump actions/configure-pages from 4 to 6 (#3) (dependabot[bot], 2026-06-14 21:14:15+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `5ce79cca` Bump actions/download-artifact from 4 to 8 (#69) (dependabot[bot], 2026-06-14 21:14:20+00:00)
+
+
+> ⚠️ **Untagged release:** main has 4 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#68](https://github.com/mojzis/introspect/pull/68), [#67](https://github.com/mojzis/introspect/pull/67), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
 
 ---
 
@@ -36,89 +149,10 @@ N/A | ★0 | 0 issues
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (1):** [#7](https://github.com/mojzis/b3d-validate/pull/7)
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `196c7690` Bump actions/checkout from 5 to 6 (#21) (dependabot[bot], 2026-06-14 21:09:43+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#20](https://github.com/mojzis/projects/pull/20), [#19](https://github.com/mojzis/projects/pull/19)
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [svatba](https://github.com/mojzis/svatba)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
-
-
-**Last commit:** `0ea8f071` Bump actions/configure-pages from 4 to 6 (#11) (dependabot[bot], 2026-06-14 21:09:32+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#10](https://github.com/mojzis/svatba/pull/10), [#9](https://github.com/mojzis/svatba/pull/9), [#8](https://github.com/mojzis/svatba/pull/8)
-
-
-
----
-
-
-## [nolegend](https://github.com/mojzis/nolegend)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `d0cb53a6` Bump actions/checkout from 4 to 6 (#2) (dependabot[bot], 2026-06-14 21:09:26+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#1](https://github.com/mojzis/nolegend/pull/1)
-
-
-
----
-
-
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `a11e8aa1` Bump actions/upload-pages-artifact from 3 to 5 (#6) (dependabot[bot], 2026-06-14 21:09:16+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#5](https://github.com/mojzis/bounceflow/pull/5), [#4](https://github.com/mojzis/bounceflow/pull/4), [#3](https://github.com/mojzis/bounceflow/pull/3)
 
 
 
@@ -146,66 +180,23 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `052da393` Bump astral-sh/setup-uv from 5 to 7 (#70) (dependabot[bot], 2026-06-14 21:09:04+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (4):** [#69](https://github.com/mojzis/introspect/pull/69), [#68](https://github.com/mojzis/introspect/pull/68), [#67](https://github.com/mojzis/introspect/pull/67), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
 ## [ajina](https://github.com/mojzis/ajina)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
 
 
-**Last commit:** `1c42a4f3` build(deps): bump actions/deploy-pages from 4 to 5 (#6) (dependabot[bot], 2026-06-14 21:08:51+00:00)
+**Last commit:** `31ac43db` build(deps): bump actions/checkout from 4 to 6 (#4) (dependabot[bot], 2026-06-14 21:14:33+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (3):** [#5](https://github.com/mojzis/ajina/pull/5), [#4](https://github.com/mojzis/ajina/pull/4), [#3](https://github.com/mojzis/ajina/pull/3)
+**Open PRs (1):** [#3](https://github.com/mojzis/ajina/pull/3)
 
 
 
 **Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `80faa2bd` Bump multer from 1.4.5-lts.2 to 2.1.1 in /server (#5) (dependabot[bot], 2026-06-14 21:08:40+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (3):** [#7](https://github.com/mojzis/talkshape/pull/7), [#6](https://github.com/mojzis/talkshape/pull/6), [#4](https://github.com/mojzis/talkshape/pull/4)
-
 
 
 ---
@@ -241,7 +232,7 @@ N/A | ★0 | 0 issues
 > ⚠️ **Untagged release:** main has 14 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
