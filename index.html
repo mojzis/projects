@@ -138,6 +138,16 @@
         .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
         .badge-success { background-color: #dafbe1; color: #1a7f37; }
         .badge-failure { background-color: #ffebe9; color: #cf222e; }
+        .status-warn { color: #bf8700; }
+        .release-warning {
+            background-color: #fff8c5;
+            border: 1px solid #d4a72c;
+            border-radius: 6px;
+            padding: 10px 12px;
+            margin: 12px 0;
+            font-size: 14px;
+            color: #633c01;
+        }
         code { background-color: #f6f8fa; padding: 2px 6px; border-radius: 3px; font-family: monospace; font-size: 13px; }
         .stats { display: flex; gap: 20px; flex-wrap: wrap; }
         .stat { text-align: center; }
@@ -171,9 +181,16 @@
                 </li>
             
                 <li>
+                    <a href="#comicforge">
+                        comicforge
+                        
+                    </a>
+                </li>
+            
+                <li>
                     <a href="#biston" class="has-prs">
                         biston
-                        <span class="pr-count">6</span>
+                        <span class="pr-count">5</span>
                     </a>
                 </li>
             
@@ -295,17 +312,17 @@
         <main class="main">
             <div class="header">
                 <h1>GitHub Project Monitor</h1>
-                <p>2026-06-14 10:54:36 | Last 90 days</p>
+                <p>2026-06-14 19:01:24 | Last 90 days</p>
             </div>
 
             <div class="summary">
                 <div class="stats">
                     <div class="stat">
-                        <div class="stat-value">18</div>
+                        <div class="stat-value">19</div>
                         <div class="stat-label">Repositories</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-value">13</div>
+                        <div class="stat-value">12</div>
                         <div class="stat-label">Open PRs</div>
                     </div>
                     <div class="stat">
@@ -313,12 +330,16 @@
                         <div class="stat-label">Orphaned Branches</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-value status-pass">13</div>
+                        <div class="stat-value status-pass">14</div>
                         <div class="stat-label">CI Passing</div>
                     </div>
                     <div class="stat">
                         <div class="stat-value status-fail">0</div>
                         <div class="stat-label">CI Failing</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value status-warn">4</div>
+                        <div class="stat-label">Untagged Releases</div>
                     </div>
                 </div>
             </div>
@@ -329,11 +350,13 @@
 
                 
                 <div class="commit-line">
-                    <a href="https://github.com/mojzis/projects/commit/1cbbae6b92e12ef4a0a6cecb9658753af5d8e80f"><code>1cbbae6</code></a>
-                    Merge pull request #16 from mojzis/claude/github-daily-run-f...
+                    <a href="https://github.com/mojzis/projects/commit/d8e3fb62b7933a1fee38cc994a798611cc282c1e"><code>d8e3fb6</code></a>
+                    Merge pull request #17 from mojzis/claude/wonderful-darwin-4...
                     &middot; Mojzis
                     &middot; 2026-06-14
                 </div>
+                
+
                 
 
                 
@@ -358,33 +381,64 @@
                 
             </div>
             
+            <div class="repo-card" id="comicforge">
+                <h2><a href="https://github.com/mojzis/comicforge">comicforge</a></h2>
+
+                
+                <div class="commit-line">
+                    <a href="https://github.com/mojzis/comicforge/commit/65c526c3dd9947dd3d1f94f731df52f9e9947cc1"><code>65c526c</code></a>
+                    Build: include skills/comicforge in sdist so wheel build fro...
+                    &middot; mojzis
+                    &middot; 2026-06-14
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                <div class="ci-status">
+                    CI:
+                    
+                    <span class="badge badge-success">PASS</span>
+                    
+                </div>
+                
+            </div>
+            
             <div class="repo-card" id="biston">
                 <h2><a href="https://github.com/mojzis/biston">biston</a></h2>
 
                 
                 <div class="commit-line">
-                    <a href="https://github.com/mojzis/biston/commit/bdf5f70917469f4adcc8c2171f4b8212037a10f6"><code>bdf5f70</code></a>
-                    Merge pull request #15 from mojzis/claude/biston-precommit-i...
+                    <a href="https://github.com/mojzis/biston/commit/5ed39b9644651b6bfe2410e9e16233def715e89f"><code>5ed39b9</code></a>
+                    Merge pull request #22 from mojzis/claude/biston-cli-comment...
                     &middot; Mojzis
-                    &middot; 2026-04-20
+                    &middot; 2026-06-14
+                </div>
+                
+
+                
+                <div class="release-warning">
+                    ⚠️ <strong>Untagged release:</strong> main has
+                    8 commits
+                    without a tag.
                 </div>
                 
 
                 
                 <div class="section">
-                    <h3>Open Pull Requests (6)</h3>
+                    <h3>Open Pull Requests (5)</h3>
                     <table>
                         <thead>
                             <tr><th>#</th><th>Title</th><th>Author</th><th>Age</th></tr>
                         </thead>
                         <tbody>
-                        
-                            <tr>
-                                <td><a href="https://github.com/mojzis/biston/pull/22">#22</a></td>
-                                <td>Add `biston usage` command and suppression hint to scan output</td>
-                                <td>@mojzis</td>
-                                <td>0d</td>
-                            </tr>
                         
                             <tr>
                                 <td><a href="https://github.com/mojzis/biston/pull/21">#21</a></td>
@@ -457,6 +511,8 @@
                 
 
                 
+
+                
                 <div class="section">
                     <h3>Open Pull Requests (1)</h3>
                     <table>
@@ -469,7 +525,7 @@
                                 <td><a href="https://github.com/mojzis/introspect/pull/48">#48</a></td>
                                 <td>Add /sql page with CodeMirror editor and query execution</td>
                                 <td>@mojzis</td>
-                                <td>53d</td>
+                                <td>54d</td>
                             </tr>
                         
                         </tbody>
@@ -514,6 +570,8 @@
                     &middot; mojzis
                     &middot; 2026-05-15
                 </div>
+                
+
                 
 
                 
@@ -571,6 +629,14 @@
                 
 
                 
+                <div class="release-warning">
+                    ⚠️ <strong>Untagged release:</strong> main has
+                    5 commits
+                    without a tag.
+                </div>
+                
+
+                
                 <div class="section">
                     <h3>Open Pull Requests (3)</h3>
                     <table>
@@ -583,21 +649,21 @@
                                 <td><a href="https://github.com/mojzis/ty-find/pull/118">#118</a></td>
                                 <td>build(deps): bump actions/upload-pages-artifact from 4 to 5</td>
                                 <td>@app/dependabot</td>
-                                <td>55d</td>
+                                <td>56d</td>
                             </tr>
                         
                             <tr>
                                 <td><a href="https://github.com/mojzis/ty-find/pull/117">#117</a></td>
                                 <td>build(deps): bump softprops/action-gh-release from 2 to 3</td>
                                 <td>@app/dependabot</td>
-                                <td>62d</td>
+                                <td>63d</td>
                             </tr>
                         
                             <tr>
                                 <td><a href="https://github.com/mojzis/ty-find/pull/115">#115</a></td>
                                 <td>build(deps): bump actions/deploy-pages from 4 to 5</td>
                                 <td>@app/dependabot</td>
-                                <td>76d</td>
+                                <td>77d</td>
                             </tr>
                         
                         </tbody>
@@ -647,6 +713,8 @@
                 
 
                 
+
+                
                 <div class="section">
                     <h3>Branches Without PRs (1)</h3>
                     <ul>
@@ -690,6 +758,8 @@
                 
 
                 
+
+                
                 <div class="pages-link">
                     <a href="https://mojzis.github.io/svatba/">GitHub Pages</a>
                 </div>
@@ -715,6 +785,8 @@
                     &middot; mojzis
                     &middot; 2026-05-15
                 </div>
+                
+
                 
 
                 
@@ -763,6 +835,8 @@
                 
 
                 
+
+                
                 <div class="pages-link">
                     <a href="https://mojzis.github.io/bounceflow/">GitHub Pages</a>
                 </div>
@@ -791,6 +865,14 @@
                 
 
                 
+                <div class="release-warning">
+                    ⚠️ <strong>Untagged release:</strong> main has
+                    2 commits
+                    without a tag.
+                </div>
+                
+
+                
 
                 
 
@@ -815,6 +897,14 @@
                     Address phase 4 review findings
                     &middot; mojzis
                     &middot; 2026-04-20
+                </div>
+                
+
+                
+                <div class="release-warning">
+                    ⚠️ <strong>Untagged release:</strong> main has
+                    9 commits
+                    without a tag.
                 </div>
                 
 
@@ -853,6 +943,8 @@
                 
 
                 
+
+                
                 <div class="ci-status">
                     CI:
                     
@@ -881,6 +973,8 @@
                 
 
                 
+
+                
             </div>
             
             <div class="repo-card" id="logogame">
@@ -893,6 +987,8 @@
                     &middot; Mojzis
                     &middot; 2026-04-10
                 </div>
+                
+
                 
 
                 
@@ -953,6 +1049,8 @@
                 
 
                 
+
+                
             </div>
             
             <div class="repo-card" id="b3d-validate">
@@ -965,6 +1063,8 @@
                     &middot; Mojzis
                     &middot; 2026-04-07
                 </div>
+                
+
                 
 
                 
@@ -1002,6 +1102,8 @@
                 
 
                 
+
+                
             </div>
             
             <div class="repo-card" id="python-template">
@@ -1014,6 +1116,8 @@
                     &middot; Mojzis
                     &middot; 2026-03-27
                 </div>
+                
+
                 
 
                 
