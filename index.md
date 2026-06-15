@@ -1,6 +1,61 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-14 21:35:17 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 19
+**Generated:** 2026-06-15 07:49:16 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 18
+
+---
+
+
+## [tyreach](https://github.com/mojzis/tyreach)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b026db09` Render-only hygiene: dedup unions and filter noisy builtins (mojzis, 2026-04-21 10:52:41+00:00)
+
+
+> ⚠️ **Untagged release:** main has 27 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `5b651e7b` Bump express from 4.22.1 to 5.2.1 in /server (#6) (dependabot[bot], 2026-06-14 21:42:03+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#4](https://github.com/mojzis/talkshape/pull/4)
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `aed8fb88` Bump the minor-and-patch group across 1 directory with 3 updates (#2) (dependabot[bot], 2026-06-14 21:41:57+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -24,44 +79,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b791bc8b` Release v0.2.0 (mojzis, 2026-06-14 21:30:38+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#2](https://github.com/mojzis/pycoati/pull/2)
-
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `49a29a50` Bump archiver from 7.0.1 to 8.0.0 in /server (#7) (dependabot[bot], 2026-06-14 21:14:41+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#6](https://github.com/mojzis/talkshape/pull/6), [#4](https://github.com/mojzis/talkshape/pull/4)
-
-
-
----
-
-
 ## [braindump](https://github.com/mojzis/braindump)
 
 N/A | ★0 | 0 issues
@@ -74,8 +91,8 @@ N/A | ★0 | 0 issues
 **CI:** PASS
 
 
+**Open PRs (1):** [#11](https://github.com/mojzis/braindump/pull/11)
 
-**Orphan branches (1):** `feat/project-area-and-entry-edit`
 
 
 ---
@@ -207,24 +224,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
 ---
 
 
-## [tyreach](https://github.com/mojzis/tyreach)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `26b0ca76` Bump softprops/action-gh-release from 2 to 3 (#1) (dependabot[bot], 2026-06-14 21:07:48+00:00)
-
-
-> ⚠️ **Untagged release:** main has 14 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [sketchpy](https://github.com/mojzis/sketchpy)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
@@ -234,7 +233,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 
-**CI: FAIL** (Run Tests)
+**CI:** PASS
 
 
 **Open PRs (14):** [#24](https://github.com/mojzis/sketchpy/pull/24), [#23](https://github.com/mojzis/sketchpy/pull/23), [#22](https://github.com/mojzis/sketchpy/pull/22), [#21](https://github.com/mojzis/sketchpy/pull/21), [#20](https://github.com/mojzis/sketchpy/pull/20), [#19](https://github.com/mojzis/sketchpy/pull/19), [#18](https://github.com/mojzis/sketchpy/pull/18), [#17](https://github.com/mojzis/sketchpy/pull/17), [#16](https://github.com/mojzis/sketchpy/pull/16), [#15](https://github.com/mojzis/sketchpy/pull/15), [#14](https://github.com/mojzis/sketchpy/pull/14), [#13](https://github.com/mojzis/sketchpy/pull/13), [#12](https://github.com/mojzis/sketchpy/pull/12), [#11](https://github.com/mojzis/sketchpy/pull/11)
