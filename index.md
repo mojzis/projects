@@ -1,24 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-15 07:49:16 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 18
-
----
-
-
-## [tyreach](https://github.com/mojzis/tyreach)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b026db09` Render-only hygiene: dedup unions and filter noisy builtins (mojzis, 2026-04-21 10:52:41+00:00)
-
-
-> ⚠️ **Untagged release:** main has 27 commits without a tag.
-
-
-**CI:** PASS
-
-
+**Generated:** 2026-06-16 07:51:02 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 22
 
 ---
 
@@ -35,26 +17,72 @@ N/A | ★0 | 0 issues
 **CI:** PASS
 
 
-**Open PRs (1):** [#4](https://github.com/mojzis/talkshape/pull/4)
+**Open PRs (1):** [#10](https://github.com/mojzis/talkshape/pull/10)
 
 
 
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
+## [zorilla](https://github.com/mojzis/zorilla)
 
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `aed8fb88` Bump the minor-and-patch group across 1 directory with 3 updates (#2) (dependabot[bot], 2026-06-14 21:41:57+00:00)
+**Last commit:** `8b8597c9` Merge pull request #1 from mojzis/dependabot/github_actions/softprops/action-gh-release-3 (Mojzis, 2026-06-14 20:32:50+00:00)
 
 
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
 **CI:** PASS
 
+
+**Open PRs (1):** [#6](https://github.com/mojzis/zorilla/pull/6)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `e011430d` Update watchfiles requirement from >=0.21 to >=1.2.0 (#1) (dependabot[bot], 2026-06-14 21:15:07+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#13](https://github.com/mojzis/braindump/pull/13), [#12](https://github.com/mojzis/braindump/pull/12), [#11](https://github.com/mojzis/braindump/pull/11)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `cda1468f` Merge pull request #115 from dependabot: bump actions/deploy-pages from 4 to 5 (mojzis, 2026-06-14 20:34:06+00:00)
+
+
+> ⚠️ **Untagged release:** main has 11 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#120](https://github.com/mojzis/ty-find/pull/120)
+
+
+
+**Orphan branches (1):** `bumpver`
 
 
 ---
@@ -79,19 +107,36 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [braindump](https://github.com/mojzis/braindump)
+## [tyreach](https://github.com/mojzis/tyreach)
 
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `e011430d` Update watchfiles requirement from >=0.21 to >=1.2.0 (#1) (dependabot[bot], 2026-06-14 21:15:07+00:00)
+**Last commit:** `b026db09` Render-only hygiene: dedup unions and filter noisy builtins (mojzis, 2026-04-21 10:52:41+00:00)
 
+
+> ⚠️ **Untagged release:** main has 27 commits without a tag.
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#11](https://github.com/mojzis/braindump/pull/11)
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `aed8fb88` Bump the minor-and-patch group across 1 directory with 3 updates (#2) (dependabot[bot], 2026-06-14 21:41:57+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
 
 
 
@@ -289,45 +334,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 
 > ⚠️ **Untagged release:** main has 17 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `cda1468f` Merge pull request #115 from dependabot: bump actions/deploy-pages from 4 to 5 (mojzis, 2026-06-14 20:34:06+00:00)
-
-
-> ⚠️ **Untagged release:** main has 11 commits without a tag.
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `bumpver`
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `8b8597c9` Merge pull request #1 from mojzis/dependabot/github_actions/softprops/action-gh-release-3 (Mojzis, 2026-06-14 20:32:50+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
 **CI:** PASS
