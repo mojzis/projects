@@ -1,6 +1,49 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-16 07:51:02 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 22
+**Generated:** 2026-06-17 07:42:17 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 23
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `dac66865` Merge pull request #124 from mojzis/claude/hopeful-carson-1qh3ui (Mojzis, 2026-06-16 16:11:27+00:00)
+
+
+> ⚠️ **Untagged release:** main has 20 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#122](https://github.com/mojzis/ty-find/pull/122), [#120](https://github.com/mojzis/ty-find/pull/120)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `28f046c9` Add merge-dependabot script + skill (#22) (Mojzis, 2026-06-14 21:34:17+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -59,49 +102,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (3):** [#13](https://github.com/mojzis/braindump/pull/13), [#12](https://github.com/mojzis/braindump/pull/12), [#11](https://github.com/mojzis/braindump/pull/11)
 
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `cda1468f` Merge pull request #115 from dependabot: bump actions/deploy-pages from 4 to 5 (mojzis, 2026-06-14 20:34:06+00:00)
-
-
-> ⚠️ **Untagged release:** main has 11 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#120](https://github.com/mojzis/ty-find/pull/120)
-
-
-
-**Orphan branches (1):** `bumpver`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `28f046c9` Add merge-dependabot script + skill (#22) (Mojzis, 2026-06-14 21:34:17+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
