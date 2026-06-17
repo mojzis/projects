@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-17 07:42:17 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 23
+**Generated:** 2026-06-17 17:09:34 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 22
 
 ---
 
@@ -10,16 +10,14 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
-**Last commit:** `dac66865` Merge pull request #124 from mojzis/claude/hopeful-carson-1qh3ui (Mojzis, 2026-06-16 16:11:27+00:00)
+**Last commit:** `713b2f59` Release v0.4.1 (mojzis, 2026-06-17 17:05:17+00:00)
 
 
-> ⚠️ **Untagged release:** main has 20 commits without a tag.
+
+**CI:** UNKNOWN
 
 
-**CI:** PASS
-
-
-**Open PRs (2):** [#122](https://github.com/mojzis/ty-find/pull/122), [#120](https://github.com/mojzis/ty-find/pull/120)
+**Open PRs (1):** [#120](https://github.com/mojzis/ty-find/pull/120)
 
 
 
@@ -34,7 +32,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-**Last commit:** `28f046c9` Add merge-dependabot script + skill (#22) (Mojzis, 2026-06-14 21:34:17+00:00)
+**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
 
 
 
@@ -43,6 +41,111 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `e011430d` Update watchfiles requirement from >=0.21 to >=1.2.0 (#1) (dependabot[bot], 2026-06-14 21:15:07+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#13](https://github.com/mojzis/braindump/pull/13), [#12](https://github.com/mojzis/braindump/pull/12), [#11](https://github.com/mojzis/braindump/pull/11)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `f79799a8` Release v0.5.1 (mojzis, 2026-06-17 17:05:50+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `ef0e8c19` Release v0.0.2 (mojzis, 2026-06-17 17:05:43+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `c81e2ad9` Release v0.2.1 (mojzis, 2026-06-17 17:05:37+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b7aaf7be` Release v0.2.1 (mojzis, 2026-06-17 17:05:29+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [tyreach](https://github.com/mojzis/tyreach)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `7a2f9f7e` Release v0.1.1 (mojzis, 2026-06-17 17:02:40+00:00)
+
+
+
+**CI: FAIL** (Release)
+
 
 
 ---
@@ -82,61 +185,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#6](https://github.com/mojzis/zorilla/pull/6)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `e011430d` Update watchfiles requirement from >=0.21 to >=1.2.0 (#1) (dependabot[bot], 2026-06-14 21:15:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#13](https://github.com/mojzis/braindump/pull/13), [#12](https://github.com/mojzis/braindump/pull/12), [#11](https://github.com/mojzis/braindump/pull/11)
-
-
-
----
-
-
-## [tyreach](https://github.com/mojzis/tyreach)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b026db09` Render-only hygiene: dedup unions and filter noisy builtins (mojzis, 2026-04-21 10:52:41+00:00)
-
-
-> ⚠️ **Untagged release:** main has 27 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `aed8fb88` Bump the minor-and-patch group across 1 directory with 3 updates (#2) (dependabot[bot], 2026-06-14 21:41:57+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
 
 
 
@@ -192,30 +240,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
 
 
 **Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b9b4a0ff` Bump actions/checkout from 4 to 6 (#67) (dependabot[bot], 2026-06-14 21:14:26+00:00)
-
-
-> ⚠️ **Untagged release:** main has 5 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -298,42 +322,6 @@ N/A | ★0 | 0 issues
 
 **Last commit:** `dfb519de` Add Dependabot configuration (mojzis, 2026-06-14 20:37:18+00:00)
 
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `1f534115` Add Dependabot configuration (mojzis, 2026-06-14 20:37:00+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `3c150df3` Merge pull request #16 from dependabot: bump actions/deploy-pages from 4 to 5 (mojzis, 2026-06-14 20:34:29+00:00)
-
-
-> ⚠️ **Untagged release:** main has 17 commits without a tag.
 
 
 **CI:** PASS
