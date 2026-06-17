@@ -204,20 +204,4 @@ class ProjectMonitor:
         if not self.collector.has_release_workflow(self.owner, repo_name):
             return False, 0
 
-        tags = self.collector.get_tags(self.owner, repo_name)
-        tagged_shas = {
-            tag["commit"]["sha"]
-            for tag in tags
-            if isinstance(tag.get("commit"), dict) and tag["commit"].get("sha")
-        }
-
-        commits = self.collector.get_main_commits(self.owner, repo_name)
-
-        # Count commits from the tip of main until we reach a tagged commit.
-        untagged = 0
-        for commit in commits:
-            if commit.get("sha") in tagged_shas:
-                break
-            untagged += 1
-
-        return True, untagged
+        return True, self.collector.count_untagged_commits_on_main(self.owner, repo_name)

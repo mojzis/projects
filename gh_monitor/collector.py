@@ -192,6 +192,22 @@ class GitHubCollector:
                 continue
         return []
 
+    def count_untagged_commits_on_main(self, owner: str, repo: str) -> int:
+        """Count commits at the tip of main not yet covered by a tag."""
+        tags = self.get_tags(owner, repo)
+        tagged_shas = {
+            tag["commit"]["sha"]
+            for tag in tags
+            if isinstance(tag.get("commit"), dict) and tag["commit"].get("sha")
+        }
+
+        untagged = 0
+        for commit in self.get_main_commits(owner, repo):
+            if commit.get("sha") in tagged_shas:
+                break
+            untagged += 1
+        return untagged
+
     def get_repositories_for_sync(self, owner: str, since_days: int | None = None) -> list[dict]:
         """Get repositories for syncing, optionally filtered by activity.
 

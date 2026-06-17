@@ -216,3 +216,56 @@ class SyncReport:
             self.skipped_dirty.append(result.repo_name)
         elif result.action == SyncAction.SKIPPED_ERROR:
             self.skipped_error.append(result.repo_name)
+
+
+class ProjectType(Enum):
+    """Detected project type used to choose the version-bump tool."""
+
+    RUST = "rust"
+    PYTHON = "python"
+    UNKNOWN = "unknown"
+
+
+class ReleaseAction(Enum):
+    """Action taken (or planned) during a release run."""
+
+    RELEASED = "released"  # version bumped, committed, tagged and pushed
+    PLANNED = "planned"  # dry-run: what would happen, no writes
+    SKIPPED_UNKNOWN_TYPE = "skipped_unknown_type"  # neither Cargo.toml nor pyproject.toml
+    SKIPPED_TOOL_MISSING = "skipped_tool_missing"  # cargo/uv not installed
+    SKIPPED_ERROR = "skipped_error"  # clone/bump/push failed
+    CANCELLED = "cancelled"  # user declined the confirmation prompt
+
+
+@dataclass
+class ReleaseResult:
+    """Result of releasing a single repository."""
+
+    repo_name: str
+    action: ReleaseAction
+    message: str
+    project_type: ProjectType = ProjectType.UNKNOWN
+    old_version: str | None = None
+    new_version: str | None = None
+    tag: str | None = None
+
+
+@dataclass
+class ReleaseReport:
+    """Summary of a release run."""
+
+    released: list[ReleaseResult] = field(default_factory=list)
+    planned: list[ReleaseResult] = field(default_factory=list)
+    skipped: list[ReleaseResult] = field(default_factory=list)
+    cancelled: list[ReleaseResult] = field(default_factory=list)
+
+    def add_result(self, result: ReleaseResult) -> None:
+        """Add a release result to the appropriate list."""
+        if result.action == ReleaseAction.RELEASED:
+            self.released.append(result)
+        elif result.action == ReleaseAction.PLANNED:
+            self.planned.append(result)
+        elif result.action == ReleaseAction.CANCELLED:
+            self.cancelled.append(result)
+        else:
+            self.skipped.append(result)

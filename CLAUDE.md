@@ -38,6 +38,7 @@ gh_monitor/
 ├── collector.py          # GitHub CLI wrapper (subprocess-based)
 ├── monitor.py            # Orchestration logic for data collection
 ├── syncer.py             # Git repository synchronization
+├── releaser.py           # Automated minor-version releases (cargo/uv bump + tag)
 ├── models.py             # Type-safe dataclasses (Commit, PR, Repository, Sync*, etc.)
 ├── generators/
 │   ├── __init__.py       # Exports all generators
@@ -56,7 +57,8 @@ tests/
 ├── test_generators.py    # Report generator tests
 ├── test_models.py        # Data model tests
 ├── test_monitor.py       # Monitor orchestration tests
-└── test_syncer.py        # Git syncer tests
+├── test_syncer.py        # Git syncer tests
+└── test_releaser.py      # Automated release tests
 
 .github/
 └── workflows/
@@ -152,6 +154,44 @@ Sync behavior:
 - Existing clean repos are pulled
 - Dirty repos (uncommitted changes) are skipped
 - Reports summary of actions taken
+
+### Release Command
+```bash
+gh-monitor release OWNER [OPTIONS]
+
+Arguments:
+  OWNER    GitHub organization or user (required)
+
+Options:
+  -r, --repo TEXT      Only release this single repository
+  -l, --level TEXT     Bump level: patch, minor, or major (default: patch)
+  -d, --days INT       Only consider repos changed in last N days (1-3650, default: 90)
+  --dry-run            Preview version bumps without writing or pushing
+  -y, --yes            Skip the per-repo confirmation prompt
+  -v, --verbose        Enable verbose output
+```
+
+Publishes automated version releases (default **patch**, `--level` for
+minor/major). A repository is a candidate when
+it has a release workflow (`.github/workflows/release.yml`) **and** untagged
+commits on main (the same signal the monitor report warns about). For each
+candidate `GitReleaser`:
+
+- Clones the repo into a throwaway temp dir (no dependency on `~/git` clones).
+- Detects the project type — **`Cargo.toml` takes precedence over
+  `pyproject.toml`** (some Rust repos ship a `pyproject.toml` too).
+- Bumps the version (level from `--level`, default patch) with the language's
+  own tool — Python `uv version --bump <level>`; Rust
+  `cargo set-version --bump <level>` (cargo-edit), falling back to
+  `cargo release version <level> --execute` (cargo-release) when cargo-edit
+  isn't installed. Each tool only edits the manifest; commit, tag (`vX.Y.Z`) and
+  push are done in git code identically for both ecosystems. Tool selection is
+  by installed binary (`cargo-set-version` / `cargo-release` / `uv`).
+- Pushes the bump commit and tag, which triggers the release workflow (runs on
+  tag push).
+- Skips and reports repos that are neither Rust nor Python, or whose tool is
+  missing. `--dry-run` computes the bump in the temp clone to preview the exact
+  new version, then discards it without pushing.
 
 ### Version Command
 ```bash

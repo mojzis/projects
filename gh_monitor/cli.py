@@ -16,8 +16,9 @@ from .generators import (
     generate_markdown_report,
     generate_toon_report,
 )
-from .models import MonitorReport, SyncReport
+from .models import MonitorReport, ReleaseReport, ReleaseResult, SyncReport
 from .monitor import ProjectMonitor
+from .releaser import GitReleaser
 from .syncer import GitSyncer
 
 
@@ -325,6 +326,104 @@ def sync(
 
         console.print()
         _print_sync_report(report)
+
+    except (SystemExit, typer.Exit):
+        raise
+    except Exception as e:
+        error_console.print(f"[bold red]Error:[/bold red] {e}")
+        if verbose:
+            import traceback
+
+            error_console.print(traceback.format_exc())
+        raise typer.Exit(1) from None
+
+
+def _release_line(r: ReleaseResult) -> str:
+    """Format a single release result as a one-line bump summary."""
+    bump = f"{r.old_version or '?'} -> {r.new_version or '?'}"
+    return f"{r.repo_name} [{r.project_type.value}] {bump} ({r.tag or '-'})"
+
+
+def _print_release_report(report: ReleaseReport, dry_run: bool) -> None:
+    """Print a release report summary to the console."""
+    planned_label = "Would release" if dry_run else "Planned"
+    sections = [
+        (report.planned, f"[bold cyan]{planned_label}", "[cyan]→[/cyan]", _release_line),
+        (report.released, "[bold green]Released", "[green]✓[/green]", _release_line),
+        (report.cancelled, "[bold yellow]Cancelled", "[yellow]-[/yellow]", lambda r: r.repo_name),
+        (report.skipped, "[bold]Skipped", "[dim]·[/dim]", lambda r: f"{r.repo_name}: {r.message}"),
+    ]
+    for results, header, bullet, fmt in sections:
+        if results:
+            console.print(f"{header} ({len(results)}):[/]")
+            for r in results:
+                console.print(f"  {bullet} {fmt(r)}")
+
+    if not any(results for results, *_ in sections):
+        console.print("[dim]No repositories with untagged release commits found.[/dim]")
+
+
+@app.command()
+def release(
+    owner: Annotated[str, typer.Argument(help="GitHub organization or user")],
+    repo: Annotated[
+        str | None, typer.Option("--repo", "-r", help="Only release this single repository")
+    ] = None,
+    level: Annotated[
+        str, typer.Option("--level", "-l", help="Bump level: patch, minor, or major")
+    ] = "patch",
+    days: Annotated[
+        int,
+        typer.Option(
+            "--days", "-d", help="Only consider repos changed in last N days", min=1, max=3650
+        ),
+    ] = 90,
+    dry_run: Annotated[
+        bool, typer.Option("--dry-run", help="Preview version bumps without writing or pushing")
+    ] = False,
+    yes: Annotated[
+        bool, typer.Option("--yes", "-y", help="Skip the per-repo confirmation prompt")
+    ] = False,
+    verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Enable verbose output")] = False,
+):
+    """Publish version releases for repos with untagged release commits.
+
+    A repository is a candidate when it has a release workflow
+    (.github/workflows/release.yml) and untagged commits on main. For each
+    candidate the version is bumped (--level, default patch) with the language's
+    own tool (cargo for Rust, uv for Python), committed, tagged vX.Y.Z and
+    pushed, which triggers the release workflow. Repos that are neither Rust nor
+    Python, or whose tool is missing, are skipped and reported.
+
+    Use --dry-run to preview, or run without --yes to confirm each push.
+    """
+    if level not in ("patch", "minor", "major"):
+        error_console.print(f"[bold red]Error:[/bold red] invalid --level {level!r}")
+        raise typer.Exit(2)
+
+    def confirm(planned: ReleaseResult) -> bool:
+        bump = f"{planned.old_version or '?'} -> {planned.new_version or '?'}"
+        console.print(f"\n[bold]{planned.repo_name}[/bold] [{planned.project_type.value}] {bump}")
+        return typer.confirm(f"Push {planned.tag} and trigger release?", default=False)
+
+    try:
+        releaser = GitReleaser(
+            owner,
+            verbose=verbose,
+            days=days,
+            level=level,
+            dry_run=dry_run,
+            assume_yes=yes,
+            confirm_callback=confirm,
+        )
+
+        mode = "[dim](dry run)[/dim] " if dry_run else ""
+        console.print(f"[bold blue]Finding release candidates for {owner}... {mode}[/bold blue]")
+
+        report = releaser.release_all(repo_filter=repo)
+
+        console.print()
+        _print_release_report(report, dry_run)
 
     except (SystemExit, typer.Exit):
         raise
