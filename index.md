@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-17 17:09:34 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 22
+**Generated:** 2026-06-18 07:34:23 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 21
 
 ---
 
@@ -14,14 +14,54 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (1):** [#120](https://github.com/mojzis/ty-find/pull/120)
 
 
 
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+**Orphan branches (4):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`, `claude/optimistic-fermi-f3i3r7`
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b33062eb` Add 'view' as a hidden alias for 'bd show' (mojzis, 2026-06-17 17:15:31+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#13](https://github.com/mojzis/braindump/pull/13), [#12](https://github.com/mojzis/braindump/pull/12)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `866fade3` Widen ZR005 carve-outs: attribute-RHS + in-assert substring (entry #86) (mojzis, 2026-06-17 17:11:59+00:00)
+
+
+> ⚠️ **Untagged release:** main has 9 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#6](https://github.com/mojzis/zorilla/pull/6)
+
 
 
 ---
@@ -41,25 +81,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `e011430d` Update watchfiles requirement from >=0.21 to >=1.2.0 (#1) (dependabot[bot], 2026-06-14 21:15:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#13](https://github.com/mojzis/braindump/pull/13), [#12](https://github.com/mojzis/braindump/pull/12), [#11](https://github.com/mojzis/braindump/pull/11)
-
 
 
 ---
@@ -128,7 +149,7 @@ N/A | ★0 | 0 issues
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -144,7 +165,7 @@ N/A | ★0 | 0 issues
 
 
 
-**CI: FAIL** (Release)
+**CI:** PASS
 
 
 
@@ -164,27 +185,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#10](https://github.com/mojzis/talkshape/pull/10)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `8b8597c9` Merge pull request #1 from mojzis/dependabot/github_actions/softprops/action-gh-release-3 (Mojzis, 2026-06-14 20:32:50+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#6](https://github.com/mojzis/zorilla/pull/6)
 
 
 
