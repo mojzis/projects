@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-18 07:34:23 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 21
+**Generated:** 2026-06-19 07:46:18 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 21
 
 ---
 
@@ -10,8 +10,10 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
-**Last commit:** `713b2f59` Release v0.4.1 (mojzis, 2026-06-17 17:05:17+00:00)
+**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
 
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
 **CI:** PASS
@@ -21,7 +23,26 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 
-**Orphan branches (4):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`, `claude/optimistic-fermi-f3i3r7`
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -62,25 +83,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (1):** [#6](https://github.com/mojzis/zorilla/pull/6)
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
