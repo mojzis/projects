@@ -1,6 +1,105 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-20 07:16:00 | **Period:** Last 90 days | **Repos:** 19 | **Open PRs:** 21
+**Generated:** 2026-06-21 07:33:03 | **Period:** Last 90 days | **Repos:** 20 | **Open PRs:** 24
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `c81e2ad9` Release v0.2.1 (mojzis, 2026-06-17 17:05:37+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#71](https://github.com/mojzis/introspect/pull/71), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (14):** [#25](https://github.com/mojzis/sketchpy/pull/25), [#24](https://github.com/mojzis/sketchpy/pull/24), [#23](https://github.com/mojzis/sketchpy/pull/23), [#22](https://github.com/mojzis/sketchpy/pull/22), [#21](https://github.com/mojzis/sketchpy/pull/21), [#20](https://github.com/mojzis/sketchpy/pull/20), [#19](https://github.com/mojzis/sketchpy/pull/19), [#18](https://github.com/mojzis/sketchpy/pull/18), [#17](https://github.com/mojzis/sketchpy/pull/17), [#16](https://github.com/mojzis/sketchpy/pull/16), [#15](https://github.com/mojzis/sketchpy/pull/15), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12), [#11](https://github.com/mojzis/sketchpy/pull/11)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b7aaf7be` Release v0.2.1 (mojzis, 2026-06-17 17:05:29+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#3](https://github.com/mojzis/pycoati/pull/3)
+
+
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `278a1226` Bump actions/configure-pages from 4 to 6 (#3) (dependabot[bot], 2026-06-14 21:14:15+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#7](https://github.com/mojzis/bounceflow/pull/7)
+
+
+
+---
+
+
+## [marimo-template](https://github.com/mojzis/marimo-template)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `98138d53` moving (Mojzis Stupka, 2026-06-20 17:12:45+00:00)
+
+
+
+
+
+**Orphan branches (1):** `claude/add-skill-sharing-011CmgsoWuV3JQZyokhxBqKp`
+
 
 ---
 
@@ -120,44 +219,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `c81e2ad9` Release v0.2.1 (mojzis, 2026-06-17 17:05:37+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b7aaf7be` Release v0.2.1 (mojzis, 2026-06-17 17:05:29+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [tyreach](https://github.com/mojzis/tyreach)
 
 N/A | ★0 | 0 issues
@@ -247,22 +308,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
 ---
 
 
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `278a1226` Bump actions/configure-pages from 4 to 6 (#3) (dependabot[bot], 2026-06-14 21:14:15+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [nolegend](https://github.com/mojzis/nolegend)
 
 N/A | ★0 | 0 issues
@@ -290,28 +335,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
 
 **CI:** PASS
 
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (14):** [#24](https://github.com/mojzis/sketchpy/pull/24), [#23](https://github.com/mojzis/sketchpy/pull/23), [#22](https://github.com/mojzis/sketchpy/pull/22), [#21](https://github.com/mojzis/sketchpy/pull/21), [#20](https://github.com/mojzis/sketchpy/pull/20), [#19](https://github.com/mojzis/sketchpy/pull/19), [#18](https://github.com/mojzis/sketchpy/pull/18), [#17](https://github.com/mojzis/sketchpy/pull/17), [#16](https://github.com/mojzis/sketchpy/pull/16), [#15](https://github.com/mojzis/sketchpy/pull/15), [#14](https://github.com/mojzis/sketchpy/pull/14), [#13](https://github.com/mojzis/sketchpy/pull/13), [#12](https://github.com/mojzis/sketchpy/pull/12), [#11](https://github.com/mojzis/sketchpy/pull/11)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
