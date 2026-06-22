@@ -1,6 +1,210 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-21 07:33:03 | **Period:** Last 90 days | **Repos:** 20 | **Open PRs:** 24
+**Generated:** 2026-06-22 07:51:25 | **Period:** Last 90 days | **Repos:** 20 | **Open PRs:** 33
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (14):** [#28](https://github.com/mojzis/sketchpy/pull/28), [#27](https://github.com/mojzis/sketchpy/pull/27), [#26](https://github.com/mojzis/sketchpy/pull/26), [#25](https://github.com/mojzis/sketchpy/pull/25), [#24](https://github.com/mojzis/sketchpy/pull/24), [#23](https://github.com/mojzis/sketchpy/pull/23), [#22](https://github.com/mojzis/sketchpy/pull/22), [#21](https://github.com/mojzis/sketchpy/pull/21), [#20](https://github.com/mojzis/sketchpy/pull/20), [#19](https://github.com/mojzis/sketchpy/pull/19), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12), [#11](https://github.com/mojzis/sketchpy/pull/11)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `ef0e8c19` Release v0.0.2 (mojzis, 2026-06-17 17:05:43+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#1](https://github.com/mojzis/comicforge/pull/1)
+
+
+
+---
+
+
+## [logogame](https://github.com/mojzis/logogame)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
+
+
+**Last commit:** `36911132` Bump actions/upload-pages-artifact from 3 to 5 (#6) (dependabot[bot], 2026-06-14 21:14:51+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#9](https://github.com/mojzis/logogame/pull/9), [#5](https://github.com/mojzis/logogame/pull/5)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [tyreach](https://github.com/mojzis/tyreach)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `7a2f9f7e` Release v0.1.1 (mojzis, 2026-06-17 17:02:40+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#5](https://github.com/mojzis/tyreach/pull/5)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#128](https://github.com/mojzis/ty-find/pull/128), [#120](https://github.com/mojzis/ty-find/pull/120)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [svatba](https://github.com/mojzis/svatba)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
+
+
+**Last commit:** `b2ca145b` Bump actions/checkout from 4 to 6 (#8) (dependabot[bot], 2026-06-14 21:14:00+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#12](https://github.com/mojzis/svatba/pull/12)
+
+
+
+---
+
+
+## [b3d-validate](https://github.com/mojzis/b3d-validate)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `f160d11d` Bump actions/checkout from 4 to 6 (#7) (dependabot[bot], 2026-06-14 21:14:54+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#9](https://github.com/mojzis/b3d-validate/pull/9)
+
+
+
+---
+
+
+## [ajina](https://github.com/mojzis/ajina)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
+
+
+**Last commit:** `8a15abbc` build(deps): bump actions/upload-pages-artifact from 3 to 5 (#3) (dependabot[bot], 2026-06-14 21:14:36+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#7](https://github.com/mojzis/ajina/pull/7)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [nolegend](https://github.com/mojzis/nolegend)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3e540722` Bump astral-sh/setup-uv from 5 to 7 (#1) (dependabot[bot], 2026-06-14 21:14:05+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#3](https://github.com/mojzis/nolegend/pull/3)
+
+
 
 ---
 
@@ -22,28 +226,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
-
-
-
-**CI: FAIL** (Run Tests)
-
-
-**Open PRs (14):** [#25](https://github.com/mojzis/sketchpy/pull/25), [#24](https://github.com/mojzis/sketchpy/pull/24), [#23](https://github.com/mojzis/sketchpy/pull/23), [#22](https://github.com/mojzis/sketchpy/pull/22), [#21](https://github.com/mojzis/sketchpy/pull/21), [#20](https://github.com/mojzis/sketchpy/pull/20), [#19](https://github.com/mojzis/sketchpy/pull/19), [#18](https://github.com/mojzis/sketchpy/pull/18), [#17](https://github.com/mojzis/sketchpy/pull/17), [#16](https://github.com/mojzis/sketchpy/pull/16), [#15](https://github.com/mojzis/sketchpy/pull/15), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12), [#11](https://github.com/mojzis/sketchpy/pull/11)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
@@ -99,49 +281,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (1):** `claude/add-skill-sharing-011CmgsoWuV3JQZyokhxBqKp`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#120](https://github.com/mojzis/ty-find/pull/120)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
@@ -203,38 +342,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 ---
 
 
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `ef0e8c19` Release v0.0.2 (mojzis, 2026-06-17 17:05:43+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [tyreach](https://github.com/mojzis/tyreach)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `7a2f9f7e` Release v0.1.1 (mojzis, 2026-06-17 17:02:40+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [talkshape](https://github.com/mojzis/talkshape)
 
 N/A | ★0 | 0 issues
@@ -248,92 +355,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#10](https://github.com/mojzis/talkshape/pull/10)
-
-
-
----
-
-
-## [b3d-validate](https://github.com/mojzis/b3d-validate)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `f160d11d` Bump actions/checkout from 4 to 6 (#7) (dependabot[bot], 2026-06-14 21:14:54+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [logogame](https://github.com/mojzis/logogame)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
-
-
-**Last commit:** `36911132` Bump actions/upload-pages-artifact from 3 to 5 (#6) (dependabot[bot], 2026-06-14 21:14:51+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#5](https://github.com/mojzis/logogame/pull/5)
-
-
-
----
-
-
-## [ajina](https://github.com/mojzis/ajina)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
-
-
-**Last commit:** `8a15abbc` build(deps): bump actions/upload-pages-artifact from 3 to 5 (#3) (dependabot[bot], 2026-06-14 21:14:36+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [nolegend](https://github.com/mojzis/nolegend)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3e540722` Bump astral-sh/setup-uv from 5 to 7 (#1) (dependabot[bot], 2026-06-14 21:14:05+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [svatba](https://github.com/mojzis/svatba)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
-
-
-**Last commit:** `b2ca145b` Bump actions/checkout from 4 to 6 (#8) (dependabot[bot], 2026-06-14 21:14:00+00:00)
-
-
-
-**CI:** PASS
 
 
 
