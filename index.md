@@ -1,6 +1,92 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-22 07:51:25 | **Period:** Last 90 days | **Repos:** 20 | **Open PRs:** 33
+**Generated:** 2026-06-23 07:08:48 | **Period:** Last 90 days | **Repos:** 20 | **Open PRs:** 36
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `866fade3` Widen ZR005 carve-outs: attribute-RHS + in-assert substring (entry #86) (mojzis, 2026-06-17 17:11:59+00:00)
+
+
+> ⚠️ **Untagged release:** main has 9 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#7](https://github.com/mojzis/zorilla/pull/7), [#6](https://github.com/mojzis/zorilla/pull/6)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b33062eb` Add 'view' as a hidden alias for 'bd show' (mojzis, 2026-06-17 17:15:31+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (4):** [#16](https://github.com/mojzis/braindump/pull/16), [#15](https://github.com/mojzis/braindump/pull/15), [#14](https://github.com/mojzis/braindump/pull/14), [#12](https://github.com/mojzis/braindump/pull/12)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#128](https://github.com/mojzis/ty-find/pull/128), [#120](https://github.com/mojzis/ty-find/pull/120)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -65,28 +151,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [tyreach](https://github.com/mojzis/tyreach)
 
 N/A | ★0 | 0 issues
@@ -101,30 +165,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (1):** [#5](https://github.com/mojzis/tyreach/pull/5)
 
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#128](https://github.com/mojzis/ty-find/pull/128), [#120](https://github.com/mojzis/ty-find/pull/120)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
@@ -281,46 +321,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (1):** `claude/add-skill-sharing-011CmgsoWuV3JQZyokhxBqKp`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b33062eb` Add 'view' as a hidden alias for 'bd show' (mojzis, 2026-06-17 17:15:31+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#13](https://github.com/mojzis/braindump/pull/13), [#12](https://github.com/mojzis/braindump/pull/12)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `866fade3` Widen ZR005 carve-outs: attribute-RHS + in-assert substring (entry #86) (mojzis, 2026-06-17 17:11:59+00:00)
-
-
-> ⚠️ **Untagged release:** main has 9 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#6](https://github.com/mojzis/zorilla/pull/6)
-
 
 
 ---
