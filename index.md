@@ -1,6 +1,25 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-24 07:06:07 | **Period:** Last 90 days | **Repos:** 20 | **Open PRs:** 36
+**Generated:** 2026-06-25 07:05:54 | **Period:** Last 90 days | **Repos:** 20 | **Open PRs:** 37
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `f79799a8` Release v0.5.1 (mojzis, 2026-06-17 17:05:50+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#23](https://github.com/mojzis/biston/pull/23)
+
+
 
 ---
 
@@ -321,22 +340,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (1):** `claude/add-skill-sharing-011CmgsoWuV3JQZyokhxBqKp`
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `f79799a8` Release v0.5.1 (mojzis, 2026-06-17 17:05:50+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
