@@ -1,24 +1,41 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-25 07:05:54 | **Period:** Last 90 days | **Repos:** 20 | **Open PRs:** 37
+**Generated:** 2026-06-26 07:12:36 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 37
 
 ---
 
 
-## [biston](https://github.com/mojzis/biston)
+## [brouci](https://github.com/mojzis/brouci)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+N/A | ★0 | 0 issues
 
 
-**Last commit:** `f79799a8` Release v0.5.1 (mojzis, 2026-06-17 17:05:50+00:00)
+**Last commit:** `96860fb1` add flask (Mojzis Stupka, 2025-05-29 05:19:39+00:00)
+
+
+
+
+
+**Orphan branches (1):** `beetle-behavior-fixes`
+
+
+---
+
+
+## [volby_check](https://github.com/mojzis/volby_check)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/volby_check/)
+
+
+**Last commit:** `fbb6cf0b` Merge pull request #21 from mojzis/claude/add-suspicious-zeros-2021-01GeHeA9gtYUomE1AKLk6tKg (Mojzis, 2025-11-15 17:13:32+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#23](https://github.com/mojzis/biston/pull/23)
 
+**Orphan branches (4):** `claude/enlarge-bubble-chart-bubbles-011uH2ypRRnnYtCF35MfPRWy`, `claude/enrich-suspicious-results-table-011zcLHg6xj6XrHciyMHPDZY`, `claude/improve-marimo-election-data-011at4r9D2DxXrSc4B57xz6h`, `claude/init-marimo-election-data-017E4azTiuMxzZzDGZS7JQ2Y`
 
 
 ---
@@ -41,6 +58,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `f79799a8` Release v0.5.1 (mojzis, 2026-06-17 17:05:50+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#23](https://github.com/mojzis/biston/pull/23)
+
 
 
 ---
