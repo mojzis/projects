@@ -1,6 +1,28 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-26 07:12:36 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 37
+**Generated:** 2026-06-27 07:00:25 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 37
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -36,28 +58,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/volby_check/)
 
 
 **Orphan branches (4):** `claude/enlarge-bubble-chart-bubbles-011uH2ypRRnnYtCF35MfPRWy`, `claude/enrich-suspicious-results-table-011zcLHg6xj6XrHciyMHPDZY`, `claude/improve-marimo-election-data-011at4r9D2DxXrSc4B57xz6h`, `claude/init-marimo-election-data-017E4azTiuMxzZzDGZS7JQ2Y`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
