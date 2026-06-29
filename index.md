@@ -1,6 +1,90 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-28 07:16:36 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 37
+**Generated:** 2026-06-29 07:34:06 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 40
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (14):** [#32](https://github.com/mojzis/sketchpy/pull/32), [#31](https://github.com/mojzis/sketchpy/pull/31), [#30](https://github.com/mojzis/sketchpy/pull/30), [#29](https://github.com/mojzis/sketchpy/pull/29), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#24](https://github.com/mojzis/sketchpy/pull/24), [#23](https://github.com/mojzis/sketchpy/pull/23), [#22](https://github.com/mojzis/sketchpy/pull/22), [#21](https://github.com/mojzis/sketchpy/pull/21), [#19](https://github.com/mojzis/sketchpy/pull/19), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b7aaf7be` Release v0.2.1 (mojzis, 2026-06-17 17:05:29+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#4](https://github.com/mojzis/pycoati/pull/4), [#3](https://github.com/mojzis/pycoati/pull/3)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `f79799a8` Release v0.5.1 (mojzis, 2026-06-17 17:05:50+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#24](https://github.com/mojzis/biston/pull/24), [#23](https://github.com/mojzis/biston/pull/23)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#129](https://github.com/mojzis/ty-find/pull/129), [#128](https://github.com/mojzis/ty-find/pull/128), [#120](https://github.com/mojzis/ty-find/pull/120)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
 
 ---
 
@@ -63,25 +147,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/volby_check/)
 ---
 
 
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `f79799a8` Release v0.5.1 (mojzis, 2026-06-17 17:05:50+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#23](https://github.com/mojzis/biston/pull/23)
-
-
-
----
-
-
 ## [zorilla](https://github.com/mojzis/zorilla)
 
 N/A | ★0 | 0 issues
@@ -117,52 +182,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (4):** [#16](https://github.com/mojzis/braindump/pull/16), [#15](https://github.com/mojzis/braindump/pull/15), [#14](https://github.com/mojzis/braindump/pull/14), [#12](https://github.com/mojzis/braindump/pull/12)
 
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#128](https://github.com/mojzis/ty-find/pull/128), [#120](https://github.com/mojzis/ty-find/pull/120)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (14):** [#28](https://github.com/mojzis/sketchpy/pull/28), [#27](https://github.com/mojzis/sketchpy/pull/27), [#26](https://github.com/mojzis/sketchpy/pull/26), [#25](https://github.com/mojzis/sketchpy/pull/25), [#24](https://github.com/mojzis/sketchpy/pull/24), [#23](https://github.com/mojzis/sketchpy/pull/23), [#22](https://github.com/mojzis/sketchpy/pull/22), [#21](https://github.com/mojzis/sketchpy/pull/21), [#20](https://github.com/mojzis/sketchpy/pull/20), [#19](https://github.com/mojzis/sketchpy/pull/19), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12), [#11](https://github.com/mojzis/sketchpy/pull/11)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
@@ -321,25 +340,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b7aaf7be` Release v0.2.1 (mojzis, 2026-06-17 17:05:29+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#3](https://github.com/mojzis/pycoati/pull/3)
-
 
 
 ---
