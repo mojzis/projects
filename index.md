@@ -1,6 +1,111 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-29 07:34:06 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 40
+**Generated:** 2026-06-30 07:12:24 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 43
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `866fade3` Widen ZR005 carve-outs: attribute-RHS + in-assert substring (entry #86) (mojzis, 2026-06-17 17:11:59+00:00)
+
+
+> ⚠️ **Untagged release:** main has 9 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#8](https://github.com/mojzis/zorilla/pull/8), [#7](https://github.com/mojzis/zorilla/pull/7)
+
+
+
+---
+
+
+## [tyreach](https://github.com/mojzis/tyreach)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `7a2f9f7e` Release v0.1.1 (mojzis, 2026-06-17 17:02:40+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#6](https://github.com/mojzis/tyreach/pull/6), [#5](https://github.com/mojzis/tyreach/pull/5)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b33062eb` Add 'view' as a hidden alias for 'bd show' (mojzis, 2026-06-17 17:15:31+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (6):** [#19](https://github.com/mojzis/braindump/pull/19), [#18](https://github.com/mojzis/braindump/pull/18), [#17](https://github.com/mojzis/braindump/pull/17), [#16](https://github.com/mojzis/braindump/pull/16), [#14](https://github.com/mojzis/braindump/pull/14), [#12](https://github.com/mojzis/braindump/pull/12)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#130](https://github.com/mojzis/ty-find/pull/130), [#129](https://github.com/mojzis/ty-find/pull/129), [#128](https://github.com/mojzis/ty-find/pull/128)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -65,52 +170,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 ---
 
 
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#129](https://github.com/mojzis/ty-find/pull/129), [#128](https://github.com/mojzis/ty-find/pull/128), [#120](https://github.com/mojzis/ty-find/pull/120)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [brouci](https://github.com/mojzis/brouci)
 
 N/A | ★0 | 0 issues
@@ -142,46 +201,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/volby_check/)
 
 
 **Orphan branches (4):** `claude/enlarge-bubble-chart-bubbles-011uH2ypRRnnYtCF35MfPRWy`, `claude/enrich-suspicious-results-table-011zcLHg6xj6XrHciyMHPDZY`, `claude/improve-marimo-election-data-011at4r9D2DxXrSc4B57xz6h`, `claude/init-marimo-election-data-017E4azTiuMxzZzDGZS7JQ2Y`
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `866fade3` Widen ZR005 carve-outs: attribute-RHS + in-assert substring (entry #86) (mojzis, 2026-06-17 17:11:59+00:00)
-
-
-> ⚠️ **Untagged release:** main has 9 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#7](https://github.com/mojzis/zorilla/pull/7), [#6](https://github.com/mojzis/zorilla/pull/6)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b33062eb` Add 'view' as a hidden alias for 'bd show' (mojzis, 2026-06-17 17:15:31+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (4):** [#16](https://github.com/mojzis/braindump/pull/16), [#15](https://github.com/mojzis/braindump/pull/15), [#14](https://github.com/mojzis/braindump/pull/14), [#12](https://github.com/mojzis/braindump/pull/12)
-
 
 
 ---
@@ -219,25 +238,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 **Open PRs (2):** [#9](https://github.com/mojzis/logogame/pull/9), [#5](https://github.com/mojzis/logogame/pull/5)
-
-
-
----
-
-
-## [tyreach](https://github.com/mojzis/tyreach)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `7a2f9f7e` Release v0.1.1 (mojzis, 2026-06-17 17:02:40+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#5](https://github.com/mojzis/tyreach/pull/5)
 
 
 
