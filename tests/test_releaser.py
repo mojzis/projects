@@ -88,6 +88,18 @@ class TestFindCandidates:
 
         assert [c["name"] for c in candidates] == ["ready"]
 
+    def test_forks_are_excluded(self):
+        releaser = GitReleaser("owner")
+        repos = [{"name": "ours"}, {"name": "a-fork", "isFork": True}]
+        with (
+            patch.object(releaser.collector, "get_repositories_for_sync", return_value=repos),
+            patch.object(releaser.collector, "has_release_workflow", return_value=True),
+            patch.object(releaser.collector, "count_untagged_commits_on_main", return_value=3),
+        ):
+            candidates = releaser.find_candidates()
+
+        assert [c["name"] for c in candidates] == ["ours"]
+
 
 def _clone_writes_manifest(manifest: str, version: str):
     """Build a _run_git side effect whose clone creates a repo with a manifest."""

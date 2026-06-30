@@ -249,11 +249,17 @@ class GitReleaser:
         )
 
     def find_candidates(self) -> list[dict]:
-        """Repos with a release workflow and untagged commits on main."""
+        """Repos with a release workflow and untagged commits on main.
+
+        Forks are never released — we only publish our own projects, not
+        clones of someone else's repo that happen to live under the owner.
+        """
         repos = self.collector.get_repositories_for_sync(self.owner, self.days)
         candidates = []
         for repo in repos:
             name = repo["name"]
+            if repo.get("isFork"):
+                continue
             if not self.collector.has_release_workflow(self.owner, name):
                 continue
             if self.collector.count_untagged_commits_on_main(self.owner, name) > 0:

@@ -225,7 +225,7 @@ class GitHubCollector:
                 "list",
                 owner,
                 "--json",
-                "name,url,sshUrl,pushedAt",
+                "name,url,sshUrl,pushedAt,isFork",
                 "--limit",
                 "1000",
             ]
