@@ -1,6 +1,50 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-30 07:12:24 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 43
+**Generated:** 2026-06-30 18:25:06 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 43
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `e5d4f40b` Never release forks; only our own projects (mojzis, 2026-06-30 18:23:54+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `47e789bc` Release v0.4.2 (mojzis, 2026-06-30 18:19:15+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#130](https://github.com/mojzis/ty-find/pull/130), [#129](https://github.com/mojzis/ty-find/pull/129), [#128](https://github.com/mojzis/ty-find/pull/128)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
 
 ---
 
@@ -59,52 +103,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (6):** [#19](https://github.com/mojzis/braindump/pull/19), [#18](https://github.com/mojzis/braindump/pull/18), [#17](https://github.com/mojzis/braindump/pull/17), [#16](https://github.com/mojzis/braindump/pull/16), [#14](https://github.com/mojzis/braindump/pull/14), [#12](https://github.com/mojzis/braindump/pull/12)
 
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `7bfc4523` Merge pull request #127 from mojzis/claude/optimistic-fermi-f3i3r7 (Mojzis, 2026-06-18 16:38:49+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#130](https://github.com/mojzis/ty-find/pull/130), [#129](https://github.com/mojzis/ty-find/pull/129), [#128](https://github.com/mojzis/ty-find/pull/128)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d565e00b` Add `release` command for automated version releases (mojzis, 2026-06-17 17:08:02+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
