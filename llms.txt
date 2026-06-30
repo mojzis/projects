@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-06-30 18:25:06 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 43
+**Generated:** 2026-06-30 18:31:17 | **Period:** Last 90 days | **Repos:** 22 | **Open PRs:** 43
 
 ---
 
@@ -10,7 +10,7 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-**Last commit:** `e5d4f40b` Never release forks; only our own projects (mojzis, 2026-06-30 18:23:54+00:00)
+**Last commit:** `4cf1225e` Support Cargo workspaces when reading release versions (mojzis, 2026-06-30 18:30:03+00:00)
 
 
 
