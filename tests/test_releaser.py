@@ -64,6 +64,22 @@ class TestProjectDetection:
         (tmp_path / "pyproject.toml").write_text(POETRY_TOML.format(v="0.6.1"))
         assert self._releaser()._read_version(tmp_path, ProjectType.PYTHON) == "0.6.1"
 
+    def test_read_virtual_workspace_version(self, tmp_path: Path):
+        # Maturin-style: virtual root manifest, version lives in a member crate.
+        (tmp_path / "Cargo.toml").write_text('[workspace]\nmembers = ["crates/*"]\n')
+        crate = tmp_path / "crates" / "demo-core"
+        crate.mkdir(parents=True)
+        (crate / "Cargo.toml").write_text(CARGO_TOML.format(v="0.1.1"))
+        assert self._releaser()._read_version(tmp_path, ProjectType.RUST) == "0.1.1"
+
+    def test_read_workspace_inherited_version(self, tmp_path: Path):
+        # Root crate inherits its version from [workspace.package].
+        (tmp_path / "Cargo.toml").write_text(
+            "[workspace.package]\nversion = \"3.1.4\"\n"
+            '[package]\nname = "demo"\nversion.workspace = true\n'
+        )
+        assert self._releaser()._read_version(tmp_path, ProjectType.RUST) == "3.1.4"
+
 
 class TestFindCandidates:
     """Tests for candidate selection."""

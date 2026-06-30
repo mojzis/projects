@@ -132,11 +132,49 @@ class GitReleaser:
         except (OSError, tomllib.TOMLDecodeError):
             return None
         if project_type == ProjectType.RUST:
-            return data.get("package", {}).get("version")
+            return self._read_rust_version(repo_path, data)
         # Python: PEP 621 [project] or Poetry [tool.poetry]
         project_version = data.get("project", {}).get("version")
         poetry_version = data.get("tool", {}).get("poetry", {}).get("version")
         return project_version or poetry_version
+
+    @staticmethod
+    def _crate_version(manifest: dict, root: dict) -> str | None:
+        """Version of a single crate, resolving ``version.workspace = true``."""
+        version = manifest.get("package", {}).get("version")
+        if isinstance(version, str):
+            return version
+        if isinstance(version, dict) and version.get("workspace"):
+            # Inherited from the workspace root's [workspace.package].
+            return root.get("workspace", {}).get("package", {}).get("version")
+        return None
+
+    def _read_rust_version(self, repo_path: Path, root: dict) -> str | None:
+        """Read a crate version, following workspace inheritance.
+
+        Handles three layouts:
+        - a plain single-crate ``[package].version`` string;
+        - ``version.workspace = true`` inherited from ``[workspace.package]``;
+        - a *virtual* workspace (no ``[package]`` at the root, e.g. maturin
+          projects) whose version lives in a member crate under ``crates/*``.
+          The bump tool touches every member, so any member's version works.
+        """
+        version = self._crate_version(root, root)
+        if version:
+            return version
+        for member in root.get("workspace", {}).get("members", []):
+            for member_dir in sorted(repo_path.glob(member)):
+                manifest = member_dir / "Cargo.toml"
+                if not manifest.is_file():
+                    continue
+                try:
+                    data = tomllib.loads(manifest.read_text(encoding="utf-8"))
+                except (OSError, tomllib.TOMLDecodeError):
+                    continue
+                version = self._crate_version(data, root)
+                if version:
+                    return version
+        return None
 
     def _release_repo(self, repo_name: str, clone_url: str) -> ReleaseResult:
         """Clone, bump, and (unless dry-run) commit/tag/push a single repo."""

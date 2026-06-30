@@ -182,6 +182,10 @@ and `find_candidates` skips any fork). For each candidate `GitReleaser`:
 - Clones the repo into a throwaway temp dir (no dependency on `~/git` clones).
 - Detects the project type — **`Cargo.toml` takes precedence over
   `pyproject.toml`** (some Rust repos ship a `pyproject.toml` too).
+- Reads the current/new version from the manifest, handling Cargo **workspaces**:
+  a plain `[package].version`, a `version.workspace = true` inherited from
+  `[workspace.package]`, or a *virtual* workspace (no root `[package]`, e.g.
+  maturin projects) whose version lives in a member crate under `crates/*`.
 - Bumps the version (level from `--level`, default patch) with the language's
   own tool — Python `uv version --bump <level>`; Rust
   `cargo set-version --bump <level>` (cargo-edit), falling back to
