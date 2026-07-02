@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-01 07:24:09 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 43
+**Generated:** 2026-07-02 07:03:12 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 44
 
 ---
 
@@ -10,7 +10,7 @@
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `fc2a1243` Reorganize docs into setup/learnings; round2 harness + results tweaks (mojzis, 2026-07-01 05:43:14+00:00)
+**Last commit:** `4a9e2075` Round-4 dlt-131 opus: A-vs-D report + data-collection issues (mojzis, 2026-07-02 06:09:45+00:00)
 
 
 
@@ -31,30 +31,11 @@ N/A | ★0 | 0 issues
 **CI:** PASS
 
 
-**Open PRs (2):** [#71](https://github.com/mojzis/introspect/pull/71), [#48](https://github.com/mojzis/introspect/pull/48)
+**Open PRs (3):** [#75](https://github.com/mojzis/introspect/pull/75), [#71](https://github.com/mojzis/introspect/pull/71), [#48](https://github.com/mojzis/introspect/pull/48)
 
 
 
 **Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `683220ca` Release v0.1.2 (mojzis, 2026-06-30 18:32:02+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#8](https://github.com/mojzis/zorilla/pull/8), [#7](https://github.com/mojzis/zorilla/pull/7)
-
 
 
 ---
@@ -77,6 +58,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `683220ca` Release v0.1.2 (mojzis, 2026-06-30 18:32:02+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#8](https://github.com/mojzis/zorilla/pull/8), [#7](https://github.com/mojzis/zorilla/pull/7)
+
 
 
 ---
