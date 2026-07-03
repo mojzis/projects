@@ -1,6 +1,25 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-02 07:03:12 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 44
+**Generated:** 2026-07-03 08:47:07 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 44
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `62f95363` improve journal (mojzis, 2026-07-02 23:21:41+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (6):** [#19](https://github.com/mojzis/braindump/pull/19), [#18](https://github.com/mojzis/braindump/pull/18), [#17](https://github.com/mojzis/braindump/pull/17), [#16](https://github.com/mojzis/braindump/pull/16), [#14](https://github.com/mojzis/braindump/pull/14), [#12](https://github.com/mojzis/braindump/pull/12)
+
+
 
 ---
 
@@ -10,32 +29,10 @@
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `4a9e2075` Round-4 dlt-131 opus: A-vs-D report + data-collection issues (mojzis, 2026-07-02 06:09:45+00:00)
+**Last commit:** `591a4442` older runs (mojzis, 2026-07-02 20:11:18+00:00)
 
 
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `0f3b38a0` Release v0.2.3 (mojzis, 2026-07-01 05:10:36+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#75](https://github.com/mojzis/introspect/pull/75), [#71](https://github.com/mojzis/introspect/pull/71), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -58,6 +55,28 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `0f3b38a0` Release v0.2.3 (mojzis, 2026-07-01 05:10:36+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#75](https://github.com/mojzis/introspect/pull/75), [#71](https://github.com/mojzis/introspect/pull/71), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -117,25 +136,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#6](https://github.com/mojzis/tyreach/pull/6), [#5](https://github.com/mojzis/tyreach/pull/5)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b33062eb` Add 'view' as a hidden alias for 'bd show' (mojzis, 2026-06-17 17:15:31+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (6):** [#19](https://github.com/mojzis/braindump/pull/19), [#18](https://github.com/mojzis/braindump/pull/18), [#17](https://github.com/mojzis/braindump/pull/17), [#16](https://github.com/mojzis/braindump/pull/16), [#14](https://github.com/mojzis/braindump/pull/14), [#12](https://github.com/mojzis/braindump/pull/12)
 
 
 
