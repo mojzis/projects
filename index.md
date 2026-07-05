@@ -1,6 +1,46 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-05 06:38:19 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 35
+**Generated:** 2026-07-05 08:39:14 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `281663d6` Bump actions/checkout from 6 to 7 (#71) (dependabot[bot], 2026-07-05 06:25:13+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (6):** [#81](https://github.com/mojzis/introspect/pull/81), [#80](https://github.com/mojzis/introspect/pull/80), [#79](https://github.com/mojzis/introspect/pull/79), [#77](https://github.com/mojzis/introspect/pull/77), [#75](https://github.com/mojzis/introspect/pull/75), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-version-check-nag-rmol85`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `a75b2b45` Add MkDocs docs site with llms.txt and GitHub Pages deploy (#21) (Mojzis, 2026-07-05 06:55:11+00:00)
+
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -37,49 +77,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 **CI:** PASS
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `281663d6` Bump actions/checkout from 6 to 7 (#71) (dependabot[bot], 2026-07-05 06:25:13+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#77](https://github.com/mojzis/introspect/pull/77), [#75](https://github.com/mojzis/introspect/pull/75), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-version-check-nag-rmol85`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `f80a6347` Update freezegun requirement from >=1.4 to >=1.5.5 (#12) (dependabot[bot], 2026-07-05 06:21:49+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `claude/mkdocs-github-pages-setup-fayhfx`
 
 
 ---
