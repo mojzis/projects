@@ -1,6 +1,43 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-04 08:22:57 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 45
+**Generated:** 2026-07-05 06:38:19 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 35
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `469fce04` Merge pull request #23 from mojzis/dependabot/github_actions/actions/checkout-7 (Mojzis, 2026-07-05 06:31:42+00:00)
+
+
+> ⚠️ **Untagged release:** main has 4 commits without a tag.
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -10,20 +47,39 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
-**Last commit:** `a7c0ce3b` Add MkDocs documentation site with GitHub Pages deploy (#76) (Mojzis, 2026-07-04 06:04:43+00:00)
+**Last commit:** `281663d6` Bump actions/checkout from 6 to 7 (#71) (dependabot[bot], 2026-07-05 06:25:13+00:00)
 
 
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
 
 
 **CI:** PASS
 
 
-**Open PRs (4):** [#77](https://github.com/mojzis/introspect/pull/77), [#75](https://github.com/mojzis/introspect/pull/75), [#71](https://github.com/mojzis/introspect/pull/71), [#48](https://github.com/mojzis/introspect/pull/48)
+**Open PRs (3):** [#77](https://github.com/mojzis/introspect/pull/77), [#75](https://github.com/mojzis/introspect/pull/75), [#48](https://github.com/mojzis/introspect/pull/48)
 
 
 
-**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+**Orphan branches (4):** `claude/pypi-version-check-nag-rmol85`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `f80a6347` Update freezegun requirement from >=1.4 to >=1.5.5 (#12) (dependabot[bot], 2026-07-05 06:21:49+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `claude/mkdocs-github-pages-setup-fayhfx`
 
 
 ---
@@ -39,47 +95,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/tyftest/)
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `4cf1225e` Support Cargo workspaces when reading release versions (mojzis, 2026-06-30 18:30:03+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#23](https://github.com/mojzis/projects/pull/23)
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `62f95363` improve journal (mojzis, 2026-07-02 23:21:41+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (6):** [#19](https://github.com/mojzis/braindump/pull/19), [#18](https://github.com/mojzis/braindump/pull/18), [#17](https://github.com/mojzis/braindump/pull/17), [#16](https://github.com/mojzis/braindump/pull/16), [#14](https://github.com/mojzis/braindump/pull/14), [#12](https://github.com/mojzis/braindump/pull/12)
 
 
 
@@ -155,7 +170,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 
-**CI: FAIL** (Run Tests)
+**CI:** PASS
 
 
 **Open PRs (14):** [#32](https://github.com/mojzis/sketchpy/pull/32), [#31](https://github.com/mojzis/sketchpy/pull/31), [#30](https://github.com/mojzis/sketchpy/pull/30), [#29](https://github.com/mojzis/sketchpy/pull/29), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#24](https://github.com/mojzis/sketchpy/pull/24), [#23](https://github.com/mojzis/sketchpy/pull/23), [#22](https://github.com/mojzis/sketchpy/pull/22), [#21](https://github.com/mojzis/sketchpy/pull/21), [#19](https://github.com/mojzis/sketchpy/pull/19), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
@@ -181,25 +196,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#4](https://github.com/mojzis/pycoati/pull/4), [#3](https://github.com/mojzis/pycoati/pull/3)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `f79799a8` Release v0.5.1 (mojzis, 2026-06-17 17:05:50+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#24](https://github.com/mojzis/biston/pull/24), [#23](https://github.com/mojzis/biston/pull/23)
 
 
 
