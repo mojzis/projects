@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-05 08:39:14 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+**Generated:** 2026-07-06 09:54:03 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 20
 
 ---
 
@@ -10,20 +10,20 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
-**Last commit:** `281663d6` Bump actions/checkout from 6 to 7 (#71) (dependabot[bot], 2026-07-05 06:25:13+00:00)
+**Last commit:** `d2d9abee` Forward extra args from `introspy claude` to the claude CLI (#84) (Mojzis, 2026-07-06 09:12:59+00:00)
 
 
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
 
 
-**Open PRs (6):** [#81](https://github.com/mojzis/introspect/pull/81), [#80](https://github.com/mojzis/introspect/pull/80), [#79](https://github.com/mojzis/introspect/pull/79), [#77](https://github.com/mojzis/introspect/pull/77), [#75](https://github.com/mojzis/introspect/pull/75), [#48](https://github.com/mojzis/introspect/pull/48)
+**Open PRs (1):** [#48](https://github.com/mojzis/introspect/pull/48)
 
 
 
-**Orphan branches (4):** `claude/pypi-version-check-nag-rmol85`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -34,11 +34,276 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
-**Last commit:** `a75b2b45` Add MkDocs docs site with llms.txt and GitHub Pages deploy (#21) (Mojzis, 2026-07-05 06:55:11+00:00)
+**Last commit:** `99961c83` Add CI workflow and fix pre-existing check failures (#23) (Mojzis, 2026-07-06 07:31:04+00:00)
+
+
+
+**CI: FAIL** (Docs)
+
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (14):** [#36](https://github.com/mojzis/sketchpy/pull/36), [#35](https://github.com/mojzis/sketchpy/pull/35), [#34](https://github.com/mojzis/sketchpy/pull/34), [#33](https://github.com/mojzis/sketchpy/pull/33), [#31](https://github.com/mojzis/sketchpy/pull/31), [#29](https://github.com/mojzis/sketchpy/pull/29), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#23](https://github.com/mojzis/sketchpy/pull/23), [#21](https://github.com/mojzis/sketchpy/pull/21), [#19](https://github.com/mojzis/sketchpy/pull/19), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `1572ffd7` Release v0.2.2 (mojzis, 2026-07-05 21:05:58+00:00)
 
 
 
 **CI:** PASS
+
+
+**Open PRs (1):** [#6](https://github.com/mojzis/pycoati/pull/6)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `f4b9d68b` Release v0.5.2 (mojzis, 2026-07-05 21:06:25+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#27](https://github.com/mojzis/biston/pull/27)
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `25e41640` Release v0.0.3 (mojzis, 2026-07-05 21:06:04+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#2](https://github.com/mojzis/comicforge/pull/2)
+
+
+
+---
+
+
+## [tyreach](https://github.com/mojzis/tyreach)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b3c2ecf8` Release v0.1.2 (mojzis, 2026-07-05 21:05:51+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#8](https://github.com/mojzis/tyreach/pull/8)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `92d64e97` Release v0.1.3 (mojzis, 2026-07-05 21:06:18+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `ce66bbf0` Release v0.4.3 (mojzis, 2026-07-05 21:06:11+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [svatba](https://github.com/mojzis/svatba)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
+
+
+**Last commit:** `5ec63121` Bump actions/checkout from 6 to 7 (#12) (dependabot[bot], 2026-07-05 20:48:18+00:00)
+
+
+
+**CI: FAIL** (Deploy to GitHub Pages)
+
+
+
+---
+
+
+## [nolegend](https://github.com/mojzis/nolegend)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `da3fa670` Bump actions/checkout from 6 to 7 (#3) (dependabot[bot], 2026-07-05 20:48:15+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `ec098995` Bump actions/checkout from 6 to 7 (#7) (dependabot[bot], 2026-07-05 20:48:11+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [ajina](https://github.com/mojzis/ajina)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
+
+
+**Last commit:** `c33dd359` build(deps): bump actions/checkout from 6 to 7 (#7) (dependabot[bot], 2026-07-05 20:48:08+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [logogame](https://github.com/mojzis/logogame)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
+
+
+**Last commit:** `3d90ddf5` Bump actions/checkout from 6 to 7 (#9) (dependabot[bot], 2026-07-05 20:48:04+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#5](https://github.com/mojzis/logogame/pull/5)
+
+
+
+---
+
+
+## [b3d-validate](https://github.com/mojzis/b3d-validate)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `af259aa9` Bump actions/checkout from 6 to 7 (#9) (dependabot[bot], 2026-07-05 20:48:01+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `0b4a0a02` Bump the minor-and-patch group across 1 directory with 3 updates (#10) (dependabot[bot], 2026-07-05 20:47:57+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [newsparser](https://github.com/mojzis/newsparser)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `60d31f1e` Ruff format sweep across codebase (mojzis, 2026-07-05 18:33:30+00:00)
+
+
 
 
 
@@ -64,24 +329,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `469fce04` Merge pull request #23 from mojzis/dependabot/github_actions/actions/checkout-7 (Mojzis, 2026-07-05 06:31:42+00:00)
-
-
-> ⚠️ **Untagged release:** main has 4 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [tyftest](https://github.com/mojzis/tyftest)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/tyftest/)
@@ -92,107 +339,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/tyftest/)
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `683220ca` Release v0.1.2 (mojzis, 2026-06-30 18:32:02+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#8](https://github.com/mojzis/zorilla/pull/8), [#7](https://github.com/mojzis/zorilla/pull/7)
-
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `47e789bc` Release v0.4.2 (mojzis, 2026-06-30 18:19:15+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#130](https://github.com/mojzis/ty-find/pull/130), [#129](https://github.com/mojzis/ty-find/pull/129), [#128](https://github.com/mojzis/ty-find/pull/128)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [tyreach](https://github.com/mojzis/tyreach)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `7a2f9f7e` Release v0.1.1 (mojzis, 2026-06-17 17:02:40+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#6](https://github.com/mojzis/tyreach/pull/6), [#5](https://github.com/mojzis/tyreach/pull/5)
-
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (14):** [#32](https://github.com/mojzis/sketchpy/pull/32), [#31](https://github.com/mojzis/sketchpy/pull/31), [#30](https://github.com/mojzis/sketchpy/pull/30), [#29](https://github.com/mojzis/sketchpy/pull/29), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#24](https://github.com/mojzis/sketchpy/pull/24), [#23](https://github.com/mojzis/sketchpy/pull/23), [#22](https://github.com/mojzis/sketchpy/pull/22), [#21](https://github.com/mojzis/sketchpy/pull/21), [#19](https://github.com/mojzis/sketchpy/pull/19), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b7aaf7be` Release v0.2.1 (mojzis, 2026-06-17 17:05:29+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#4](https://github.com/mojzis/pycoati/pull/4), [#3](https://github.com/mojzis/pycoati/pull/3)
 
 
 
@@ -235,142 +381,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/volby_check/)
 ---
 
 
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `ef0e8c19` Release v0.0.2 (mojzis, 2026-06-17 17:05:43+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#1](https://github.com/mojzis/comicforge/pull/1)
-
-
-
----
-
-
-## [logogame](https://github.com/mojzis/logogame)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
-
-
-**Last commit:** `36911132` Bump actions/upload-pages-artifact from 3 to 5 (#6) (dependabot[bot], 2026-06-14 21:14:51+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#9](https://github.com/mojzis/logogame/pull/9), [#5](https://github.com/mojzis/logogame/pull/5)
-
-
-
----
-
-
-## [svatba](https://github.com/mojzis/svatba)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
-
-
-**Last commit:** `b2ca145b` Bump actions/checkout from 4 to 6 (#8) (dependabot[bot], 2026-06-14 21:14:00+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#12](https://github.com/mojzis/svatba/pull/12)
-
-
-
----
-
-
-## [b3d-validate](https://github.com/mojzis/b3d-validate)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `f160d11d` Bump actions/checkout from 4 to 6 (#7) (dependabot[bot], 2026-06-14 21:14:54+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#9](https://github.com/mojzis/b3d-validate/pull/9)
-
-
-
----
-
-
-## [ajina](https://github.com/mojzis/ajina)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
-
-
-**Last commit:** `8a15abbc` build(deps): bump actions/upload-pages-artifact from 3 to 5 (#3) (dependabot[bot], 2026-06-14 21:14:36+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#7](https://github.com/mojzis/ajina/pull/7)
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [nolegend](https://github.com/mojzis/nolegend)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3e540722` Bump astral-sh/setup-uv from 5 to 7 (#1) (dependabot[bot], 2026-06-14 21:14:05+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#3](https://github.com/mojzis/nolegend/pull/3)
-
-
-
----
-
-
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `278a1226` Bump actions/configure-pages from 4 to 6 (#3) (dependabot[bot], 2026-06-14 21:14:15+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#7](https://github.com/mojzis/bounceflow/pull/7)
-
-
-
----
-
-
 ## [marimo-template](https://github.com/mojzis/marimo-template)
 
 N/A | ★0 | 0 issues
@@ -383,25 +393,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (1):** `claude/add-skill-sharing-011CmgsoWuV3JQZyokhxBqKp`
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `5b651e7b` Bump express from 4.22.1 to 5.2.1 in /server (#6) (dependabot[bot], 2026-06-14 21:42:03+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#10](https://github.com/mojzis/talkshape/pull/10)
-
 
 
 ---
