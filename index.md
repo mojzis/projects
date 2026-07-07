@@ -1,6 +1,25 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-07 09:22:56 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 29
+**Generated:** 2026-07-07 20:25:02 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 19
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `e4de83ef` Update markupsafe requirement from >=2.1 to >=3.0.3 (#24) (dependabot[bot], 2026-07-07 20:16:54+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#29](https://github.com/mojzis/braindump/pull/29), [#26](https://github.com/mojzis/braindump/pull/26)
+
+
 
 ---
 
@@ -10,14 +29,47 @@
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `0b4a0a02` Bump the minor-and-patch group across 1 directory with 3 updates (#10) (dependabot[bot], 2026-07-05 20:47:57+00:00)
+**Last commit:** `cec2559d` Bump @anthropic-ai/claude-agent-sdk (#11) (dependabot[bot], 2026-07-07 20:17:18+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#11](https://github.com/mojzis/talkshape/pull/11)
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `77ba57ae` Bump ignore from 0.4.26 to 0.4.27 in the minor-and-patch group (#6) (dependabot[bot], 2026-07-07 20:17:11+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `9ff4683d` Bump astral-sh/setup-uv from 8.2.0 to 8.3.0 (#2) (dependabot[bot], 2026-07-07 20:17:06+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
 
 
 
@@ -29,34 +81,51 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `92d64e97` Release v0.1.3 (mojzis, 2026-07-05 21:06:18+00:00)
+**Last commit:** `c63154a0` Bump ignore from 0.4.26 to 0.4.27 in the minor-and-patch group (#10) (dependabot[bot], 2026-07-07 20:17:02+00:00)
 
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI: FAIL** (Cargo Audit)
-
-
-**Open PRs (1):** [#10](https://github.com/mojzis/zorilla/pull/10)
 
 
 
 ---
 
 
-## [braindump](https://github.com/mojzis/braindump)
+## [biston](https://github.com/mojzis/biston)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 
-**Last commit:** `08aaa230` update pages action (mojzis, 2026-07-06 11:33:34+00:00)
+**Last commit:** `dfe5f823` Bump the minor-and-patch group with 4 updates (#27) (dependabot[bot], 2026-07-07 20:16:58+00:00)
 
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
 
 
-**Open PRs (7):** [#30](https://github.com/mojzis/braindump/pull/30), [#29](https://github.com/mojzis/braindump/pull/29), [#28](https://github.com/mojzis/braindump/pull/28), [#27](https://github.com/mojzis/braindump/pull/27), [#26](https://github.com/mojzis/braindump/pull/26), [#25](https://github.com/mojzis/braindump/pull/25), [#24](https://github.com/mojzis/braindump/pull/24)
 
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -84,25 +153,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [sketchpy](https://github.com/mojzis/sketchpy)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
@@ -120,63 +170,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 **Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `1572ffd7` Release v0.2.2 (mojzis, 2026-07-05 21:05:58+00:00)
-
-
-
-**CI: FAIL** (Cargo Audit)
-
-
-**Open PRs (1):** [#6](https://github.com/mojzis/pycoati/pull/6)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `f4b9d68b` Release v0.5.2 (mojzis, 2026-07-05 21:06:25+00:00)
-
-
-
-**CI: FAIL** (Cargo Audit)
-
-
-**Open PRs (1):** [#27](https://github.com/mojzis/biston/pull/27)
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `25e41640` Release v0.0.3 (mojzis, 2026-07-05 21:06:04+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#2](https://github.com/mojzis/comicforge/pull/2)
-
 
 
 ---
