@@ -1,35 +1,48 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-07 20:25:02 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 19
+**Generated:** 2026-07-07 20:34:42 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 17
 
 ---
 
 
-## [braindump](https://github.com/mojzis/braindump)
+## [biston](https://github.com/mojzis/biston)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `e4de83ef` Update markupsafe requirement from >=2.1 to >=3.0.3 (#24) (dependabot[bot], 2026-07-07 20:16:54+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 
+**Last commit:** `4ba62a56` Release v0.5.3 (mojzis, 2026-07-07 20:32:37+00:00)
 
-**CI:** PASS
 
 
-**Open PRs (2):** [#29](https://github.com/mojzis/braindump/pull/29), [#26](https://github.com/mojzis/braindump/pull/26)
+**CI:** UNKNOWN
 
 
 
 ---
 
 
-## [talkshape](https://github.com/mojzis/talkshape)
+## [zorilla](https://github.com/mojzis/zorilla)
 
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `cec2559d` Bump @anthropic-ai/claude-agent-sdk (#11) (dependabot[bot], 2026-07-07 20:17:18+00:00)
+**Last commit:** `3fbc4b82` Release v0.1.4 (mojzis, 2026-07-07 20:32:29+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `6888419d` Release v0.0.4 (mojzis, 2026-07-07 20:32:22+00:00)
 
 
 
@@ -45,46 +58,8 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `77ba57ae` Bump ignore from 0.4.26 to 0.4.27 in the minor-and-patch group (#6) (dependabot[bot], 2026-07-07 20:17:11+00:00)
+**Last commit:** `46446e30` Release v0.2.3 (mojzis, 2026-07-07 20:32:16+00:00)
 
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `9ff4683d` Bump astral-sh/setup-uv from 8.2.0 to 8.3.0 (#2) (dependabot[bot], 2026-07-07 20:17:06+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `c63154a0` Bump ignore from 0.4.26 to 0.4.27 in the minor-and-patch group (#10) (dependabot[bot], 2026-07-07 20:17:02+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI: FAIL** (Cargo Audit)
@@ -94,15 +69,13 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [biston](https://github.com/mojzis/biston)
+## [braindump](https://github.com/mojzis/braindump)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `dfe5f823` Bump the minor-and-patch group with 4 updates (#27) (dependabot[bot], 2026-07-07 20:16:58+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
+**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
+
 
 
 **CI:** PASS
@@ -126,6 +99,22 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `cec2559d` Bump @anthropic-ai/claude-agent-sdk (#11) (dependabot[bot], 2026-07-07 20:17:18+00:00)
+
+
+
+**CI:** PASS
+
 
 
 ---
