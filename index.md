@@ -1,6 +1,63 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-06 09:54:03 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 20
+**Generated:** 2026-07-07 09:22:56 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 29
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `0b4a0a02` Bump the minor-and-patch group across 1 directory with 3 updates (#10) (dependabot[bot], 2026-07-05 20:47:57+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#11](https://github.com/mojzis/talkshape/pull/11)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `92d64e97` Release v0.1.3 (mojzis, 2026-07-05 21:06:18+00:00)
+
+
+
+**CI: FAIL** (Cargo Audit)
+
+
+**Open PRs (1):** [#10](https://github.com/mojzis/zorilla/pull/10)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `08aaa230` update pages action (mojzis, 2026-07-06 11:33:34+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (7):** [#30](https://github.com/mojzis/braindump/pull/30), [#29](https://github.com/mojzis/braindump/pull/29), [#28](https://github.com/mojzis/braindump/pull/28), [#27](https://github.com/mojzis/braindump/pull/27), [#26](https://github.com/mojzis/braindump/pull/26), [#25](https://github.com/mojzis/braindump/pull/25), [#24](https://github.com/mojzis/braindump/pull/24)
+
+
 
 ---
 
@@ -10,10 +67,8 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
-**Last commit:** `d2d9abee` Forward extra args from `introspy claude` to the claude CLI (#84) (Mojzis, 2026-07-06 09:12:59+00:00)
+**Last commit:** `124c2a4d` Release v0.2.5 (mojzis, 2026-07-06 12:34:50+00:00)
 
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
@@ -29,17 +84,20 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 ---
 
 
-## [braindump](https://github.com/mojzis/braindump)
+## [projects](https://github.com/mojzis/projects)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `99961c83` Add CI workflow and fix pre-existing check failures (#23) (Mojzis, 2026-07-06 07:31:04+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
 
-**CI: FAIL** (Docs)
 
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -76,7 +134,7 @@ N/A | ★0 | 0 issues
 
 
 
-**CI:** PASS
+**CI: FAIL** (Cargo Audit)
 
 
 **Open PRs (1):** [#6](https://github.com/mojzis/pycoati/pull/6)
@@ -95,7 +153,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (Cargo Audit)
 
 
 **Open PRs (1):** [#27](https://github.com/mojzis/biston/pull/27)
@@ -133,26 +191,10 @@ N/A | ★0 | 0 issues
 
 
 
-**CI:** PASS
+**CI: FAIL** (Cargo Audit)
 
 
 **Open PRs (1):** [#8](https://github.com/mojzis/tyreach/pull/8)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `92d64e97` Release v0.1.3 (mojzis, 2026-07-05 21:06:18+00:00)
-
-
-
-**CI:** PASS
 
 
 
@@ -280,22 +322,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `0b4a0a02` Bump the minor-and-patch group across 1 directory with 3 updates (#10) (dependabot[bot], 2026-07-05 20:47:57+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [newsparser](https://github.com/mojzis/newsparser)
 
 N/A | ★0 | 0 issues
@@ -305,25 +331,6 @@ N/A | ★0 | 0 issues
 
 
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
