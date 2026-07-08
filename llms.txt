@@ -1,6 +1,57 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-07 20:38:41 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 17
+**Generated:** 2026-07-08 08:07:12 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 17
+
+---
+
+
+## [tyreach](https://github.com/mojzis/tyreach)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3f39e893` Release v0.1.3 (mojzis, 2026-07-07 21:06:53+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#8](https://github.com/mojzis/tyreach/pull/8)
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `ca0548d9` Release v0.2.4 (mojzis, 2026-07-07 21:06:24+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `6281a94d` Release v0.5.4 (mojzis, 2026-07-07 21:05:51+00:00)
+
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -24,22 +75,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `4ba62a56` Release v0.5.3 (mojzis, 2026-07-07 20:32:37+00:00)
-
-
-
-**CI: FAIL** (Cargo Audit)
-
-
-
----
-
-
 ## [zorilla](https://github.com/mojzis/zorilla)
 
 N/A | ★0 | 0 issues
@@ -49,7 +84,7 @@ N/A | ★0 | 0 issues
 
 
 
-**CI:** PASS
+**CI: FAIL** (Cargo Audit)
 
 
 
@@ -66,22 +101,6 @@ N/A | ★0 | 0 issues
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `46446e30` Release v0.2.3 (mojzis, 2026-07-07 20:32:16+00:00)
-
-
-
-**CI: FAIL** (Cargo Audit)
 
 
 
@@ -159,25 +178,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 **Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [tyreach](https://github.com/mojzis/tyreach)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b3c2ecf8` Release v0.1.2 (mojzis, 2026-07-05 21:05:51+00:00)
-
-
-
-**CI: FAIL** (Cargo Audit)
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/tyreach/pull/8)
-
 
 
 ---
@@ -397,20 +397,6 @@ N/A | ★0 | 0 issues
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [skill-build123d](https://github.com/mojzis/skill-build123d)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `9c55bb33` Merge pull request #2 from mojzis/claude/sketch-figure-assembly-qcNtb (Mojzis, 2026-04-08 21:21:52+00:00)
-
-
 
 
 
