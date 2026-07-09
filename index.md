@@ -1,6 +1,47 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-08 08:07:12 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 17
+**Generated:** 2026-07-09 09:19:15 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 17
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `124c2a4d` Release v0.2.5 (mojzis, 2026-07-06 12:34:50+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/adaptive-jsonl-memory-management-pfposi`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -51,25 +92,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 **CI:** PASS
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -134,28 +156,6 @@ N/A | ★0 | 0 issues
 
 **CI:** PASS
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `124c2a4d` Release v0.2.5 (mojzis, 2026-07-06 12:34:50+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
