@@ -1,28 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-09 09:19:15 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 17
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `124c2a4d` Release v0.2.5 (mojzis, 2026-07-06 12:34:50+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/adaptive-jsonl-memory-management-pfposi`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
+**Generated:** 2026-07-10 09:00:34 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 18
 
 ---
 
@@ -41,6 +19,28 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `124c2a4d` Release v0.2.5 (mojzis, 2026-07-06 12:34:50+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
