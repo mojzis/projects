@@ -1,6 +1,85 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-12 07:58:03 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 18
+**Generated:** 2026-07-13 08:46:49 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 21
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (14):** [#40](https://github.com/mojzis/sketchpy/pull/40), [#39](https://github.com/mojzis/sketchpy/pull/39), [#38](https://github.com/mojzis/sketchpy/pull/38), [#37](https://github.com/mojzis/sketchpy/pull/37), [#35](https://github.com/mojzis/sketchpy/pull/35), [#34](https://github.com/mojzis/sketchpy/pull/34), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#23](https://github.com/mojzis/sketchpy/pull/23), [#21](https://github.com/mojzis/sketchpy/pull/21), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `ca0548d9` Release v0.2.4 (mojzis, 2026-07-07 21:06:24+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#8](https://github.com/mojzis/pycoati/pull/8)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `6281a94d` Release v0.5.4 (mojzis, 2026-07-07 21:05:51+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#29](https://github.com/mojzis/biston/pull/29)
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `6888419d` Release v0.0.4 (mojzis, 2026-07-07 20:32:22+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#3](https://github.com/mojzis/comicforge/pull/3)
+
+
 
 ---
 
@@ -65,38 +144,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `ca0548d9` Release v0.2.4 (mojzis, 2026-07-07 21:06:24+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `6281a94d` Release v0.5.4 (mojzis, 2026-07-07 21:05:51+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [zorilla](https://github.com/mojzis/zorilla)
 
 N/A | ★0 | 0 issues
@@ -107,22 +154,6 @@ N/A | ★0 | 0 issues
 
 
 **CI: FAIL** (Cargo Audit)
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `6888419d` Release v0.0.4 (mojzis, 2026-07-07 20:32:22+00:00)
-
-
-
-**CI:** PASS
 
 
 
@@ -161,28 +192,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (14):** [#36](https://github.com/mojzis/sketchpy/pull/36), [#35](https://github.com/mojzis/sketchpy/pull/35), [#34](https://github.com/mojzis/sketchpy/pull/34), [#33](https://github.com/mojzis/sketchpy/pull/33), [#31](https://github.com/mojzis/sketchpy/pull/31), [#29](https://github.com/mojzis/sketchpy/pull/29), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#23](https://github.com/mojzis/sketchpy/pull/23), [#21](https://github.com/mojzis/sketchpy/pull/21), [#19](https://github.com/mojzis/sketchpy/pull/19), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
 ## [ty-find](https://github.com/mojzis/ty-find)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
@@ -211,7 +220,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
 
 
 
-**CI: FAIL** (Deploy to GitHub Pages)
+**CI:** PASS
 
 
 
