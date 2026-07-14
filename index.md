@@ -1,6 +1,82 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-13 08:46:49 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 21
+**Generated:** 2026-07-14 07:45:37 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 24
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `cec2559d` Bump @anthropic-ai/claude-agent-sdk (#11) (dependabot[bot], 2026-07-07 20:17:18+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#12](https://github.com/mojzis/talkshape/pull/12)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3fbc4b82` Release v0.1.4 (mojzis, 2026-07-07 20:32:29+00:00)
+
+
+
+**CI: FAIL** (Cargo Audit)
+
+
+**Open PRs (1):** [#12](https://github.com/mojzis/zorilla/pull/12)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#31](https://github.com/mojzis/braindump/pull/31)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -84,25 +160,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [introspect](https://github.com/mojzis/introspect)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
@@ -138,54 +195,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#8](https://github.com/mojzis/tyreach/pull/8)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3fbc4b82` Release v0.1.4 (mojzis, 2026-07-07 20:32:29+00:00)
-
-
-
-**CI: FAIL** (Cargo Audit)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `cec2559d` Bump @anthropic-ai/claude-agent-sdk (#11) (dependabot[bot], 2026-07-07 20:17:18+00:00)
-
-
-
-**CI:** PASS
 
 
 
