@@ -1,6 +1,88 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-19 07:57:05 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 24
+**Generated:** 2026-07-20 08:38:14 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 25
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (14):** [#42](https://github.com/mojzis/sketchpy/pull/42), [#41](https://github.com/mojzis/sketchpy/pull/41), [#39](https://github.com/mojzis/sketchpy/pull/39), [#37](https://github.com/mojzis/sketchpy/pull/37), [#35](https://github.com/mojzis/sketchpy/pull/35), [#34](https://github.com/mojzis/sketchpy/pull/34), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#23](https://github.com/mojzis/sketchpy/pull/23), [#21](https://github.com/mojzis/sketchpy/pull/21), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `ca0548d9` Release v0.2.4 (mojzis, 2026-07-07 21:06:24+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#9](https://github.com/mojzis/pycoati/pull/9)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `6281a94d` Release v0.5.4 (mojzis, 2026-07-07 21:05:51+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#30](https://github.com/mojzis/biston/pull/30)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `ce66bbf0` Release v0.4.3 (mojzis, 2026-07-05 21:06:11+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#132](https://github.com/mojzis/ty-find/pull/132)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
 
 ---
 
@@ -81,66 +163,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 ---
 
 
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (14):** [#40](https://github.com/mojzis/sketchpy/pull/40), [#39](https://github.com/mojzis/sketchpy/pull/39), [#38](https://github.com/mojzis/sketchpy/pull/38), [#37](https://github.com/mojzis/sketchpy/pull/37), [#35](https://github.com/mojzis/sketchpy/pull/35), [#34](https://github.com/mojzis/sketchpy/pull/34), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#23](https://github.com/mojzis/sketchpy/pull/23), [#21](https://github.com/mojzis/sketchpy/pull/21), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `ca0548d9` Release v0.2.4 (mojzis, 2026-07-07 21:06:24+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/pycoati/pull/8)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `6281a94d` Release v0.5.4 (mojzis, 2026-07-07 21:05:51+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#29](https://github.com/mojzis/biston/pull/29)
-
-
-
----
-
-
 ## [comicforge](https://github.com/mojzis/comicforge)
 
 N/A | ★0 | 0 issues
@@ -196,25 +218,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (1):** [#8](https://github.com/mojzis/tyreach/pull/8)
 
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `ce66bbf0` Release v0.4.3 (mojzis, 2026-07-05 21:06:11+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
