@@ -1,6 +1,25 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-22 08:07:13 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 30
+**Generated:** 2026-07-23 08:10:14 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 31
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `6281a94d` Release v0.5.4 (mojzis, 2026-07-07 21:05:51+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#31](https://github.com/mojzis/biston/pull/31), [#30](https://github.com/mojzis/biston/pull/30)
+
+
 
 ---
 
@@ -157,25 +176,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#9](https://github.com/mojzis/pycoati/pull/9)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `6281a94d` Release v0.5.4 (mojzis, 2026-07-07 21:05:51+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#30](https://github.com/mojzis/biston/pull/30)
 
 
 
