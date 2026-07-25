@@ -1,25 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-24 08:06:14 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 31
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
+**Generated:** 2026-07-25 07:49:52 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 31
 
 ---
 
@@ -38,6 +19,28 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open PRs (2):** [#31](https://github.com/mojzis/biston/pull/31), [#30](https://github.com/mojzis/biston/pull/30)
 
+
+
+**Orphan branches (1):** `claude/biston-prefix-suffix-containment-i9szes`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
 
 
 ---
