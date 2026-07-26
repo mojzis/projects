@@ -1,6 +1,44 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-25 07:49:52 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 31
+**Generated:** 2026-07-26 08:07:03 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 32
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `ca0548d9` Release v0.2.4 (mojzis, 2026-07-07 21:06:24+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#10](https://github.com/mojzis/pycoati/pull/10), [#9](https://github.com/mojzis/pycoati/pull/9)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -22,25 +60,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 
 **Orphan branches (1):** `claude/biston-prefix-suffix-containment-i9szes`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -153,7 +172,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 
-**CI: FAIL** (Run Tests)
+**CI:** PASS
 
 
 **Open PRs (14):** [#42](https://github.com/mojzis/sketchpy/pull/42), [#41](https://github.com/mojzis/sketchpy/pull/41), [#39](https://github.com/mojzis/sketchpy/pull/39), [#37](https://github.com/mojzis/sketchpy/pull/37), [#35](https://github.com/mojzis/sketchpy/pull/35), [#34](https://github.com/mojzis/sketchpy/pull/34), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#23](https://github.com/mojzis/sketchpy/pull/23), [#21](https://github.com/mojzis/sketchpy/pull/21), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
@@ -161,25 +180,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 **Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `ca0548d9` Release v0.2.4 (mojzis, 2026-07-07 21:06:24+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#9](https://github.com/mojzis/pycoati/pull/9)
-
 
 
 ---
