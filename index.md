@@ -1,6 +1,69 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-27 09:28:06 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 35
+**Generated:** 2026-07-28 08:13:46 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 35
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (4):** [#35](https://github.com/mojzis/braindump/pull/35), [#34](https://github.com/mojzis/braindump/pull/34), [#32](https://github.com/mojzis/braindump/pull/32), [#31](https://github.com/mojzis/braindump/pull/31)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `ce66bbf0` Release v0.4.3 (mojzis, 2026-07-05 21:06:11+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#135](https://github.com/mojzis/ty-find/pull/135), [#134](https://github.com/mojzis/ty-find/pull/134), [#132](https://github.com/mojzis/ty-find/pull/132)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -68,28 +131,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [tyreach](https://github.com/mojzis/tyreach)
 
 N/A | ★0 | 0 issues
@@ -104,28 +145,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (2):** [#11](https://github.com/mojzis/tyreach/pull/11), [#10](https://github.com/mojzis/tyreach/pull/10)
 
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `ce66bbf0` Release v0.4.3 (mojzis, 2026-07-05 21:06:11+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#134](https://github.com/mojzis/ty-find/pull/134), [#133](https://github.com/mojzis/ty-find/pull/133), [#132](https://github.com/mojzis/ty-find/pull/132)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
@@ -182,25 +201,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#14](https://github.com/mojzis/zorilla/pull/14), [#13](https://github.com/mojzis/zorilla/pull/13)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (4):** [#34](https://github.com/mojzis/braindump/pull/34), [#33](https://github.com/mojzis/braindump/pull/33), [#32](https://github.com/mojzis/braindump/pull/32), [#31](https://github.com/mojzis/braindump/pull/31)
 
 
 
