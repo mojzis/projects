@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-07-31 08:32:33 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 35
+**Generated:** 2026-08-01 08:03:16 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 35
 
 ---
 
@@ -14,14 +14,14 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
 
 
 
-**Orphan branches (3):** `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
