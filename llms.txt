@@ -1,28 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-01 08:03:16 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 35
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `c7d9d7f0` Release v0.2.6 (Mojzis Stupka, 2026-07-31 08:31:14+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
+**Generated:** 2026-08-02 08:03:30 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 35
 
 ---
 
@@ -44,6 +22,28 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `c7d9d7f0` Release v0.2.6 (Mojzis Stupka, 2026-07-31 08:31:14+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -99,7 +99,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 
-**CI: FAIL** (Run Tests)
+**CI:** PASS
 
 
 **Open PRs (14):** [#45](https://github.com/mojzis/sketchpy/pull/45), [#44](https://github.com/mojzis/sketchpy/pull/44), [#43](https://github.com/mojzis/sketchpy/pull/43), [#39](https://github.com/mojzis/sketchpy/pull/39), [#35](https://github.com/mojzis/sketchpy/pull/35), [#34](https://github.com/mojzis/sketchpy/pull/34), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#23](https://github.com/mojzis/sketchpy/pull/23), [#21](https://github.com/mojzis/sketchpy/pull/21), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
