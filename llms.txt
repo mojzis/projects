@@ -1,6 +1,66 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-03 09:01:13 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 36
+**Generated:** 2026-08-04 08:17:07 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3fbc4b82` Release v0.1.4 (mojzis, 2026-07-07 20:32:29+00:00)
+
+
+
+**CI: FAIL** (Cargo Audit)
+
+
+**Open PRs (3):** [#15](https://github.com/mojzis/zorilla/pull/15), [#14](https://github.com/mojzis/zorilla/pull/14), [#13](https://github.com/mojzis/zorilla/pull/13)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (5):** [#38](https://github.com/mojzis/braindump/pull/38), [#37](https://github.com/mojzis/braindump/pull/37), [#36](https://github.com/mojzis/braindump/pull/36), [#34](https://github.com/mojzis/braindump/pull/34), [#32](https://github.com/mojzis/braindump/pull/32)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -66,47 +126,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 
 **Orphan branches (1):** `claude/biston-prefix-suffix-containment-i9szes`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (4):** [#35](https://github.com/mojzis/braindump/pull/35), [#34](https://github.com/mojzis/braindump/pull/34), [#32](https://github.com/mojzis/braindump/pull/32), [#31](https://github.com/mojzis/braindump/pull/31)
-
 
 
 ---
@@ -204,25 +223,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#13](https://github.com/mojzis/talkshape/pull/13)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3fbc4b82` Release v0.1.4 (mojzis, 2026-07-07 20:32:29+00:00)
-
-
-
-**CI: FAIL** (Cargo Audit)
-
-
-**Open PRs (2):** [#14](https://github.com/mojzis/zorilla/pull/14), [#13](https://github.com/mojzis/zorilla/pull/13)
 
 
 
