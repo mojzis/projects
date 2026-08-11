@@ -1,27 +1,24 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-10 07:08:35 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+**Generated:** 2026-08-11 06:45:57 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
 
 ---
 
 
-## [sketchpy](https://github.com/mojzis/sketchpy)
+## [braindump](https://github.com/mojzis/braindump)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
-
-**CI: FAIL** (Run Tests)
-
-
-**Open PRs (14):** [#51](https://github.com/mojzis/sketchpy/pull/51), [#50](https://github.com/mojzis/sketchpy/pull/50), [#49](https://github.com/mojzis/sketchpy/pull/49), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#43](https://github.com/mojzis/sketchpy/pull/43), [#39](https://github.com/mojzis/sketchpy/pull/39), [#35](https://github.com/mojzis/sketchpy/pull/35), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
 
 
 
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+**CI:** PASS
+
+
+**Open PRs (5):** [#40](https://github.com/mojzis/braindump/pull/40), [#39](https://github.com/mojzis/braindump/pull/39), [#38](https://github.com/mojzis/braindump/pull/38), [#37](https://github.com/mojzis/braindump/pull/37), [#32](https://github.com/mojzis/braindump/pull/32)
+
 
 
 ---
@@ -49,6 +46,28 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (14):** [#51](https://github.com/mojzis/sketchpy/pull/51), [#50](https://github.com/mojzis/sketchpy/pull/50), [#49](https://github.com/mojzis/sketchpy/pull/49), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#43](https://github.com/mojzis/sketchpy/pull/43), [#39](https://github.com/mojzis/sketchpy/pull/39), [#35](https://github.com/mojzis/sketchpy/pull/35), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
 ## [zorilla](https://github.com/mojzis/zorilla)
 
 N/A | ★0 | 0 issues
@@ -62,25 +81,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (3):** [#15](https://github.com/mojzis/zorilla/pull/15), [#14](https://github.com/mojzis/zorilla/pull/14), [#13](https://github.com/mojzis/zorilla/pull/13)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (5):** [#38](https://github.com/mojzis/braindump/pull/38), [#37](https://github.com/mojzis/braindump/pull/37), [#36](https://github.com/mojzis/braindump/pull/36), [#34](https://github.com/mojzis/braindump/pull/34), [#32](https://github.com/mojzis/braindump/pull/32)
 
 
 
