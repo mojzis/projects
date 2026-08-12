@@ -1,25 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-11 06:45:57 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (5):** [#40](https://github.com/mojzis/braindump/pull/40), [#39](https://github.com/mojzis/braindump/pull/39), [#38](https://github.com/mojzis/braindump/pull/38), [#37](https://github.com/mojzis/braindump/pull/37), [#32](https://github.com/mojzis/braindump/pull/32)
-
-
+**Generated:** 2026-08-12 07:07:11 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
 
 ---
 
@@ -41,6 +22,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `29a055f6` Update mkdocs-llmstxt requirement from >=0.2 to >=0.5.0 (#26) (dependabot[bot], 2026-07-07 20:28:54+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (5):** [#40](https://github.com/mojzis/braindump/pull/40), [#39](https://github.com/mojzis/braindump/pull/39), [#38](https://github.com/mojzis/braindump/pull/38), [#37](https://github.com/mojzis/braindump/pull/37), [#32](https://github.com/mojzis/braindump/pull/32)
+
 
 
 ---
