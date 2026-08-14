@@ -1,6 +1,28 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-13 07:10:29 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+**Generated:** 2026-08-14 07:07:26 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 39
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `c7d9d7f0` Release v0.2.6 (Mojzis Stupka, 2026-07-31 08:31:14+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (4):** [#88](https://github.com/mojzis/introspect/pull/88), [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
 
 ---
 
@@ -82,28 +104,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (3):** [#15](https://github.com/mojzis/zorilla/pull/15), [#14](https://github.com/mojzis/zorilla/pull/14), [#13](https://github.com/mojzis/zorilla/pull/13)
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `c7d9d7f0` Release v0.2.6 (Mojzis Stupka, 2026-07-31 08:31:14+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
