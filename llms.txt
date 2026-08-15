@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-14 07:07:26 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 39
+**Generated:** 2026-08-15 06:19:57 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
 
 ---
 
@@ -10,14 +10,14 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
-**Last commit:** `c7d9d7f0` Release v0.2.6 (Mojzis Stupka, 2026-07-31 08:31:14+00:00)
+**Last commit:** `619b9b8f` Release v0.2.7 (#89) (Mojzis, 2026-08-14 09:17:55+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (4):** [#88](https://github.com/mojzis/introspect/pull/88), [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
 
 
 
