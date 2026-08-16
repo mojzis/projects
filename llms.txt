@@ -1,28 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-15 06:19:57 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `619b9b8f` Release v0.2.7 (#89) (Mojzis, 2026-08-14 09:17:55+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
+**Generated:** 2026-08-16 06:21:45 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
 
 ---
 
@@ -44,6 +22,28 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `619b9b8f` Release v0.2.7 (#89) (Mojzis, 2026-08-14 09:17:55+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
