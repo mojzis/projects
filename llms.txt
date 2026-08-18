@@ -1,24 +1,27 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-17 06:32:17 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+**Generated:** 2026-08-18 06:24:32 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
 
 ---
 
 
-## [comicforge](https://github.com/mojzis/comicforge)
+## [sketchpy](https://github.com/mojzis/sketchpy)
 
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `6888419d` Release v0.0.4 (mojzis, 2026-07-07 20:32:22+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
 
-**CI:** PASS
 
 
-**Open PRs (1):** [#5](https://github.com/mojzis/comicforge/pull/5)
+**CI: FAIL** (Run Tests)
 
+
+**Open PRs (14):** [#55](https://github.com/mojzis/sketchpy/pull/55), [#54](https://github.com/mojzis/sketchpy/pull/54), [#53](https://github.com/mojzis/sketchpy/pull/53), [#52](https://github.com/mojzis/sketchpy/pull/52), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
@@ -41,6 +44,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `6888419d` Release v0.0.4 (mojzis, 2026-07-07 20:32:22+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#5](https://github.com/mojzis/comicforge/pull/5)
+
 
 
 ---
@@ -77,33 +99,11 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (pip in /. - Update #1529309971)
 
 
 **Open PRs (5):** [#40](https://github.com/mojzis/braindump/pull/40), [#39](https://github.com/mojzis/braindump/pull/39), [#38](https://github.com/mojzis/braindump/pull/38), [#37](https://github.com/mojzis/braindump/pull/37), [#32](https://github.com/mojzis/braindump/pull/32)
 
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (14):** [#51](https://github.com/mojzis/sketchpy/pull/51), [#50](https://github.com/mojzis/sketchpy/pull/50), [#49](https://github.com/mojzis/sketchpy/pull/49), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#43](https://github.com/mojzis/sketchpy/pull/43), [#39](https://github.com/mojzis/sketchpy/pull/39), [#35](https://github.com/mojzis/sketchpy/pull/35), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
