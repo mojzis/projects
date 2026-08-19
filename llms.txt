@@ -1,28 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-18 06:24:32 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
-
-
-
-**CI: FAIL** (Run Tests)
-
-
-**Open PRs (14):** [#55](https://github.com/mojzis/sketchpy/pull/55), [#54](https://github.com/mojzis/sketchpy/pull/54), [#53](https://github.com/mojzis/sketchpy/pull/53), [#52](https://github.com/mojzis/sketchpy/pull/52), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
+**Generated:** 2026-08-19 06:24:48 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
 
 ---
 
@@ -44,6 +22,28 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (14):** [#55](https://github.com/mojzis/sketchpy/pull/55), [#54](https://github.com/mojzis/sketchpy/pull/54), [#53](https://github.com/mojzis/sketchpy/pull/53), [#52](https://github.com/mojzis/sketchpy/pull/52), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
