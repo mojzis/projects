@@ -1,6 +1,27 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-20 06:26:03 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+**Generated:** 2026-08-21 06:26:38 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `dcdae893` Drop comment and docstring nodes from normalization entirely (#35) (Mojzis, 2026-08-20 23:33:29+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#33](https://github.com/mojzis/biston/pull/33), [#31](https://github.com/mojzis/biston/pull/31)
+
+
 
 ---
 
@@ -123,28 +144,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (3):** [#15](https://github.com/mojzis/zorilla/pull/15), [#14](https://github.com/mojzis/zorilla/pull/14), [#13](https://github.com/mojzis/zorilla/pull/13)
 
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `6281a94d` Release v0.5.4 (mojzis, 2026-07-07 21:05:51+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#33](https://github.com/mojzis/biston/pull/33), [#31](https://github.com/mojzis/biston/pull/31)
-
-
-
-**Orphan branches (1):** `claude/biston-prefix-suffix-containment-i9szes`
 
 
 ---
