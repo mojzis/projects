@@ -1,26 +1,29 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-21 06:26:38 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+**Generated:** 2026-08-22 06:20:35 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
 
 ---
 
 
-## [biston](https://github.com/mojzis/biston)
+## [ty-find](https://github.com/mojzis/ty-find)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `dcdae893` Drop comment and docstring nodes from normalization entirely (#35) (Mojzis, 2026-08-20 23:33:29+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
+**Last commit:** `7162f5c7` feat: add `tyf calls` — call hierarchy navigation (#136) (Mojzis, 2026-08-21 17:39:02+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
 
 
-**Open PRs (2):** [#33](https://github.com/mojzis/biston/pull/33), [#31](https://github.com/mojzis/biston/pull/31)
+**Open PRs (3):** [#135](https://github.com/mojzis/ty-find/pull/135), [#134](https://github.com/mojzis/ty-find/pull/134), [#132](https://github.com/mojzis/ty-find/pull/132)
 
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
@@ -43,6 +46,27 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `dcdae893` Drop comment and docstring nodes from normalization entirely (#35) (Mojzis, 2026-08-20 23:33:29+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#33](https://github.com/mojzis/biston/pull/33), [#31](https://github.com/mojzis/biston/pull/31)
+
 
 
 ---
@@ -144,28 +168,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (3):** [#15](https://github.com/mojzis/zorilla/pull/15), [#14](https://github.com/mojzis/zorilla/pull/14), [#13](https://github.com/mojzis/zorilla/pull/13)
 
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `ce66bbf0` Release v0.4.3 (mojzis, 2026-07-05 21:06:11+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#135](https://github.com/mojzis/ty-find/pull/135), [#134](https://github.com/mojzis/ty-find/pull/134), [#132](https://github.com/mojzis/ty-find/pull/132)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
