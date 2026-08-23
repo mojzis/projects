@@ -46,6 +46,9 @@ htmlcov/
 # Reports output
 reports/
 *.toon
+
+# Script logs
+logs/
 *.html
 *.md.generated
 

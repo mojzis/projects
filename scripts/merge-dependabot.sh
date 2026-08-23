@@ -27,6 +27,11 @@
 #         scripts/merge-dependabot.sh <owner> --rebase-conflicts
 set -euo pipefail
 
+# Log dir lives at the repo root (gitignored), one timestamped file per run.
+log_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/logs"
+mkdir -p "$log_dir"
+log_file="$log_dir/merge-$(date +%Y%m%d-%H%M%S).log"
+
 owner="${1:-}"
 if [[ -z "$owner" || "$owner" == -* ]]; then
   echo "usage: $0 <owner> [--dry-run] [--rebase-conflicts] [repo ...]" >&2
@@ -53,6 +58,7 @@ if [[ ${#repos[@]} -eq 0 ]]; then
 fi
 
 ok=0; skip=0; fail=0; rebased=0
+merged_repos=()
 for r in "${repos[@]}"; do
   prs=$(gh pr list -R "$owner/$r" --state open \
         --json number,author,mergeStateStatus --limit 100 2>/dev/null \
@@ -68,7 +74,7 @@ for r in "${repos[@]}"; do
       if $dry_run; then
         echo "WOULD-MERGE $owner/$r #$n"
       elif gh pr merge -R "$owner/$r" "$n" --squash --delete-branch 2>/tmp/dmerge.err; then
-        echo "OK          $owner/$r #$n"; ok=$((ok+1))
+        echo "OK          $owner/$r #$n"; ok=$((ok+1)); merged_repos+=("$r")
       else
         echo "FAIL        $owner/$r #$n -> $(tr -d '\n' </tmp/dmerge.err)"; fail=$((fail+1))
       fi
@@ -81,5 +87,11 @@ for r in "${repos[@]}"; do
   done <<<"$prs"
 done
 rm -f /tmp/dmerge.err
+
+# Brief log: which repos had merges and so need a local fetch/pull.
+if [[ ${#merged_repos[@]} -gt 0 ]]; then
+  printf '%s\n' "${merged_repos[@]}" | sort -u >"$log_file"
+  echo "fetch these: $log_file"
+fi
 
 echo "=== merged: $ok  skipped: $skip  failed: $fail  rebase-requested: $rebased ==="
