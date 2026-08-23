@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-22 06:20:35 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 38
+**Generated:** 2026-08-23 06:22:31 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 39
 
 ---
 
@@ -19,7 +19,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 **CI:** PASS
 
 
-**Open PRs (3):** [#135](https://github.com/mojzis/ty-find/pull/135), [#134](https://github.com/mojzis/ty-find/pull/134), [#132](https://github.com/mojzis/ty-find/pull/132)
+**Open PRs (4):** [#137](https://github.com/mojzis/ty-find/pull/137), [#135](https://github.com/mojzis/ty-find/pull/135), [#134](https://github.com/mojzis/ty-find/pull/134), [#132](https://github.com/mojzis/ty-find/pull/132)
 
 
 
