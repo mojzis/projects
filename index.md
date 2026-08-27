@@ -1,6 +1,65 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-26 06:29:00 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 42
+**Generated:** 2026-08-27 17:02:52 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 40
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `658b6c64` Skills: make forked review skill return in-turn to the caller (#90) (Mojzis, 2026-08-27 16:03:42+00:00)
+
+
+> ⚠️ **Untagged release:** main has 6 commits without a tag.
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (6):** `claude/execute-bounded-byte-cap-akss9n`, `claude/introspect-mcp-startup-wv7cm8`, `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1` +1 more
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `294f1862` Merge pull request #45 from mojzis/claude/macos-app-name-branding-iyf7u6 (Mojzis, 2026-08-27 08:23:20+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `6008a5fb` Release v0.7.0 (Mojzis Stupka, 2026-08-26 19:15:38+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#36](https://github.com/mojzis/biston/pull/36), [#33](https://github.com/mojzis/biston/pull/33), [#31](https://github.com/mojzis/biston/pull/31)
+
+
 
 ---
 
@@ -22,25 +81,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `8ac214ed` Release v0.6.0 (Mojzis Stupka, 2026-08-24 13:40:19+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (4):** [#38](https://github.com/mojzis/biston/pull/38), [#36](https://github.com/mojzis/biston/pull/36), [#33](https://github.com/mojzis/biston/pull/33), [#31](https://github.com/mojzis/biston/pull/31)
-
 
 
 ---
@@ -81,22 +121,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#6](https://github.com/mojzis/comicforge/pull/6)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `9469f8d0` Merge pull request #42 from mojzis/todos-view (Mojzis, 2026-08-23 21:28:36+00:00)
-
-
-
-**CI:** PASS
 
 
 
@@ -194,28 +218,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (1):** [#1](https://github.com/mojzis/newsparser/pull/1)
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `619b9b8f` Release v0.2.7 (#89) (Mojzis, 2026-08-14 09:17:55+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (4):** [#90](https://github.com/mojzis/introspect/pull/90), [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
