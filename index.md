@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-27 17:02:52 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 40
+**Generated:** 2026-08-28 17:51:59 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 41
 
 ---
 
@@ -10,20 +10,42 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
-**Last commit:** `658b6c64` Skills: make forked review skill return in-turn to the caller (#90) (Mojzis, 2026-08-27 16:03:42+00:00)
+**Last commit:** `74c40877` Add provider-scoped cost drilldowns and Auto Review estimates (#104) (Mojzis, 2026-08-28 14:30:42+00:00)
 
 
-> ⚠️ **Untagged release:** main has 6 commits without a tag.
+> ⚠️ **Untagged release:** main has 13 commits without a tag.
 
 
 **CI: FAIL** (CI)
 
 
-**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+**Open PRs (4):** [#103](https://github.com/mojzis/introspect/pull/103), [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
 
 
 
-**Orphan branches (6):** `claude/execute-bounded-byte-cap-akss9n`, `claude/introspect-mcp-startup-wv7cm8`, `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1` +1 more
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
+
+
+
+**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -59,28 +81,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open PRs (3):** [#36](https://github.com/mojzis/biston/pull/36), [#33](https://github.com/mojzis/biston/pull/33), [#31](https://github.com/mojzis/biston/pull/31)
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
