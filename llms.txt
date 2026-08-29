@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-28 17:51:59 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 41
+**Generated:** 2026-08-29 11:56:22 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 40
 
 ---
 
@@ -10,16 +10,14 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
-**Last commit:** `74c40877` Add provider-scoped cost drilldowns and Auto Review estimates (#104) (Mojzis, 2026-08-28 14:30:42+00:00)
+**Last commit:** `a6ec2d05` Release v0.3.1 (Mojzis Stupka, 2026-08-28 18:52:46+00:00)
 
 
-> ⚠️ **Untagged release:** main has 13 commits without a tag.
+
+**CI:** PASS
 
 
-**CI: FAIL** (CI)
-
-
-**Open PRs (4):** [#103](https://github.com/mojzis/introspect/pull/103), [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
 
 
 
