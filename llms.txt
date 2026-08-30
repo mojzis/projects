@@ -1,27 +1,26 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-29 11:56:22 | **Period:** Last 90 days | **Repos:** 23 | **Open PRs:** 40
+**Generated:** 2026-08-30 10:53:28 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 42
 
 ---
 
 
-## [introspect](https://github.com/mojzis/introspect)
+## [gerenuk](https://github.com/mojzis/gerenuk)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
-**Last commit:** `a6ec2d05` Release v0.3.1 (Mojzis Stupka, 2026-08-28 18:52:46+00:00)
+**Last commit:** `8082ce77` Add impacted-tests: walk changed symbols out to the tests that reach them (mojzis, 2026-08-29 21:41:55+00:00)
 
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
 
 
-**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+**Open PRs (2):** [#2](https://github.com/mojzis/gerenuk/pull/2), [#1](https://github.com/mojzis/gerenuk/pull/1)
 
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -44,6 +43,28 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `a6ec2d05` Release v0.3.1 (Mojzis Stupka, 2026-08-28 18:52:46+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -93,7 +114,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 
-**CI: FAIL** (Run Tests)
+**CI:** PASS
 
 
 **Open PRs (14):** [#57](https://github.com/mojzis/sketchpy/pull/57), [#56](https://github.com/mojzis/sketchpy/pull/56), [#54](https://github.com/mojzis/sketchpy/pull/54), [#53](https://github.com/mojzis/sketchpy/pull/53), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
