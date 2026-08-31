@@ -1,26 +1,65 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-08-30 10:53:28 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 42
+**Generated:** 2026-08-31 12:05:26 | **Period:** Last 90 days | **Repos:** 24 | **Open PRs:** 42
 
 ---
 
 
-## [gerenuk](https://github.com/mojzis/gerenuk)
+## [braindump](https://github.com/mojzis/braindump)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `8082ce77` Add impacted-tests: walk changed symbols out to the tests that reach them (mojzis, 2026-08-29 21:41:55+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
+**Last commit:** `2e2818a8` Add quality gates and pre-commit hook (Mojzis Stupka, 2026-08-31 07:25:45+00:00)
+
 
 
 **CI:** PASS
 
 
-**Open PRs (2):** [#2](https://github.com/mojzis/gerenuk/pull/2), [#1](https://github.com/mojzis/gerenuk/pull/1)
 
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `a6ec2d05` Release v0.3.1 (Mojzis Stupka, 2026-08-28 18:52:46+00:00)
+
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (3):** [#105](https://github.com/mojzis/introspect/pull/105), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (14):** [#60](https://github.com/mojzis/sketchpy/pull/60), [#59](https://github.com/mojzis/sketchpy/pull/59), [#58](https://github.com/mojzis/sketchpy/pull/58), [#54](https://github.com/mojzis/sketchpy/pull/54), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
@@ -48,38 +87,21 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [introspect](https://github.com/mojzis/introspect)
+## [gerenuk](https://github.com/mojzis/gerenuk)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `a6ec2d05` Release v0.3.1 (Mojzis Stupka, 2026-08-28 18:52:46+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#87](https://github.com/mojzis/introspect/pull/87), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+**Last commit:** `8082ce77` Add impacted-tests: walk changed symbols out to the tests that reach them (mojzis, 2026-08-29 21:41:55+00:00)
 
 
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `294f1862` Merge pull request #45 from mojzis/claude/macos-app-name-branding-iyf7u6 (Mojzis, 2026-08-27 08:23:20+00:00)
-
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
+
+
+**Open PRs (2):** [#2](https://github.com/mojzis/gerenuk/pull/2), [#1](https://github.com/mojzis/gerenuk/pull/1)
 
 
 
@@ -100,28 +122,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open PRs (3):** [#36](https://github.com/mojzis/biston/pull/36), [#33](https://github.com/mojzis/biston/pull/33), [#31](https://github.com/mojzis/biston/pull/31)
 
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (14):** [#57](https://github.com/mojzis/sketchpy/pull/57), [#56](https://github.com/mojzis/sketchpy/pull/56), [#54](https://github.com/mojzis/sketchpy/pull/54), [#53](https://github.com/mojzis/sketchpy/pull/53), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
