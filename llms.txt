@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-01 10:43:34 | **Period:** Last 90 days | **Repos:** 25 | **Open PRs:** 32
+**Generated:** 2026-09-02 10:09:15 | **Period:** Last 90 days | **Repos:** 25 | **Open PRs:** 30
 
 ---
 
@@ -10,17 +10,54 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
-**Last commit:** `e4274e3a` Bump actions/setup-node from 6 to 7 (#1) (dependabot[bot], 2026-08-31 20:55:15+00:00)
+**Last commit:** `90cdfac6` See through the two edges a type checker cannot draw (#5) (Mojzis, 2026-09-02 08:22:36+00:00)
 
 
-> ⚠️ **Untagged release:** main has 6 commits without a tag.
+> ⚠️ **Untagged release:** main has 7 commits without a tag.
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#5](https://github.com/mojzis/gerenuk/pull/5)
 
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `48065e19` Add `madoqua guide`, serving the docs the site publishes (#4) (Mojzis, 2026-09-02 08:21:21+00:00)
+
+
+> ⚠️ **Untagged release:** main has 5 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
+
+
+
+**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -41,27 +78,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#12](https://github.com/mojzis/pycoati/pull/12), [#11](https://github.com/mojzis/pycoati/pull/11)
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `2e1ae0a6` Port the pre-commit bash hook to madoqua (#3) (Mojzis, 2026-08-31 21:45:36+00:00)
-
-
-> ⚠️ **Untagged release:** main has 4 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#4](https://github.com/mojzis/madoqua/pull/4)
 
 
 
@@ -225,28 +241,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
