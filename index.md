@@ -1,6 +1,49 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-02 10:09:15 | **Period:** Last 90 days | **Repos:** 25 | **Open PRs:** 30
+**Generated:** 2026-09-03 10:20:10 | **Period:** Last 90 days | **Repos:** 25 | **Open PRs:** 28
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `a6ec2d05` Release v0.3.1 (Mojzis Stupka, 2026-08-28 18:52:46+00:00)
+
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `claude/toolbox-integration-setup-gfvhfp`, `ideas`
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `5ddee4e0` Add `zorilla guide` with setup, triage and tune instructions (#17) (Mojzis, 2026-09-02 12:06:16+00:00)
+
+
+> ⚠️ **Untagged release:** main has 4 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#14](https://github.com/mojzis/zorilla/pull/14)
+
+
 
 ---
 
@@ -10,10 +53,10 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
-**Last commit:** `90cdfac6` See through the two edges a type checker cannot draw (#5) (Mojzis, 2026-09-02 08:22:36+00:00)
+**Last commit:** `2abac28f` Reframe the docs around test selection, audit as its verifier (#7) (Mojzis, 2026-09-02 11:44:37+00:00)
 
 
-> ⚠️ **Untagged release:** main has 7 commits without a tag.
+> ⚠️ **Untagged release:** main has 9 commits without a tag.
 
 
 **CI:** PASS
@@ -23,18 +66,21 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 ---
 
 
-## [madoqua](https://github.com/mojzis/madoqua)
+## [pycoati](https://github.com/mojzis/pycoati)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `48065e19` Add `madoqua guide`, serving the docs the site publishes (#4) (Mojzis, 2026-09-02 08:21:21+00:00)
+N/A | ★0 | 0 issues
 
 
-> ⚠️ **Untagged release:** main has 5 commits without a tag.
+**Last commit:** `596f8993` Add `pycoati guide` so the tool carries its own workflow instructions (#12) (Mojzis, 2026-09-02 11:40:07+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
 
 
 **CI:** PASS
+
+
+**Open PRs (1):** [#11](https://github.com/mojzis/pycoati/pull/11)
 
 
 
@@ -63,42 +109,18 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
+## [madoqua](https://github.com/mojzis/madoqua)
 
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `09287983` Bump the minor-and-patch group across 1 directory with 7 updates (#9) (dependabot[bot], 2026-08-31 20:56:25+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
+**Last commit:** `48065e19` Add `madoqua guide`, serving the docs the site publishes (#4) (Mojzis, 2026-09-02 08:21:21+00:00)
+
+
+> ⚠️ **Untagged release:** main has 5 commits without a tag.
 
 
 **CI:** PASS
-
-
-**Open PRs (2):** [#12](https://github.com/mojzis/pycoati/pull/12), [#11](https://github.com/mojzis/pycoati/pull/11)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `ba165304` Skills: make forked review skill return in-turn to the caller (#16) (Mojzis, 2026-08-31 21:32:40+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI: FAIL** (Cargo Audit)
-
-
-**Open PRs (2):** [#17](https://github.com/mojzis/zorilla/pull/17), [#14](https://github.com/mojzis/zorilla/pull/14)
 
 
 
@@ -219,28 +241,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open PRs (1):** [#36](https://github.com/mojzis/biston/pull/36)
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `a6ec2d05` Release v0.3.1 (Mojzis Stupka, 2026-08-28 18:52:46+00:00)
-
-
-
-**CI: FAIL** (CI)
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
