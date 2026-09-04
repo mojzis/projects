@@ -1,6 +1,28 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-03 10:20:10 | **Period:** Last 90 days | **Repos:** 25 | **Open PRs:** 28
+**Generated:** 2026-09-04 10:08:37 | **Period:** Last 90 days | **Repos:** 25 | **Open PRs:** 29
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -14,14 +36,14 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 
-**CI: FAIL** (CI)
+**CI:** PASS
 
 
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+**Open PRs (3):** [#106](https://github.com/mojzis/introspect/pull/106), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
 
 
 
-**Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `claude/toolbox-integration-setup-gfvhfp`, `ideas`
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -82,28 +104,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (1):** [#11](https://github.com/mojzis/pycoati/pull/11)
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
