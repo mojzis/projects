@@ -1,6 +1,46 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-04 10:08:37 | **Period:** Last 90 days | **Repos:** 25 | **Open PRs:** 29
+**Generated:** 2026-09-05 09:37:37 | **Period:** Last 90 days | **Repos:** 25 | **Open PRs:** 32
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `2abac28f` Reframe the docs around test selection, audit as its verifier (#7) (Mojzis, 2026-09-02 11:44:37+00:00)
+
+
+> ⚠️ **Untagged release:** main has 9 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#10](https://github.com/mojzis/gerenuk/pull/10), [#9](https://github.com/mojzis/gerenuk/pull/9), [#8](https://github.com/mojzis/gerenuk/pull/8)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `9fd88d43` Merge pull request #52 from mojzis/make-journal-parse-failures-actionable (Mojzis, 2026-09-05 06:03:21+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#48](https://github.com/mojzis/braindump/pull/48), [#47](https://github.com/mojzis/braindump/pull/47)
+
+
 
 ---
 
@@ -64,24 +104,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#14](https://github.com/mojzis/zorilla/pull/14)
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `2abac28f` Reframe the docs around test selection, audit as its verifier (#7) (Mojzis, 2026-09-02 11:44:37+00:00)
-
-
-> ⚠️ **Untagged release:** main has 9 commits without a tag.
-
-
-**CI:** PASS
 
 
 
@@ -166,25 +188,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#12](https://github.com/mojzis/tyreach/pull/12), [#10](https://github.com/mojzis/tyreach/pull/10)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `8dc8823a` Update pyobjc-framework-cocoa requirement from >=9.0 to >=12.2.2 (#46) (dependabot[bot], 2026-08-31 20:55:33+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#48](https://github.com/mojzis/braindump/pull/48), [#47](https://github.com/mojzis/braindump/pull/47)
 
 
 
