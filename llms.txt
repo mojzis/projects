@@ -1,6 +1,73 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-06 10:12:55 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 24
+**Generated:** 2026-09-06 10:15:40 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 24
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `37ed975f` CLAUDE.md: list sketchpy and tyreach as repos to ignore in cross-repo work (mojzis, 2026-09-06 10:13:51+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `3f46746e` Release v0.3.1 (mojzis, 2026-09-06 10:13:38+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `0a74ec5a` Release v0.2.2 (mojzis, 2026-09-06 10:13:31+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `53d8542d` Release v0.2.7 (mojzis, 2026-09-06 10:13:23+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
 
 ---
 
@@ -10,13 +77,11 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
-**Last commit:** `c5ace157` Add `introspy guide`: the opt-in pitch, served from the package (#107) (Mojzis, 2026-09-06 10:12:00+00:00)
+**Last commit:** `057839c8` Release v0.3.2 (mojzis, 2026-09-06 10:13:15+00:00)
 
 
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
 
-
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
@@ -38,65 +103,10 @@ N/A | ★0 | 0 issues
 
 
 
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#20](https://github.com/mojzis/zorilla/pull/20)
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `70c3de3f` Bump actions/setup-python from 6 to 7 (#24) (dependabot[bot], 2026-09-06 10:11:43+00:00)
-
-
-
 **CI:** PASS
 
 
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `f4a41524` Skills: make forked review skill return in-turn to the caller (#11) (Mojzis, 2026-09-06 10:11:37+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** UNKNOWN
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `97eb8d60` Shim: exec <repo>/.venv/bin/madoqua before falling back to PATH (#7) (Mojzis, 2026-09-06 10:11:31+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** UNKNOWN
+**Open PRs (1):** [#20](https://github.com/mojzis/zorilla/pull/20)
 
 
 
@@ -110,24 +120,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 **Last commit:** `2f1e55f0` Update ruff requirement from >=0.16.4 to >=0.16.5 (#47) (dependabot[bot], 2026-09-06 10:09:13+00:00)
 
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `753b07df` Update pytest requirement from >=8.0 to >=9.1.1 (#8) (dependabot[bot], 2026-09-06 10:09:06+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
 
 
 **CI:** PASS
