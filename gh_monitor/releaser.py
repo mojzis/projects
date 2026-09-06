@@ -291,12 +291,13 @@ class GitReleaser:
 
         Forks are never released — we only publish our own projects, not
         clones of someone else's repo that happen to live under the owner.
+        Archived repos are abandoned and skipped too.
         """
         repos = self.collector.get_repositories_for_sync(self.owner, self.days)
         candidates = []
         for repo in repos:
             name = repo["name"]
-            if repo.get("isFork"):
+            if repo.get("isFork") or repo.get("isArchived"):
                 continue
             if not self.collector.has_release_workflow(self.owner, name):
                 continue

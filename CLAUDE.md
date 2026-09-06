@@ -177,7 +177,8 @@ it has a release workflow (`.github/workflows/release.yml`) **and** untagged
 commits on main (the same signal the monitor report warns about). **Forks are
 never candidates** — we only release our own projects, not clones of someone
 else's repo that live under the owner (the sync repo list now carries `isFork`
-and `find_candidates` skips any fork). For each candidate `GitReleaser`:
+and `find_candidates` skips any fork). **Archived repos are skipped too** — archiving on
+GitHub is how an abandoned project is marked (the list also carries `isArchived`). For each candidate `GitReleaser`:
 
 - Clones the repo into a throwaway temp dir (no dependency on `~/git` clones).
 - Detects the project type — **`Cargo.toml` takes precedence over
