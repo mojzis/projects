@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-06 10:15:40 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 24
+**Generated:** 2026-09-06 10:19:07 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 24
 
 ---
 
@@ -10,7 +10,7 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-**Last commit:** `37ed975f` CLAUDE.md: list sketchpy and tyreach as repos to ignore in cross-repo work (mojzis, 2026-09-06 10:13:51+00:00)
+**Last commit:** `8fa7c283` Integrate aesop toolbox: madoqua hook with biston/zorilla/gerenuk, CLAUDE.md notes (mojzis, 2026-09-06 10:17:45+00:00)
 
 
 
@@ -19,6 +19,22 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [aesop](https://github.com/mojzis/aesop)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+
+
+**Last commit:** `1dae3446` Add /guide/: the guide-subcommand principle, plus a prompt to add it to any CLI (mojzis, 2026-09-06 10:16:06+00:00)
+
+
+
+**CI:** PASS
+
 
 
 ---
@@ -33,7 +49,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -49,7 +65,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -65,7 +81,7 @@ N/A | ★0 | 0 issues
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -146,22 +162,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [aesop](https://github.com/mojzis/aesop)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
-
-
-**Last commit:** `df0ffe87` build: tool_md header carries the category, like index.md already does (mojzis, 2026-09-06 09:52:41+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
