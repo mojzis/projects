@@ -364,3 +364,41 @@ Clean web visualization using Jinja2 template at `templates/report.html`. Featur
 - **Progress tracking**: CLI uses Rich progress bars during collection/sync
 - **Error handling**: GitHubCLIError exception for gh command failures
 - **Sync safety**: Dirty repos are never modified, always skipped
+
+## Toolbox (aesop)
+
+Every tool teaches itself: run `uv run <tool> guide` before guessing at flags.
+
+**On every commit** — `madoqua` is the single pre-commit hook (`hooks/pre-commit`,
+`core.hooksPath=hooks`). It acts only on staged `.py` files: fix phase `ruff check --fix`
++ `ruff format` (re-staged), then in parallel `ruff check`, `ty check`, `biston scan
+--focus-args` (clone pairs touching staged files), `zorilla check` (test smells in staged
+files) and `gerenuk run -- -q` (only the tests the diff can reach, whole suite when unsure;
+diffs the working tree against `origin/main`). Typical run: ~2 s, gerenuk dominates.
+`uv run madoqua stats` shows timings from `.git/hook-timings.jsonl`. Note: `ty check` and
+`zorilla check` have pre-existing findings in `tests/` (61 ty diagnostics, mostly
+`tests/test_models.py`; 20 zorilla ZR004/ZR005 findings), and `biston` reports one exact
+clone (`_run_git` in `releaser.py`/`syncer.py`) — commits staging those files will be
+blocked until they are resolved.
+
+**Fresh clone:** `uv sync && uv run madoqua install` once (`core.hooksPath` is local
+git config, not committed).
+
+**On demand, instead of grep** — use `uv run tyf` for symbol definitions and references,
+never grep: `uv run tyf find <name>`, `uv run tyf refs <name>`, `uv run tyf show <name>`,
+`uv run tyf calls --in <name>`. `uv run gerenuk audit <file>` lists symbols nothing
+references. `uv run gerenuk impacted-tests` shows which tests the current diff reaches.
+
+**Periodic audits, never in the hook or CI:**
+- `uv run pycoati . --format pretty` — scores every test for suspicion (mock overuse,
+  weak asserts) and prints a ranked list; run before a test cleanup session. Needs
+  pytest-cov installed or coverage is silently null.
+- `uv run biston scan .` / `uv run zorilla check .` — full-tree clone / test-smell scans.
+
+**Refresh the toolbox:**
+
+```
+uv lock --refresh --upgrade-package madoqua --upgrade-package gerenuk --upgrade-package biston --upgrade-package zorilla --upgrade-package pycoati --upgrade-package ty-find && uv sync
+```
+
+(`--refresh` matters: without it uv may serve a cached index and miss a fresh release.)
