@@ -1,6 +1,86 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-06 09:52:30 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 32
+**Generated:** 2026-09-06 10:12:55 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 24
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `c5ace157` Add `introspy guide`: the opt-in pitch, served from the package (#107) (Mojzis, 2026-09-06 10:12:00+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b71ed6b1` Release v0.2.1 (mojzis, 2026-09-06 09:39:16+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#20](https://github.com/mojzis/zorilla/pull/20)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `70c3de3f` Bump actions/setup-python from 6 to 7 (#24) (dependabot[bot], 2026-09-06 10:11:43+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `f4a41524` Skills: make forked review skill return in-turn to the caller (#11) (Mojzis, 2026-09-06 10:11:37+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
 
 ---
 
@@ -10,7 +90,25 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 
-**Last commit:** `3cf4ed60` Release v0.2.1 (mojzis, 2026-09-06 09:44:22+00:00)
+**Last commit:** `97eb8d60` Shim: exec <repo>/.venv/bin/madoqua before falling back to PATH (#7) (Mojzis, 2026-09-06 10:11:31+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `2f1e55f0` Update ruff requirement from >=0.16.4 to >=0.16.5 (#47) (dependabot[bot], 2026-09-06 10:09:13+00:00)
 
 
 
@@ -26,71 +124,13 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
-**Last commit:** `3be0131f` Release v0.3.0 (mojzis, 2026-09-06 09:39:21+00:00)
+**Last commit:** `753b07df` Update pytest requirement from >=8.0 to >=9.1.1 (#8) (dependabot[bot], 2026-09-06 10:09:06+00:00)
 
 
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#10](https://github.com/mojzis/gerenuk/pull/10), [#9](https://github.com/mojzis/gerenuk/pull/9), [#8](https://github.com/mojzis/gerenuk/pull/8)
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b20a39b8` Release v0.2.6 (mojzis, 2026-09-06 09:39:21+00:00)
-
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
 
 
 **CI:** PASS
-
-
-**Open PRs (1):** [#11](https://github.com/mojzis/pycoati/pull/11)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b71ed6b1` Release v0.2.1 (mojzis, 2026-09-06 09:39:16+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#14](https://github.com/mojzis/zorilla/pull/14)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `44432444` Release v0.7.2 (mojzis, 2026-09-06 09:39:11+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#36](https://github.com/mojzis/biston/pull/36)
 
 
 
@@ -119,38 +159,35 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `1736531b` Skip archived repos when finding release candidates (mojzis, 2026-09-06 09:19:43+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [aesop](https://github.com/mojzis/aesop)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 
 
-**Last commit:** `943f1a53` setup prompt: hand over the working hook config and the two-commit verification (mojzis, 2026-09-06 09:16:23+00:00)
+**Last commit:** `df0ffe87` build: tool_md header carries the category, like index.md already does (mojzis, 2026-09-06 09:52:41+00:00)
 
 
 
 **CI:** PASS
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `44432444` Release v0.7.2 (mojzis, 2026-09-06 09:39:11+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#36](https://github.com/mojzis/biston/pull/36)
 
 
 
@@ -203,47 +240,6 @@ N/A | ★0 | 0 issues
 
 **CI:** PASS
 
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `e9c3934f` Merge pull request #53 from mojzis/add-dedicated-til-view (Mojzis, 2026-09-05 23:18:26+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#48](https://github.com/mojzis/braindump/pull/48), [#47](https://github.com/mojzis/braindump/pull/47)
-
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `a6ec2d05` Release v0.3.1 (Mojzis Stupka, 2026-08-28 18:52:46+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#106](https://github.com/mojzis/introspect/pull/106), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
