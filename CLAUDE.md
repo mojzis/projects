@@ -295,6 +295,13 @@ gh api repos/OWNER/REPO/tags --paginate
 gh api "repos/OWNER/REPO/commits?sha=main&per_page=100"
 ```
 
+## Repos to ignore
+
+- **sketchpy** — ignore in all cross-repo work (Dependabot merges, releases, CI
+  triage). Its JS unit tests reference a removed `sketchpy/shapes.py`, so every
+  PR shows red CI; do not diagnose, merge, or release it unless explicitly asked.
+- **tyreach** — archived on GitHub (2026-09-06); skip.
+
 ## Release Tagging Warning
 
 Repositories that contain a release workflow (`.github/workflows/release.yml`) are
