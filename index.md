@@ -1,6 +1,120 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-06 09:20:59 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 33
+**Generated:** 2026-09-06 09:52:30 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 32
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `3cf4ed60` Release v0.2.1 (mojzis, 2026-09-06 09:44:22+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `3be0131f` Release v0.3.0 (mojzis, 2026-09-06 09:39:21+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#10](https://github.com/mojzis/gerenuk/pull/10), [#9](https://github.com/mojzis/gerenuk/pull/9), [#8](https://github.com/mojzis/gerenuk/pull/8)
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b20a39b8` Release v0.2.6 (mojzis, 2026-09-06 09:39:21+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#11](https://github.com/mojzis/pycoati/pull/11)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b71ed6b1` Release v0.2.1 (mojzis, 2026-09-06 09:39:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#14](https://github.com/mojzis/zorilla/pull/14)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `44432444` Release v0.7.2 (mojzis, 2026-09-06 09:39:11+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#36](https://github.com/mojzis/biston/pull/36)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `7cf8de56` Release v0.5.0 (mojzis, 2026-09-06 09:38:07+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#139](https://github.com/mojzis/ty-find/pull/139), [#137](https://github.com/mojzis/ty-find/pull/137)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
 
 ---
 
@@ -43,25 +157,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 ---
 
 
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `a9561f32` Release v0.7.1 (mojzis, 2026-09-06 09:13:56+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#36](https://github.com/mojzis/biston/pull/36)
-
-
-
----
-
-
 ## [tyreach](https://github.com/mojzis/tyreach)
 
 N/A | ★0 | 0 issues
@@ -75,47 +170,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#12](https://github.com/mojzis/tyreach/pull/12), [#10](https://github.com/mojzis/tyreach/pull/10)
-
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `4520d30a` Release v0.4.6 (mojzis, 2026-09-06 09:13:41+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#139](https://github.com/mojzis/ty-find/pull/139), [#137](https://github.com/mojzis/ty-find/pull/137)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `e59b5187` Release v0.2.5 (mojzis, 2026-09-06 09:13:32+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#11](https://github.com/mojzis/pycoati/pull/11)
 
 
 
@@ -148,63 +202,6 @@ N/A | ★0 | 0 issues
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `8d4d7a49` Release v0.2.0 (mojzis, 2026-09-06 09:11:47+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#14](https://github.com/mojzis/zorilla/pull/14)
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `48065e19` Add `madoqua guide`, serving the docs the site publishes (#4) (Mojzis, 2026-09-02 08:21:21+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#5](https://github.com/mojzis/madoqua/pull/5)
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `58f48c2b` Release 0.2.0 (mojzis, 2026-09-06 08:47:18+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#10](https://github.com/mojzis/gerenuk/pull/10), [#9](https://github.com/mojzis/gerenuk/pull/9), [#8](https://github.com/mojzis/gerenuk/pull/8)
 
 
 
