@@ -1,6 +1,193 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-05 09:37:37 | **Period:** Last 90 days | **Repos:** 25 | **Open PRs:** 32
+**Generated:** 2026-09-06 09:20:59 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 33
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `1736531b` Skip archived repos when finding release candidates (mojzis, 2026-09-06 09:19:43+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [aesop](https://github.com/mojzis/aesop)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+
+
+**Last commit:** `943f1a53` setup prompt: hand over the working hook config and the two-commit verification (mojzis, 2026-09-06 09:16:23+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `a9561f32` Release v0.7.1 (mojzis, 2026-09-06 09:13:56+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#36](https://github.com/mojzis/biston/pull/36)
+
+
+
+---
+
+
+## [tyreach](https://github.com/mojzis/tyreach)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `4a86ba4e` Release v0.1.4 (mojzis, 2026-09-06 09:13:49+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#12](https://github.com/mojzis/tyreach/pull/12), [#10](https://github.com/mojzis/tyreach/pull/10)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `4520d30a` Release v0.4.6 (mojzis, 2026-09-06 09:13:41+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#139](https://github.com/mojzis/ty-find/pull/139), [#137](https://github.com/mojzis/ty-find/pull/137)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `e59b5187` Release v0.2.5 (mojzis, 2026-09-06 09:13:32+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#11](https://github.com/mojzis/pycoati/pull/11)
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `b30a12c0` Release v0.2.1 (mojzis, 2026-09-06 09:13:24+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `00e9bf64` Release v0.1.2 (mojzis, 2026-09-06 09:13:17+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `8d4d7a49` Release v0.2.0 (mojzis, 2026-09-06 09:11:47+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#14](https://github.com/mojzis/zorilla/pull/14)
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `48065e19` Add `madoqua guide`, serving the docs the site publishes (#4) (Mojzis, 2026-09-02 08:21:21+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#5](https://github.com/mojzis/madoqua/pull/5)
+
+
 
 ---
 
@@ -10,10 +197,8 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
-**Last commit:** `2abac28f` Reframe the docs around test selection, audit as its verifier (#7) (Mojzis, 2026-09-02 11:44:37+00:00)
+**Last commit:** `58f48c2b` Release 0.2.0 (mojzis, 2026-09-06 08:47:18+00:00)
 
-
-> ⚠️ **Untagged release:** main has 9 commits without a tag.
 
 
 **CI:** PASS
@@ -31,7 +216,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
-**Last commit:** `9fd88d43` Merge pull request #52 from mojzis/make-journal-parse-failures-actionable (Mojzis, 2026-09-05 06:03:21+00:00)
+**Last commit:** `e9c3934f` Merge pull request #53 from mojzis/add-dedicated-til-view (Mojzis, 2026-09-05 23:18:26+00:00)
 
 
 
@@ -40,28 +225,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 **Open PRs (2):** [#48](https://github.com/mojzis/braindump/pull/48), [#47](https://github.com/mojzis/braindump/pull/47)
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5c9fc1b` Bump actions/checkout from 6 to 7 (#23) (dependabot[bot], 2026-07-05 06:36:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#24](https://github.com/mojzis/projects/pull/24)
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -89,111 +252,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 ---
 
 
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `5ddee4e0` Add `zorilla guide` with setup, triage and tune instructions (#17) (Mojzis, 2026-09-02 12:06:16+00:00)
-
-
-> ⚠️ **Untagged release:** main has 4 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#14](https://github.com/mojzis/zorilla/pull/14)
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `596f8993` Add `pycoati guide` so the tool carries its own workflow instructions (#12) (Mojzis, 2026-09-02 11:40:07+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#11](https://github.com/mojzis/pycoati/pull/11)
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `48065e19` Add `madoqua guide`, serving the docs the site publishes (#4) (Mojzis, 2026-09-02 08:21:21+00:00)
-
-
-> ⚠️ **Untagged release:** main has 5 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `8fa5a762` build(deps): bump actions/setup-node from 6 to 7 (#132) (dependabot[bot], 2026-08-31 20:55:56+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#139](https://github.com/mojzis/ty-find/pull/139), [#137](https://github.com/mojzis/ty-find/pull/137)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [tyreach](https://github.com/mojzis/tyreach)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `2c0e7500` Bump actions/setup-python from 6 to 7 (#11) (dependabot[bot], 2026-08-31 20:56:17+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#12](https://github.com/mojzis/tyreach/pull/12), [#10](https://github.com/mojzis/tyreach/pull/10)
-
-
-
----
-
-
 ## [talkshape](https://github.com/mojzis/talkshape)
 
 N/A | ★0 | 0 issues
@@ -210,45 +268,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `dae54dcb` Bump astral-sh/setup-uv from 8.3.0 to 10.0.1 (#6) (dependabot[bot], 2026-08-31 20:56:12+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `58b21cf3` Bump actions/setup-python from 6 to 7 (#31) (dependabot[bot], 2026-08-31 20:55:43+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#36](https://github.com/mojzis/biston/pull/36)
-
-
-
----
-
-
 ## [sketchpy](https://github.com/mojzis/sketchpy)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
@@ -258,7 +277,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 
-**CI: FAIL** (Run Tests)
+**CI:** PASS
 
 
 **Open PRs (14):** [#60](https://github.com/mojzis/sketchpy/pull/60), [#59](https://github.com/mojzis/sketchpy/pull/59), [#58](https://github.com/mojzis/sketchpy/pull/58), [#54](https://github.com/mojzis/sketchpy/pull/54), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
