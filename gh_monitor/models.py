@@ -103,7 +103,7 @@ class Repository:
     @property
     def has_untagged_release_commits(self) -> bool:
         """Whether a release workflow exists but main has untagged commits."""
-        return self.has_release_workflow and self.untagged_commits_on_main > 0
+        return bool(self.has_release_workflow and self.untagged_commits_on_main > 0)
 
     def to_dict(self) -> dict:
         """Convert to dictionary for serialization."""
