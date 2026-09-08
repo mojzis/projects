@@ -9,6 +9,7 @@ from typing import Annotated
 import typer
 from rich.console import Console
 from rich.progress import Progress
+from typer_agentic import agent_errors
 
 from .generators import (
     generate_html_report,
@@ -436,9 +437,8 @@ def release(
         raise typer.Exit(1) from None
 
 
-def main():
-    """Main entry point."""
-    app()
+# Agent-facing usage errors (typer-agentic): humans get stock Typer output.
+main = agent_errors(app)
 
 
 if __name__ == "__main__":
