@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-08 01:13:31 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 25
+**Generated:** 2026-09-08 01:17:19 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 25
 
 ---
 
@@ -10,7 +10,7 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-**Last commit:** `82eb215c` Add the merge-dependabot script the skill has always referenced (mojzis, 2026-09-08 01:09:55+00:00)
+**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
 
 
 
@@ -51,7 +51,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 > ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
