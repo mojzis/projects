@@ -1,6 +1,68 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-08 01:17:19 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 25
+**Generated:** 2026-09-08 10:15:39 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 25
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `3f46746e` Release v0.3.1 (mojzis, 2026-09-06 10:13:38+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#14](https://github.com/mojzis/gerenuk/pull/14), [#13](https://github.com/mojzis/gerenuk/pull/13), [#12](https://github.com/mojzis/gerenuk/pull/12)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `8ebb0cde` Wrap the bd entry point in typer-agentic (mojzis, 2026-09-08 01:15:54+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#54](https://github.com/mojzis/braindump/pull/54)
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `3ee2df0b` Wrap the CLI entry point in typer-agentic (mojzis, 2026-09-08 01:14:50+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
 
 ---
 
@@ -35,30 +97,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 **CI:** PASS
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `5d5666c2` Add `introspy guide`: the opt-in pitch, served from the package (#108) (Mojzis, 2026-09-08 01:09:39+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -115,25 +153,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `b5c56f7b` Update ty requirement from >=0.0.75 to >=0.0.78 (#55) (dependabot[bot], 2026-09-08 01:07:21+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#54](https://github.com/mojzis/braindump/pull/54)
-
 
 
 ---
@@ -270,25 +289,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `3f46746e` Release v0.3.1 (mojzis, 2026-09-06 10:13:38+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#14](https://github.com/mojzis/gerenuk/pull/14), [#13](https://github.com/mojzis/gerenuk/pull/13), [#12](https://github.com/mojzis/gerenuk/pull/12)
 
 
 
