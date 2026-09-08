@@ -1,6 +1,277 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-07 10:59:01 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 37
+**Generated:** 2026-09-08 01:11:32 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 25
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `82eb215c` Add the merge-dependabot script the skill has always referenced (mojzis, 2026-09-08 01:09:55+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [logogame](https://github.com/mojzis/logogame)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
+
+
+**Last commit:** `dc1b6b00` Fix sentence unlock race condition and add slowdown effect (#5) (Mojzis, 2026-09-08 01:09:42+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `5d5666c2` Add `introspy guide`: the opt-in pitch, served from the package (#108) (Mojzis, 2026-09-08 01:09:39+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `7ec15e3e` Skills: make forked review skill return in-turn to the caller (#36) (Mojzis, 2026-09-08 01:09:36+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#42](https://github.com/mojzis/biston/pull/42)
+
+
+
+---
+
+
+## [newsparser](https://github.com/mojzis/newsparser)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `801100e6` Skills: make forked review skill return in-turn to the caller (#1) (Mojzis, 2026-09-08 01:09:30+00:00)
+
+
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `5af4ec03` Skills: make forked review skill return in-turn to the caller (#139) (Mojzis, 2026-09-08 01:09:26+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `b5c56f7b` Update ty requirement from >=0.0.75 to >=0.0.78 (#55) (dependabot[bot], 2026-09-08 01:07:21+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#54](https://github.com/mojzis/braindump/pull/54)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `93d7dd31` Bump the minor-and-patch group across 1 directory with 8 updates (#20) (dependabot[bot], 2026-09-08 01:08:47+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3e9382e7` Bump the minor-and-patch group in /server with 3 updates (#14) (dependabot[bot], 2026-09-08 01:08:30+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `7945ca7b` Bump the minor-and-patch group with 3 updates (#15) (dependabot[bot], 2026-09-08 01:08:10+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `92ef23d4` Bump actions/deploy-pages from 4 to 5 (#10) (dependabot[bot], 2026-09-08 01:07:34+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `85792015` Bump vitest from 4.1.11 to 5.0.0 (#8) (dependabot[bot], 2026-09-08 01:07:17+00:00)
+
+
+
+**CI: FAIL** (Deploy to GitHub Pages)
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3b4d5b16` Release v0.1.3 (mojzis, 2026-09-08 01:01:05+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `39de33b6` Release v0.2.3 (mojzis, 2026-09-08 01:00:45+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#8](https://github.com/mojzis/madoqua/pull/8)
+
+
+
+---
+
+
+## [aesop](https://github.com/mojzis/aesop)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+
+
+**Last commit:** `f7ec8eb1` guide: typer-agentic as the after-the-call channel (mojzis, 2026-09-08 00:56:36+00:00)
+
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -14,7 +285,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 
-**CI: FAIL** (Code Review)
+**CI:** PASS
 
 
 **Open PRs (3):** [#14](https://github.com/mojzis/gerenuk/pull/14), [#13](https://github.com/mojzis/gerenuk/pull/13), [#12](https://github.com/mojzis/gerenuk/pull/12)
@@ -46,103 +317,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `53d8542d` Release v0.2.7 (mojzis, 2026-09-06 10:13:23+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#16](https://github.com/mojzis/pycoati/pull/16), [#15](https://github.com/mojzis/pycoati/pull/15)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `44432444` Release v0.7.2 (mojzis, 2026-09-06 09:39:11+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#42](https://github.com/mojzis/biston/pull/42), [#41](https://github.com/mojzis/biston/pull/41), [#36](https://github.com/mojzis/biston/pull/36)
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `0a74ec5a` Release v0.2.2 (mojzis, 2026-09-06 10:13:31+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/madoqua/pull/8)
-
-
-
----
-
-
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `ec098995` Bump actions/checkout from 6 to 7 (#7) (dependabot[bot], 2026-07-05 20:48:11+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/bounceflow/pull/8)
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `1519073c` inspire: read the references file into a local before parsing it (mojzis, 2026-09-06 14:18:03+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#11](https://github.com/mojzis/comicforge/pull/11), [#10](https://github.com/mojzis/comicforge/pull/10)
-
-
-
----
-
-
 ## [imgen](https://github.com/mojzis/imgen)
 
 N/A | ★0 | 0 issues
@@ -154,140 +328,6 @@ N/A | ★0 | 0 issues
 
 **CI:** PASS
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `874c1bfc` Reword the validate_read_only_sql docstring summary (mojzis, 2026-09-06 14:39:25+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#108](https://github.com/mojzis/introspect/pull/108), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `1515fca6` Refresh toolbox pins: biston 0.7.2, ty-find 0.5.0 (mojzis, 2026-09-06 14:36:06+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `f24abd8e` Fix fresh-clone sync command in CLAUDE.md (mojzis, 2026-09-06 14:12:49+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `ab4563f6` models: make has_untagged_release_commits return an explicit bool (mojzis, 2026-09-06 10:18:11+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [aesop](https://github.com/mojzis/aesop)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
-
-
-**Last commit:** `1dae3446` Add /guide/: the guide-subcommand principle, plus a prompt to add it to any CLI (mojzis, 2026-09-06 10:16:06+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b71ed6b1` Release v0.2.1 (mojzis, 2026-09-06 09:39:16+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#20](https://github.com/mojzis/zorilla/pull/20)
-
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `7cf8de56` Release v0.5.0 (mojzis, 2026-09-06 09:38:07+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#139](https://github.com/mojzis/ty-find/pull/139), [#137](https://github.com/mojzis/ty-find/pull/137)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
@@ -306,39 +346,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#12](https://github.com/mojzis/tyreach/pull/12), [#10](https://github.com/mojzis/tyreach/pull/10)
-
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `7b979478` Bump the minor-and-patch group across 1 directory with 2 updates (#13) (dependabot[bot], 2026-08-31 20:56:30+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [newsparser](https://github.com/mojzis/newsparser)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `60d31f1e` Ruff format sweep across codebase (mojzis, 2026-07-05 18:33:30+00:00)
-
-
-
-
-**Open PRs (1):** [#1](https://github.com/mojzis/newsparser/pull/1)
 
 
 
@@ -391,25 +398,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
 
 
 **Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [logogame](https://github.com/mojzis/logogame)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
-
-
-**Last commit:** `3d90ddf5` Bump actions/checkout from 6 to 7 (#9) (dependabot[bot], 2026-07-05 20:48:04+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#5](https://github.com/mojzis/logogame/pull/5)
-
 
 
 ---
