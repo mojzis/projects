@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-08 01:11:32 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 25
+**Generated:** 2026-09-08 01:13:31 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 25
 
 ---
 
@@ -33,7 +33,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -75,7 +75,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 > ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (1):** [#42](https://github.com/mojzis/biston/pull/42)
@@ -110,7 +110,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 > ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -129,7 +129,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (1):** [#54](https://github.com/mojzis/braindump/pull/54)
@@ -150,7 +150,7 @@ N/A | ★0 | 0 issues
 > ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -184,7 +184,7 @@ N/A | ★0 | 0 issues
 > ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
