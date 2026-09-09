@@ -1,42 +1,90 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-08 10:15:39 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 25
+**Generated:** 2026-09-09 10:20:29 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 24
 
 ---
 
 
-## [gerenuk](https://github.com/mojzis/gerenuk)
+## [comicforge](https://github.com/mojzis/comicforge)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 
 
-**Last commit:** `3f46746e` Release v0.3.1 (mojzis, 2026-09-06 10:13:38+00:00)
+**Last commit:** `74fd1a7f` Release v0.2.3 (mojzis, 2026-09-08 12:33:40+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (3):** [#14](https://github.com/mojzis/gerenuk/pull/14), [#13](https://github.com/mojzis/gerenuk/pull/13), [#12](https://github.com/mojzis/gerenuk/pull/12)
-
-
 
 ---
 
 
-## [braindump](https://github.com/mojzis/braindump)
+## [pycoati](https://github.com/mojzis/pycoati)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+N/A | ★0 | 0 issues
 
 
-**Last commit:** `8ebb0cde` Wrap the bd entry point in typer-agentic (mojzis, 2026-09-08 01:15:54+00:00)
+**Last commit:** `469d1c5a` Release v0.2.8 (mojzis, 2026-09-08 12:33:34+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#54](https://github.com/mojzis/braindump/pull/54)
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `e8942229` Release v0.2.2 (mojzis, 2026-09-08 12:33:26+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `5dd928ea` Release v0.5.1 (mojzis, 2026-09-08 12:33:18+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `f3d7c7a4` Release v0.7.3 (mojzis, 2026-09-08 12:33:10+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#42](https://github.com/mojzis/biston/pull/42)
 
 
 
@@ -48,10 +96,8 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
-**Last commit:** `3ee2df0b` Wrap the CLI entry point in typer-agentic (mojzis, 2026-09-08 01:14:50+00:00)
+**Last commit:** `eff966c4` Release v0.3.4 (mojzis, 2026-09-08 12:33:02+00:00)
 
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
 **CI:** PASS
@@ -62,6 +108,41 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `a3ae8f6a` Release v0.4.0 (mojzis, 2026-09-08 12:23:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#14](https://github.com/mojzis/gerenuk/pull/14), [#13](https://github.com/mojzis/gerenuk/pull/13)
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `fabee6b7` Release v0.1.4 (mojzis, 2026-09-08 12:16:36+00:00)
+
+
+
+**CI:** PASS
+
 
 
 ---
@@ -86,6 +167,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `8ebb0cde` Wrap the bd entry point in typer-agentic (mojzis, 2026-09-08 01:15:54+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#54](https://github.com/mojzis/braindump/pull/54)
+
+
+
+---
+
+
 ## [logogame](https://github.com/mojzis/logogame)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
@@ -102,27 +202,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 ---
 
 
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `7ec15e3e` Skills: make forked review skill return in-turn to the caller (#36) (Mojzis, 2026-09-08 01:09:36+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#42](https://github.com/mojzis/biston/pull/42)
-
-
-
----
-
-
 ## [newsparser](https://github.com/mojzis/newsparser)
 
 N/A | ★0 | 0 issues
@@ -131,45 +210,6 @@ N/A | ★0 | 0 issues
 **Last commit:** `801100e6` Skills: make forked review skill return in-turn to the caller (#1) (Mojzis, 2026-09-08 01:09:30+00:00)
 
 
-
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `5af4ec03` Skills: make forked review skill return in-turn to the caller (#139) (Mojzis, 2026-09-08 01:09:26+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `93d7dd31` Bump the minor-and-patch group across 1 directory with 8 updates (#20) (dependabot[bot], 2026-09-08 01:08:47+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
 
 
 
@@ -192,42 +232,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `7945ca7b` Bump the minor-and-patch group with 3 updates (#15) (dependabot[bot], 2026-09-08 01:08:10+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `92ef23d4` Bump actions/deploy-pages from 4 to 5 (#10) (dependabot[bot], 2026-09-08 01:07:34+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [bounceflow](https://github.com/mojzis/bounceflow)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
@@ -238,22 +242,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 **CI: FAIL** (Deploy to GitHub Pages)
-
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3b4d5b16` Release v0.1.3 (mojzis, 2026-09-08 01:01:05+00:00)
-
-
-
-**CI:** PASS
 
 
 
