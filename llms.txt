@@ -1,6 +1,49 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-09 10:20:29 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 24
+**Generated:** 2026-09-10 10:13:58 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 24
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `2dc84807` chore: use Sol for Codex planning and review (Mojzis Stupka, 2026-09-09 21:26:50+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -91,28 +134,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 ---
 
 
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `eff966c4` Release v0.3.4 (mojzis, 2026-09-08 12:33:02+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
 ## [gerenuk](https://github.com/mojzis/gerenuk)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
@@ -143,25 +164,6 @@ N/A | ★0 | 0 issues
 
 **CI:** PASS
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
