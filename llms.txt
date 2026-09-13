@@ -1,6 +1,41 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-12 09:45:46 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 25
+**Generated:** 2026-09-13 10:47:09 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 25
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `1a8eec67` Release v0.2.9 (Mojzis Stupka, 2026-09-13 08:26:52+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -29,47 +64,12 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [comicforge](https://github.com/mojzis/comicforge)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 
 
 **Last commit:** `74fd1a7f` Release v0.2.3 (mojzis, 2026-09-08 12:33:40+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `469d1c5a` Release v0.2.8 (mojzis, 2026-09-08 12:33:34+00:00)
 
 
 
@@ -243,7 +243,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI: FAIL** (Deploy to GitHub Pages)
+**CI:** PASS
 
 
 
@@ -473,22 +473,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (1):** `claude/add-skill-sharing-011CmgsoWuV3JQZyokhxBqKp`
-
-
----
-
-
-## [python-template](https://github.com/mojzis/python-template)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `dfb519de` Add Dependabot configuration (mojzis, 2026-06-14 20:37:18+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
