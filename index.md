@@ -1,6 +1,91 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-13 10:47:09 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 25
+**Generated:** 2026-09-14 11:12:20 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 31
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `a4152fd6` Stop pytest inheriting the hook's git environment (#15) (#16) (Mojzis, 2026-09-14 10:31:58+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#14](https://github.com/mojzis/gerenuk/pull/14), [#13](https://github.com/mojzis/gerenuk/pull/13)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `260bee9a` Refine ZR001, ZR003 and ZR005 for adoption noise (#22, #24, #25) (#27) (Mojzis, 2026-09-13 18:59:37+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#28](https://github.com/mojzis/zorilla/pull/28)
+
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3a5c4483` Add generate/model registry, styles, templates and prompt cache (mojzis, 2026-09-06 14:52:12+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#1](https://github.com/mojzis/imgen/pull/1)
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `559573f3` Strengthen test evidence and tune Zorilla policy (#110) (Mojzis, 2026-09-13 11:12:42+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (4):** [#112](https://github.com/mojzis/introspect/pull/112), [#111](https://github.com/mojzis/introspect/pull/111), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
 
 ---
 
@@ -15,6 +100,68 @@ N/A | ★0 | 0 issues
 
 
 **CI:** PASS
+
+
+**Open PRs (1):** [#21](https://github.com/mojzis/pycoati/pull/21)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `f3d7c7a4` Release v0.7.3 (mojzis, 2026-09-08 12:33:10+00:00)
+
+
+
+**CI: FAIL** (Code Review)
+
+
+**Open PRs (2):** [#43](https://github.com/mojzis/biston/pull/43), [#42](https://github.com/mojzis/biston/pull/42)
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `39de33b6` Release v0.2.3 (mojzis, 2026-09-08 01:00:45+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#8](https://github.com/mojzis/madoqua/pull/8)
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `b84fd181` Merge pull request #13 from mojzis/panel-on-page (Mojzis, 2026-09-13 20:05:50+00:00)
+
+
+> ⚠️ **Untagged release:** main has 6 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#14](https://github.com/mojzis/comicforge/pull/14)
 
 
 
@@ -40,62 +187,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `2dc84807` chore: use Sol for Codex planning and review (Mojzis Stupka, 2026-09-09 21:26:50+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#110](https://github.com/mojzis/introspect/pull/110), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `74fd1a7f` Release v0.2.3 (mojzis, 2026-09-08 12:33:40+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `e8942229` Release v0.2.2 (mojzis, 2026-09-08 12:33:26+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [ty-find](https://github.com/mojzis/ty-find)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
@@ -110,44 +201,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `f3d7c7a4` Release v0.7.3 (mojzis, 2026-09-08 12:33:10+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#42](https://github.com/mojzis/biston/pull/42)
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `a3ae8f6a` Release v0.4.0 (mojzis, 2026-09-08 12:23:16+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#14](https://github.com/mojzis/gerenuk/pull/14), [#13](https://github.com/mojzis/gerenuk/pull/13)
-
 
 
 ---
@@ -250,25 +303,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 ---
 
 
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `39de33b6` Release v0.2.3 (mojzis, 2026-09-08 01:00:45+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/madoqua/pull/8)
-
-
-
----
-
-
 ## [aesop](https://github.com/mojzis/aesop)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
@@ -302,22 +336,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 **Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3a5c4483` Add generate/model registry, styles, templates and prompt cache (mojzis, 2026-09-06 14:52:12+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
