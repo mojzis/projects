@@ -1,6 +1,216 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-14 11:12:20 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 31
+**Generated:** 2026-09-15 10:39:30 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 42
+
+---
+
+
+## [catpin](https://github.com/mojzis/catpin)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `fcb4de25` Initial commit (Mojzis, 2026-09-14 22:39:28+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `claude/elegant-heisenberg-4rgpy0`
+
+
+---
+
+
+## [python-template](https://github.com/mojzis/python-template)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `d1dfb4fe` Merge pull request #2 from mojzis/claude/aesop-toolbox-setup-v6daq3 (Mojzis, 2026-09-14 22:38:26+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `fabee6b7` Release v0.1.4 (mojzis, 2026-09-08 12:16:36+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#1](https://github.com/mojzis/typer-agentic/pull/1)
+
+
+
+---
+
+
+## [aesop](https://github.com/mojzis/aesop)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+
+
+**Last commit:** `00a6ef95` Merge pull request #1 from mojzis/claude/setup-page-curl-instruction-ahmvc6 (Mojzis, 2026-09-14 22:29:16+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `6b829cee` Initial commit (mojzis, 2026-09-14 22:25:58+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3e9382e7` Bump the minor-and-patch group in /server with 3 updates (#14) (dependabot[bot], 2026-09-08 01:08:30+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#15](https://github.com/mojzis/talkshape/pull/15)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `c572899b` Scope suppressions to their statement and exempt one-subject contracts from ZR004 (#23, #26) (#28) (Mojzis, 2026-09-14 11:25:15+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#31](https://github.com/mojzis/zorilla/pull/31), [#30](https://github.com/mojzis/zorilla/pull/30), [#29](https://github.com/mojzis/zorilla/pull/29)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `f8f29af1` Fix Pycoati audit acceptance checks (Mojzis Stupka, 2026-09-13 23:50:31+00:00)
+
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (8):** [#63](https://github.com/mojzis/braindump/pull/63), [#62](https://github.com/mojzis/braindump/pull/62), [#61](https://github.com/mojzis/braindump/pull/61), [#60](https://github.com/mojzis/braindump/pull/60), [#59](https://github.com/mojzis/braindump/pull/59), [#58](https://github.com/mojzis/braindump/pull/58), [#57](https://github.com/mojzis/braindump/pull/57), [#56](https://github.com/mojzis/braindump/pull/56)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `5dd928ea` Release v0.5.1 (mojzis, 2026-09-08 12:33:18+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#142](https://github.com/mojzis/ty-find/pull/142)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `5bacfd01` Adopt Pycoati 0.2.9 accepted findings (#111) (Mojzis, 2026-09-14 11:42:07+00:00)
+
+
+> ⚠️ **Untagged release:** main has 4 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#112](https://github.com/mojzis/introspect/pull/112), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -26,27 +236,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 ---
 
 
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `260bee9a` Refine ZR001, ZR003 and ZR005 for adoption noise (#22, #24, #25) (#27) (Mojzis, 2026-09-13 18:59:37+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#28](https://github.com/mojzis/zorilla/pull/28)
-
-
-
----
-
-
 ## [imgen](https://github.com/mojzis/imgen)
 
 N/A | ★0 | 0 issues
@@ -61,30 +250,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (1):** [#1](https://github.com/mojzis/imgen/pull/1)
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `559573f3` Strengthen test evidence and tune Zorilla policy (#110) (Mojzis, 2026-09-13 11:12:42+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI: FAIL** (CI)
-
-
-**Open PRs (4):** [#112](https://github.com/mojzis/introspect/pull/112), [#111](https://github.com/mojzis/introspect/pull/111), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -118,7 +283,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 
 
-**CI: FAIL** (Code Review)
+**CI:** PASS
 
 
 **Open PRs (2):** [#43](https://github.com/mojzis/biston/pull/43), [#42](https://github.com/mojzis/biston/pull/42)
@@ -168,79 +333,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `5dd928ea` Release v0.5.1 (mojzis, 2026-09-08 12:33:18+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `fabee6b7` Release v0.1.4 (mojzis, 2026-09-08 12:16:36+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `8ebb0cde` Wrap the bd entry point in typer-agentic (mojzis, 2026-09-08 01:15:54+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#54](https://github.com/mojzis/braindump/pull/54)
-
-
-
----
-
-
 ## [logogame](https://github.com/mojzis/logogame)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
@@ -271,44 +363,12 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3e9382e7` Bump the minor-and-patch group in /server with 3 updates (#14) (dependabot[bot], 2026-09-08 01:08:30+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [bounceflow](https://github.com/mojzis/bounceflow)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 **Last commit:** `85792015` Bump vitest from 4.1.11 to 5.0.0 (#8) (dependabot[bot], 2026-09-08 01:07:17+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [aesop](https://github.com/mojzis/aesop)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
-
-
-**Last commit:** `f7ec8eb1` guide: typer-agentic as the after-the-call channel (mojzis, 2026-09-08 00:56:36+00:00)
 
 
 
