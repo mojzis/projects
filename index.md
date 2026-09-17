@@ -1,6 +1,25 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-16 10:28:23 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 42
+**Generated:** 2026-09-17 10:37:26 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 42
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `8d3a5011` Address todo presence review findings (Mojzis Stupka, 2026-09-14 16:14:53+00:00)
+
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (8):** [#63](https://github.com/mojzis/braindump/pull/63), [#62](https://github.com/mojzis/braindump/pull/62), [#61](https://github.com/mojzis/braindump/pull/61), [#60](https://github.com/mojzis/braindump/pull/60), [#59](https://github.com/mojzis/braindump/pull/59), [#58](https://github.com/mojzis/braindump/pull/58), [#57](https://github.com/mojzis/braindump/pull/57), [#56](https://github.com/mojzis/braindump/pull/56)
+
+
 
 ---
 
@@ -144,25 +163,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (3):** [#31](https://github.com/mojzis/zorilla/pull/31), [#30](https://github.com/mojzis/zorilla/pull/30), [#29](https://github.com/mojzis/zorilla/pull/29)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `f8f29af1` Fix Pycoati audit acceptance checks (Mojzis Stupka, 2026-09-13 23:50:31+00:00)
-
-
-
-**CI: FAIL** (CI)
-
-
-**Open PRs (8):** [#63](https://github.com/mojzis/braindump/pull/63), [#62](https://github.com/mojzis/braindump/pull/62), [#61](https://github.com/mojzis/braindump/pull/61), [#60](https://github.com/mojzis/braindump/pull/60), [#59](https://github.com/mojzis/braindump/pull/59), [#58](https://github.com/mojzis/braindump/pull/58), [#57](https://github.com/mojzis/braindump/pull/57), [#56](https://github.com/mojzis/braindump/pull/56)
 
 
 
