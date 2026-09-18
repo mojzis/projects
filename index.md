@@ -1,23 +1,36 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-17 10:37:26 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 42
+**Generated:** 2026-09-18 10:13:42 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 42
 
 ---
 
 
-## [braindump](https://github.com/mojzis/braindump)
+## [noticky](https://github.com/mojzis/noticky)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `8d3a5011` Address todo presence review findings (Mojzis Stupka, 2026-09-14 16:14:53+00:00)
+N/A | ★0 | 0 issues
 
 
+**Last commit:** `176623db` Ignore __pycache__ (mojzis, 2026-09-18 07:38:23+00:00)
 
-**CI: FAIL** (CI)
 
 
-**Open PRs (8):** [#63](https://github.com/mojzis/braindump/pull/63), [#62](https://github.com/mojzis/braindump/pull/62), [#61](https://github.com/mojzis/braindump/pull/61), [#60](https://github.com/mojzis/braindump/pull/60), [#59](https://github.com/mojzis/braindump/pull/59), [#58](https://github.com/mojzis/braindump/pull/58), [#57](https://github.com/mojzis/braindump/pull/57), [#56](https://github.com/mojzis/braindump/pull/56)
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `0f481336` Scaffold dermestes from gerenuk: CLI contract, guide, packaging, CI, docs (mojzis, 2026-09-18 06:22:45+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
 
 
 
@@ -38,6 +51,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `8d3a5011` Address todo presence review findings (Mojzis Stupka, 2026-09-14 16:14:53+00:00)
+
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (8):** [#63](https://github.com/mojzis/braindump/pull/63), [#62](https://github.com/mojzis/braindump/pull/62), [#61](https://github.com/mojzis/braindump/pull/61), [#60](https://github.com/mojzis/braindump/pull/60), [#59](https://github.com/mojzis/braindump/pull/59), [#58](https://github.com/mojzis/braindump/pull/58), [#57](https://github.com/mojzis/braindump/pull/57), [#56](https://github.com/mojzis/braindump/pull/56)
+
 
 
 ---
