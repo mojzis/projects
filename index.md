@@ -1,6 +1,44 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-19 16:42:05 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 42
+**Generated:** 2026-09-19 17:06:31 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 44
+
+---
+
+
+## [aesop](https://github.com/mojzis/aesop)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+
+
+**Last commit:** `00a6ef95` Merge pull request #1 from mojzis/claude/setup-page-curl-instruction-ahmvc6 (Mojzis, 2026-09-14 22:29:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#2](https://github.com/mojzis/aesop/pull/2)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -16,23 +54,70 @@ N/A | ★0 | 0 issues
 
 
 
+**Orphan branches (1):** `wip/2026-09-19`
+
+
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
+## [ty-find](https://github.com/mojzis/ty-find)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b23d8b9e` tests: add the GIT_* isolation fixture missing from 7c29dec (mojzis, 2026-09-19 16:40:04+00:00)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
-
-**CI:** UNKNOWN
+**Last commit:** `5dd928ea` Release v0.5.1 (mojzis, 2026-09-08 12:33:18+00:00)
 
 
 
-**Orphan branches (1):** `gh-pages`
+**CI:** PASS
+
+
+**Open PRs (2):** [#143](https://github.com/mojzis/ty-find/pull/143), [#142](https://github.com/mojzis/ty-find/pull/142)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `8a39c8e8` Release v0.2.4 (mojzis, 2026-09-19 16:57:18+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#8](https://github.com/mojzis/madoqua/pull/8)
+
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `eee8d169` dermestes corpus: inline srv.py pid helpers, drop constant debounce param (mojzis, 2026-09-19 16:40:07+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (15):** [#63](https://github.com/mojzis/sketchpy/pull/63), [#62](https://github.com/mojzis/sketchpy/pull/62), [#61](https://github.com/mojzis/sketchpy/pull/61), [#58](https://github.com/mojzis/sketchpy/pull/58), [#54](https://github.com/mojzis/sketchpy/pull/54), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
@@ -49,7 +134,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 > ⚠️ **Untagged release:** main has 11 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (3):** [#112](https://github.com/mojzis/introspect/pull/112), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
@@ -76,6 +161,9 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 **Open PRs (8):** [#63](https://github.com/mojzis/braindump/pull/63), [#62](https://github.com/mojzis/braindump/pull/62), [#61](https://github.com/mojzis/braindump/pull/61), [#60](https://github.com/mojzis/braindump/pull/60), [#59](https://github.com/mojzis/braindump/pull/59), [#58](https://github.com/mojzis/braindump/pull/58), [#57](https://github.com/mojzis/braindump/pull/57), [#56](https://github.com/mojzis/braindump/pull/56)
 
+
+
+**Orphan branches (1):** `chore/madoqua-0.2.4`
 
 
 ---
@@ -206,22 +294,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [aesop](https://github.com/mojzis/aesop)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
-
-
-**Last commit:** `00a6ef95` Merge pull request #1 from mojzis/claude/setup-page-curl-instruction-ahmvc6 (Mojzis, 2026-09-14 22:29:16+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [talkshape](https://github.com/mojzis/talkshape)
 
 N/A | ★0 | 0 issues
@@ -262,28 +334,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `5dd928ea` Release v0.5.1 (mojzis, 2026-09-08 12:33:18+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#142](https://github.com/mojzis/ty-find/pull/142)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
 ## [gerenuk](https://github.com/mojzis/gerenuk)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
@@ -310,11 +360,13 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `3a5c4483` Add generate/model registry, styles, templates and prompt cache (mojzis, 2026-09-06 14:52:12+00:00)
+**Last commit:** `3e3f1825` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#2) (Mojzis, 2026-09-19 17:05:59+00:00)
 
 
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
-**CI:** PASS
+
+**CI:** UNKNOWN
 
 
 **Open PRs (1):** [#1](https://github.com/mojzis/imgen/pull/1)
@@ -362,25 +414,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 ---
 
 
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `39de33b6` Release v0.2.3 (mojzis, 2026-09-08 01:00:45+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/madoqua/pull/8)
-
-
-
----
-
-
 ## [logogame](https://github.com/mojzis/logogame)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
@@ -408,28 +441,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 **CI:** PASS
 
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `eee8d169` dermestes corpus: inline srv.py pid helpers, drop constant debounce param (mojzis, 2026-09-19 16:40:07+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (15):** [#63](https://github.com/mojzis/sketchpy/pull/63), [#62](https://github.com/mojzis/sketchpy/pull/62), [#61](https://github.com/mojzis/sketchpy/pull/61), [#58](https://github.com/mojzis/sketchpy/pull/58), [#54](https://github.com/mojzis/sketchpy/pull/54), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
