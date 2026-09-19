@@ -1,6 +1,67 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-19 09:54:54 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 42
+**Generated:** 2026-09-19 16:37:30 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 42
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `72cd0197` dermestes corpus: drop never-varied limit params from collector (mojzis, 2026-09-19 16:35:06+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `132fa525` dermestes corpus: drop never-passed _recovery(escalation) param (mojzis, 2026-09-19 16:28:39+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#1](https://github.com/mojzis/typer-agentic/pull/1)
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `d70daf1a` dermestes corpus: drop dead params and a one-caller wrapper (mojzis, 2026-09-19 16:27:22+00:00)
+
+
+> ⚠️ **Untagged release:** main has 7 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#14](https://github.com/mojzis/comicforge/pull/14)
+
+
 
 ---
 
@@ -16,25 +77,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
 
 **CI:** PASS
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -120,25 +162,6 @@ N/A | ★0 | 0 issues
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `fabee6b7` Release v0.1.4 (mojzis, 2026-09-08 12:16:36+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#1](https://github.com/mojzis/typer-agentic/pull/1)
 
 
 
@@ -338,27 +361,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 
 **Open PRs (1):** [#8](https://github.com/mojzis/madoqua/pull/8)
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `b84fd181` Merge pull request #13 from mojzis/panel-on-page (Mojzis, 2026-09-13 20:05:50+00:00)
-
-
-> ⚠️ **Untagged release:** main has 6 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#14](https://github.com/mojzis/comicforge/pull/14)
 
 
 
