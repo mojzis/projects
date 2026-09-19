@@ -1,6 +1,20 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-19 16:37:30 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 42
+**Generated:** 2026-09-19 16:42:05 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 42
+
+---
+
+
+## [newsparser](https://github.com/mojzis/newsparser)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `83eff4e0` Merge origin/main (PR #1 squash) into local main (mojzis, 2026-09-19 16:37:11+00:00)
+
+
+
+
 
 ---
 
@@ -10,7 +24,7 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-**Last commit:** `72cd0197` dermestes corpus: drop never-varied limit params from collector (mojzis, 2026-09-19 16:35:06+00:00)
+**Last commit:** `b23d8b9e` tests: add the GIT_* isolation fixture missing from 7c29dec (mojzis, 2026-09-19 16:40:04+00:00)
 
 
 
@@ -19,6 +33,49 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `abeb1b78` dermestes corpus: drop never-passed params in codex, refresh, version_check (mojzis, 2026-09-19 16:37:09+00:00)
+
+
+> ⚠️ **Untagged release:** main has 11 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (3):** [#112](https://github.com/mojzis/introspect/pull/112), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `db42a859` dermestes corpus: drop dead wrappers and never-passed params (mojzis, 2026-09-19 16:26:20+00:00)
+
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (8):** [#63](https://github.com/mojzis/braindump/pull/63), [#62](https://github.com/mojzis/braindump/pull/62), [#61](https://github.com/mojzis/braindump/pull/61), [#60](https://github.com/mojzis/braindump/pull/60), [#59](https://github.com/mojzis/braindump/pull/59), [#58](https://github.com/mojzis/braindump/pull/58), [#57](https://github.com/mojzis/braindump/pull/57), [#56](https://github.com/mojzis/braindump/pull/56)
+
 
 
 ---
@@ -56,7 +113,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 > ⚠️ **Untagged release:** main has 7 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (1):** [#14](https://github.com/mojzis/comicforge/pull/14)
@@ -108,25 +165,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `8d3a5011` Address todo presence review findings (Mojzis Stupka, 2026-09-14 16:14:53+00:00)
-
-
-
-**CI: FAIL** (CI)
-
-
-**Open PRs (8):** [#63](https://github.com/mojzis/braindump/pull/63), [#62](https://github.com/mojzis/braindump/pull/62), [#61](https://github.com/mojzis/braindump/pull/61), [#60](https://github.com/mojzis/braindump/pull/60), [#59](https://github.com/mojzis/braindump/pull/59), [#58](https://github.com/mojzis/braindump/pull/58), [#57](https://github.com/mojzis/braindump/pull/57), [#56](https://github.com/mojzis/braindump/pull/56)
 
 
 
@@ -246,30 +284,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 ---
 
 
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `5bacfd01` Adopt Pycoati 0.2.9 accepted findings (#111) (Mojzis, 2026-09-14 11:42:07+00:00)
-
-
-> ⚠️ **Untagged release:** main has 4 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#112](https://github.com/mojzis/introspect/pull/112), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
 ## [gerenuk](https://github.com/mojzis/gerenuk)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
@@ -383,20 +397,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 ---
 
 
-## [newsparser](https://github.com/mojzis/newsparser)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `801100e6` Skills: make forked review skill return in-turn to the caller (#1) (Mojzis, 2026-09-08 01:09:30+00:00)
-
-
-
-
-
----
-
-
 ## [bounceflow](https://github.com/mojzis/bounceflow)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
@@ -418,11 +418,11 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
-**Last commit:** `b9ef05a0` Add Dependabot configuration (mojzis, 2026-06-14 20:37:07+00:00)
+**Last commit:** `eee8d169` dermestes corpus: inline srv.py pid helpers, drop constant debounce param (mojzis, 2026-09-19 16:40:07+00:00)
 
 
 
-**CI: FAIL** (Run Tests)
+**CI:** UNKNOWN
 
 
 **Open PRs (15):** [#63](https://github.com/mojzis/sketchpy/pull/63), [#62](https://github.com/mojzis/sketchpy/pull/62), [#61](https://github.com/mojzis/sketchpy/pull/61), [#58](https://github.com/mojzis/sketchpy/pull/58), [#54](https://github.com/mojzis/sketchpy/pull/54), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
