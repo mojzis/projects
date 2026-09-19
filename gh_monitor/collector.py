@@ -128,7 +128,7 @@ class GitHubCollector:
         except GitHubCLIError:
             return None
 
-    def get_ci_runs(self, owner: str, repo: str, limit: int = 20) -> list[dict]:
+    def get_ci_runs(self, owner: str, repo: str) -> list[dict]:
         """Get recent CI/CD runs."""
         try:
             runs = self._run_gh(
@@ -138,7 +138,7 @@ class GitHubCollector:
                     "--repo",
                     f"{owner}/{repo}",
                     "--limit",
-                    str(limit),
+                    "20",
                     "--json",
                     "status,conclusion,name,createdAt",
                 ]
@@ -179,12 +179,12 @@ class GitHubCollector:
         except GitHubCLIError:
             return []
 
-    def get_main_commits(self, owner: str, repo: str, limit: int = 100) -> list[dict]:
+    def get_main_commits(self, owner: str, repo: str) -> list[dict]:
         """Get recent commits on the default branch (main, falling back to master)."""
         for branch in ("main", "master"):
             try:
                 commits = self._run_gh(
-                    ["api", f"repos/{owner}/{repo}/commits?sha={branch}&per_page={limit}"]
+                    ["api", f"repos/{owner}/{repo}/commits?sha={branch}&per_page=100"]
                 )
                 if isinstance(commits, list):
                     return commits
