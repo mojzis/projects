@@ -1,6 +1,41 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-18 10:13:42 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 42
+**Generated:** 2026-09-19 09:54:54 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 42
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `be6c28de` review vanoce-o-ktere-neprisla 64b24e8-dirty (mojzis, 2026-09-18 19:45:14+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -32,25 +67,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 **CI:** PASS
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `d9116db2` Wrap the gh-monitor entry point in typer-agentic (mojzis, 2026-09-08 01:14:44+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -135,22 +151,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 
 
 **Last commit:** `00a6ef95` Merge pull request #1 from mojzis/claude/setup-page-curl-instruction-ahmvc6 (Mojzis, 2026-09-14 22:29:16+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `6b829cee` Initial commit (mojzis, 2026-09-14 22:25:58+00:00)
 
 
 
@@ -566,23 +566,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/volby_check/)
 
 
 **Orphan branches (4):** `claude/enlarge-bubble-chart-bubbles-011uH2ypRRnnYtCF35MfPRWy`, `claude/enrich-suspicious-results-table-011zcLHg6xj6XrHciyMHPDZY`, `claude/improve-marimo-election-data-011at4r9D2DxXrSc4B57xz6h`, `claude/init-marimo-election-data-017E4azTiuMxzZzDGZS7JQ2Y`
-
-
----
-
-
-## [marimo-template](https://github.com/mojzis/marimo-template)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `98138d53` moving (Mojzis Stupka, 2026-06-20 17:12:45+00:00)
-
-
-
-
-
-**Orphan branches (1):** `claude/add-skill-sharing-011CmgsoWuV3JQZyokhxBqKp`
 
 
 ---
