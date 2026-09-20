@@ -1,23 +1,230 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-19 17:06:31 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 44
+**Generated:** 2026-09-20 10:16:23 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 21
 
 ---
 
 
-## [aesop](https://github.com/mojzis/aesop)
+## [braindump](https://github.com/mojzis/braindump)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
-**Last commit:** `00a6ef95` Merge pull request #1 from mojzis/claude/setup-page-curl-instruction-ahmvc6 (Mojzis, 2026-09-14 22:29:16+00:00)
+**Last commit:** `f0db6854` Update ruff requirement from >=0.16.5 to >=0.16.8 (#62) (dependabot[bot], 2026-09-19 19:50:00+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#2](https://github.com/mojzis/aesop/pull/2)
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `83b4a169` Bump the minor-and-patch group across 1 directory with 2 updates (#17) (dependabot[bot], 2026-09-19 19:44:23+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `bccc0ccb` Bump tree-sitter from 0.26.10 to 0.27.0 (#30) (dependabot[bot], 2026-09-19 19:44:15+00:00)
+
+
+> ⚠️ **Untagged release:** main has 5 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `6db20d5f` Bump the minor-and-patch group across 1 directory with 3 updates (#45) (dependabot[bot], 2026-09-19 19:44:11+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `85f1176d` Bump astral-sh/setup-uv from 10.0.1 to 10.1.0 (#14) (dependabot[bot], 2026-09-19 19:38:16+00:00)
+
+
+> ⚠️ **Untagged release:** main has 9 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `5f223ade` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:13+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `f427ad93` Bump toml in the minor-and-patch group (#21) (dependabot[bot], 2026-09-19 19:37:59+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `c5edad68` Bump the minor-and-patch group across 1 directory with 2 updates (#11) (dependabot[bot], 2026-09-19 19:37:40+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `f3e25303` Update mcp requirement from <2,>=1.10 to >=1.10,<3 (#112) (dependabot[bot], 2026-09-19 19:36:59+00:00)
+
+
+> ⚠️ **Untagged release:** main has 13 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `ff01c001` build(deps): bump rmcp from 3.1.4 to 3.3.0 in the minor-and-patch group (#142) (dependabot[bot], 2026-09-19 19:34:07+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#143](https://github.com/mojzis/ty-find/pull/143)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `2b7a46bd` const-param: exempt functions reached by a computed getattr (mojzis, 2026-09-19 17:55:07+00:00)
+
+
+> ⚠️ **Untagged release:** main has 13 commits without a tag.
+
+
+**CI:** PASS
 
 
 
@@ -33,11 +240,27 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 
-**CI:** PASS
+**CI:** UNKNOWN
 
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [aesop](https://github.com/mojzis/aesop)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+
+
+**Last commit:** `198ddefd` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#2) (Mojzis, 2026-09-19 17:05:07+00:00)
+
+
+
+**CI:** PASS
+
 
 
 ---
@@ -60,47 +283,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `5dd928ea` Release v0.5.1 (mojzis, 2026-09-08 12:33:18+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#143](https://github.com/mojzis/ty-find/pull/143), [#142](https://github.com/mojzis/ty-find/pull/142)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `8a39c8e8` Release v0.2.4 (mojzis, 2026-09-19 16:57:18+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/madoqua/pull/8)
-
-
-
----
-
-
 ## [sketchpy](https://github.com/mojzis/sketchpy)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
@@ -118,94 +300,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 **Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `abeb1b78` dermestes corpus: drop never-passed params in codex, refresh, version_check (mojzis, 2026-09-19 16:37:09+00:00)
-
-
-> ⚠️ **Untagged release:** main has 11 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#112](https://github.com/mojzis/introspect/pull/112), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `db42a859` dermestes corpus: drop dead wrappers and never-passed params (mojzis, 2026-09-19 16:26:20+00:00)
-
-
-
-**CI: FAIL** (CI)
-
-
-**Open PRs (8):** [#63](https://github.com/mojzis/braindump/pull/63), [#62](https://github.com/mojzis/braindump/pull/62), [#61](https://github.com/mojzis/braindump/pull/61), [#60](https://github.com/mojzis/braindump/pull/60), [#59](https://github.com/mojzis/braindump/pull/59), [#58](https://github.com/mojzis/braindump/pull/58), [#57](https://github.com/mojzis/braindump/pull/57), [#56](https://github.com/mojzis/braindump/pull/56)
-
-
-
-**Orphan branches (1):** `chore/madoqua-0.2.4`
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `132fa525` dermestes corpus: drop never-passed _recovery(escalation) param (mojzis, 2026-09-19 16:28:39+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#1](https://github.com/mojzis/typer-agentic/pull/1)
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `d70daf1a` dermestes corpus: drop dead params and a one-caller wrapper (mojzis, 2026-09-19 16:27:22+00:00)
-
-
-> ⚠️ **Untagged release:** main has 7 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#14](https://github.com/mojzis/comicforge/pull/14)
-
 
 
 ---
@@ -235,24 +329,6 @@ N/A | ★0 | 0 issues
 **Last commit:** `176623db` Ignore __pycache__ (mojzis, 2026-09-18 07:38:23+00:00)
 
 
-
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `0f481336` Scaffold dermestes from gerenuk: CLI contract, guide, packaging, CI, docs (mojzis, 2026-09-18 06:22:45+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
 
 
 
@@ -307,107 +383,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#15](https://github.com/mojzis/talkshape/pull/15)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `c572899b` Scope suppressions to their statement and exempt one-subject contracts from ZR004 (#23, #26) (#28) (Mojzis, 2026-09-14 11:25:15+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#31](https://github.com/mojzis/zorilla/pull/31), [#30](https://github.com/mojzis/zorilla/pull/30), [#29](https://github.com/mojzis/zorilla/pull/29)
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `a4152fd6` Stop pytest inheriting the hook's git environment (#15) (#16) (Mojzis, 2026-09-14 10:31:58+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#14](https://github.com/mojzis/gerenuk/pull/14), [#13](https://github.com/mojzis/gerenuk/pull/13)
-
-
-
----
-
-
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3e3f1825` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#2) (Mojzis, 2026-09-19 17:05:59+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#1](https://github.com/mojzis/imgen/pull/1)
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `1a8eec67` Release v0.2.9 (Mojzis Stupka, 2026-09-13 08:26:52+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#21](https://github.com/mojzis/pycoati/pull/21)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `f3d7c7a4` Release v0.7.3 (mojzis, 2026-09-08 12:33:10+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#43](https://github.com/mojzis/biston/pull/43), [#42](https://github.com/mojzis/biston/pull/42)
 
 
 
