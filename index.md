@@ -1,6 +1,109 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-20 10:16:23 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 21
+**Generated:** 2026-09-21 11:22:38 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 25
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `2b7a46bd` const-param: exempt functions reached by a computed getattr (mojzis, 2026-09-19 17:55:07+00:00)
+
+
+> ⚠️ **Untagged release:** main has 13 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#1](https://github.com/mojzis/dermestes/pull/1)
+
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#4](https://github.com/mojzis/imgen/pull/4)
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `c5edad68` Bump the minor-and-patch group across 1 directory with 2 updates (#11) (dependabot[bot], 2026-09-19 19:37:40+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#13](https://github.com/mojzis/madoqua/pull/13)
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `f427ad93` Bump toml in the minor-and-patch group (#21) (dependabot[bot], 2026-09-19 19:37:59+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#22](https://github.com/mojzis/pycoati/pull/22)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -111,60 +214,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `f427ad93` Bump toml in the minor-and-patch group (#21) (dependabot[bot], 2026-09-19 19:37:59+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `c5edad68` Bump the minor-and-patch group across 1 directory with 2 updates (#11) (dependabot[bot], 2026-09-19 19:37:40+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [introspect](https://github.com/mojzis/introspect)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
@@ -208,43 +257,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `2b7a46bd` const-param: exempt functions reached by a computed getattr (mojzis, 2026-09-19 17:55:07+00:00)
-
-
-> ⚠️ **Untagged release:** main has 13 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
