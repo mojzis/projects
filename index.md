@@ -1,6 +1,129 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-21 11:22:38 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 25
+**Generated:** 2026-09-22 10:32:46 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 32
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `5f223ade` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:13+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#4](https://github.com/mojzis/typer-agentic/pull/4)
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3e9382e7` Bump the minor-and-patch group in /server with 3 updates (#14) (dependabot[bot], 2026-09-08 01:08:30+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#16](https://github.com/mojzis/talkshape/pull/16)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `bccc0ccb` Bump tree-sitter from 0.26.10 to 0.27.0 (#30) (dependabot[bot], 2026-09-19 19:44:15+00:00)
+
+
+> ⚠️ **Untagged release:** main has 5 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#33](https://github.com/mojzis/zorilla/pull/33), [#32](https://github.com/mojzis/zorilla/pull/32)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `f0db6854` Update ruff requirement from >=0.16.5 to >=0.16.8 (#62) (dependabot[bot], 2026-09-19 19:50:00+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#69](https://github.com/mojzis/braindump/pull/69), [#68](https://github.com/mojzis/braindump/pull/68), [#67](https://github.com/mojzis/braindump/pull/67)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `ff01c001` build(deps): bump rmcp from 3.1.4 to 3.3.0 in the minor-and-patch group (#142) (dependabot[bot], 2026-09-19 19:34:07+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#144](https://github.com/mojzis/ty-find/pull/144), [#143](https://github.com/mojzis/ty-find/pull/143)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -89,41 +212,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `f0db6854` Update ruff requirement from >=0.16.5 to >=0.16.8 (#62) (dependabot[bot], 2026-09-19 19:50:00+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [gerenuk](https://github.com/mojzis/gerenuk)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
@@ -133,24 +221,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 > ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `bccc0ccb` Bump tree-sitter from 0.26.10 to 0.27.0 (#30) (dependabot[bot], 2026-09-19 19:44:15+00:00)
-
-
-> ⚠️ **Untagged release:** main has 5 commits without a tag.
 
 
 **CI:** PASS
@@ -196,24 +266,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 ---
 
 
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `5f223ade` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:13+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [introspect](https://github.com/mojzis/introspect)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
@@ -233,30 +285,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `ff01c001` build(deps): bump rmcp from 3.1.4 to 3.3.0 in the minor-and-patch group (#142) (dependabot[bot], 2026-09-19 19:34:07+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#143](https://github.com/mojzis/ty-find/pull/143)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
@@ -376,25 +404,6 @@ N/A | ★0 | 0 issues
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3e9382e7` Bump the minor-and-patch group in /server with 3 updates (#14) (dependabot[bot], 2026-09-08 01:08:30+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#15](https://github.com/mojzis/talkshape/pull/15)
 
 
 
