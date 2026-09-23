@@ -1,6 +1,25 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-22 10:32:46 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 32
+**Generated:** 2026-09-23 10:27:22 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 32
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -104,25 +123,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -539,42 +539,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/tyftest/)
 
 **CI:** PASS
 
-
-
----
-
-
-## [brouci](https://github.com/mojzis/brouci)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `96860fb1` add flask (Mojzis Stupka, 2025-05-29 05:19:39+00:00)
-
-
-
-
-
-**Orphan branches (1):** `beetle-behavior-fixes`
-
-
----
-
-
-## [volby_check](https://github.com/mojzis/volby_check)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/volby_check/)
-
-
-**Last commit:** `fbb6cf0b` Merge pull request #21 from mojzis/claude/add-suspicious-zeros-2021-01GeHeA9gtYUomE1AKLk6tKg (Mojzis, 2025-11-15 17:13:32+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (4):** `claude/enlarge-bubble-chart-bubbles-011uH2ypRRnnYtCF35MfPRWy`, `claude/enrich-suspicious-results-table-011zcLHg6xj6XrHciyMHPDZY`, `claude/improve-marimo-election-data-011at4r9D2DxXrSc4B57xz6h`, `claude/init-marimo-election-data-017E4azTiuMxzZzDGZS7JQ2Y`
 
 
 ---
