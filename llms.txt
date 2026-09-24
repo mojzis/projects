@@ -1,6 +1,22 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-23 10:27:22 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 32
+**Generated:** 2026-09-24 10:43:35 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 31
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `f598a1a6` Release v0.2.5 (Mojzis Stupka, 2026-09-24 09:23:33+00:00)
+
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -164,27 +180,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#4](https://github.com/mojzis/imgen/pull/4)
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `c5edad68` Bump the minor-and-patch group across 1 directory with 2 updates (#11) (dependabot[bot], 2026-09-19 19:37:40+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#13](https://github.com/mojzis/madoqua/pull/13)
 
 
 
