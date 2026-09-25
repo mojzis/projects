@@ -1,22 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-24 10:43:35 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 31
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `f598a1a6` Release v0.2.5 (Mojzis Stupka, 2026-09-24 09:23:33+00:00)
-
-
-
-**CI:** PASS
-
-
+**Generated:** 2026-09-25 10:47:20 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 31
 
 ---
 
@@ -35,6 +19,22 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `f598a1a6` Release v0.2.5 (Mojzis Stupka, 2026-09-24 09:23:33+00:00)
+
+
+
+**CI:** PASS
+
 
 
 ---
