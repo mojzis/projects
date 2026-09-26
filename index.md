@@ -1,6 +1,40 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-25 10:47:20 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 31
+**Generated:** 2026-09-26 10:29:47 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 31
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `266cc4d7` review prvni-jeslicky 9b93b7f (mojzis, 2026-09-25 17:43:02+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `e7256c9a` Wrapping: never end a line with a one-letter word, never break a no-break space (mojzis, 2026-09-25 16:57:35+00:00)
+
+
+> ⚠️ **Untagged release:** main has 10 commits without a tag.
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -243,24 +277,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 ---
 
 
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `85f1176d` Bump astral-sh/setup-uv from 10.0.1 to 10.1.0 (#14) (dependabot[bot], 2026-09-19 19:38:16+00:00)
-
-
-> ⚠️ **Untagged release:** main has 9 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [introspect](https://github.com/mojzis/introspect)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
@@ -335,22 +351,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 **Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `be6c28de` review vanoce-o-ktere-neprisla 64b24e8-dirty (mojzis, 2026-09-18 19:45:14+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
