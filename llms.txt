@@ -1,6 +1,64 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-27 11:01:02 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 31
+**Generated:** 2026-09-28 12:18:50 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 32
+
+---
+
+
+## [trains-de](https://github.com/mojzis/trains-de)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `98f5460f` Merge pull request #1 from mojzis/claude/quirky-fermi-4j0m2v (Mojzis, 2026-09-28 12:07:28+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#5](https://github.com/mojzis/imgen/pull/5)
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `e7256c9a` Wrapping: never end a line with a one-letter word, never break a no-break space (mojzis, 2026-09-25 16:57:35+00:00)
+
+
+> ⚠️ **Untagged release:** main has 10 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#16](https://github.com/mojzis/comicforge/pull/16)
+
+
 
 ---
 
@@ -31,24 +89,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
 
 **Last commit:** `266cc4d7` review prvni-jeslicky 9b93b7f (mojzis, 2026-09-25 17:43:02+00:00)
 
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `e7256c9a` Wrapping: never end a line with a one-letter word, never break a no-break space (mojzis, 2026-09-25 16:57:35+00:00)
-
-
-> ⚠️ **Untagged release:** main has 10 commits without a tag.
 
 
 **CI:** PASS
@@ -193,27 +233,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 
 **Open PRs (1):** [#1](https://github.com/mojzis/dermestes/pull/1)
-
-
-
----
-
-
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#4](https://github.com/mojzis/imgen/pull/4)
 
 
 
@@ -430,7 +449,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1593720942)
 
 
 
