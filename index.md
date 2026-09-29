@@ -1,21 +1,122 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-28 12:18:50 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 32
+**Generated:** 2026-09-29 11:46:38 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 36
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `5f223ade` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:13+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#5](https://github.com/mojzis/typer-agentic/pull/5)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `bccc0ccb` Bump tree-sitter from 0.26.10 to 0.27.0 (#30) (dependabot[bot], 2026-09-19 19:44:15+00:00)
+
+
+> ⚠️ **Untagged release:** main has 5 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#35](https://github.com/mojzis/zorilla/pull/35), [#34](https://github.com/mojzis/zorilla/pull/34)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `f0db6854` Update ruff requirement from >=0.16.5 to >=0.16.8 (#62) (dependabot[bot], 2026-09-19 19:50:00+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (7):** [#75](https://github.com/mojzis/braindump/pull/75), [#74](https://github.com/mojzis/braindump/pull/74), [#73](https://github.com/mojzis/braindump/pull/73), [#72](https://github.com/mojzis/braindump/pull/72), [#71](https://github.com/mojzis/braindump/pull/71), [#70](https://github.com/mojzis/braindump/pull/70), [#69](https://github.com/mojzis/braindump/pull/69)
+
+
 
 ---
 
 
 ## [trains-de](https://github.com/mojzis/trains-de)
 
-N/A | ★0 | 0 issues
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
 
 
-**Last commit:** `98f5460f` Merge pull request #1 from mojzis/claude/quirky-fermi-4j0m2v (Mojzis, 2026-09-28 12:07:28+00:00)
+**Last commit:** `bc1c7b17` Merge pull request #3 from mojzis/tight-changes-and-dates (Mojzis, 2026-09-28 13:30:40+00:00)
 
 
 
 **CI:** PASS
 
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `d501f118` Phase 3: pass-through check (one-caller folded in) (mojzis, 2026-09-19 19:41:13+00:00)
+
+
+> ⚠️ **Untagged release:** main has 20 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#1](https://github.com/mojzis/dermestes/pull/1)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -63,25 +164,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
@@ -114,27 +196,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 ---
 
 
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `5f223ade` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:13+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#4](https://github.com/mojzis/typer-agentic/pull/4)
-
-
-
----
-
-
 ## [talkshape](https://github.com/mojzis/talkshape)
 
 N/A | ★0 | 0 issues
@@ -148,46 +209,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#16](https://github.com/mojzis/talkshape/pull/16)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `bccc0ccb` Bump tree-sitter from 0.26.10 to 0.27.0 (#30) (dependabot[bot], 2026-09-19 19:44:15+00:00)
-
-
-> ⚠️ **Untagged release:** main has 5 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#33](https://github.com/mojzis/zorilla/pull/33), [#32](https://github.com/mojzis/zorilla/pull/32)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `f0db6854` Update ruff requirement from >=0.16.5 to >=0.16.8 (#62) (dependabot[bot], 2026-09-19 19:50:00+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#69](https://github.com/mojzis/braindump/pull/69), [#68](https://github.com/mojzis/braindump/pull/68), [#67](https://github.com/mojzis/braindump/pull/67)
 
 
 
@@ -213,27 +234,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `2b7a46bd` const-param: exempt functions reached by a computed getattr (mojzis, 2026-09-19 17:55:07+00:00)
-
-
-> ⚠️ **Untagged release:** main has 13 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#1](https://github.com/mojzis/dermestes/pull/1)
-
 
 
 ---
@@ -433,7 +433,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1596197877)
 
 
 
