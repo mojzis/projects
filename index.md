@@ -1,6 +1,41 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-29 11:46:38 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 36
+**Generated:** 2026-09-30 11:32:59 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 36
+
+---
+
+
+## [python-template](https://github.com/mojzis/python-template)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `7d921258` Merge pull request #3 from mojzis/claude/pensive-johnson-2ak2fy (Mojzis, 2026-09-29 13:45:33+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -98,25 +133,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 **Open PRs (1):** [#1](https://github.com/mojzis/dermestes/pull/1)
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -403,22 +419,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (1):** `claude/elegant-heisenberg-4rgpy0`
-
-
----
-
-
-## [python-template](https://github.com/mojzis/python-template)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `d1dfb4fe` Merge pull request #2 from mojzis/claude/aesop-toolbox-setup-v6daq3 (Mojzis, 2026-09-14 22:38:26+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
