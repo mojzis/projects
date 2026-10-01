@@ -1,20 +1,44 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-09-30 11:32:59 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 36
+**Generated:** 2026-10-01 12:01:59 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 36
 
 ---
 
 
-## [python-template](https://github.com/mojzis/python-template)
+## [model-comparison](https://github.com/mojzis/model-comparison)
 
-N/A | ★0 | 0 issues
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
 
 
-**Last commit:** `7d921258` Merge pull request #3 from mojzis/claude/pensive-johnson-2ak2fy (Mojzis, 2026-09-29 13:45:33+00:00)
+**Last commit:** `37f74f70` AA snapshot 2026-09-30 (github-actions[bot], 2026-09-30 19:24:34+00:00)
 
 
 
 **CI:** PASS
+
+
+
+**Orphan branches (1):** `claude/nifty-thompson-7so8pc`
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `8c0be63a` Architecture: index notes test strings and evidence-only files (mojzis, 2026-09-29 06:34:26+00:00)
+
+
+> ⚠️ **Untagged release:** main has 29 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#1](https://github.com/mojzis/dermestes/pull/1)
 
 
 
@@ -35,6 +59,22 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [python-template](https://github.com/mojzis/python-template)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `7d921258` Merge pull request #3 from mojzis/claude/pensive-johnson-2ak2fy (Mojzis, 2026-09-29 13:45:33+00:00)
+
+
+
+**CI:** PASS
+
 
 
 ---
@@ -111,27 +151,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `d501f118` Phase 3: pass-through check (one-caller folded in) (mojzis, 2026-09-19 19:41:13+00:00)
-
-
-> ⚠️ **Untagged release:** main has 20 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#1](https://github.com/mojzis/dermestes/pull/1)
 
 
 
