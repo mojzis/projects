@@ -1,6 +1,44 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-01 12:01:59 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 36
+**Generated:** 2026-10-02 11:33:48 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 36
+
+---
+
+
+## [model2data](https://github.com/mojzis/model2data)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `9af96f50` adding codecov (#2) (jarichb, 2025-12-19 21:50:07+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+
+
+**Orphan branches (4):** `add-poe-tasks`, `claude/determined-turing-qmjlou`, `feat/add-examples`, `feature/dev-tooling`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -40,25 +78,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 **Open PRs (1):** [#1](https://github.com/mojzis/dermestes/pull/1)
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -551,22 +570,6 @@ N/A | ★0 | 0 issues
 
 
 **Last commit:** `af259aa9` Bump actions/checkout from 6 to 7 (#9) (dependabot[bot], 2026-07-05 20:48:01+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [tyftest](https://github.com/mojzis/tyftest)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/tyftest/)
-
-
-**Last commit:** `23ed952a` chore: gitignore marimo __marimo__ session cache (mojzis, 2026-07-03 12:03:28+00:00)
 
 
 
