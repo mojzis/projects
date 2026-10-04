@@ -1,25 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-03 10:48:10 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 36
-
----
-
-
-## [model2data](https://github.com/mojzis/model2data)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `9af96f50` adding codecov (#2) (jarichb, 2025-12-19 21:50:07+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-
-
-**Orphan branches (4):** `add-poe-tasks`, `claude/determined-turing-qmjlou`, `feat/add-examples`, `feature/dev-tooling`
-
+**Generated:** 2026-10-04 11:29:58 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 36
 
 ---
 
@@ -38,6 +19,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [model2data](https://github.com/mojzis/model2data)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `9af96f50` adding codecov (#2) (jarichb, 2025-12-19 21:50:07+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+
+
+**Orphan branches (4):** `add-poe-tasks`, `claude/determined-turing-qmjlou`, `feat/add-examples`, `feature/dev-tooling`
 
 
 ---
@@ -487,7 +487,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1593720942)
+**CI:** PASS
 
 
 
@@ -507,73 +507,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#12](https://github.com/mojzis/tyreach/pull/12), [#10](https://github.com/mojzis/tyreach/pull/10)
-
-
-
----
-
-
-## [svatba](https://github.com/mojzis/svatba)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/svatba/)
-
-
-**Last commit:** `5ec63121` Bump actions/checkout from 6 to 7 (#12) (dependabot[bot], 2026-07-05 20:48:18+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [nolegend](https://github.com/mojzis/nolegend)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `da3fa670` Bump actions/checkout from 6 to 7 (#3) (dependabot[bot], 2026-07-05 20:48:15+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [ajina](https://github.com/mojzis/ajina)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
-
-
-**Last commit:** `c33dd359` build(deps): bump actions/checkout from 6 to 7 (#7) (dependabot[bot], 2026-07-05 20:48:08+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [b3d-validate](https://github.com/mojzis/b3d-validate)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `af259aa9` Bump actions/checkout from 6 to 7 (#9) (dependabot[bot], 2026-07-05 20:48:01+00:00)
-
-
-
-**CI:** PASS
 
 
 
