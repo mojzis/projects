@@ -191,7 +191,11 @@ GitHub is how an abandoned project is marked (the list also carries `isArchived`
   own tool — Python `uv version --bump <level>`; Rust
   `cargo set-version --bump <level>` (cargo-edit), falling back to
   `cargo release version <level> --execute` (cargo-release) when cargo-edit
-  isn't installed. Each tool only edits the manifest; commit, tag (`vX.Y.Z`) and
+  isn't installed. A Rust repo with a `release.toml` **always** uses cargo-release
+  (`cargo release version` + `cargo release replace`), so its
+  `pre-release-replacements` (doc `rev:` pins, `docs/version.js`, …) are applied —
+  cargo-edit ignores them; without cargo-release such a repo is skipped as
+  tool-missing. The tools only edit files; commit, tag (`vX.Y.Z`) and
   push are done in git code identically for both ecosystems. Tool selection is
   by installed binary (`cargo-set-version` / `cargo-release` / `uv`).
 - Pushes the bump commit and tag, which triggers the release workflow (runs on

@@ -10,9 +10,11 @@ and untagged commits on ``main``) this:
 3. Bumps the version with the language's own tool — Python
    ``uv version --bump <level>``; Rust ``cargo set-version --bump <level>``
    (cargo-edit), falling back to ``cargo release version <level>``
-   (cargo-release) when cargo-edit is not installed. Each tool only edits the
-   manifest; commit, tag and push are handled here so both ecosystems behave
-   identically.
+   (cargo-release) when cargo-edit is not installed. A Rust repo with a
+   ``release.toml`` always uses cargo-release and also runs its ``replace``
+   step, so the ``pre-release-replacements`` there (doc version pins, etc.) are
+   applied — cargo-edit knows nothing about them. The tools only edit files;
+   commit, tag and push are handled here so both ecosystems behave identically.
 4. Commits the bump, tags ``vX.Y.Z`` and pushes, which triggers the release
    workflow (it runs on tag push).
 
@@ -21,7 +23,6 @@ clone to preview the exact new version, then discarded.
 """
 
 import shutil
-import subprocess
 import tempfile
 import tomllib
 from collections.abc import Callable
@@ -29,12 +30,25 @@ from pathlib import Path
 
 from .collector import GitHubCollector
 from .models import ProjectType, ReleaseAction, ReleaseReport, ReleaseResult
+from .process import run_command
 
 # Project type -> manifest filename whose version is bumped.
 _MANIFESTS: dict[ProjectType, str] = {
     ProjectType.RUST: "Cargo.toml",
     ProjectType.PYTHON: "pyproject.toml",
 }
+
+# Make cargo-release edit files without prompting (it is a dry run otherwise).
+_CARGO_RELEASE_FLAGS = ["--execute", "--no-confirm"]
+
+
+def _missing_tool(project_type: ProjectType, repo_path: Path) -> str:
+    """Name the bump tool a repo needs, for the tool-missing skip message."""
+    if project_type == ProjectType.PYTHON:
+        return "uv"
+    if (repo_path / "release.toml").exists():
+        return "cargo-release (required by release.toml)"
+    return "cargo-edit or cargo-release"
 
 
 class GitReleaser:
@@ -73,29 +87,20 @@ class GitReleaser:
 
     def _run_git(self, args: list[str], cwd: Path | None = None) -> tuple[bool, str]:
         """Run a git command and return (success, output)."""
-        result = subprocess.run(
-            ["git", *args],
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            cwd=cwd,
-            check=False,
-        )
-        output = result.stdout.strip() or result.stderr.strip()
-        return result.returncode == 0, output
+        return run_command(["git", *args], cwd=cwd)
 
     def _run(self, args: list[str], cwd: Path) -> tuple[bool, str]:
         """Run an arbitrary command and return (success, output)."""
-        result = subprocess.run(
-            args,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            cwd=cwd,
-            check=False,
-        )
-        output = result.stdout.strip() or result.stderr.strip()
-        return result.returncode == 0, output
+        return run_command(args, cwd=cwd)
+
+    def _run_all(self, cmds: list[list[str]], cwd: Path) -> tuple[bool, str]:
+        """Run commands in order, stopping at the first failure."""
+        ok, out = True, ""
+        for cmd in cmds:
+            ok, out = self._run(cmd, cwd=cwd)
+            if not ok:
+                break
+        return ok, out
 
     def _detect_type(self, repo_path: Path) -> ProjectType:
         """Detect the project type; Cargo.toml wins over pyproject.toml."""
@@ -105,22 +110,31 @@ class GitReleaser:
             return ProjectType.PYTHON
         return ProjectType.UNKNOWN
 
-    def _resolve_bump_cmd(self, project_type: ProjectType) -> list[str] | None:
-        """Pick the version-bump command for the project, or None if no tool.
+    def _resolve_bump_cmds(
+        self, project_type: ProjectType, repo_path: Path
+    ) -> list[list[str]] | None:
+        """Pick the version-bump commands for the project, or None if no tool.
 
-        Each command only edits the manifest (commit/tag/push is handled here).
-        For Rust, cargo-edit's ``set-version`` is preferred, falling back to
+        The commands only edit files (commit/tag/push is handled here). For
+        Rust, cargo-edit's ``set-version`` is preferred, falling back to
         cargo-release's ``release version`` subcommand when cargo-edit is absent.
+        A repo with a ``release.toml`` requires cargo-release: its ``replace``
+        step applies the ``pre-release-replacements`` configured there.
         """
         if project_type == ProjectType.PYTHON:
             if shutil.which("uv"):
-                return ["uv", "version", "--bump", self.level]
+                return [["uv", "version", "--bump", self.level]]
             return None
         if project_type == ProjectType.RUST:
+            release_version = ["cargo", "release", "version", self.level, *_CARGO_RELEASE_FLAGS]
+            if (repo_path / "release.toml").exists():
+                if shutil.which("cargo-release"):
+                    return [release_version, ["cargo", "release", "replace", *_CARGO_RELEASE_FLAGS]]
+                return None
             if shutil.which("cargo-set-version"):
-                return ["cargo", "set-version", "--bump", self.level]
+                return [["cargo", "set-version", "--bump", self.level]]
             if shutil.which("cargo-release"):
-                return ["cargo", "release", "version", self.level, "--execute", "--no-confirm"]
+                return [release_version]
             return None
         return None
 
@@ -197,19 +211,18 @@ class GitReleaser:
                     message="No Cargo.toml or pyproject.toml found",
                 )
 
-            bump_cmd = self._resolve_bump_cmd(project_type)
-            if bump_cmd is None:
-                tool = "cargo-edit or cargo-release" if project_type == ProjectType.RUST else "uv"
+            bump_cmds = self._resolve_bump_cmds(project_type, repo_path)
+            if bump_cmds is None:
                 return ReleaseResult(
                     repo_name=repo_name,
                     action=ReleaseAction.SKIPPED_TOOL_MISSING,
-                    message=f"{tool} not installed",
+                    message=f"{_missing_tool(project_type, repo_path)} not installed",
                     project_type=project_type,
                 )
 
             old_version = self._read_version(repo_path, project_type)
 
-            ok, out = self._run(bump_cmd, cwd=repo_path)
+            ok, out = self._run_all(bump_cmds, cwd=repo_path)
             if not ok:
                 return ReleaseResult(
                     repo_name=repo_name,
@@ -254,15 +267,15 @@ class GitReleaser:
                     tag=tag,
                 )
 
-            return self._commit_tag_push(repo_path, planned)
+            return self._commit_tag_push(repo_path, planned, tag)
 
-    def _commit_tag_push(self, repo_path: Path, planned: ReleaseResult) -> ReleaseResult:
+    def _commit_tag_push(self, repo_path: Path, planned: ReleaseResult, tag: str) -> ReleaseResult:
         """Commit the bump, create the tag, and push commit + tag."""
         steps = [
-            (["commit", "-am", f"Release {planned.tag}"], "commit"),
-            (["tag", planned.tag], "tag"),
+            (["commit", "-am", f"Release {tag}"], "commit"),
+            (["tag", tag], "tag"),
             (["push", "origin", "HEAD"], "push"),
-            (["push", "origin", planned.tag], "push tag"),
+            (["push", "origin", tag], "push tag"),
         ]
         for args, label in steps:
             ok, out = self._run_git(args, cwd=repo_path)
@@ -329,7 +342,7 @@ class GitReleaser:
             return report
 
         for i, repo in enumerate(candidates):
-            clone_url = repo.get("sshUrl") or repo.get("url")
+            clone_url = repo.get("sshUrl") or repo["url"]
             report.add_result(self._release_repo(repo["name"], clone_url))
             if progress_callback:
                 progress_callback(int((i + 1) / total * 100))

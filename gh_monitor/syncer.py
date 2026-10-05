@@ -1,11 +1,11 @@
 """Git repository synchronization with local filesystem."""
 
-import subprocess
 from collections.abc import Callable
 from pathlib import Path
 
 from .collector import GitHubCollector
 from .models import SyncAction, SyncReport, SyncResult
+from .process import run_command
 
 
 class GitSyncer:
@@ -28,16 +28,7 @@ class GitSyncer:
 
     def _run_git(self, args: list[str], cwd: Path | None = None) -> tuple[bool, str]:
         """Run a git command and return (success, output)."""
-        result = subprocess.run(
-            ["git", *args],
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            cwd=cwd,
-            check=False,
-        )
-        output = result.stdout.strip() or result.stderr.strip()
-        return result.returncode == 0, output
+        return run_command(["git", *args], cwd=cwd)
 
     def _is_git_clean(self, repo_path: Path) -> bool:
         """Check if a git repo has no uncommitted changes."""
@@ -146,7 +137,7 @@ class GitSyncer:
             repo_name = repo["name"]
             repo_path = self.git_dir / repo_name
             # Prefer SSH URL for cloning
-            clone_url = repo.get("sshUrl") or repo.get("url")
+            clone_url = repo.get("sshUrl") or repo["url"]
 
             if repo_path.exists() and (repo_path / ".git").exists():
                 # Existing repo - try to pull

@@ -16,6 +16,11 @@ PYPROJECT_TOML = '[project]\nname = "demo"\nversion = "{v}"\n'
 POETRY_TOML = '[tool.poetry]\nname = "demo"\nversion = "{v}"\n'
 
 
+def _installed(*tools: str):
+    """A shutil.which stand-in that finds only the given executables."""
+    return lambda name: name if name in tools else None
+
+
 class TestReleaseModels:
     """Tests for release-related models."""
 
@@ -160,15 +165,22 @@ class TestReleaseRepo:
                 releaser, "_run_git", side_effect=_clone_writes_manifest("Cargo.toml", "0.1.0")
             ),
             patch.object(releaser, "_run", side_effect=bump),
-            patch("gh_monitor.releaser.shutil.which", return_value="/usr/bin/cargo"),
+            patch(
+                "gh_monitor.releaser.shutil.which",
+                side_effect=_installed("cargo-set-version", "cargo-release"),
+            ),
         ):
             result = releaser._release_repo("demo", "git@github.com:owner/demo.git")
 
-        assert result.action == ReleaseAction.RELEASED
-        assert result.project_type == ProjectType.RUST
-        assert result.old_version == "0.1.0"
-        assert result.new_version == "0.2.0"
-        assert result.tag == "v0.2.0"
+        assert result == ReleaseResult(
+            repo_name="demo",
+            action=ReleaseAction.RELEASED,
+            message="Released v0.2.0",
+            project_type=ProjectType.RUST,
+            old_version="0.1.0",
+            new_version="0.2.0",
+            tag="v0.2.0",
+        )
 
     def test_rust_falls_back_to_cargo_release(self):
         releaser = GitReleaser("owner", assume_yes=True)
@@ -179,16 +191,13 @@ class TestReleaseRepo:
             (Path(cwd) / "Cargo.toml").write_text(CARGO_TOML.format(v="0.1.1"))
             return True, ""
 
-        # cargo-edit absent, cargo-release present.
-        def which(name):
-            return "/usr/bin/cargo-release" if name == "cargo-release" else None
-
         with (
             patch.object(
                 releaser, "_run_git", side_effect=_clone_writes_manifest("Cargo.toml", "0.1.0")
             ),
             patch.object(releaser, "_run", side_effect=bump),
-            patch("gh_monitor.releaser.shutil.which", side_effect=which),
+            # cargo-edit absent, cargo-release present.
+            patch("gh_monitor.releaser.shutil.which", side_effect=_installed("cargo-release")),
         ):
             result = releaser._release_repo("demo", "url")
 
@@ -196,6 +205,28 @@ class TestReleaseRepo:
         assert result.tag == "v0.1.1"
         # Default level is patch.
         assert ran == [["cargo", "release", "version", "patch", "--execute", "--no-confirm"]]
+
+    def test_release_toml_forces_cargo_release_with_replacements(self, tmp_path: Path):
+        releaser = GitReleaser("owner")
+        (tmp_path / "release.toml").write_text("pre-release-replacements = []\n")
+
+        # cargo-edit is installed too, but would skip the release.toml replacements.
+        installed = _installed("cargo-set-version", "cargo-release")
+        with patch("gh_monitor.releaser.shutil.which", side_effect=installed):
+            cmds = releaser._resolve_bump_cmds(ProjectType.RUST, tmp_path)
+
+        assert cmds == [
+            ["cargo", "release", "version", "patch", "--execute", "--no-confirm"],
+            ["cargo", "release", "replace", "--execute", "--no-confirm"],
+        ]
+
+    def test_release_toml_without_cargo_release_is_tool_missing(self, tmp_path: Path):
+        releaser = GitReleaser("owner")
+        (tmp_path / "release.toml").write_text("")
+
+        installed = _installed("cargo-set-version")
+        with patch("gh_monitor.releaser.shutil.which", side_effect=installed):
+            assert releaser._resolve_bump_cmds(ProjectType.RUST, tmp_path) is None
 
     def test_level_threads_into_bump_command(self):
         releaser = GitReleaser("owner", level="minor", assume_yes=True)
@@ -211,7 +242,7 @@ class TestReleaseRepo:
                 releaser, "_run_git", side_effect=_clone_writes_manifest("pyproject.toml", "0.1.0")
             ),
             patch.object(releaser, "_run", side_effect=bump),
-            patch("gh_monitor.releaser.shutil.which", return_value="/usr/bin/uv"),
+            patch("gh_monitor.releaser.shutil.which", side_effect=_installed("uv")),
         ):
             result = releaser._release_repo("demo", "url")
 
@@ -230,7 +261,7 @@ class TestReleaseRepo:
                 releaser, "_run_git", side_effect=_clone_writes_manifest("pyproject.toml", "1.0.0")
             ) as mock_git,
             patch.object(releaser, "_run", side_effect=bump),
-            patch("gh_monitor.releaser.shutil.which", return_value="/usr/bin/uv"),
+            patch("gh_monitor.releaser.shutil.which", side_effect=_installed("uv")),
         ):
             result = releaser._release_repo("demo", "url")
 
@@ -279,7 +310,10 @@ class TestReleaseRepo:
                 releaser, "_run_git", side_effect=_clone_writes_manifest("Cargo.toml", "0.1.0")
             ),
             patch.object(releaser, "_run", side_effect=bump),
-            patch("gh_monitor.releaser.shutil.which", return_value="/usr/bin/cargo"),
+            patch(
+                "gh_monitor.releaser.shutil.which",
+                side_effect=_installed("cargo-set-version", "cargo-release"),
+            ),
         ):
             result = releaser._release_repo("demo", "url")
 
