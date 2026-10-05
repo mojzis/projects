@@ -380,10 +380,10 @@ Every tool teaches itself: run `uv run <tool> guide` before guessing at flags.
 files) and `gerenuk run -- -q` (only the tests the diff can reach, whole suite when unsure;
 diffs the working tree against `origin/main`). Typical run: ~2 s, gerenuk dominates.
 `uv run madoqua stats` shows timings from `.git/hook-timings.jsonl`. Note: `ty check` and
-`zorilla check` have pre-existing findings in `tests/` (61 ty diagnostics, mostly
-`tests/test_models.py`; 20 zorilla ZR004/ZR005 findings), and `biston` reports one exact
-clone (`_run_git` in `releaser.py`/`syncer.py`) — commits staging those files will be
-blocked until they are resolved.
+`zorilla check` have pre-existing findings (51 ty diagnostics in `tests/`, mostly
+`tests/test_models.py`, plus 7 in `gh_monitor/collector.py`; 14 zorilla ZR004/ZR005
+findings in `tests/`) — commits staging those files will be blocked until they are
+resolved.
 
 **Fresh clone:** `uv sync && uv run madoqua install` once (`core.hooksPath` is local
 git config, not committed).
