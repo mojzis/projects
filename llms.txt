@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-04 11:29:58 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 36
+**Generated:** 2026-10-05 05:06:43 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 36
 
 ---
 
@@ -10,7 +10,7 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-**Last commit:** `7756bb4f` Bump madoqua to 0.2.4: hook no longer leaks GIT_* env into tests (#25) (Mojzis, 2026-09-19 17:04:50+00:00)
+**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
 
 
 
@@ -471,7 +471,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1596197877)
+**CI:** PASS
 
 
 
@@ -487,7 +487,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1608378978)
 
 
 
