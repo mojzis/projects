@@ -1,6 +1,64 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-05 05:06:43 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 36
+**Generated:** 2026-10-05 12:57:47 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 37
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#6](https://github.com/mojzis/imgen/pull/6)
+
+
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `f10edef7` review lab-20261005-092218 a2dd3ee (mojzis, 2026-10-05 07:24:08+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `6db20d5f` Bump the minor-and-patch group across 1 directory with 3 updates (#45) (dependabot[bot], 2026-09-19 19:44:11+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#46](https://github.com/mojzis/biston/pull/46)
+
+
 
 ---
 
@@ -176,27 +234,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
 ---
 
 
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#5](https://github.com/mojzis/imgen/pull/5)
-
-
-
----
-
-
 ## [comicforge](https://github.com/mojzis/comicforge)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
@@ -212,22 +249,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 
 
 **Open PRs (1):** [#16](https://github.com/mojzis/comicforge/pull/16)
-
-
-
----
-
-
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `266cc4d7` review prvni-jeslicky 9b93b7f (mojzis, 2026-09-25 17:43:02+00:00)
-
-
-
-**CI:** PASS
 
 
 
@@ -320,24 +341,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 **Last commit:** `83b4a169` Bump the minor-and-patch group across 1 directory with 2 updates (#17) (dependabot[bot], 2026-09-19 19:44:23+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `6db20d5f` Bump the minor-and-patch group across 1 directory with 3 updates (#45) (dependabot[bot], 2026-09-19 19:44:11+00:00)
 
 
 > ⚠️ **Untagged release:** main has 3 commits without a tag.
