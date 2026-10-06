@@ -1,6 +1,79 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-05 12:57:47 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 37
+**Generated:** 2026-10-06 12:24:04 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `8cec55ea` review lab-20261006-074203 1bf4740-dirty (mojzis, 2026-10-06 05:42:22+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3e9382e7` Bump the minor-and-patch group in /server with 3 updates (#14) (dependabot[bot], 2026-09-08 01:08:30+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#17](https://github.com/mojzis/talkshape/pull/17)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `f0db6854` Update ruff requirement from >=0.16.5 to >=0.16.8 (#62) (dependabot[bot], 2026-09-19 19:50:00+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (8):** [#77](https://github.com/mojzis/braindump/pull/77), [#76](https://github.com/mojzis/braindump/pull/76), [#75](https://github.com/mojzis/braindump/pull/75), [#74](https://github.com/mojzis/braindump/pull/74), [#72](https://github.com/mojzis/braindump/pull/72), [#71](https://github.com/mojzis/braindump/pull/71), [#70](https://github.com/mojzis/braindump/pull/70), [#69](https://github.com/mojzis/braindump/pull/69)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -26,22 +99,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `f10edef7` review lab-20261005-092218 a2dd3ee (mojzis, 2026-10-05 07:24:08+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [biston](https://github.com/mojzis/biston)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
@@ -58,25 +115,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open PRs (1):** [#46](https://github.com/mojzis/biston/pull/46)
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -199,25 +237,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `f0db6854` Update ruff requirement from >=0.16.5 to >=0.16.8 (#62) (dependabot[bot], 2026-09-19 19:50:00+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (7):** [#75](https://github.com/mojzis/braindump/pull/75), [#74](https://github.com/mojzis/braindump/pull/74), [#73](https://github.com/mojzis/braindump/pull/73), [#72](https://github.com/mojzis/braindump/pull/72), [#71](https://github.com/mojzis/braindump/pull/71), [#70](https://github.com/mojzis/braindump/pull/70), [#69](https://github.com/mojzis/braindump/pull/69)
-
-
-
----
-
-
 ## [trains-de](https://github.com/mojzis/trains-de)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
@@ -265,25 +284,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3e9382e7` Bump the minor-and-patch group in /server with 3 updates (#14) (dependabot[bot], 2026-09-08 01:08:30+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#16](https://github.com/mojzis/talkshape/pull/16)
 
 
 
@@ -474,7 +474,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1611327235)
 
 
 
