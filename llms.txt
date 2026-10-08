@@ -1,6 +1,22 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-07 12:16:18 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
+**Generated:** 2026-10-08 12:26:46 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `b79988cb` review anezka-dopisy-pres-hory 5f7df67-dirty (mojzis, 2026-10-07 21:26:56+00:00)
+
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -19,22 +35,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `8cec55ea` review lab-20261006-074203 1bf4740-dirty (mojzis, 2026-10-06 05:42:22+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
