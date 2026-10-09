@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-08 12:26:46 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
+**Generated:** 2026-10-09 12:15:50 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
 
 ---
 
@@ -10,12 +10,31 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
 
 
-**Last commit:** `b79988cb` review anezka-dopisy-pres-hory 5f7df67-dirty (mojzis, 2026-10-07 21:26:56+00:00)
+**Last commit:** `7384131b` review anezka-dopisy-pres-hory cbbae82-dirty (mojzis, 2026-10-09 06:47:25+00:00)
 
 
 
 **CI:** PASS
 
+
+
+---
+
+
+## [model-comparison](https://github.com/mojzis/model-comparison)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
+
+
+**Last commit:** `b54f599d` AA snapshot 2026-10-08 (github-actions[bot], 2026-10-08 14:16:10+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `claude/nifty-thompson-7so8pc`
 
 
 ---
@@ -134,25 +153,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (4):** `add-poe-tasks`, `claude/determined-turing-qmjlou`, `feat/add-examples`, `feature/dev-tooling`
-
-
----
-
-
-## [model-comparison](https://github.com/mojzis/model-comparison)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
-
-
-**Last commit:** `37f74f70` AA snapshot 2026-09-30 (github-actions[bot], 2026-09-30 19:24:34+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `claude/nifty-thompson-7so8pc`
 
 
 ---
