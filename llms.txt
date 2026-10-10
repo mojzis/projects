@@ -1,6 +1,120 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-09 12:15:50 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
+**Generated:** 2026-10-10 11:33:14 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `c3c68f30` Release v0.2.3 (mojzis, 2026-10-09 18:56:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#36](https://github.com/mojzis/zorilla/pull/36), [#35](https://github.com/mojzis/zorilla/pull/35)
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `e1ea85a9` Release v0.2.10 (mojzis, 2026-10-09 19:00:47+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#22](https://github.com/mojzis/pycoati/pull/22)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `716090cb` Release v0.5.2 (mojzis, 2026-10-09 18:59:26+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#144](https://github.com/mojzis/ty-find/pull/144), [#143](https://github.com/mojzis/ty-find/pull/143)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `62e7c460` Release v0.7.4 (mojzis, 2026-10-09 18:58:03+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#46](https://github.com/mojzis/biston/pull/46)
+
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `bca734ff` Release v0.5.0 (mojzis, 2026-10-09 18:50:21+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -35,25 +149,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
 
 
 **Orphan branches (1):** `claude/nifty-thompson-7so8pc`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -112,27 +207,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#6](https://github.com/mojzis/imgen/pull/6)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `6db20d5f` Bump the minor-and-patch group across 1 directory with 3 updates (#45) (dependabot[bot], 2026-09-19 19:44:11+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#46](https://github.com/mojzis/biston/pull/46)
 
 
 
@@ -216,27 +290,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `bccc0ccb` Bump tree-sitter from 0.26.10 to 0.27.0 (#30) (dependabot[bot], 2026-09-19 19:44:15+00:00)
-
-
-> ⚠️ **Untagged release:** main has 5 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#35](https://github.com/mojzis/zorilla/pull/35), [#34](https://github.com/mojzis/zorilla/pull/34)
-
-
-
----
-
-
 ## [trains-de](https://github.com/mojzis/trains-de)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
@@ -281,69 +334,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 **Last commit:** `f598a1a6` Release v0.2.5 (Mojzis Stupka, 2026-09-24 09:23:33+00:00)
 
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `ff01c001` build(deps): bump rmcp from 3.1.4 to 3.3.0 in the minor-and-patch group (#142) (dependabot[bot], 2026-09-19 19:34:07+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#144](https://github.com/mojzis/ty-find/pull/144), [#143](https://github.com/mojzis/ty-find/pull/143)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `f427ad93` Bump toml in the minor-and-patch group (#21) (dependabot[bot], 2026-09-19 19:37:59+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#22](https://github.com/mojzis/pycoati/pull/22)
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `83b4a169` Bump the minor-and-patch group across 1 directory with 2 updates (#17) (dependabot[bot], 2026-09-19 19:44:23+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
 
 
 **CI:** PASS
