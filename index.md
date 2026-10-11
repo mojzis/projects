@@ -1,6 +1,25 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-10 11:33:14 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
+**Generated:** 2026-10-11 11:47:04 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -95,25 +114,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 **CI:** PASS
 
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -480,7 +480,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1608378978)
+**CI:** PASS
 
 
 
