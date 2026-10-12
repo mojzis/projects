@@ -1,6 +1,41 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-11 11:47:04 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 38
+**Generated:** 2026-10-12 13:50:12 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 39
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `f598a1a6` Release v0.2.5 (Mojzis Stupka, 2026-09-24 09:23:33+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#14](https://github.com/mojzis/madoqua/pull/14)
+
+
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `79053057` review vanoce-o-ktere-neprisla bd2824d (mojzis, 2026-10-12 00:56:17+00:00)
+
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -109,22 +144,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 **Last commit:** `bca734ff` Release v0.5.0 (mojzis, 2026-10-09 18:50:21+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `7384131b` review anezka-dopisy-pres-hory cbbae82-dirty (mojzis, 2026-10-09 06:47:25+00:00)
 
 
 
@@ -327,22 +346,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 ---
 
 
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `f598a1a6` Release v0.2.5 (Mojzis Stupka, 2026-09-24 09:23:33+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [introspect](https://github.com/mojzis/introspect)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
@@ -464,7 +467,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1611327235)
+**CI:** PASS
 
 
 
@@ -480,7 +483,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1621986282)
 
 
 
