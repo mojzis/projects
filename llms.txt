@@ -1,23 +1,84 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-12 13:50:12 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 39
+**Generated:** 2026-10-13 13:08:41 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 41
 
 ---
 
 
-## [madoqua](https://github.com/mojzis/madoqua)
+## [dermestes](https://github.com/mojzis/dermestes)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 
-**Last commit:** `f598a1a6` Release v0.2.5 (Mojzis Stupka, 2026-09-24 09:23:33+00:00)
+**Last commit:** `8c0be63a` Architecture: index notes test strings and evidence-only files (mojzis, 2026-09-29 06:34:26+00:00)
+
+
+> ⚠️ **Untagged release:** main has 29 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#2](https://github.com/mojzis/dermestes/pull/2), [#3](https://github.com/mojzis/dermestes/pull/3)
+
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#7](https://github.com/mojzis/imgen/pull/7)
+
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `bca734ff` Release v0.5.0 (mojzis, 2026-10-09 18:50:21+00:00)
 
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#14](https://github.com/mojzis/madoqua/pull/14)
+**Open PRs (1):** [#20](https://github.com/mojzis/gerenuk/pull/20)
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `e1ea85a9` Release v0.2.10 (mojzis, 2026-10-09 19:00:47+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#23](https://github.com/mojzis/pycoati/pull/23)
 
 
 
@@ -29,11 +90,30 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
 
 
-**Last commit:** `79053057` review vanoce-o-ktere-neprisla bd2824d (mojzis, 2026-10-12 00:56:17+00:00)
+**Last commit:** `c48f38d5` review vanoce-o-ktere-neprisla 8e5184b (mojzis, 2026-10-12 17:49:02+00:00)
 
 
 
 **CI:** PASS
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `62e7c460` Release v0.7.4 (mojzis, 2026-10-09 18:58:03+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#47](https://github.com/mojzis/biston/pull/47)
 
 
 
@@ -59,6 +139,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `f598a1a6` Release v0.2.5 (Mojzis Stupka, 2026-09-24 09:23:33+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#14](https://github.com/mojzis/madoqua/pull/14)
+
+
+
+---
+
+
 ## [zorilla](https://github.com/mojzis/zorilla)
 
 N/A | ★0 | 0 issues
@@ -72,25 +171,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#36](https://github.com/mojzis/zorilla/pull/36), [#35](https://github.com/mojzis/zorilla/pull/35)
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `e1ea85a9` Release v0.2.10 (mojzis, 2026-10-09 19:00:47+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#22](https://github.com/mojzis/pycoati/pull/22)
 
 
 
@@ -114,41 +194,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `62e7c460` Release v0.7.4 (mojzis, 2026-10-09 18:58:03+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#46](https://github.com/mojzis/biston/pull/46)
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `bca734ff` Release v0.5.0 (mojzis, 2026-10-09 18:50:21+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
@@ -211,27 +256,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 ---
 
 
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#6](https://github.com/mojzis/imgen/pull/6)
-
-
-
----
-
-
 ## [model2data](https://github.com/mojzis/model2data)
 
 N/A | ★0 | 0 issues
@@ -246,27 +270,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (4):** `add-poe-tasks`, `claude/determined-turing-qmjlou`, `feat/add-examples`, `feature/dev-tooling`
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `8c0be63a` Architecture: index notes test strings and evidence-only files (mojzis, 2026-09-29 06:34:26+00:00)
-
-
-> ⚠️ **Untagged release:** main has 29 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#1](https://github.com/mojzis/dermestes/pull/1)
-
 
 
 ---
