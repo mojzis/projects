@@ -1,6 +1,125 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-13 13:08:41 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 41
+**Generated:** 2026-10-14 10:49:53 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 43
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `5f223ade` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:13+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#6](https://github.com/mojzis/typer-agentic/pull/6)
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3e9382e7` Bump the minor-and-patch group in /server with 3 updates (#14) (dependabot[bot], 2026-09-08 01:08:30+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#18](https://github.com/mojzis/talkshape/pull/18)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `c3c68f30` Release v0.2.3 (mojzis, 2026-10-09 18:56:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#38](https://github.com/mojzis/zorilla/pull/38), [#37](https://github.com/mojzis/zorilla/pull/37)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `f0db6854` Update ruff requirement from >=0.16.5 to >=0.16.8 (#62) (dependabot[bot], 2026-09-19 19:50:00+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (10):** [#82](https://github.com/mojzis/braindump/pull/82), [#81](https://github.com/mojzis/braindump/pull/81), [#80](https://github.com/mojzis/braindump/pull/80), [#79](https://github.com/mojzis/braindump/pull/79), [#78](https://github.com/mojzis/braindump/pull/78), [#75](https://github.com/mojzis/braindump/pull/75), [#74](https://github.com/mojzis/braindump/pull/74), [#72](https://github.com/mojzis/braindump/pull/72), [#71](https://github.com/mojzis/braindump/pull/71), [#69](https://github.com/mojzis/braindump/pull/69)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `716090cb` Release v0.5.2 (mojzis, 2026-10-09 18:59:26+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#145](https://github.com/mojzis/ty-find/pull/145), [#143](https://github.com/mojzis/ty-find/pull/143)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -120,25 +239,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [madoqua](https://github.com/mojzis/madoqua)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
@@ -158,47 +258,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 ---
 
 
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `c3c68f30` Release v0.2.3 (mojzis, 2026-10-09 18:56:16+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#36](https://github.com/mojzis/zorilla/pull/36), [#35](https://github.com/mojzis/zorilla/pull/35)
-
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `716090cb` Release v0.5.2 (mojzis, 2026-10-09 18:59:26+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#144](https://github.com/mojzis/ty-find/pull/144), [#143](https://github.com/mojzis/ty-find/pull/143)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
 ## [model-comparison](https://github.com/mojzis/model-comparison)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
@@ -213,44 +272,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
 
 
 **Orphan branches (1):** `claude/nifty-thompson-7so8pc`
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `3e9382e7` Bump the minor-and-patch group in /server with 3 updates (#14) (dependabot[bot], 2026-09-08 01:08:30+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#17](https://github.com/mojzis/talkshape/pull/17)
-
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `f0db6854` Update ruff requirement from >=0.16.5 to >=0.16.8 (#62) (dependabot[bot], 2026-09-19 19:50:00+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (8):** [#77](https://github.com/mojzis/braindump/pull/77), [#76](https://github.com/mojzis/braindump/pull/76), [#75](https://github.com/mojzis/braindump/pull/75), [#74](https://github.com/mojzis/braindump/pull/74), [#72](https://github.com/mojzis/braindump/pull/72), [#71](https://github.com/mojzis/braindump/pull/71), [#70](https://github.com/mojzis/braindump/pull/70), [#69](https://github.com/mojzis/braindump/pull/69)
-
 
 
 ---
@@ -285,27 +306,6 @@ N/A | ★0 | 0 issues
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `5f223ade` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:13+00:00)
-
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#5](https://github.com/mojzis/typer-agentic/pull/5)
 
 
 
@@ -470,7 +470,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1626116852)
 
 
 
