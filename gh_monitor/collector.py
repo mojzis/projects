@@ -46,6 +46,9 @@ class GitHubCollector:
             ]
         )
 
+        if not isinstance(repos, list):
+            return []
+
         # Filter by date
         cutoff = datetime.now(UTC) - timedelta(days=since_days)
         filtered = []
@@ -61,12 +64,12 @@ class GitHubCollector:
         """Get last commit on main branch."""
         try:
             commit = self._run_gh(["api", f"repos/{owner}/{repo}/commits/main"])
-            return commit
+            return commit if isinstance(commit, dict) else None
         except GitHubCLIError:
             # Try master branch if main fails
             try:
                 commit = self._run_gh(["api", f"repos/{owner}/{repo}/commits/master"])
-                return commit
+                return commit if isinstance(commit, dict) else None
             except GitHubCLIError:
                 return None
 
@@ -225,13 +228,13 @@ class GitHubCollector:
                 "list",
                 owner,
                 "--json",
-                "name,url,sshUrl,pushedAt,isFork,isArchived",
+                "name,url,sshUrl,pushedAt,isFork,isArchived,isTemplate",
                 "--limit",
                 "1000",
             ]
         )
 
-        if not repos:
+        if not isinstance(repos, list):
             return []
 
         # Filter by date if since_days is specified

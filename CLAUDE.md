@@ -178,7 +178,9 @@ commits on main (the same signal the monitor report warns about). **Forks are
 never candidates** — we only release our own projects, not clones of someone
 else's repo that live under the owner (the sync repo list now carries `isFork`
 and `find_candidates` skips any fork). **Archived repos are skipped too** — archiving on
-GitHub is how an abandoned project is marked (the list also carries `isArchived`). For each candidate `GitReleaser`:
+GitHub is how an abandoned project is marked (the list also carries `isArchived`). **Template
+repos are skipped** (`isTemplate`) — e.g. `rust-template` ships a `release.yml` only so
+projects created from it inherit one. For each candidate `GitReleaser`:
 
 - Clones the repo into a throwaway temp dir (no dependency on `~/git` clones).
 - Detects the project type — **`Cargo.toml` takes precedence over
@@ -381,7 +383,7 @@ files) and `gerenuk run -- -q` (only the tests the diff can reach, whole suite w
 diffs the working tree against `origin/main`). Typical run: ~2 s, gerenuk dominates.
 `uv run madoqua stats` shows timings from `.git/hook-timings.jsonl`. Note: `ty check` and
 `zorilla check` have pre-existing findings (51 ty diagnostics in `tests/`, mostly
-`tests/test_models.py`, plus 7 in `gh_monitor/collector.py`; 14 zorilla ZR004/ZR005
+`tests/test_models.py`; 14 zorilla ZR004/ZR005
 findings in `tests/`) — commits staging those files will be blocked until they are
 resolved.
 

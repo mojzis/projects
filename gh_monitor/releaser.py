@@ -304,13 +304,14 @@ class GitReleaser:
 
         Forks are never released — we only publish our own projects, not
         clones of someone else's repo that happen to live under the owner.
-        Archived repos are abandoned and skipped too.
+        Archived repos are abandoned and skipped too. Template repos carry a
+        release workflow only so that projects created from them inherit it.
         """
         repos = self.collector.get_repositories_for_sync(self.owner, self.days)
         candidates = []
         for repo in repos:
             name = repo["name"]
-            if repo.get("isFork") or repo.get("isArchived"):
+            if repo.get("isFork") or repo.get("isArchived") or repo.get("isTemplate"):
                 continue
             if not self.collector.has_release_workflow(self.owner, name):
                 continue
