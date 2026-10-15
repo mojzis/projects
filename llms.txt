@@ -1,6 +1,43 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-14 10:49:53 | **Period:** Last 90 days | **Repos:** 27 | **Open PRs:** 43
+**Generated:** 2026-10-15 05:54:07 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 42
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [rust-template](https://github.com/mojzis/rust-template)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `46840fb2` Rust CLI project template (mojzis, 2026-10-15 05:51:09+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** UNKNOWN
+
+
 
 ---
 
@@ -10,16 +47,109 @@
 N/A | ★0 | 0 issues
 
 
-**Last commit:** `5f223ade` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:13+00:00)
+**Last commit:** `8545ced3` Release v0.1.5 (mojzis, 2026-10-15 05:45:17+00:00)
 
-
-> ⚠️ **Untagged release:** main has 3 commits without a tag.
 
 
 **CI:** PASS
 
 
 **Open PRs (1):** [#6](https://github.com/mojzis/typer-agentic/pull/6)
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `e81a132b` Release v0.3.5 (mojzis, 2026-10-15 05:45:36+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `df052bd9` Release v0.2.4 (mojzis, 2026-10-15 05:45:29+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#16](https://github.com/mojzis/comicforge/pull/16)
+
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `ef316b50` Release v0.1.1 (mojzis, 2026-10-15 05:45:23+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#7](https://github.com/mojzis/imgen/pull/7)
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `6b2b4823` Release v0.2.6 (mojzis, 2026-10-15 05:45:11+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `d234d3bf` Release v0.1.1 (mojzis, 2026-10-15 05:45:02+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#2](https://github.com/mojzis/dermestes/pull/2), [#3](https://github.com/mojzis/dermestes/pull/3)
 
 
 
@@ -105,67 +235,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `8e6ce27a` CLAUDE.md: refresh pre-existing hook finding counts (mojzis, 2026-10-05 05:05:01+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `8c0be63a` Architecture: index notes test strings and evidence-only files (mojzis, 2026-09-29 06:34:26+00:00)
-
-
-> ⚠️ **Untagged release:** main has 29 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#2](https://github.com/mojzis/dermestes/pull/2), [#3](https://github.com/mojzis/dermestes/pull/3)
-
-
-
----
-
-
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `47f16c08` Bump the minor-and-patch group across 1 directory with 7 updates (#3) (dependabot[bot], 2026-09-19 19:38:09+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#7](https://github.com/mojzis/imgen/pull/7)
-
-
-
----
-
-
 ## [gerenuk](https://github.com/mojzis/gerenuk)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
@@ -233,25 +302,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 
 
 **Open PRs (1):** [#47](https://github.com/mojzis/biston/pull/47)
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `f598a1a6` Release v0.2.5 (Mojzis Stupka, 2026-09-24 09:23:33+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#14](https://github.com/mojzis/madoqua/pull/14)
 
 
 
@@ -328,51 +378,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
 ---
 
 
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `e7256c9a` Wrapping: never end a line with a one-letter word, never break a no-break space (mojzis, 2026-09-25 16:57:35+00:00)
-
-
-> ⚠️ **Untagged release:** main has 10 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#16](https://github.com/mojzis/comicforge/pull/16)
-
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `f3e25303` Update mcp requirement from <2,>=1.10 to >=1.10,<3 (#112) (dependabot[bot], 2026-09-19 19:36:59+00:00)
-
-
-> ⚠️ **Untagged release:** main has 13 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
 ## [aesop](https://github.com/mojzis/aesop)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
@@ -414,8 +419,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 **Last commit:** `eee8d169` dermestes corpus: inline srv.py pid helpers, drop constant debounce param (mojzis, 2026-09-19 16:40:07+00:00)
 
 
-
-**CI: FAIL** (Run Tests)
 
 
 **Open PRs (15):** [#63](https://github.com/mojzis/sketchpy/pull/63), [#62](https://github.com/mojzis/sketchpy/pull/62), [#61](https://github.com/mojzis/sketchpy/pull/61), [#58](https://github.com/mojzis/sketchpy/pull/58), [#54](https://github.com/mojzis/sketchpy/pull/54), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
