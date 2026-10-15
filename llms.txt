@@ -1,6 +1,22 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-15 05:54:07 | **Period:** Last 90 days | **Repos:** 28 | **Open PRs:** 42
+**Generated:** 2026-10-15 10:32:10 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 42
+
+---
+
+
+## [clauding](https://github.com/mojzis/clauding)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/clauding/)
+
+
+**Last commit:** `1a5ee27f` Name the site Clauding Manifesto, add tagline (mojzis, 2026-10-15 06:59:35+00:00)
+
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -35,7 +51,7 @@ N/A | ★0 | 0 issues
 > ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -419,6 +435,8 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 **Last commit:** `eee8d169` dermestes corpus: inline srv.py pid helpers, drop constant debounce param (mojzis, 2026-09-19 16:40:07+00:00)
 
 
+
+**CI: FAIL** (Run Tests)
 
 
 **Open PRs (15):** [#63](https://github.com/mojzis/sketchpy/pull/63), [#62](https://github.com/mojzis/sketchpy/pull/62), [#61](https://github.com/mojzis/sketchpy/pull/61), [#58](https://github.com/mojzis/sketchpy/pull/58), [#54](https://github.com/mojzis/sketchpy/pull/54), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
