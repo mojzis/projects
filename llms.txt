@@ -1,22 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-15 10:32:10 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 42
-
----
-
-
-## [clauding](https://github.com/mojzis/clauding)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/clauding/)
-
-
-**Last commit:** `1a5ee27f` Name the site Clauding Manifesto, add tagline (mojzis, 2026-10-15 06:59:35+00:00)
-
-
-
-**CI:** PASS
-
-
+**Generated:** 2026-10-16 10:19:24 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 42
 
 ---
 
@@ -35,6 +19,22 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [clauding](https://github.com/mojzis/clauding)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/clauding/)
+
+
+**Last commit:** `1a5ee27f` Name the site Clauding Manifesto, add tagline (mojzis, 2026-10-15 06:59:35+00:00)
+
+
+
+**CI:** PASS
+
 
 
 ---
