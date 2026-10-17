@@ -1,6 +1,44 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-16 10:19:24 | **Period:** Last 90 days | **Repos:** 29 | **Open PRs:** 42
+**Generated:** 2026-10-17 09:52:54 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 47
+
+---
+
+
+## [saints-calendar](https://github.com/mojzis/saints-calendar)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/saints-calendar/)
+
+
+**Last commit:** `f71879ac` Merge pull request #10 from mojzis/remove-namedays (Mojzis, 2026-10-17 07:19:20+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (5):** [#7](https://github.com/mojzis/saints-calendar/pull/7), [#6](https://github.com/mojzis/saints-calendar/pull/6), [#5](https://github.com/mojzis/saints-calendar/pull/5), [#4](https://github.com/mojzis/saints-calendar/pull/4), [#3](https://github.com/mojzis/saints-calendar/pull/3)
+
+
+
+---
+
+
+## [python-template](https://github.com/mojzis/python-template)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `7d921258` Merge pull request #3 from mojzis/claude/pensive-johnson-2ak2fy (Mojzis, 2026-09-29 13:45:33+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `claude/update-deps-clauding`
+
 
 ---
 
@@ -357,22 +395,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (4):** `add-poe-tasks`, `claude/determined-turing-qmjlou`, `feat/add-examples`, `feature/dev-tooling`
-
-
----
-
-
-## [python-template](https://github.com/mojzis/python-template)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `7d921258` Merge pull request #3 from mojzis/claude/pensive-johnson-2ak2fy (Mojzis, 2026-09-29 13:45:33+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
