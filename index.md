@@ -1,6 +1,44 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-17 09:52:54 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 47
+**Generated:** 2026-10-18 10:05:27 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 47
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `85792015` Bump vitest from 4.1.11 to 5.0.0 (#8) (dependabot[bot], 2026-09-08 01:07:17+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `claude/peaceful-turing-ytjukt`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -38,25 +76,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (1):** `claude/update-deps-clauding`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -514,22 +533,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 **CI: FAIL** (npm_and_yarn in /. - Update #1626116852)
-
-
-
----
-
-
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `85792015` Bump vitest from 4.1.11 to 5.0.0 (#8) (dependabot[bot], 2026-09-08 01:07:17+00:00)
-
-
-
-**CI: FAIL** (npm_and_yarn in /. - Update #1621986282)
 
 
 
