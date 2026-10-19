@@ -1,24 +1,138 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-18 10:05:27 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 47
+**Generated:** 2026-10-19 11:30:43 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
 
 ---
 
 
-## [bounceflow](https://github.com/mojzis/bounceflow)
+## [imgen](https://github.com/mojzis/imgen)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+N/A | ★0 | 0 issues
 
 
-**Last commit:** `85792015` Bump vitest from 4.1.11 to 5.0.0 (#8) (dependabot[bot], 2026-09-08 01:07:17+00:00)
+**Last commit:** `ef316b50` Release v0.1.1 (mojzis, 2026-10-15 05:45:23+00:00)
 
 
 
 **CI:** PASS
 
 
+**Open PRs (1):** [#8](https://github.com/mojzis/imgen/pull/8)
 
-**Orphan branches (1):** `claude/peaceful-turing-ytjukt`
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `d234d3bf` Release v0.1.1 (mojzis, 2026-10-15 05:45:02+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#4](https://github.com/mojzis/dermestes/pull/4), [#3](https://github.com/mojzis/dermestes/pull/3)
+
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `bca734ff` Release v0.5.0 (mojzis, 2026-10-09 18:50:21+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#21](https://github.com/mojzis/gerenuk/pull/21)
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `e1ea85a9` Release v0.2.10 (mojzis, 2026-10-09 19:00:47+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#24](https://github.com/mojzis/pycoati/pull/24)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `62e7c460` Release v0.7.4 (mojzis, 2026-10-09 18:58:03+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#48](https://github.com/mojzis/biston/pull/48)
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `6b2b4823` Release v0.2.6 (mojzis, 2026-10-15 05:45:11+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#16](https://github.com/mojzis/madoqua/pull/16)
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `df052bd9` Release v0.2.4 (mojzis, 2026-10-15 05:45:29+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#17](https://github.com/mojzis/comicforge/pull/17)
+
 
 
 ---
@@ -38,6 +152,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `85792015` Bump vitest from 4.1.11 to 5.0.0 (#8) (dependabot[bot], 2026-09-08 01:07:17+00:00)
+
+
+
+**CI: FAIL** (npm_and_yarn in /. - Update #1634917796)
+
+
+
+**Orphan branches (1):** `claude/peaceful-turing-ytjukt`
 
 
 ---
@@ -156,79 +289,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 ---
 
 
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `df052bd9` Release v0.2.4 (mojzis, 2026-10-15 05:45:29+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#16](https://github.com/mojzis/comicforge/pull/16)
-
-
-
----
-
-
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `ef316b50` Release v0.1.1 (mojzis, 2026-10-15 05:45:23+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#7](https://github.com/mojzis/imgen/pull/7)
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `6b2b4823` Release v0.2.6 (mojzis, 2026-10-15 05:45:11+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `d234d3bf` Release v0.1.1 (mojzis, 2026-10-15 05:45:02+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#2](https://github.com/mojzis/dermestes/pull/2), [#3](https://github.com/mojzis/dermestes/pull/3)
-
-
-
----
-
-
 ## [talkshape](https://github.com/mojzis/talkshape)
 
 N/A | ★0 | 0 issues
@@ -308,44 +368,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 ---
 
 
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `bca734ff` Release v0.5.0 (mojzis, 2026-10-09 18:50:21+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#20](https://github.com/mojzis/gerenuk/pull/20)
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `e1ea85a9` Release v0.2.10 (mojzis, 2026-10-09 19:00:47+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#23](https://github.com/mojzis/pycoati/pull/23)
-
-
-
----
-
-
 ## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
@@ -356,25 +378,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `62e7c460` Release v0.7.4 (mojzis, 2026-10-09 18:58:03+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#47](https://github.com/mojzis/biston/pull/47)
 
 
 
@@ -532,7 +535,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1626116852)
+**CI:** PASS
 
 
 
