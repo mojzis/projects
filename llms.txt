@@ -1,6 +1,85 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-19 11:30:43 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
+**Generated:** 2026-10-20 10:36:27 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `8545ced3` Release v0.1.5 (mojzis, 2026-10-15 05:45:17+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#7](https://github.com/mojzis/typer-agentic/pull/7)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `c3c68f30` Release v0.2.3 (mojzis, 2026-10-09 18:56:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#39](https://github.com/mojzis/zorilla/pull/39), [#37](https://github.com/mojzis/zorilla/pull/37)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `716090cb` Release v0.5.2 (mojzis, 2026-10-09 18:59:26+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#146](https://github.com/mojzis/ty-find/pull/146), [#143](https://github.com/mojzis/ty-find/pull/143)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -138,25 +217,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [bounceflow](https://github.com/mojzis/bounceflow)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
@@ -248,25 +308,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `8545ced3` Release v0.1.5 (mojzis, 2026-10-15 05:45:17+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#6](https://github.com/mojzis/typer-agentic/pull/6)
-
-
-
----
-
-
 ## [introspect](https://github.com/mojzis/introspect)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
@@ -308,25 +349,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `c3c68f30` Release v0.2.3 (mojzis, 2026-10-09 18:56:16+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#38](https://github.com/mojzis/zorilla/pull/38), [#37](https://github.com/mojzis/zorilla/pull/37)
-
-
-
----
-
-
 ## [braindump](https://github.com/mojzis/braindump)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
@@ -341,28 +363,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 **Open PRs (10):** [#82](https://github.com/mojzis/braindump/pull/82), [#81](https://github.com/mojzis/braindump/pull/81), [#80](https://github.com/mojzis/braindump/pull/80), [#79](https://github.com/mojzis/braindump/pull/79), [#78](https://github.com/mojzis/braindump/pull/78), [#75](https://github.com/mojzis/braindump/pull/75), [#74](https://github.com/mojzis/braindump/pull/74), [#72](https://github.com/mojzis/braindump/pull/72), [#71](https://github.com/mojzis/braindump/pull/71), [#69](https://github.com/mojzis/braindump/pull/69)
 
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `716090cb` Release v0.5.2 (mojzis, 2026-10-09 18:59:26+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#145](https://github.com/mojzis/ty-find/pull/145), [#143](https://github.com/mojzis/ty-find/pull/143)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
@@ -535,7 +535,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1638034233)
 
 
 
