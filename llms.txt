@@ -1,6 +1,41 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-20 10:36:27 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
+**Generated:** 2026-10-21 10:48:19 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `bee73e34` Add CI workflow with lint, tests and build (#14) (Mojzis, 2026-10-21 06:14:36+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -60,25 +95,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
 
 
 ---
@@ -212,25 +228,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 
 **Open PRs (1):** [#17](https://github.com/mojzis/comicforge/pull/17)
 
-
-
----
-
-
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `85792015` Bump vitest from 4.1.11 to 5.0.0 (#8) (dependabot[bot], 2026-09-08 01:07:17+00:00)
-
-
-
-**CI: FAIL** (npm_and_yarn in /. - Update #1634917796)
-
-
-
-**Orphan branches (1):** `claude/peaceful-turing-ytjukt`
 
 
 ---
