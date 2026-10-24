@@ -1,6 +1,27 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-23 10:41:42 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
+**Generated:** 2026-10-24 09:58:51 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `cdbe19ac` Select no tests for comment-, docstring- or blank-line-only edits (#22) (Mojzis, 2026-10-23 20:29:19+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#21](https://github.com/mojzis/gerenuk/pull/21)
+
+
 
 ---
 
@@ -132,25 +153,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 
 **Open PRs (2):** [#4](https://github.com/mojzis/dermestes/pull/4), [#3](https://github.com/mojzis/dermestes/pull/3)
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `bca734ff` Release v0.5.0 (mojzis, 2026-10-09 18:50:21+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#21](https://github.com/mojzis/gerenuk/pull/21)
 
 
 
