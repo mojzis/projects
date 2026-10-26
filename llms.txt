@@ -1,25 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-25 10:21:49 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
+**Generated:** 2026-10-26 11:50:05 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
 
 ---
 
@@ -45,6 +26,44 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 ---
 
 
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `df052bd9` Release v0.2.4 (mojzis, 2026-10-15 05:45:29+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#18](https://github.com/mojzis/comicforge/pull/18)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
+
+---
+
+
 ## [bounceflow](https://github.com/mojzis/bounceflow)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
@@ -54,7 +73,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1652296846)
 
 
 
@@ -210,25 +229,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 
 **Open PRs (1):** [#16](https://github.com/mojzis/madoqua/pull/16)
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `df052bd9` Release v0.2.4 (mojzis, 2026-10-15 05:45:29+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#17](https://github.com/mojzis/comicforge/pull/17)
 
 
 
@@ -534,7 +534,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1638034233)
+**CI:** PASS
 
 
 
