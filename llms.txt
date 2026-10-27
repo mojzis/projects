@@ -1,6 +1,44 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-26 11:50:05 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
+**Generated:** 2026-10-27 11:15:13 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `c3c68f30` Release v0.2.3 (mojzis, 2026-10-09 18:56:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#40](https://github.com/mojzis/zorilla/pull/40), [#37](https://github.com/mojzis/zorilla/pull/37)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (1):** `gh-pages`
+
 
 ---
 
@@ -45,25 +83,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `c3bca982` release: skip template repos (mojzis, 2026-10-15 05:52:28+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-**Orphan branches (1):** `gh-pages`
-
-
----
-
-
 ## [bounceflow](https://github.com/mojzis/bounceflow)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
@@ -93,25 +112,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (1):** [#7](https://github.com/mojzis/typer-agentic/pull/7)
-
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `c3c68f30` Release v0.2.3 (mojzis, 2026-10-09 18:56:16+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#39](https://github.com/mojzis/zorilla/pull/39), [#37](https://github.com/mojzis/zorilla/pull/37)
 
 
 
@@ -534,7 +534,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1656268382)
 
 
 
