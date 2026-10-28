@@ -209,6 +209,16 @@ class TestGetBranchesWithoutPRs:
             assert "master" not in result
             assert "feature-1" in result
 
+    def test_branches_excludes_gh_pages(self):
+        """gh-pages holds the published site and never gets a PR."""
+        monitor = ProjectMonitor(owner="test-owner", days=30)
+
+        with (
+            patch.object(monitor.collector, "get_branches", return_value=["gh-pages", "feature"]),
+            patch.object(monitor.collector, "get_pr_branches", return_value=set()),
+        ):
+            assert monitor._get_branches_without_prs("test-repo") == ["feature"]
+
 
 class TestGetGitHubPages:
     """Tests for _get_github_pages method."""
@@ -217,7 +227,9 @@ class TestGetGitHubPages:
         """Test when GitHub Pages is enabled."""
         monitor = ProjectMonitor(owner="test-owner", days=30)
 
-        pages_data = {"html_url": "https://test-owner.github.io/repo"}
+        pages_data = {
+            "html_url": "https://test-owner.github.io/repo"
+        }  # zorilla: ignore -- mocked value, never fetched
 
         with patch.object(monitor.collector, "get_github_pages", return_value=pages_data):
             enabled, url = monitor._get_github_pages("test-repo")

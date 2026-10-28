@@ -140,8 +140,9 @@ class ProjectMonitor:
         all_branches = self.collector.get_branches(self.owner, repo_name)
         pr_branches = self.collector.get_pr_branches(self.owner, repo_name)
 
-        # Filter out main/master and branches with PRs
-        return [b for b in all_branches if b not in {"main", "master"} and b not in pr_branches]
+        # Long-lived branches never get PRs: main/master, and gh-pages (published site)
+        ignored = {"main", "master", "gh-pages"}
+        return [b for b in all_branches if b not in ignored and b not in pr_branches]
 
     def _get_github_pages(self, repo_name: str) -> tuple[bool, str | None]:
         """Get GitHub Pages status and URL."""
