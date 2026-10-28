@@ -1,25 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-27 11:15:13 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `c3c68f30` Release v0.2.3 (mojzis, 2026-10-09 18:56:16+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#40](https://github.com/mojzis/zorilla/pull/40), [#37](https://github.com/mojzis/zorilla/pull/37)
-
-
+**Generated:** 2026-10-28 11:49:16 | **Period:** Last 90 days | **Repos:** 30 | **Open PRs:** 48
 
 ---
 
@@ -38,6 +19,25 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **Orphan branches (1):** `gh-pages`
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `c3c68f30` Release v0.2.3 (mojzis, 2026-10-09 18:56:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#40](https://github.com/mojzis/zorilla/pull/40), [#37](https://github.com/mojzis/zorilla/pull/37)
+
 
 
 ---
