@@ -1,6 +1,103 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-28 20:06:43 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 20
+**Generated:** 2026-10-29 11:57:27 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 7
+
+---
+
+
+## [model-comparison](https://github.com/mojzis/model-comparison)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
+
+
+**Last commit:** `2a318ce0` AA snapshot 2026-10-28 (github-actions[bot], 2026-10-28 18:15:19+00:00)
+
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (1):** [#4](https://github.com/mojzis/model-comparison/pull/4)
+
+
+
+**Orphan branches (1):** `claude/nifty-thompson-7so8pc`
+
+
+---
+
+
+## [catpin](https://github.com/mojzis/catpin)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `3dfd7005` Merge pull request #1 from mojzis/claude/elegant-heisenberg-4rgpy0 (Mojzis, 2026-10-29 08:30:52+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [happytube](https://github.com/mojzis/happytube)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
+
+
+**Last commit:** `01f6f2c9` Player: lock landscape while fullscreen (mojzis, 2026-10-29 06:31:35+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#16](https://github.com/mojzis/happytube/pull/16)
+
+
+
+**Orphan branches (1):** `claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y`
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `6a43c8d8` Pin setup-uv to v10.3.3 (no floating v10 tag) (mojzis, 2026-10-28 20:24:42+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `b1b0e886` Add a targeted mutation check to the remediate guide (#25) (Mojzis, 2026-10-28 20:16:54+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -21,25 +118,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [happytube](https://github.com/mojzis/happytube)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `06185d1f` Merge pull request #10 from mojzis/phase-3-vetting (Mojzis, 2026-10-28 19:52:58+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y`
-
-
----
-
-
 ## [madoqua](https://github.com/mojzis/madoqua)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
@@ -49,7 +127,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 
 
-**CI: FAIL** (Release)
+**CI:** PASS
 
 
 
@@ -110,25 +188,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [model-comparison](https://github.com/mojzis/model-comparison)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
-
-
-**Last commit:** `2a318ce0` AA snapshot 2026-10-28 (github-actions[bot], 2026-10-28 18:15:19+00:00)
-
-
-
-**CI: FAIL** (CI)
-
-
-
-**Orphan branches (1):** `claude/nifty-thompson-7so8pc`
 
 
 ---
@@ -306,22 +365,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `e70aea5d` Release v0.2.11 (mojzis, 2026-10-28 17:31:29+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [biston](https://github.com/mojzis/biston)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
@@ -456,28 +499,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `eee8d169` dermestes corpus: inline srv.py pid helpers, drop constant debounce param (mojzis, 2026-09-19 16:40:07+00:00)
-
-
-
-**CI: FAIL** (Run Tests)
-
-
-**Open PRs (15):** [#63](https://github.com/mojzis/sketchpy/pull/63), [#62](https://github.com/mojzis/sketchpy/pull/62), [#61](https://github.com/mojzis/sketchpy/pull/61), [#58](https://github.com/mojzis/sketchpy/pull/58), [#54](https://github.com/mojzis/sketchpy/pull/54), [#51](https://github.com/mojzis/sketchpy/pull/51), [#48](https://github.com/mojzis/sketchpy/pull/48), [#47](https://github.com/mojzis/sketchpy/pull/47), [#39](https://github.com/mojzis/sketchpy/pull/39), [#33](https://github.com/mojzis/sketchpy/pull/33), [#28](https://github.com/mojzis/sketchpy/pull/28), [#25](https://github.com/mojzis/sketchpy/pull/25), [#16](https://github.com/mojzis/sketchpy/pull/16), [#14](https://github.com/mojzis/sketchpy/pull/14), [#12](https://github.com/mojzis/sketchpy/pull/12)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
 ## [noticky](https://github.com/mojzis/noticky)
 
 N/A | ★0 | 0 issues
@@ -487,25 +508,6 @@ N/A | ★0 | 0 issues
 
 
 
-
-
----
-
-
-## [catpin](https://github.com/mojzis/catpin)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `fcb4de25` Initial commit (Mojzis, 2026-09-14 22:39:28+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `claude/elegant-heisenberg-4rgpy0`
 
 
 ---
