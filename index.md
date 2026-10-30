@@ -1,6 +1,25 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-29 11:57:27 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 7
+**Generated:** 2026-10-30 11:50:48 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 6
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `14bd9d53` Release v0.5.1 (mojzis, 2026-10-28 17:32:16+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `claude/determined-wright-6mw4n4`
+
 
 ---
 
@@ -10,18 +29,31 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
 
 
-**Last commit:** `2a318ce0` AA snapshot 2026-10-28 (github-actions[bot], 2026-10-28 18:15:19+00:00)
+**Last commit:** `47d27e03` AA snapshot 2026-10-29 (github-actions[bot], 2026-10-29 14:52:04+00:00)
 
 
 
-**CI: FAIL** (CI)
-
-
-**Open PRs (1):** [#4](https://github.com/mojzis/model-comparison/pull/4)
+**CI:** PASS
 
 
 
 **Orphan branches (1):** `claude/nifty-thompson-7so8pc`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
+
+
+
+**CI:** UNKNOWN
+
 
 
 ---
@@ -96,22 +128,6 @@ N/A | ★0 | 0 issues
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
-
-
-
-**CI:** UNKNOWN
 
 
 
@@ -328,22 +344,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `14bd9d53` Release v0.5.1 (mojzis, 2026-10-28 17:32:16+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
