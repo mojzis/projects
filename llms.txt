@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-30 11:50:48 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 6
+**Generated:** 2026-10-31 11:24:35 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 6
 
 ---
 
@@ -10,7 +10,7 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
-**Last commit:** `14bd9d53` Release v0.5.1 (mojzis, 2026-10-28 17:32:16+00:00)
+**Last commit:** `cf98cd2c` Release v0.5.4 (mojzis, 2026-10-30 18:23:04+00:00)
 
 
 
@@ -18,7 +18,106 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 
-**Orphan branches (1):** `claude/determined-wright-6mw4n4`
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `9c1f001f` Release v0.2.6 (mojzis, 2026-10-30 13:18:42+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `eec3269f` Release v0.1.3 (mojzis, 2026-10-30 13:18:36+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `4860dea6` Release v0.1.7 (mojzis, 2026-10-30 13:18:30+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `ad3cb505` Release v0.3.6 (mojzis, 2026-10-30 13:18:24+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `aa873ba2` Release v0.2.12 (mojzis, 2026-10-30 13:18:17+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
+
+
+
+**CI:** UNKNOWN
+
 
 
 ---
@@ -38,22 +137,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
 
 
 **Orphan branches (1):** `claude/nifty-thompson-7so8pc`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
-
-
-
-**CI:** UNKNOWN
-
 
 
 ---
@@ -116,24 +199,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `b1b0e886` Add a targeted mutation check to the remediate guide (#25) (Mojzis, 2026-10-28 20:16:54+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [madoqua](https://github.com/mojzis/madoqua)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
@@ -185,48 +250,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 ---
 
 
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `2b818b5e` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:17:40+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `472765e5` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:15:02+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [trains-de](https://github.com/mojzis/trains-de)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
@@ -266,42 +289,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 **Last commit:** `55b8de4c` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:14:49+00:00)
 
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `d54f7e0f` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:14:36+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `59a1c795` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:14:30+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
