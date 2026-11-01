@@ -1,6 +1,22 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-10-31 11:24:35 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 6
+**Generated:** 2026-11-01 12:16:07 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 6
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
 
 ---
 
@@ -101,22 +117,6 @@ N/A | ★0 | 0 issues
 
 
 **CI:** PASS
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
-
-
-
-**CI:** UNKNOWN
 
 
 
@@ -409,7 +409,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1652296846)
+**CI:** PASS
 
 
 
