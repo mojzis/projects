@@ -1,6 +1,123 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-01 12:16:07 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 6
+**Generated:** 2026-11-02 14:07:30 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 13
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `eec3269f` Release v0.1.3 (mojzis, 2026-10-30 13:18:36+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#9](https://github.com/mojzis/imgen/pull/9)
+
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `a0e6c16c` Release v0.1.2 (mojzis, 2026-10-28 17:31:38+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#5](https://github.com/mojzis/dermestes/pull/5)
+
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `6a43c8d8` Pin setup-uv to v10.3.3 (no floating v10 tag) (mojzis, 2026-10-28 20:24:42+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#65](https://github.com/mojzis/sketchpy/pull/65), [#64](https://github.com/mojzis/sketchpy/pull/64)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `aa873ba2` Release v0.2.12 (mojzis, 2026-10-30 13:18:17+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#26](https://github.com/mojzis/pycoati/pull/26)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `fa3ebc73` Release v0.7.5 (mojzis, 2026-10-28 17:31:20+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#49](https://github.com/mojzis/biston/pull/49)
+
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `9c1f001f` Release v0.2.6 (mojzis, 2026-10-30 13:18:42+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#19](https://github.com/mojzis/comicforge/pull/19)
+
+
 
 ---
 
@@ -27,38 +144,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 **Last commit:** `cf98cd2c` Release v0.5.4 (mojzis, 2026-10-30 18:23:04+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `9c1f001f` Release v0.2.6 (mojzis, 2026-10-30 13:18:42+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `eec3269f` Release v0.1.3 (mojzis, 2026-10-30 13:18:36+00:00)
 
 
 
@@ -102,22 +187,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `aa873ba2` Release v0.2.12 (mojzis, 2026-10-30 13:18:17+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
@@ -175,25 +244,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
 
 
 **Orphan branches (1):** `claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y`
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `6a43c8d8` Pin setup-uv to v10.3.3 (no floating v10 tag) (mojzis, 2026-10-28 20:24:42+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
@@ -336,38 +386,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 ---
 
 
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `a0e6c16c` Release v0.1.2 (mojzis, 2026-10-28 17:31:38+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `fa3ebc73` Release v0.7.5 (mojzis, 2026-10-28 17:31:20+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [zorilla](https://github.com/mojzis/zorilla)
 
 N/A | ★0 | 0 issues
@@ -409,7 +427,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1671626671)
 
 
 
@@ -509,7 +527,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1656268382)
+**CI:** PASS
 
 
 
