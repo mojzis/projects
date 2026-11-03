@@ -1,6 +1,142 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-02 14:07:30 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 13
+**Generated:** 2026-11-03 13:14:27 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 29
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `4860dea6` Release v0.1.7 (mojzis, 2026-10-30 13:18:30+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#8](https://github.com/mojzis/typer-agentic/pull/8)
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `f3c71e68` Bump the minor-and-patch group across 1 directory with 4 updates (#18) (dependabot[bot], 2026-10-28 17:25:57+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#20](https://github.com/mojzis/talkshape/pull/20), [#19](https://github.com/mojzis/talkshape/pull/19)
+
+
+
+---
+
+
+## [happytube](https://github.com/mojzis/happytube)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
+
+
+**Last commit:** `01f6f2c9` Player: lock landscape while fullscreen (mojzis, 2026-10-29 06:31:35+00:00)
+
+
+
+**CI: FAIL** (CI)
+
+
+**Open PRs (2):** [#17](https://github.com/mojzis/happytube/pull/17), [#16](https://github.com/mojzis/happytube/pull/16)
+
+
+
+**Orphan branches (1):** `claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y`
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `63619194` Release v0.2.4 (mojzis, 2026-10-28 17:31:10+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#41](https://github.com/mojzis/zorilla/pull/41)
+
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `55b8de4c` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:14:49+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (10):** [#92](https://github.com/mojzis/braindump/pull/92), [#91](https://github.com/mojzis/braindump/pull/91), [#90](https://github.com/mojzis/braindump/pull/90), [#89](https://github.com/mojzis/braindump/pull/89), [#88](https://github.com/mojzis/braindump/pull/88), [#87](https://github.com/mojzis/braindump/pull/87), [#86](https://github.com/mojzis/braindump/pull/86), [#85](https://github.com/mojzis/braindump/pull/85), [#84](https://github.com/mojzis/braindump/pull/84), [#83](https://github.com/mojzis/braindump/pull/83)
+
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `9b5d3d19` Release v0.5.3 (mojzis, 2026-10-28 17:44:53+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#148](https://github.com/mojzis/ty-find/pull/148), [#143](https://github.com/mojzis/ty-find/pull/143)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
 
 ---
 
@@ -122,44 +258,12 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
----
-
-
 ## [gerenuk](https://github.com/mojzis/gerenuk)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 **Last commit:** `cf98cd2c` Release v0.5.4 (mojzis, 2026-10-30 18:23:04+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `4860dea6` Release v0.1.7 (mojzis, 2026-10-30 13:18:30+00:00)
 
 
 
@@ -222,28 +326,6 @@ N/A | ★0 | 0 issues
 
 **CI:** PASS
 
-
-
----
-
-
-## [happytube](https://github.com/mojzis/happytube)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
-
-
-**Last commit:** `01f6f2c9` Player: lock landscape while fullscreen (mojzis, 2026-10-29 06:31:35+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#16](https://github.com/mojzis/happytube/pull/16)
-
-
-
-**Orphan branches (1):** `claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y`
 
 
 ---
@@ -332,82 +414,12 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/saints-calendar/)
 ---
 
 
-## [braindump](https://github.com/mojzis/braindump)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `55b8de4c` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:14:49+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
 ## [clauding](https://github.com/mojzis/clauding)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/clauding/)
 
 
 **Last commit:** `c275ab1d` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:14:17+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `9b5d3d19` Release v0.5.3 (mojzis, 2026-10-28 17:44:53+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#143](https://github.com/mojzis/ty-find/pull/143)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `63619194` Release v0.2.4 (mojzis, 2026-10-28 17:31:10+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `f3c71e68` Bump the minor-and-patch group across 1 directory with 4 updates (#18) (dependabot[bot], 2026-10-28 17:25:57+00:00)
 
 
 
@@ -527,7 +539,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1675468900)
 
 
 
