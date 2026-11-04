@@ -1,6 +1,22 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-03 13:14:27 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 29
+**Generated:** 2026-11-04 13:27:57 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 29
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
 
 ---
 
@@ -120,22 +136,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
-
-
-
-**CI:** UNKNOWN
-
 
 
 ---
