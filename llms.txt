@@ -1,6 +1,161 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-08 12:24:34 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 29
+**Generated:** 2026-11-09 14:39:43 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 34
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `a0e6c16c` Release v0.1.2 (mojzis, 2026-10-28 17:31:38+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#6](https://github.com/mojzis/dermestes/pull/6)
+
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `eec3269f` Release v0.1.3 (mojzis, 2026-10-30 13:18:36+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#10](https://github.com/mojzis/imgen/pull/10)
+
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `cf98cd2c` Release v0.5.4 (mojzis, 2026-10-30 18:23:04+00:00)
+
+
+
+**CI: FAIL** (Cargo Deny)
+
+
+**Open PRs (1):** [#26](https://github.com/mojzis/gerenuk/pull/26)
+
+
+
+**Orphan branches (1):** `claude/youthful-cerf-aha79n`
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `6a43c8d8` Pin setup-uv to v10.3.3 (no floating v10 tag) (mojzis, 2026-10-28 20:24:42+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (5):** [#69](https://github.com/mojzis/sketchpy/pull/69), [#68](https://github.com/mojzis/sketchpy/pull/68), [#67](https://github.com/mojzis/sketchpy/pull/67), [#66](https://github.com/mojzis/sketchpy/pull/66), [#65](https://github.com/mojzis/sketchpy/pull/65)
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `aa873ba2` Release v0.2.12 (mojzis, 2026-10-30 13:18:17+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#27](https://github.com/mojzis/pycoati/pull/27)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `fa3ebc73` Release v0.7.5 (mojzis, 2026-10-28 17:31:20+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#50](https://github.com/mojzis/biston/pull/50)
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `9ba4aeab` Release v0.2.8 (mojzis, 2026-10-28 19:24:05+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#18](https://github.com/mojzis/madoqua/pull/18)
+
+
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `f54dba0d` review cyril-a-metodej-pismena-pro-slovany d1abbc4 (mojzis, 2026-11-08 22:31:46+00:00)
+
+
+
+**CI:** PASS
+
+
 
 ---
 
@@ -141,104 +296,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 ---
 
 
-## [imgen](https://github.com/mojzis/imgen)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `eec3269f` Release v0.1.3 (mojzis, 2026-10-30 13:18:36+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#9](https://github.com/mojzis/imgen/pull/9)
-
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `a0e6c16c` Release v0.1.2 (mojzis, 2026-10-28 17:31:38+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#5](https://github.com/mojzis/dermestes/pull/5)
-
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `6a43c8d8` Pin setup-uv to v10.3.3 (no floating v10 tag) (mojzis, 2026-10-28 20:24:42+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#65](https://github.com/mojzis/sketchpy/pull/65), [#64](https://github.com/mojzis/sketchpy/pull/64)
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `aa873ba2` Release v0.2.12 (mojzis, 2026-10-30 13:18:17+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#26](https://github.com/mojzis/pycoati/pull/26)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `fa3ebc73` Release v0.7.5 (mojzis, 2026-10-28 17:31:20+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#49](https://github.com/mojzis/biston/pull/49)
-
-
-
----
-
-
 ## [comicforge](https://github.com/mojzis/comicforge)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
@@ -252,22 +309,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 
 
 **Open PRs (1):** [#19](https://github.com/mojzis/comicforge/pull/19)
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `cf98cd2c` Release v0.5.4 (mojzis, 2026-10-30 18:23:04+00:00)
-
-
-
-**CI:** PASS
 
 
 
@@ -321,22 +362,6 @@ N/A | ★0 | 0 issues
 
 
 **Last commit:** `3dfd7005` Merge pull request #1 from mojzis/claude/elegant-heisenberg-4rgpy0 (Mojzis, 2026-10-29 08:30:52+00:00)
-
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `9ba4aeab` Release v0.2.8 (mojzis, 2026-10-28 19:24:05+00:00)
 
 
 
@@ -439,7 +464,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1688075682)
 
 
 
@@ -455,22 +480,6 @@ N/A | ★0 | 0 issues
 
 
 > ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
----
-
-
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `c48f38d5` review vanoce-o-ktere-neprisla 8e5184b (mojzis, 2026-10-12 17:49:02+00:00)
-
 
 
 **CI:** PASS
@@ -539,7 +548,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1675468900)
+**CI:** PASS
 
 
 
