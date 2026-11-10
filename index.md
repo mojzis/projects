@@ -1,6 +1,98 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-09 14:39:43 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 34
+**Generated:** 2026-11-10 13:56:47 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 35
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `8198c539` Release v0.2.9 (mojzis, 2026-11-10 08:20:58+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#18](https://github.com/mojzis/madoqua/pull/18)
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `4860dea6` Release v0.1.7 (mojzis, 2026-10-30 13:18:30+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#9](https://github.com/mojzis/typer-agentic/pull/9)
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `f3c71e68` Bump the minor-and-patch group across 1 directory with 4 updates (#18) (dependabot[bot], 2026-10-28 17:25:57+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#21](https://github.com/mojzis/talkshape/pull/21), [#20](https://github.com/mojzis/talkshape/pull/20)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `63619194` Release v0.2.4 (mojzis, 2026-10-28 17:31:10+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#43](https://github.com/mojzis/zorilla/pull/43), [#42](https://github.com/mojzis/zorilla/pull/42)
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
 
 ---
 
@@ -52,7 +144,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 
-**CI: FAIL** (Cargo Deny)
+**CI:** PASS
 
 
 **Open PRs (1):** [#26](https://github.com/mojzis/gerenuk/pull/26)
@@ -125,25 +217,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
 ---
 
 
-## [madoqua](https://github.com/mojzis/madoqua)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `9ba4aeab` Release v0.2.8 (mojzis, 2026-10-28 19:24:05+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#18](https://github.com/mojzis/madoqua/pull/18)
-
-
-
----
-
-
 ## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
@@ -160,60 +233,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `4860dea6` Release v0.1.7 (mojzis, 2026-10-30 13:18:30+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/typer-agentic/pull/8)
-
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `f3c71e68` Bump the minor-and-patch group across 1 directory with 4 updates (#18) (dependabot[bot], 2026-10-28 17:25:57+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#20](https://github.com/mojzis/talkshape/pull/20), [#19](https://github.com/mojzis/talkshape/pull/19)
-
-
-
----
-
-
 ## [happytube](https://github.com/mojzis/happytube)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
@@ -223,7 +242,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
 
 
 
-**CI: FAIL** (CI)
+**CI:** PASS
 
 
 **Open PRs (2):** [#17](https://github.com/mojzis/happytube/pull/17), [#16](https://github.com/mojzis/happytube/pull/16)
@@ -231,25 +250,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
 
 
 **Orphan branches (1):** `claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y`
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `63619194` Release v0.2.4 (mojzis, 2026-10-28 17:31:10+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#41](https://github.com/mojzis/zorilla/pull/41)
-
 
 
 ---
@@ -283,7 +283,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (Cargo Audit)
 
 
 **Open PRs (2):** [#148](https://github.com/mojzis/ty-find/pull/148), [#143](https://github.com/mojzis/ty-find/pull/143)
@@ -548,7 +548,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1691380516)
 
 
 
