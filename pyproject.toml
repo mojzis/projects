@@ -51,16 +51,16 @@ addopts = "--cov=gh_monitor --cov-report=html --cov-report=term"
 
 [dependency-groups]
 dev = [
-    "biston>=0.7.2",
-    "gerenuk>=0.3.0",
-    "madoqua>=0.2.4",
-    "pycoati>=0.2.6",
+    "biston>=0.7.5",
+    "gerenuk>=0.5.5",
+    "madoqua>=0.2.8",
+    "pycoati>=0.2.12",
     "pytest>=9.0.3",
     "pytest-cov>=7.1.0",
     "ruff>=0.15.11",
     "ty>=0.0.78",
-    "ty-find>=0.5.0",
-    "zorilla>=0.2.1",
+    "ty-find>=0.5.3",
+    "zorilla>=0.2.4",
 ]
 
 [tool.madoqua]
