@@ -1,6 +1,57 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-10 13:56:47 | **Period:** Last 90 days | **Repos:** 31 | **Open PRs:** 35
+**Generated:** 2026-11-11 13:10:21 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 35
+
+---
+
+
+## [model-comparison](https://github.com/mojzis/model-comparison)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
+
+
+**Last commit:** `40fe6547` AA snapshot 2026-11-10 (github-actions[bot], 2026-11-10 22:41:56+00:00)
+
+
+
+**CI:** PASS
+
+
+
+**Orphan branches (1):** `claude/nifty-thompson-7so8pc`
+
+
+---
+
+
+## [lepisma](https://github.com/mojzis/lepisma)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `59065436` Release v0.1.2 (mojzis, 2026-11-10 18:18:03+00:00)
+
+
+
+**CI:** PASS
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
 
 ---
 
@@ -14,7 +65,7 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (1):** [#18](https://github.com/mojzis/madoqua/pull/18)
@@ -75,22 +126,6 @@ N/A | ★0 | 0 issues
 
 
 **Open PRs (2):** [#43](https://github.com/mojzis/zorilla/pull/43), [#42](https://github.com/mojzis/zorilla/pull/42)
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
-
-
-
-**CI:** UNKNOWN
 
 
 
@@ -332,25 +367,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [model-comparison](https://github.com/mojzis/model-comparison)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
-
-
-**Last commit:** `47d27e03` AA snapshot 2026-10-29 (github-actions[bot], 2026-10-29 14:52:04+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `claude/nifty-thompson-7so8pc`
 
 
 ---
