@@ -1,41 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-11 13:10:21 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 35
-
----
-
-
-## [model-comparison](https://github.com/mojzis/model-comparison)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
-
-
-**Last commit:** `40fe6547` AA snapshot 2026-11-10 (github-actions[bot], 2026-11-10 22:41:56+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Orphan branches (1):** `claude/nifty-thompson-7so8pc`
-
-
----
-
-
-## [lepisma](https://github.com/mojzis/lepisma)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `59065436` Release v0.1.2 (mojzis, 2026-11-10 18:18:03+00:00)
-
-
-
-**CI:** PASS
-
-
+**Generated:** 2026-11-11 21:21:24 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 34
 
 ---
 
@@ -45,7 +10,7 @@ N/A | ★0 | 0 issues
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-**Last commit:** `9d28dc6b` monitor: don't report gh-pages as a branch without PR (mojzis, 2026-10-28 20:04:36+00:00)
+**Last commit:** `2a0ab12f` Bump biston to 0.7.5, gerenuk to 0.5.5, madoqua to 0.2.8, pycoati to 0.2.12, ty-find to 0.5.3, zorilla to 0.2.4 (#26) (Mojzis, 2026-11-11 21:19:11+00:00)
 
 
 
@@ -56,19 +21,227 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [madoqua](https://github.com/mojzis/madoqua)
+## [model-comparison](https://github.com/mojzis/model-comparison)
 
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
 
 
-**Last commit:** `8198c539` Release v0.2.9 (mojzis, 2026-11-10 08:20:58+00:00)
+**Last commit:** `0f1a4a11` Bump gerenuk to 0.5.5, madoqua to 0.2.8, pycoati to 0.2.12 (#7) (Mojzis, 2026-11-11 21:19:05+00:00)
 
+
+
+**CI:** UNKNOWN
+
+
+
+**Orphan branches (2):** `claude/nifty-thompson-7so8pc`, `tool-bump/gerenuk-0.5.5_madoqua-0.2.8_pycoati-0.2.12`
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `2b4fc7f7` Bump rmcp to 3.9.0 for RUSTSEC-2026-0457, -0461, -0462 (#153) (Mojzis, 2026-11-11 20:53:51+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#18](https://github.com/mojzis/madoqua/pull/18)
+**Open PRs (2):** [#155](https://github.com/mojzis/ty-find/pull/155), [#143](https://github.com/mojzis/ty-find/pull/143)
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `fc8ff27a` Bump rustix to 1.1.6 for RUSTSEC-2026-0486 (#28) (Mojzis, 2026-11-11 20:52:22+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#27](https://github.com/mojzis/pycoati/pull/27)
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `e3217ebd` Bump rustix to 1.1.6 for RUSTSEC-2026-0486 (#44) (Mojzis, 2026-11-11 20:52:19+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (2):** [#43](https://github.com/mojzis/zorilla/pull/43), [#42](https://github.com/mojzis/zorilla/pull/42)
+
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `c248e599` Bump rustix to 1.1.6 for RUSTSEC-2026-0486 (#7) (Mojzis, 2026-11-11 20:52:15+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#6](https://github.com/mojzis/dermestes/pull/6)
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `8cfbb52f` Bump rustix to 1.1.6 for RUSTSEC-2026-0486 (#51) (Mojzis, 2026-11-11 20:52:12+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (1):** [#50](https://github.com/mojzis/biston/pull/50)
+
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `21d074ae` Bump rustix to 1.1.6 for RUSTSEC-2026-0486 (#29) (Mojzis, 2026-11-11 20:52:08+00:00)
+
+
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#26](https://github.com/mojzis/gerenuk/pull/26)
+
+
+
+**Orphan branches (1):** `claude/youthful-cerf-aha79n`
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `8c4ec92a` Bump rustix to 1.1.6 for RUSTSEC-2026-0486 (#23) (Mojzis, 2026-11-11 20:52:00+00:00)
+
+
+> ⚠️ **Untagged release:** main has 5 commits without a tag.
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `d45305e4` README: link to aesop near the top (#114) (Mojzis, 2026-11-11 20:42:07+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** UNKNOWN
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
+
+
+---
+
+
+## [lepisma](https://github.com/mojzis/lepisma)
+
+N/A | ★0 | 0 issues
+
+
+**Last commit:** `6104d856` README: link to aesop near the top (#10) (Mojzis, 2026-11-11 20:42:02+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** UNKNOWN
+
+
+
+---
+
+
+## [aesop](https://github.com/mojzis/aesop)
+
+N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+
+
+**Last commit:** `75b60e41` Add docs-theme: shared mdBook theme for the tools' doc sites (#3) (Mojzis, 2026-11-11 20:41:28+00:00)
+
+
+
+**CI:** UNKNOWN
 
 
 
@@ -113,44 +286,6 @@ N/A | ★0 | 0 issues
 ---
 
 
-## [zorilla](https://github.com/mojzis/zorilla)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `63619194` Release v0.2.4 (mojzis, 2026-10-28 17:31:10+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#43](https://github.com/mojzis/zorilla/pull/43), [#42](https://github.com/mojzis/zorilla/pull/42)
-
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `a0e6c16c` Release v0.1.2 (mojzis, 2026-10-28 17:31:38+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#6](https://github.com/mojzis/dermestes/pull/6)
-
-
-
----
-
-
 ## [imgen](https://github.com/mojzis/imgen)
 
 N/A | ★0 | 0 issues
@@ -165,28 +300,6 @@ N/A | ★0 | 0 issues
 
 **Open PRs (1):** [#10](https://github.com/mojzis/imgen/pull/10)
 
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `cf98cd2c` Release v0.5.4 (mojzis, 2026-10-30 18:23:04+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#26](https://github.com/mojzis/gerenuk/pull/26)
-
-
-
-**Orphan branches (1):** `claude/youthful-cerf-aha79n`
 
 
 ---
@@ -209,44 +322,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 **Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-N/A | ★0 | 0 issues
-
-
-**Last commit:** `aa873ba2` Release v0.2.12 (mojzis, 2026-10-30 13:18:17+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#27](https://github.com/mojzis/pycoati/pull/27)
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `fa3ebc73` Release v0.7.5 (mojzis, 2026-10-28 17:31:20+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#50](https://github.com/mojzis/biston/pull/50)
-
 
 
 ---
@@ -309,28 +384,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 ---
 
 
-## [ty-find](https://github.com/mojzis/ty-find)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `9b5d3d19` Release v0.5.3 (mojzis, 2026-10-28 17:44:53+00:00)
-
-
-
-**CI: FAIL** (Cargo Audit)
-
-
-**Open PRs (2):** [#148](https://github.com/mojzis/ty-find/pull/148), [#143](https://github.com/mojzis/ty-find/pull/143)
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
 ## [comicforge](https://github.com/mojzis/comicforge)
 
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
@@ -345,28 +398,6 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 
 **Open PRs (1):** [#19](https://github.com/mojzis/comicforge/pull/19)
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `ad3cb505` Release v0.3.6 (mojzis, 2026-10-30 13:18:24+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -402,22 +433,6 @@ N/A | ★0 | 0 issues
 
 
 **Orphan branches (1):** `claude/update-deps-clauding`
-
-
----
-
-
-## [aesop](https://github.com/mojzis/aesop)
-
-N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
-
-
-**Last commit:** `2252480a` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:20:48+00:00)
-
-
-
-**CI:** PASS
-
 
 
 ---
