@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-11 21:21:24 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 34
+**Generated:** 2026-11-11 21:43:39 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 34
 
 ---
 
@@ -10,7 +10,7 @@
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-**Last commit:** `2a0ab12f` Bump biston to 0.7.5, gerenuk to 0.5.5, madoqua to 0.2.8, pycoati to 0.2.12, ty-find to 0.5.3, zorilla to 0.2.4 (#26) (Mojzis, 2026-11-11 21:19:11+00:00)
+**Last commit:** `6109fd65` scripts: bump-tools.sh rolls new releases of our tools out to dependents (#27) (Mojzis, 2026-11-11 21:41:17+00:00)
 
 
 
@@ -26,11 +26,11 @@ N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 N/A | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
 
 
-**Last commit:** `0f1a4a11` Bump gerenuk to 0.5.5, madoqua to 0.2.8, pycoati to 0.2.12 (#7) (Mojzis, 2026-11-11 21:19:05+00:00)
+**Last commit:** `81a06e43` AA snapshot 2026-11-11 (github-actions[bot], 2026-11-11 21:19:32+00:00)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
