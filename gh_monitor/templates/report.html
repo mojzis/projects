@@ -65,6 +65,22 @@
             border-radius: 10px;
             margin-left: 4px;
         }
+        .sidebar .issue-count {
+            background: #1a7f37;
+            color: white;
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 10px;
+            margin-left: 4px;
+        }
+        .label {
+            display: inline-block;
+            font-size: 11px;
+            padding: 1px 6px;
+            border: 1px solid #d0d7de;
+            border-radius: 10px;
+            color: #57606a;
+        }
         .main {
             margin-left: 240px;
             flex: 1;
@@ -179,7 +195,8 @@
                 <li>
                     <a href="#{{ repo.name }}"{% if repo.open_prs %} class="has-prs"{% endif %}>
                         {{ repo.name }}
-                        {% if repo.open_prs %}<span class="pr-count">{{ repo.open_prs|length }}</span>{% endif %}
+                        {% if repo.open_prs %}<span class="pr-count" title="Open PRs">{{ repo.open_prs|length }}</span>{% endif %}
+                        {% if repo.open_issues %}<span class="issue-count" title="Open issues">{{ repo.open_issues }}</span>{% endif %}
                     </a>
                 </li>
             {% endfor %}
@@ -201,6 +218,10 @@
                     <div class="stat">
                         <div class="stat-value">{{ total_prs }}</div>
                         <div class="stat-label">Open PRs</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">{{ total_issues }}</div>
+                        <div class="stat-label">Open Issues</div>
                     </div>
                     <div class="stat">
                         <div class="stat-value">{{ total_branches }}</div>
@@ -256,6 +277,28 @@
                                 <td>{{ pr.title }}</td>
                                 <td>@{{ pr.author }}</td>
                                 <td>{{ pr.age_days }}d</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+
+                {% if repo.issues %}
+                <div class="section">
+                    <h3>Open Issues ({{ repo.open_issues }})</h3>
+                    <table>
+                        <thead>
+                            <tr><th>#</th><th>Title</th><th>Labels</th><th>Author</th><th>Age</th></tr>
+                        </thead>
+                        <tbody>
+                        {% for issue in repo.issues %}
+                            <tr>
+                                <td><a href="{{ issue.url }}">#{{ issue.number }}</a></td>
+                                <td>{{ issue.title|e }}</td>
+                                <td>{% for label in issue.labels %}<span class="label">{{ label|e }}</span> {% endfor %}</td>
+                                <td>@{{ issue.author }}</td>
+                                <td>{{ issue.age_days }}d</td>
                             </tr>
                         {% endfor %}
                         </tbody>

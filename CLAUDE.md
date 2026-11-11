@@ -86,6 +86,7 @@ CLI (Typer)
    - `get_repositories()`: List repos filtered by activity date
    - `get_last_commit()`: Fetch latest commit on main/master
    - `get_open_prs()`: List open pull requests
+   - `get_open_issues()`: List open issues (`[]` when issues are disabled)
    - `get_branches()` / `get_pr_branches()`: Branch tracking
    - `get_github_pages()`: Pages status detection
    - `get_ci_runs()`: CI/CD workflow runs
@@ -108,6 +109,7 @@ CLI (Typer)
    - `CIStatus` (enum): success/failure/pending/no_ci/unknown
    - `Commit`: sha, message, author, date
    - `PullRequest`: number, title, author, age_days, url
+   - `Issue`: number, title, author, age_days, url, labels
    - `CIRun`: name, status, conclusion, created_at
    - `Repository`: Full repo metrics with nested models (incl. `has_release_workflow`,
      `untagged_commits_on_main`, and the `has_untagged_release_commits` warning property)
@@ -278,6 +280,9 @@ gh api repos/OWNER/REPO/commits/main
 # Open PRs
 gh pr list --repo OWNER/REPO --state open --json number,title,createdAt,author,url --limit 100
 
+# Open issues
+gh issue list --repo OWNER/REPO --state open --json number,title,createdAt,author,url,labels --limit 100
+
 # All branches
 gh api repos/OWNER/REPO/branches --paginate
 
@@ -291,7 +296,7 @@ gh api repos/OWNER/REPO/pages
 gh run list --repo OWNER/REPO --limit 20 --json status,conclusion,name,createdAt
 
 # Repo details
-gh repo view OWNER/REPO --json stargazerCount,forkCount,openIssues,primaryLanguage
+gh repo view OWNER/REPO --json stargazerCount,forkCount,issues,primaryLanguage
 
 # Release workflow detection (for untagged-commit warning)
 gh api repos/OWNER/REPO/contents/.github/workflows/release.yml

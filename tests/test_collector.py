@@ -223,6 +223,35 @@ class TestGetOpenPRs:
             assert result == []
 
 
+class TestGetOpenIssues:
+    """Tests for get_open_issues method."""
+
+    @pytest.fixture
+    def collector(self):
+        return GitHubCollector()
+
+    def test_get_open_issues_success(self, collector):
+        """Test getting open issues."""
+        issues = [{"number": 1, "title": "Bug", "createdAt": "2025-01-10T10:00:00Z"}]
+
+        mock_result = MagicMock()
+        mock_result.returncode = 0
+        mock_result.stdout = json.dumps(issues)
+
+        with patch("subprocess.run", return_value=mock_result) as run:
+            assert collector.get_open_issues("owner", "repo") == issues
+            assert run.call_args.args[0][:3] == ["gh", "issue", "list"]
+
+    def test_get_open_issues_error(self, collector):
+        """Test issue fetch error (e.g. issues disabled) returns empty list."""
+        mock_result = MagicMock()
+        mock_result.returncode = 1
+        mock_result.stderr = "error"
+
+        with patch("subprocess.run", return_value=mock_result):
+            assert collector.get_open_issues("owner", "repo") == []
+
+
 class TestGetBranches:
     """Tests for get_branches method."""
 
@@ -292,7 +321,9 @@ class TestGetGitHubPages:
 
     def test_get_github_pages_enabled(self, collector):
         """Test getting GitHub Pages when enabled."""
-        pages = {"html_url": "https://owner.github.io/repo"}
+        pages = {
+            "html_url": "https://owner.github.io/repo"
+        }  # zorilla: ignore[ZR005] -- fake payload for a mocked gh call, never fetched
 
         mock_result = MagicMock()
         mock_result.returncode = 0
@@ -358,7 +389,7 @@ class TestGetRepoDetails:
         details = {
             "stargazerCount": 100,
             "forkCount": 20,
-            "openIssues": {"totalCount": 5},
+            "issues": {"totalCount": 5},
             "primaryLanguage": {"name": "Python"},
         }
 
@@ -366,9 +397,13 @@ class TestGetRepoDetails:
         mock_result.returncode = 0
         mock_result.stdout = json.dumps(details)
 
-        with patch("subprocess.run", return_value=mock_result):
+        with patch("subprocess.run", return_value=mock_result) as run:
             result = collector.get_repo_details("owner", "repo")
             assert result["stargazerCount"] == 100
+            # gh has no `openIssues` field; asking for it fails the whole query
+            assert "openIssues" not in run.call_args.args[0][-1]
+            # gh has no `openIssues` field; asking for it fails the whole query
+            assert "openIssues" not in run.call_args.args[0][-1]
 
     def test_get_repo_details_error(self, collector):
         """Test repo details fetch error returns empty dict."""

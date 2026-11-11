@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** {{ timestamp }} | **Period:** Last {{ scan_days }} days | **Repos:** {{ total_repos }} | **Open PRs:** {{ total_prs }}
+**Generated:** {{ timestamp }} | **Period:** Last {{ scan_days }} days | **Repos:** {{ total_repos }} | **Open PRs:** {{ total_prs }} | **Open issues:** {{ total_issues }}
 
 ---
 {% for repo in repositories %}
@@ -26,6 +26,14 @@
 {% endif %}
 {% if repo.open_prs %}
 **Open PRs ({{ repo.open_prs|length }}):** {% for pr in repo.open_prs %}[#{{ pr.number }}]({{ pr.url }}){% if not loop.last %}, {% endif %}{% endfor %}
+
+{% endif %}
+{% if repo.issues %}
+**Open issues ({{ repo.open_issues }}):**
+{% for issue in repo.issues %}
+- [#{{ issue.number }}]({{ issue.url }}) {{ issue.title }} ({{ issue.age_days }}d{% if issue.labels %}, {{ issue.labels|join(', ') }}{% endif %})
+{%- endfor %}
+
 
 {% endif %}
 {% if repo.branches_without_prs %}

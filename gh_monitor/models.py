@@ -58,6 +58,31 @@ class PullRequest:
 
 
 @dataclass
+class Issue:
+    """Represents an open GitHub issue."""
+
+    number: int
+    title: str
+    created_at: datetime
+    author: str
+    age_days: int
+    url: str
+    labels: list[str] = field(default_factory=list)
+
+    def to_dict(self) -> dict:
+        """Convert to dictionary for serialization."""
+        return {
+            "number": self.number,
+            "title": self.title,
+            "created_at": self.created_at.isoformat(),
+            "author": self.author,
+            "age_days": self.age_days,
+            "url": self.url,
+            "labels": self.labels,
+        }
+
+
+@dataclass
 class CIRun:
     """Represents a CI/CD run."""
 
@@ -99,6 +124,7 @@ class Repository:
     primary_language: str | None = None
     has_release_workflow: bool = False
     untagged_commits_on_main: int = 0
+    issues: list[Issue] = field(default_factory=list)
 
     @property
     def has_untagged_release_commits(self) -> bool:
@@ -115,6 +141,8 @@ class Repository:
             "last_commit": self.last_commit.to_dict() if self.last_commit else None,
             "open_prs": [pr.to_dict() for pr in self.open_prs],
             "pr_count": len(self.open_prs),
+            "open_issues": [issue.to_dict() for issue in self.issues],
+            "issue_count": self.open_issues,
             "branches_without_prs": self.branches_without_prs,
             "branch_without_pr_count": len(self.branches_without_prs),
             "github_pages": {
@@ -150,12 +178,14 @@ class MonitorReport:
     repositories: list[Repository]
     total_repositories: int = field(init=False)
     total_open_prs: int = field(init=False)
+    total_open_issues: int = field(init=False)
     total_branches_without_prs: int = field(init=False)
 
     def __post_init__(self):
         """Calculate aggregated metrics."""
         self.total_repositories = len(self.repositories)
         self.total_open_prs = sum(len(r.open_prs) for r in self.repositories)
+        self.total_open_issues = sum(r.open_issues for r in self.repositories)
         self.total_branches_without_prs = sum(
             len(r.branches_without_prs) for r in self.repositories
         )
@@ -168,6 +198,7 @@ class MonitorReport:
                 "scan_period_days": self.scan_period_days,
                 "total_repositories": self.total_repositories,
                 "total_open_prs": self.total_open_prs,
+                "total_open_issues": self.total_open_issues,
                 "total_branches_without_prs": self.total_branches_without_prs,
             },
             "repositories": [repo.to_dict() for repo in self.repositories],

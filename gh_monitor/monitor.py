@@ -4,7 +4,7 @@ from collections.abc import Callable
 from datetime import UTC, datetime
 
 from .collector import GitHubCollector
-from .models import CIRun, CIStatus, Commit, PullRequest, Repository
+from .models import CIRun, CIStatus, Commit, Issue, PullRequest, Repository
 
 
 class ProjectMonitor:
@@ -53,6 +53,9 @@ class ProjectMonitor:
         # Get open PRs
         open_prs = self._get_open_prs(repo_name)
 
+        # Get open issues
+        issues = self._get_open_issues(repo_name)
+
         # Get branches without PRs
         branches_without_prs = self._get_branches_without_prs(repo_name)
 
@@ -84,7 +87,9 @@ class ProjectMonitor:
             last_updated=datetime.now(UTC),
             stars=details.get("stargazerCount", 0),
             forks=details.get("forkCount", 0),
-            open_issues=details.get("openIssues", {}).get("totalCount", 0),
+            # Total from repo details; the issue list is capped, so it may be shorter
+            open_issues=(details.get("issues") or {}).get("totalCount", len(issues)),
+            issues=issues,
             primary_language=details.get("primaryLanguage", {}).get("name")
             if details.get("primaryLanguage")
             else None,
@@ -134,6 +139,28 @@ class ProjectMonitor:
             )
 
         return prs
+
+    def _get_open_issues(self, repo_name: str) -> list[Issue]:
+        """Get all open issues with age calculation."""
+        issues = []
+
+        for issue in self.collector.get_open_issues(self.owner, repo_name):
+            created_at = datetime.fromisoformat(issue["createdAt"].replace("Z", "+00:00"))
+            author_data = issue.get("author")
+
+            issues.append(
+                Issue(
+                    number=issue["number"],
+                    title=issue["title"],
+                    created_at=created_at,
+                    author=author_data.get("login", "Unknown") if author_data else "Unknown",
+                    age_days=(datetime.now(UTC) - created_at).days,
+                    url=issue["url"],
+                    labels=[label["name"] for label in issue.get("labels") or []],
+                )
+            )
+
+        return issues
 
     def _get_branches_without_prs(self, repo_name: str) -> list[str]:
         """Get branches that don't have associated PRs."""

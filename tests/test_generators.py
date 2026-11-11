@@ -15,6 +15,7 @@ from gh_monitor.models import (
     CIRun,
     CIStatus,
     Commit,
+    Issue,
     MonitorReport,
     PullRequest,
     Repository,
@@ -77,6 +78,17 @@ def sample_repository(sample_commit, sample_pr, sample_ci_run):
         forks=25,
         open_issues=5,
         primary_language="Python",
+        issues=[
+            Issue(
+                number=42,
+                title="Crash on <start>",
+                created_at=datetime(2025, 1, 12, 9, 0, 0, tzinfo=UTC),
+                author="reporter",
+                age_days=3,
+                url="https://github.com/test-owner/test-repo/issues/42",
+                labels=["bug"],
+            )
+        ],
     )
 
 
@@ -137,27 +149,27 @@ class TestMarkdownGenerator:
             output_path = Path(tmpdir) / "report.md"
             generate_markdown_report(sample_report, output_path)
 
-            assert output_path.exists()
+            assert output_path.exists(), "report file written missing"
             content = output_path.read_text()
 
             # Check report header
-            assert "GitHub Project Monitor Report" in content
-            assert "Last 30 days" in content
+            assert "GitHub Project Monitor Report" in content, "title missing"
+            assert "Last 30 days" in content, "scan period missing"
 
             # Check repository info
-            assert "test-repo" in content
-            assert "Python" in content
-            assert "100" in content  # stars
+            assert "test-repo" in content, "repo name missing"
+            assert "Python" in content, "language missing"
+            assert "100" in content, "stars missing"  # stars
 
             # Check PR info
-            assert "#42" in content
+            assert "#42" in content, "PR number missing"
 
             # Check branches
-            assert "feature-x" in content
-            assert "feature-y" in content
+            assert "feature-x" in content, "orphan branch missing"
+            assert "feature-y" in content, "orphan branch missing"
 
             # Check CI status
-            assert "PASS" in content or "success" in content.lower()
+            assert "PASS" in content or "success" in content.lower(), "CI status missing"
 
     def test_generate_markdown_report_empty(self, empty_report):
         """Test Markdown report with empty repositories."""
@@ -245,23 +257,23 @@ class TestHTMLGenerator:
             output_path = Path(tmpdir) / "report.html"
             generate_html_report(sample_report, output_path)
 
-            assert output_path.exists()
+            assert output_path.exists(), "report file written missing"
             content = output_path.read_text()
 
             # Check HTML structure
-            assert "<!DOCTYPE html>" in content
-            assert "<html" in content
-            assert "</html>" in content
-            assert "GitHub Project Monitor Report" in content
+            assert "<!DOCTYPE html>" in content, "doctype missing"
+            assert "<html" in content, "html open tag missing"
+            assert "</html>" in content, "html close tag missing"
+            assert "GitHub Project Monitor Report" in content, "title missing"
 
             # Check repository info
-            assert "test-owner/test-repo" in content
+            assert "test-owner/test-repo" in content, "repo full name missing"
             # Check sidebar nav exists
-            assert "Projects" in content
-            assert 'href="#test-repo"' in content
+            assert "Projects" in content, "sidebar heading missing"
+            assert 'href="#test-repo"' in content, "sidebar link missing"
 
             # Check PR info
-            assert "#42" in content
+            assert "#42" in content, "PR number missing"
 
     def test_generate_html_report_empty(self, empty_report):
         """Test HTML report with empty repositories."""
@@ -320,6 +332,58 @@ class TestHTMLGenerator:
             content = output_path.read_text()
             assert "PASS" in content
             assert "FAIL" in content
+
+
+class TestOpenIssues:
+    """Open issues are listed in every report format."""
+
+    def test_toon_lists_issues(self, sample_report):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = Path(tmpdir) / "report.toon"
+            generate_toon_report(sample_report, output_path)
+            content = output_path.read_text()
+            assert "total_open_issues: 5" in content
+            assert "issue_count: 5" in content
+            assert "issues/42" in content
+            assert "bug" in content
+
+    def test_markdown_lists_issues(self, sample_report):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = Path(tmpdir) / "report.md"
+            generate_markdown_report(sample_report, output_path)
+            content = output_path.read_text()
+            assert "**Open issues:** 5" in content
+            assert "**Open issues (5):**" in content
+            assert (
+                "- [#42](https://github.com/test-owner/test-repo/issues/42) "
+                "Crash on <start> (3d, bug)"
+            ) in content
+
+    def test_html_lists_issues_escaped(self, sample_report):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = Path(tmpdir) / "report.html"
+            generate_html_report(sample_report, output_path)
+            content = output_path.read_text()
+            assert "Open Issues (5)" in content
+            assert "issues/42" in content
+            assert "Crash on &lt;start&gt;" in content
+            assert '<span class="label">bug</span>' in content
+
+    def test_no_issue_section_without_issues(self, sample_repository):
+        sample_repository.issues = []
+        sample_repository.open_issues = 0
+        report = MonitorReport(
+            generated_at=datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC),
+            scan_period_days=30,
+            repositories=[sample_repository],
+        )
+        with tempfile.TemporaryDirectory() as tmpdir:
+            html_path = Path(tmpdir) / "report.html"
+            md_path = Path(tmpdir) / "report.md"
+            generate_html_report(report, html_path)
+            generate_markdown_report(report, md_path)
+            assert "Open Issues (" not in html_path.read_text()
+            assert "**Open issues (" not in md_path.read_text()
 
 
 class TestReleaseWarning:
