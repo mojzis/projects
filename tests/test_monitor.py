@@ -47,6 +47,7 @@ class TestCollectAllData:
             patch.object(monitor.collector, "get_repositories", return_value=[repo_info]),
             patch.object(monitor.collector, "get_last_commit", return_value=None),
             patch.object(monitor.collector, "get_open_prs", return_value=[]),
+            patch.object(monitor.collector, "get_open_issues", return_value=[]),
             patch.object(monitor.collector, "get_branches", return_value=["main"]),
             patch.object(monitor.collector, "get_pr_branches", return_value=set()),
             patch.object(monitor.collector, "get_github_pages", return_value=None),
@@ -78,6 +79,7 @@ class TestCollectAllData:
             patch.object(monitor.collector, "get_repositories", return_value=repos),
             patch.object(monitor.collector, "get_last_commit", return_value=None),
             patch.object(monitor.collector, "get_open_prs", return_value=[]),
+            patch.object(monitor.collector, "get_open_issues", return_value=[]),
             patch.object(monitor.collector, "get_branches", return_value=[]),
             patch.object(monitor.collector, "get_pr_branches", return_value=set()),
             patch.object(monitor.collector, "get_github_pages", return_value=None),
@@ -167,6 +169,69 @@ class TestGetOpenPRs:
 
             assert len(result) == 1
             assert result[0].author == "Unknown"
+
+
+class TestGetOpenIssues:
+    """Tests for _get_open_issues method."""
+
+    def test_get_open_issues_success(self):
+        """Test parsing open issues, including labels and a deleted author."""
+        monitor = ProjectMonitor(owner="test-owner", days=30)
+
+        issues_data = [
+            {
+                "number": 7,
+                "title": "Crash on start",
+                "createdAt": "2025-01-10T10:00:00Z",
+                "author": {"login": "reporter"},
+                "url": "https://github.com/test-owner/repo/issues/7",
+                "labels": [{"name": "bug"}, {"name": "p1"}],
+            },
+            {
+                "number": 8,
+                "title": "Ghost",
+                "createdAt": "2025-01-11T10:00:00Z",
+                "author": None,
+                "url": "https://github.com/test-owner/repo/issues/8",
+            },
+        ]
+
+        with patch.object(monitor.collector, "get_open_issues", return_value=issues_data):
+            result = monitor._get_open_issues("test-repo")
+
+        assert [i.number for i in result] == [7, 8], "issue order"
+        assert result[0].labels == ["bug", "p1"], "label names"
+        assert result[0].author == "reporter", "author login"
+        assert result[0].age_days > 0, "age from createdAt"
+        assert result[1].author == "Unknown", "deleted author"
+        assert result[1].labels == [], "missing labels key"
+
+    def test_open_issue_count_falls_back_to_list(self):
+        """Without repo details the count comes from the collected issues."""
+        monitor = ProjectMonitor(owner="test-owner", days=30)
+        issue = {
+            "number": 7,
+            "title": "Crash on start",
+            "createdAt": "2025-01-10T10:00:00Z",
+            "author": {"login": "reporter"},
+            "url": "https://github.com/test-owner/repo/issues/7",
+        }
+
+        with (
+            patch.object(monitor.collector, "get_last_commit", return_value=None),
+            patch.object(monitor.collector, "get_open_prs", return_value=[]),
+            patch.object(monitor.collector, "get_open_issues", return_value=[issue]),
+            patch.object(monitor.collector, "get_branches", return_value=["main"]),
+            patch.object(monitor.collector, "get_pr_branches", return_value=set()),
+            patch.object(monitor.collector, "get_github_pages", return_value=None),
+            patch.object(monitor.collector, "get_ci_runs", return_value=[]),
+            patch.object(monitor.collector, "get_repo_details", return_value={}),
+            patch.object(monitor.collector, "has_release_workflow", return_value=False),
+        ):
+            repo = monitor._collect_repo_data("test-repo", {"name": "test-repo"})
+
+        assert repo.open_issues == 1
+        assert repo.issues[0].title == "Crash on start"
 
 
 class TestGetBranchesWithoutPRs:
@@ -424,13 +489,14 @@ class TestCollectRepoData:
         repo_details = {
             "stargazerCount": 50,
             "forkCount": 10,
-            "openIssues": {"totalCount": 3},
+            "issues": {"totalCount": 3},
             "primaryLanguage": {"name": "Python"},
         }
 
         with (
             patch.object(monitor.collector, "get_last_commit", return_value=commit_data),
             patch.object(monitor.collector, "get_open_prs", return_value=[]),
+            patch.object(monitor.collector, "get_open_issues", return_value=[]),
             patch.object(monitor.collector, "get_branches", return_value=["main"]),
             patch.object(monitor.collector, "get_pr_branches", return_value=set()),
             patch.object(monitor.collector, "get_github_pages", return_value=None),
@@ -443,6 +509,7 @@ class TestCollectRepoData:
             assert result.name == "test-repo"
             assert result.owner == "test-owner"
             assert result.stars == 50
+            assert result.open_issues == 3
             assert result.primary_language == "Python"
             assert result.last_commit is not None
             assert result.last_commit.sha == "abc123"

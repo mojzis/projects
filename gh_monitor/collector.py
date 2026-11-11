@@ -94,6 +94,28 @@ class GitHubCollector:
         except GitHubCLIError:
             return []
 
+    def get_open_issues(self, owner: str, repo: str) -> list[dict]:
+        """Get all open issues (pull requests are not included)."""
+        try:
+            issues = self._run_gh(
+                [
+                    "issue",
+                    "list",
+                    "--repo",
+                    f"{owner}/{repo}",
+                    "--state",
+                    "open",
+                    "--json",
+                    "number,title,createdAt,author,url,labels",
+                    "--limit",
+                    "100",
+                ]
+            )
+            return issues if isinstance(issues, list) else []
+        except GitHubCLIError:
+            # Also covers repos with issues disabled
+            return []
+
     def get_branches(self, owner: str, repo: str) -> list[str]:
         """Get all branch names."""
         try:
@@ -159,7 +181,7 @@ class GitHubCollector:
                     "view",
                     f"{owner}/{repo}",
                     "--json",
-                    "stargazerCount,forkCount,openIssues,primaryLanguage",
+                    "stargazerCount,forkCount,issues,primaryLanguage",
                 ]
             )
             return details if isinstance(details, dict) else {}

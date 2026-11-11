@@ -26,6 +26,7 @@ def generate_markdown_report(report: MonitorReport, output_path: Path) -> None:
         scan_days=report.scan_period_days,
         total_repos=report.total_repositories,
         total_prs=report.total_open_prs,
+        total_issues=report.total_open_issues,
         repositories=[
             {
                 "name": r.name,
@@ -33,6 +34,7 @@ def generate_markdown_report(report: MonitorReport, output_path: Path) -> None:
                 "language": r.primary_language,
                 "stars": r.stars,
                 "open_issues": r.open_issues,
+                "issues": r.issues,
                 "last_commit": r.last_commit,
                 "open_prs": r.open_prs,
                 "branches_without_prs": r.branches_without_prs,

@@ -186,6 +186,7 @@ def _display_and_publish_results(
         f"\n[bold green]Successfully monitored {len(report.repositories)} repositories[/bold green]"
     )
     console.print(f"  • {report.total_open_prs} open PRs")
+    console.print(f"  • {report.total_open_issues} open issues")
     console.print(f"  • {report.total_branches_without_prs} branches without PRs\n")
 
     if outputs:
