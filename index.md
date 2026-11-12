@@ -1,6 +1,48 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-11 22:11:33 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 34 | **Open issues:** 9
+**Generated:** 2026-11-12 14:14:06 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 34 | **Open issues:** 7
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `803b192d` Index files that use type parameter defaults (PEP 696) (#10) (Mojzis, 2026-11-12 13:14:16+00:00)
+
+
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#6](https://github.com/mojzis/dermestes/pull/6)
+
+
+
+
+**Orphan branches (1):** `claude/nifty-fermat-pg64gg`
+
+
+---
+
+
+## [lepisma](https://github.com/mojzis/lepisma)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `c2876f95` Release v0.1.5 (mojzis, 2026-11-12 09:52:36+00:00)
+
+
+
+**CI:** PASS
+
+
+
 
 ---
 
@@ -62,8 +104,8 @@ Rust | ★3 | 2 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (2):**
 
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (146d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (146d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (147d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (147d)
 
 
 
@@ -85,7 +127,7 @@ Rust | ★0 | 1 issues
 > ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (1):** [#27](https://github.com/mojzis/pycoati/pull/27)
@@ -113,7 +155,7 @@ Rust | ★0 | 2 issues
 > ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (2):** [#43](https://github.com/mojzis/zorilla/pull/43), [#42](https://github.com/mojzis/zorilla/pull/42)
@@ -122,30 +164,8 @@ Rust | ★0 | 2 issues
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (59d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (59d)
-
-
-
-
----
-
-
-## [dermestes](https://github.com/mojzis/dermestes)
-
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `c248e599` Bump rustix to 1.1.6 for RUSTSEC-2026-0486 (#7) (Mojzis, 2026-11-11 20:52:15+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#6](https://github.com/mojzis/dermestes/pull/6)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (60d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (60d)
 
 
 
@@ -164,7 +184,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 > ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (1):** [#50](https://github.com/mojzis/biston/pull/50)
@@ -173,7 +193,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (133d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (134d)
 
 
 
@@ -183,7 +203,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 ## [gerenuk](https://github.com/mojzis/gerenuk)
 
-Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/gerenuk/)
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 **Last commit:** `21d074ae` Bump rustix to 1.1.6 for RUSTSEC-2026-0486 (#29) (Mojzis, 2026-11-11 20:52:08+00:00)
@@ -196,13 +216,6 @@ Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 **Open PRs (1):** [#26](https://github.com/mojzis/gerenuk/pull/26)
-
-
-
-**Open issues (2):**
-
-- [#18](https://github.com/mojzis/gerenuk/issues/18) Option to ignore non-Python paths (docs, *.md) when deciding run_all (33d)
-- [#15](https://github.com/mojzis/gerenuk/issues/15) Isolate pytest from inherited Git hook repository environment (58d)
 
 
 
@@ -224,7 +237,7 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 > ⚠️ **Untagged release:** main has 5 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -252,25 +265,6 @@ Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
-
-
----
-
-
-## [lepisma](https://github.com/mojzis/lepisma)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `6104d856` README: link to aesop near the top (#10) (Mojzis, 2026-11-11 20:42:02+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** UNKNOWN
-
-
 
 
 ---
@@ -668,7 +662,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (134d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (135d)
 
 
 
