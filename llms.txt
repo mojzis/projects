@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-13 13:37:06 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 34 | **Open issues:** 9
+**Generated:** 2026-11-14 12:42:24 | **Period:** Last 90 days | **Repos:** 32 | **Open PRs:** 34 | **Open issues:** 9
 
 ---
 
@@ -42,8 +42,8 @@ Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 **Open issues (2):**
 
-- [#12](https://github.com/mojzis/dermestes/issues/12) const-param: precision depends on form × caller count; consider a threshold (0d)
-- [#11](https://github.com/mojzis/dermestes/issues/11) const-param: calls through unresolved or ambiguous imports are dropped, producing breaking suggestions (0d)
+- [#12](https://github.com/mojzis/dermestes/issues/12) const-param: precision depends on form × caller count; consider a threshold (1d)
+- [#11](https://github.com/mojzis/dermestes/issues/11) const-param: calls through unresolved or ambiguous imports are dropped, producing breaking suggestions (1d)
 
 
 
@@ -111,8 +111,8 @@ Rust | ★3 | 2 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (2):**
 
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (148d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (148d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (149d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (149d)
 
 
 
@@ -143,7 +143,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#17](https://github.com/mojzis/pycoati/issues/17) Recognize checked subprocesses as verification evidence in assertionless-test analysis (61d)
+- [#17](https://github.com/mojzis/pycoati/issues/17) Recognize checked subprocesses as verification evidence in assertionless-test analysis (62d)
 
 
 
@@ -171,8 +171,8 @@ Rust | ★0 | 2 issues
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (61d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (61d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (62d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (62d)
 
 
 
@@ -200,7 +200,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (135d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (136d)
 
 
 
@@ -669,7 +669,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (136d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (137d)
 
 
 
