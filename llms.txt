@@ -1,6 +1,104 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-14 18:12:59 | **Period:** Last 90 days | **Repos:** 33 | **Open PRs:** 16 | **Open issues:** 8
+**Generated:** 2026-11-14 18:22:13 | **Period:** Last 90 days | **Repos:** 33 | **Open PRs:** 12 | **Open issues:** 8
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `6a223643` Bump ty-find to 0.5.4 (#32) (Mojzis, 2026-11-14 18:20:05+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+**Open issues (1):**
+
+- [#31](https://github.com/mojzis/gerenuk/issues/31) run: fails on the first commit of a new repo (unborn HEAD) instead of running all tests (0d)
+
+
+
+
+**Orphan branches (1):** `claude/youthful-cerf-aha79n`
+
+
+---
+
+
+## [braindump](https://github.com/mojzis/braindump)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
+
+
+**Last commit:** `562b273b` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#94) (Mojzis, 2026-11-14 18:17:05+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `c403133c` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#10) (Mojzis, 2026-11-14 18:15:31+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [trains-de](https://github.com/mojzis/trains-de)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
+
+
+**Last commit:** `3691681f` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#4) (Mojzis, 2026-11-14 18:15:24+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+
+---
+
+
+## [saints-calendar](https://github.com/mojzis/saints-calendar)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/saints-calendar/)
+
+
+**Last commit:** `dd33a22f` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#11) (Mojzis, 2026-11-14 18:13:07+00:00)
+
+
+
+**CI:** PASS
+
+
+
 
 ---
 
@@ -17,6 +115,26 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 **CI:** UNKNOWN
 
 
+
+
+---
+
+
+## [python-template](https://github.com/mojzis/python-template)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `4edbfb91` Bump biston to 0.7.6, dermestes to 0.1.3, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#9) (Mojzis, 2026-11-14 18:11:59+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+**Orphan branches (1):** `claude/update-deps-clauding`
 
 
 ---
@@ -241,106 +359,6 @@ CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 ---
 
 
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `60f3c162` Release v0.1.8 (mojzis, 2026-11-14 16:53:08+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#10](https://github.com/mojzis/typer-agentic/pull/10)
-
-
-
-
----
-
-
-## [trains-de](https://github.com/mojzis/trains-de)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
-
-
-**Last commit:** `1ceabb0c` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:14:56+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#4](https://github.com/mojzis/trains-de/pull/4)
-
-
-
-
----
-
-
-## [saints-calendar](https://github.com/mojzis/saints-calendar)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/saints-calendar/)
-
-
-**Last commit:** `b7d4d4bc` Bump toolbox (madoqua, gerenuk, biston, zorilla, pycoati, ty-find) (mojzis, 2026-10-28 18:14:54+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#11](https://github.com/mojzis/saints-calendar/pull/11)
-
-
-
-
----
-
-
-## [python-template](https://github.com/mojzis/python-template)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `ea8f7cd5` Merge pull request #8 from mojzis/ci-action-tags (Mojzis, 2026-11-14 16:53:34+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#9](https://github.com/mojzis/python-template/pull/9)
-
-
-
-
-**Orphan branches (1):** `claude/update-deps-clauding`
-
-
----
-
-
-## [braindump](https://github.com/mojzis/braindump)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
-
-
-**Last commit:** `ecba9e61` Update pydantic requirement from >=2.14.0 to >=2.14.3 (#84) (dependabot[bot], 2026-11-14 17:05:06+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
 ## [dermestes](https://github.com/mojzis/dermestes)
 
 Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
@@ -450,32 +468,6 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 **CI:** PASS
 
 
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `43c7a175` Release v0.5.6 (mojzis, 2026-11-14 16:52:51+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Open issues (1):**
-
-- [#31](https://github.com/mojzis/gerenuk/issues/31) run: fails on the first commit of a new repo (unborn HEAD) instead of running all tests (0d)
-
-
-
-
-**Orphan branches (1):** `claude/youthful-cerf-aha79n`
 
 
 ---
