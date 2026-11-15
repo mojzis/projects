@@ -39,6 +39,7 @@ gh_monitor/
 ├── monitor.py            # Orchestration logic for data collection
 ├── syncer.py             # Git repository synchronization
 ├── releaser.py           # Automated minor-version releases (cargo/uv bump + tag)
+├── watcher.py            # Timer-driven two-way sync of repos listed in watched.toml
 ├── models.py             # Type-safe dataclasses (Commit, PR, Repository, Sync*, etc.)
 ├── generators/
 │   ├── __init__.py       # Exports all generators
@@ -58,6 +59,7 @@ tests/
 ├── test_models.py        # Data model tests
 ├── test_monitor.py       # Monitor orchestration tests
 ├── test_syncer.py        # Git syncer tests
+├── test_watcher.py       # Watcher tests (real temp git repos)
 └── test_releaser.py      # Automated release tests
 
 .github/
@@ -207,6 +209,23 @@ projects created from it inherit one. For each candidate `GitReleaser`:
 - Skips and reports repos that are neither Rust nor Python, or whose tool is
   missing. `--dry-run` computes the bump in the temp clone to preview the exact
   new version, then discards it without pushing.
+
+### Watch Command
+```bash
+gh-monitor watch [--config PATH]   # default: watched.toml in this repo
+```
+
+Keeps the repos listed in `watched.toml` (maintained in this repo) in step with GitHub.
+Run every 15 minutes by the `gh-monitor-watch` systemd **user** timer; the unit files live
+in dotfiles (`~/.config/systemd/user/gh-monitor-watch.{service,timer}`), logs go to
+`journalctl --user -u gh-monitor-watch`. `ideas` is the first watched repo.
+
+Per repo (`direction = "pull"` default, or `"both"`):
+- Missing clone → cloned over SSH. Always `git fetch --prune`.
+- Another branch checked out, or a dirty tree → left alone; incoming commits are listed.
+- Behind → `merge --ff-only`; ahead and `both` → `git push`; ahead and `pull` → reported.
+- Diverged or any git error → reported and the run exits 1 (shows in
+  `systemctl --user --failed`). Never rebases, merges or force-pushes.
 
 ### Version Command
 ```bash

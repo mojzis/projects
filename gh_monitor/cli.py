@@ -17,10 +17,11 @@ from .generators import (
     generate_markdown_report,
     generate_toon_report,
 )
-from .models import MonitorReport, ReleaseReport, ReleaseResult, SyncReport
+from .models import MonitorReport, ReleaseReport, ReleaseResult, SyncReport, WatchAction
 from .monitor import ProjectMonitor
 from .releaser import GitReleaser
 from .syncer import GitSyncer
+from .watcher import DEFAULT_CONFIG, load_watch_config, watch_repo
 
 
 def _print_sync_report(report: SyncReport) -> None:
@@ -285,6 +286,43 @@ def monitor(
 
             error_console.print(traceback.format_exc())
         raise typer.Exit(1) from None
+
+
+_WATCH_STYLE = {
+    WatchAction.CLONED: "green",
+    WatchAction.PULLED: "blue",
+    WatchAction.PUSHED: "magenta",
+    WatchAction.CURRENT: "dim",
+    WatchAction.LOCAL_AHEAD: "yellow",
+    WatchAction.SKIPPED_DIRTY: "yellow",
+    WatchAction.SKIPPED_BRANCH: "yellow",
+    WatchAction.DIVERGED: "red",
+    WatchAction.ERROR: "red",
+}
+
+
+@app.command()
+def watch(
+    config: Annotated[
+        Path, typer.Option("--config", "-c", help="Watch config (TOML)")
+    ] = DEFAULT_CONFIG,
+):
+    """Keep the repos listed in watched.toml in step with GitHub.
+
+    For each repo: clone if missing, fetch, fast-forward the tracked branch, and push
+    local commits when the repo is configured `direction = "both"`. Dirty trees and other
+    checked-out branches are left alone. Exits 1 when a repo diverged or errored, so a
+    timer run shows up as failed. Built for a systemd timer; output is plain lines.
+    """
+    repos = load_watch_config(config)
+    results = [watch_repo(repo) for repo in repos]
+    for r in results:
+        style = _WATCH_STYLE[r.action]
+        console.print(f"[{style}]{r.action.value:<14}[/{style}] {r.repo_name}: {r.message}")
+        for line in r.commits:
+            console.print(f"    {line}", highlight=False)
+    if any(r.action.needs_attention for r in results):
+        raise typer.Exit(1)
 
 
 @app.command()

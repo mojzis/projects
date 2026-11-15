@@ -3,6 +3,7 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
+from pathlib import Path
 
 
 class CIStatus(Enum):
@@ -300,3 +301,50 @@ class ReleaseReport:
             self.cancelled.append(result)
         else:
             self.skipped.append(result)
+
+
+class WatchDirection(Enum):
+    """Which way a watched repository is kept in step with GitHub."""
+
+    PULL = "pull"  # GitHub -> local only
+    BOTH = "both"  # also push local commits on the tracked branch
+
+
+class WatchAction(Enum):
+    """Outcome of one watch pass over a repository."""
+
+    CLONED = "cloned"
+    PULLED = "pulled"
+    PUSHED = "pushed"
+    CURRENT = "current"
+    LOCAL_AHEAD = "local_ahead"  # local commits, but direction is pull-only
+    SKIPPED_DIRTY = "skipped_dirty"
+    SKIPPED_BRANCH = "skipped_branch"
+    DIVERGED = "diverged"
+    ERROR = "error"
+
+    @property
+    def needs_attention(self) -> bool:
+        """True when a person has to step in (the timer run exits non-zero)."""
+        return self in (WatchAction.DIVERGED, WatchAction.ERROR)
+
+
+@dataclass
+class WatchedRepo:
+    """One entry of the watch config."""
+
+    name: str
+    path: Path
+    clone_url: str
+    branch: str = "main"
+    direction: WatchDirection = WatchDirection.PULL
+
+
+@dataclass
+class WatchResult:
+    """Result of watching a single repository."""
+
+    repo_name: str
+    action: WatchAction
+    message: str
+    commits: list[str] = field(default_factory=list)  # one-line summaries moved this pass
