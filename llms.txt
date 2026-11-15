@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-14 18:22:13 | **Period:** Last 90 days | **Repos:** 33 | **Open PRs:** 12 | **Open issues:** 8
+**Generated:** 2026-11-15 13:08:23 | **Period:** Last 90 days | **Repos:** 34 | **Open PRs:** 14 | **Open issues:** 7
 
 ---
 
@@ -10,13 +10,16 @@
 Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
-**Last commit:** `6a223643` Bump ty-find to 0.5.4 (#32) (Mojzis, 2026-11-14 18:20:05+00:00)
+**Last commit:** `5bc05f60` Wire orch in, with a pitch for #31 (unborn HEAD runs the full suite) (mojzis, 2026-11-15 12:17:06+00:00)
 
 
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
+> ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
 **CI:** PASS
+
+
+**Open PRs (1):** [#33](https://github.com/mojzis/gerenuk/pull/33)
 
 
 
@@ -28,6 +31,147 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 **Orphan branches (1):** `claude/youthful-cerf-aha79n`
+
+
+---
+
+
+## [orch](https://github.com/mojzis/orch)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/orch/)
+
+
+**Last commit:** `23254825` Merge pull request #4 from mojzis/docs-site (Mojzis, 2026-11-15 00:45:33+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+JavaScript | ★0 | 0 issues
+
+
+**Last commit:** `0f0fe40f` Bump chokidar from 5.0.0 to 6.0.0 in /server (#20) (dependabot[bot], 2026-11-14 16:49:44+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+**Orphan branches (1):** `wip/exe-vm-2026-11-15`
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `442f189b` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#115) (Mojzis, 2026-11-14 18:08:08+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+
+**Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`, `wip/exe-vm-2026-11-15`
+
+
+---
+
+
+## [ajina](https://github.com/mojzis/ajina)
+
+HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
+
+
+**Last commit:** `c33dd359` build(deps): bump actions/checkout from 6 to 7 (#7) (dependabot[bot], 2026-07-05 20:48:08+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+**Orphan branches (1):** `wip/exe-vm-2026-11-15`
+
+
+---
+
+
+## [bounceflow](https://github.com/mojzis/bounceflow)
+
+JavaScript | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
+
+
+**Last commit:** `ad374540` dependabot: use the bun ecosystem (#15) (Mojzis, 2026-11-15 00:24:25+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#16](https://github.com/mojzis/bounceflow/pull/16)
+
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+Rust | ★0 | 0 issues
+
+
+**Last commit:** `48c82746` coverage: write .coverage data to a private temp dir (#32) (Mojzis, 2026-11-15 00:24:21+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#31](https://github.com/mojzis/pycoati/pull/31)
+
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `76db3d34` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#29) (Mojzis, 2026-11-14 18:10:52+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
 
 
 ---
@@ -78,7 +222,7 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
 
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -103,23 +247,6 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/saints-calendar/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `76db3d34` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#29) (Mojzis, 2026-11-14 18:10:52+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-
----
-
-
 ## [python-template](https://github.com/mojzis/python-template)
 
 Python | ★0 | 0 issues
@@ -135,23 +262,6 @@ Python | ★0 | 0 issues
 
 
 **Orphan branches (1):** `claude/update-deps-clauding`
-
-
----
-
-
-## [orch](https://github.com/mojzis/orch)
-
-Shell | ★0 | 0 issues
-
-
-**Last commit:** `05865905` Bump biston to 0.7.6, dermestes to 0.1.3, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#1) (Mojzis, 2026-11-14 18:10:42+00:00)
-
-
-
-**CI:** PASS
-
-
 
 
 ---
@@ -191,31 +301,6 @@ Python | ★0 | 0 issues
 **CI:** PASS
 
 
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `442f189b` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#115) (Mojzis, 2026-11-14 18:08:08+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-
-**Orphan branches (4):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`
 
 
 ---
@@ -316,32 +401,6 @@ Python | ★0 | 0 issues
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
-
-Rust | ★0 | 1 issues
-
-
-**Last commit:** `badefe4b` ci: build macOS wheels on macos-15 (#30) (Mojzis, 2026-11-14 17:03:09+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#31](https://github.com/mojzis/pycoati/pull/31)
-
-
-
-**Open issues (1):**
-
-- [#17](https://github.com/mojzis/pycoati/issues/17) Recognize checked subprocesses as verification evidence in assertionless-test analysis (62d)
-
-
-
-
----
-
-
 ## [aesop](https://github.com/mojzis/aesop)
 
 CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
@@ -397,8 +456,8 @@ Rust | ★3 | 2 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (2):**
 
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (149d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (149d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (150d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (150d)
 
 
 
@@ -424,8 +483,8 @@ Rust | ★0 | 2 issues
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (62d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (62d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (63d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (63d)
 
 
 
@@ -448,7 +507,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (136d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (137d)
 
 
 
@@ -462,23 +521,6 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
 
 
 **Last commit:** `74bfa677` Release v0.2.11 (mojzis, 2026-11-14 16:54:07+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [talkshape](https://github.com/mojzis/talkshape)
-
-JavaScript | ★0 | 0 issues
-
-
-**Last commit:** `0f0fe40f` Bump chokidar from 5.0.0 to 6.0.0 in /server (#20) (dependabot[bot], 2026-11-14 16:49:44+00:00)
 
 
 
@@ -523,23 +565,6 @@ HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
 
 
 **CI:** PASS
-
-
-
-
----
-
-
-## [bounceflow](https://github.com/mojzis/bounceflow)
-
-JavaScript | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
-
-
-**Last commit:** `bee73e34` Add CI workflow with lint, tests and build (#14) (Mojzis, 2026-10-21 06:14:36+00:00)
-
-
-
-**CI: FAIL** (npm_and_yarn in /. - Update #1688075682)
 
 
 
@@ -654,7 +679,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (137d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (138d)
 
 
 
