@@ -1,31 +1,77 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-15 13:08:23 | **Period:** Last 90 days | **Repos:** 34 | **Open PRs:** 14 | **Open issues:** 7
+**Generated:** 2026-11-16 14:16:40 | **Period:** Last 90 days | **Repos:** 34 | **Open PRs:** 20 | **Open issues:** 8
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `a6333814` ci: build macOS wheels on macos-15 (#14) (Mojzis, 2026-11-14 17:03:31+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#15](https://github.com/mojzis/dermestes/pull/15)
+
+
+
+
+**Orphan branches (1):** `claude/nifty-fermat-pg64gg`
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `9ae58dd0` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#11) (Mojzis, 2026-11-14 18:08:02+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#12](https://github.com/mojzis/imgen/pull/12)
+
+
+
 
 ---
 
 
 ## [gerenuk](https://github.com/mojzis/gerenuk)
 
-Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/gerenuk/)
+Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
-**Last commit:** `5bc05f60` Wire orch in, with a pitch for #31 (unborn HEAD runs the full suite) (mojzis, 2026-11-15 12:17:06+00:00)
+**Last commit:** `4d460633` An unborn HEAD runs the full suite instead of exiting 2 (#33) (Mojzis, 2026-11-15 20:01:11+00:00)
 
 
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
+> ⚠️ **Untagged release:** main has 3 commits without a tag.
 
 
 **CI:** PASS
 
 
-**Open PRs (1):** [#33](https://github.com/mojzis/gerenuk/pull/33)
+**Open PRs (1):** [#36](https://github.com/mojzis/gerenuk/pull/36)
 
 
 
-**Open issues (1):**
+**Open issues (2):**
 
-- [#31](https://github.com/mojzis/gerenuk/issues/31) run: fails on the first commit of a new repo (unborn HEAD) instead of running all tests (0d)
+- [#35](https://github.com/mojzis/gerenuk/issues/35) gerenuk's own git calls inherit a hook's GIT_INDEX_FILE (breaks replay inside a hook) (0d, bug)
+- [#34](https://github.com/mojzis/gerenuk/issues/34) run --dry-run prints a pytest-not-found error to stderr when pytest isn't on PATH (0d, bug)
 
 
 
@@ -36,16 +82,144 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/gerenuk/)
 ---
 
 
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `6a43c8d8` Pin setup-uv to v10.3.3 (no floating v10 tag) (mojzis, 2026-10-28 20:24:42+00:00)
+
+
+
+**CI: FAIL** (Run Tests)
+
+
+**Open PRs (6):** [#72](https://github.com/mojzis/sketchpy/pull/72), [#71](https://github.com/mojzis/sketchpy/pull/71), [#70](https://github.com/mojzis/sketchpy/pull/70), [#68](https://github.com/mojzis/sketchpy/pull/68), [#67](https://github.com/mojzis/sketchpy/pull/67), [#65](https://github.com/mojzis/sketchpy/pull/65)
+
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+Rust | ★0 | 0 issues
+
+
+**Last commit:** `48c82746` coverage: write .coverage data to a private temp dir (#32) (Mojzis, 2026-11-15 00:24:21+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#33](https://github.com/mojzis/pycoati/pull/33), [#31](https://github.com/mojzis/pycoati/pull/31)
+
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `a2eb05ae` ci: build macOS wheels on macos-15 (#53) (Mojzis, 2026-11-14 17:02:49+00:00)
+
+
+> ⚠️ **Untagged release:** main has 100 commits without a tag.
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#54](https://github.com/mojzis/biston/pull/54)
+
+
+
+**Open issues (1):**
+
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (138d)
+
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `74bfa677` Release v0.2.11 (mojzis, 2026-11-14 16:54:07+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#25](https://github.com/mojzis/madoqua/pull/25)
+
+
+
+
+---
+
+
+## [newsparser](https://github.com/mojzis/newsparser)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `276cd2ce` Add nsp try-terms: try search terms before a collection goes daily (#2) (Mojzis, 2026-11-15 21:26:42+00:00)
+
+
+
+
+
+
+**Orphan branches (1):** `wip/2026-09-19`
+
+
+---
+
+
 ## [orch](https://github.com/mojzis/orch)
 
 Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/orch/)
 
 
-**Last commit:** `23254825` Merge pull request #4 from mojzis/docs-site (Mojzis, 2026-11-15 00:45:33+00:00)
+**Last commit:** `7671935c` Merge pull request #5 from mojzis/central-home (Mojzis, 2026-11-15 19:59:13+00:00)
 
 
 
 **CI:** PASS
+
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `76db3d34` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#29) (Mojzis, 2026-11-14 18:10:52+00:00)
+
+
+
+**CI:** UNKNOWN
 
 
 
@@ -131,45 +305,6 @@ JavaScript | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 **Open PRs (1):** [#16](https://github.com/mojzis/bounceflow/pull/16)
-
-
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-Rust | ★0 | 0 issues
-
-
-**Last commit:** `48c82746` coverage: write .coverage data to a private temp dir (#32) (Mojzis, 2026-11-15 00:24:21+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#31](https://github.com/mojzis/pycoati/pull/31)
-
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `76db3d34` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#29) (Mojzis, 2026-11-14 18:10:52+00:00)
-
-
-
-**CI:** UNKNOWN
 
 
 
@@ -306,25 +441,6 @@ Python | ★0 | 0 issues
 ---
 
 
-## [imgen](https://github.com/mojzis/imgen)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `9ae58dd0` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#11) (Mojzis, 2026-11-14 18:08:02+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
-
----
-
-
 ## [happytube](https://github.com/mojzis/happytube)
 
 Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
@@ -418,26 +534,6 @@ CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 ---
 
 
-## [dermestes](https://github.com/mojzis/dermestes)
-
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `a6333814` ci: build macOS wheels on macos-15 (#14) (Mojzis, 2026-11-14 17:03:31+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
-**Orphan branches (1):** `claude/nifty-fermat-pg64gg`
-
-
----
-
-
 ## [ty-find](https://github.com/mojzis/ty-find)
 
 Rust | ★3 | 2 issues | [Pages](https://mojzis.github.io/ty-find/)
@@ -456,8 +552,8 @@ Rust | ★3 | 2 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (2):**
 
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (150d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (150d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (151d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (151d)
 
 
 
@@ -483,73 +579,10 @@ Rust | ★0 | 2 issues
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (63d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (63d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (64d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (64d)
 
 
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `a2eb05ae` ci: build macOS wheels on macos-15 (#53) (Mojzis, 2026-11-14 17:02:49+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Open issues (1):**
-
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (137d)
-
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `74bfa677` Release v0.2.11 (mojzis, 2026-11-14 16:54:07+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `6a43c8d8` Pin setup-uv to v10.3.3 (no floating v10 tag) (mojzis, 2026-10-28 20:24:42+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (5):** [#69](https://github.com/mojzis/sketchpy/pull/69), [#68](https://github.com/mojzis/sketchpy/pull/68), [#67](https://github.com/mojzis/sketchpy/pull/67), [#66](https://github.com/mojzis/sketchpy/pull/66), [#65](https://github.com/mojzis/sketchpy/pull/65)
-
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
 
 
 ---
@@ -611,24 +644,6 @@ Python | ★0 | 0 issues
 ---
 
 
-## [newsparser](https://github.com/mojzis/newsparser)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `83eff4e0` Merge origin/main (PR #1 squash) into local main (mojzis, 2026-09-19 16:37:11+00:00)
-
-
-
-
-
-
-**Orphan branches (1):** `wip/2026-09-19`
-
-
----
-
-
 ## [noticky](https://github.com/mojzis/noticky)
 
 HTML | ★0 | 0 issues
@@ -653,7 +668,7 @@ JavaScript | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI: FAIL** (npm_and_yarn in /. - Update #1691380516)
+**CI:** PASS
 
 
 
@@ -679,7 +694,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (138d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (139d)
 
 
 
