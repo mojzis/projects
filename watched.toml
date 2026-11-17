@@ -1,0 +1,37 @@
+# Repos that `gh-monitor watch` keeps in step with GitHub.
+# Run every 15 minutes by the gh-monitor-watch systemd user timer (in dotfiles).
+#
+# Per repo:
+#   name       GitHub repo name (required)
+#   direction  "pull" = GitHub -> local only (default)
+#              "both" = also push local commits on `branch`
+#   branch     tracked branch (default "main"); nothing happens while another is checked out
+#   path       local clone (default <dir>/<name>); cloned if missing
+#   owner      overrides the top-level owner
+#
+# Only safe moves happen: fast-forward pulls and plain pushes. Dirty trees are skipped;
+# diverged history is reported and makes the run fail, so it shows in
+# `systemctl --user --failed`.
+
+owner = "mojzis"
+dir = "~/git"
+
+[[repo]]
+name = "ideas"
+direction = "pull"  # changes land through PRs; local main only follows
+
+# changelog-chronicles org
+[[repo]]
+name = "changelog"
+owner = "changelog-chronicles"
+direction = "pull"  # changes land through PRs
+
+[[repo]]
+name = "changelog-chronicles.github.io"
+owner = "changelog-chronicles"
+direction = "both"  # built site, committed straight to main
+
+[[repo]]
+name = "changelog-data"
+owner = "changelog-chronicles"
+direction = "both"  # generated data, committed straight to main
