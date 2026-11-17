@@ -20,13 +20,15 @@
 #
 # Usage:
 #   scripts/bump-tools.sh <owner> [--dry-run] [--tool NAME]... [--no-test]
-#                         [--no-merge] [repo ...]
+#                         [--no-merge] [-j N] [--timeout S] [repo ...]
 #
 #   --dry-run     list what would be bumped; clone/push nothing
 #   --tool NAME   only consider this tool (PyPI name; repeatable)
 #   --no-test     skip the local test run; the PR's CI is then the only gate,
 #                 so a repo without PR CI is left open, never merged untested
 #   --no-merge    open PRs but do not merge them
+#   -j N          repos bumped/tested in parallel (default 4)
+#   --timeout S   seconds to wait for PR checks before leaving PRs open (default 1800)
 #   [repo ...]    explicit repos (name or owner/name); default = all non-archived
 #                 repos + extra-repos.txt
 #
@@ -44,7 +46,7 @@ mkdir -p "$log_dir"
 stamp="$(date +%Y%m%d-%H%M%S)"
 
 usage() {
-  echo "usage: $0 <owner> [--dry-run] [--tool NAME]... [--no-test] [--no-merge] [repo ...]" >&2
+  echo "usage: $0 <owner> [--dry-run] [--tool NAME]... [--no-test] [--no-merge] [-j N] [--timeout S] [repo ...]" >&2
   exit 2
 }
 
@@ -52,13 +54,15 @@ owner="${1:-}"
 [[ -z "$owner" || "$owner" == -* ]] && usage
 shift
 
-dry_run=false; run_tests=true; do_merge=true
+dry_run=false; run_tests=true; do_merge=true; max_jobs=4; timeout=1800
 only_tools=(); repos=()
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --dry-run) dry_run=true ;;
     --no-test) run_tests=false ;;
     --no-merge) do_merge=false ;;
+    -j) shift; [[ "${1:-}" =~ ^[1-9][0-9]*$ ]] || usage; max_jobs="$1" ;;
+    --timeout) shift; [[ "${1:-}" =~ ^[0-9]+$ ]] || usage; timeout="$1" ;;
     --tool) shift; [[ $# -gt 0 ]] || usage; only_tools+=("$1") ;;
     -*) echo "unknown flag: $1" >&2; exit 2 ;;
     *) repos+=("$1") ;;
@@ -140,20 +144,24 @@ done
 work="$(mktemp -d)"
 trap 'rm -rf "$work"' EXIT
 
-# Queue for the merge phase: "repo number tested(true|false)".
-queue=()
-bumped=0; stuck=0; test_failed=0; merged=0; left_open=0
-merged_repos=()
 
-# --- phase 1: bump, test, open PRs -------------------------------------------
-for r in "${repos[@]}"; do
-  pyproject="$(raw "$r" pyproject.toml)" || continue
-  [[ -n "$pyproject" ]] || continue
+# Status lines of the whole run, also counted for the summary. Phase 1 jobs append
+# merge-queue entries ("repo number tested(true|false)") to $work/queue.
+status_file="$work/status"
+: >"$status_file"
+: >"$work/queue"
+say() { echo "$*" | tee -a "$status_file"; }
+
+# --- phase 1: bump, test, open PRs (up to $max_jobs repos at once) ----------------
+bump_one() {
+  local r="$1" pyproject self lock t floor locked new summary open_pr dir log
+  local stale=() notes=() upgrade_args=() files=() behind=() test_cmd=() got tested
+  local branch title body url n
+  pyproject="$(raw "$r" pyproject.toml)" || return 0
+  [[ -n "$pyproject" ]] || return 0
   self="$(grep -m1 -oP '^name\s*=\s*"\K[^"]+' <<<"$pyproject" || true)"
   lock="$(raw "$r" uv.lock || true)"
 
-  stale=()   # tools to bump in this repo
-  notes=()   # "tool old->new" for output and the PR
   for t in "${tools[@]}"; do
     [[ "$t" == "$self" ]] && continue
     has_dep "$t" <<<"$pyproject" || continue
@@ -167,29 +175,28 @@ for r in "${repos[@]}"; do
       stale+=("$t"); notes+=("$t $locked -> $new")
     fi
   done
-  [[ ${#stale[@]} -gt 0 ]] || continue
+  [[ ${#stale[@]} -gt 0 ]] || return 0
   summary="$(IFS=,; echo "${notes[*]}" | sed 's/,/, /g')"
 
   open_pr="$(gh pr list -R "$r" --state open --json number,headRefName \
     --jq '[.[] | select(.headRefName | startswith("tool-bump/"))][0].number // empty')"
   if [[ -n "$open_pr" ]]; then
-    echo "PENDING     $r #$open_pr (open tool-bump PR; $summary)"
-    queue+=("$r $open_pr false")
-    continue
+    say "PENDING     $r #$open_pr (open tool-bump PR; $summary)"
+    echo "$r $open_pr false" >>"$work/queue"
+    return 0
   fi
 
   if $dry_run; then
-    echo "WOULD-BUMP  $r: $summary"
-    continue
+    say "WOULD-BUMP  $r: $summary"
+    return 0
   fi
 
   dir="$work/${r##*/}"
   log="$log_dir/bump-$stamp-${r##*/}.log"
   if ! gh repo clone "$r" "$dir" -- -q --depth 1 >"$log" 2>&1; then
-    echo "FAIL        $r clone failed ($log)"; continue
+    say "FAIL        $r clone failed ($log)"; return 0
   fi
 
-  upgrade_args=()
   for t in "${stale[@]}"; do
     set_floor "$t" "${latest[$t]}" "$dir/pyproject.toml"
     upgrade_args+=(--upgrade-package "$t")
@@ -199,37 +206,37 @@ for r in "${repos[@]}"; do
   if git -C "$dir" ls-files --error-unmatch uv.lock >/dev/null 2>&1; then
     files+=(uv.lock)
     if ! (cd "$dir" && env -u VIRTUAL_ENV uv lock "${upgrade_args[@]}") >>"$log" 2>&1; then
-      echo "STUCK       $r uv lock failed ($log)"; stuck=$((stuck+1)); continue
+      say "STUCK       $r uv lock failed ($log)"; return 0
     fi
-    behind=()
     for t in "${stale[@]}"; do
       got="$(locked_version "$t" <"$dir/uv.lock")"
       [[ "$got" == "${latest[$t]}" ]] || behind+=("$t=$got")
     done
     if [[ ${#behind[@]} -gt 0 ]]; then
-      echo "STUCK       $r lock did not reach latest: ${behind[*]} (pin or exclude-newer?)"
-      stuck=$((stuck+1)); continue
+      say "STUCK       $r lock did not reach latest: ${behind[*]} (pin or exclude-newer?)"
+      return 0
     fi
   fi
 
   if git -C "$dir" diff --quiet -- "${files[@]}"; then
-    echo "NOOP        $r nothing changed ($summary)"; continue
+    say "NOOP        $r nothing changed ($summary)"; return 0
   fi
 
   tested=false
   if $run_tests; then
-    if grep -qE '^check\s*=|^\[tool\.poe\.tasks\.check\]' "$dir/pyproject.toml"; then
+    # Rust repos (maturin): the Python env has no test runner; CI is the gate.
+    if [[ -f "$dir/Cargo.toml" ]]; then
+      test_cmd=()
+    elif grep -qE '^check\s*=|^\[tool\.poe\.tasks\.check\]' "$dir/pyproject.toml"; then
       test_cmd=(uv run poe check)
     elif [[ -d "$dir/tests" ]]; then
       test_cmd=(uv run pytest -q)
-    else
-      test_cmd=()
     fi
     if [[ ${#test_cmd[@]} -gt 0 ]]; then
-      echo "TEST        $r: ${test_cmd[*]}"
+      say "TEST        $r: ${test_cmd[*]}"
       if ! (cd "$dir" && env -u VIRTUAL_ENV "${test_cmd[@]}") >>"$log" 2>&1; then
-        echo "TEST-FAIL   $r ($summary) -> $log"
-        test_failed=$((test_failed+1)); continue
+        say "TEST-FAIL   $r ($summary) -> $log"
+        return 0
       fi
       tested=true
     fi
@@ -250,53 +257,92 @@ for r in "${repos[@]}"; do
      && url="$(gh pr create -R "$r" --head "$branch" \
                  --title "$title" --body "$body" 2>>"$log")"; then
     n="${url##*/}"
-    echo "PR          $r #$n: $summary"
-    bumped=$((bumped+1))
-    queue+=("$r $n $tested")
+    say "PR          $r #$n: $summary"
+    echo "$r $n $tested" >>"$work/queue"
   else
-    echo "FAIL        $r push/PR failed ($log)"
+    say "FAIL        $r push/PR failed ($log)"
   fi
   rm -rf "$dir"
-done
-
-# --- phase 2: wait for CI, merge ---------------------------------------------
-# has_checks REPO PR: true once the PR reports at least one check. Polls briefly
-# because checks register a few seconds after the PR opens.
-has_checks() {
-  local i count
-  for i in 1 2 3 4 5 6; do
-    count="$(gh pr view -R "$1" "$2" --json statusCheckRollup --jq '.statusCheckRollup | length')"
-    [[ "$count" -gt 0 ]] && return 0
-    sleep 10
-  done
-  return 1
 }
 
-if $do_merge && ! $dry_run; then
-  for item in "${queue[@]}"; do
-    read -r r n tested <<<"$item"
-    if has_checks "$r" "$n"; then
-      if ! gh pr checks -R "$r" "$n" --watch --fail-fast --interval 15 >/dev/null 2>&1; then
-        echo "CI-FAIL     $r #$n (left open)"; left_open=$((left_open+1)); continue
-      fi
-    elif [[ "$tested" != true ]]; then
-      echo "UNTESTED    $r #$n (no PR CI, no local test run; left open)"
-      left_open=$((left_open+1)); continue
+for r in "${repos[@]}"; do
+  while [[ "$(jobs -rp | wc -l)" -ge "$max_jobs" ]]; do wait -n || true; done
+  bump_one "$r" &
+done
+wait
+
+# --- phase 2: wait for CI, merge ---------------------------------------------
+# One polling loop over every queued PR, so CI runs are waited on side by side.
+# Merge on mergeStateStatus CLEAN (GitHub's own verdict: mergeable, checks green);
+# a single failed check is CI-FAIL. Polling instead of `gh pr checks --watch`,
+# which hung forever on a check run GitHub left "in_progress" after it succeeded.
+# PRs with no checks at all: merged when tested locally, else UNTESTED.
+pr_state() {
+  gh pr view -R "$1" "$2" --json mergeStateStatus,statusCheckRollup --jq '
+    [.statusCheckRollup[] | (.conclusion // .state // "")] as $c
+    | if ($c | map(select(. == "FAILURE" or . == "ERROR" or . == "CANCELLED"
+                         or . == "TIMED_OUT" or . == "ACTION_REQUIRED")) | length) > 0
+        then "failed"
+      elif ($c | length) == 0 then "nochecks"
+      elif .mergeStateStatus == "CLEAN" then "clean"
+      else "waiting" end'
+}
+
+merge_pr() {
+  local err
+  if err="$(gh pr merge -R "$1" "$2" --squash --delete-branch 2>&1)"; then
+    say "MERGED      $1 #$2"
+  else
+    say "FAIL        $1 #$2 merge -> $(tr -d '\n' <<<"$err")"
+  fi
+}
+
+mapfile -t queue <"$work/queue"
+if $do_merge && ! $dry_run && [[ ${#queue[@]} -gt 0 ]]; then
+  start=$SECONDS
+  while [[ ${#queue[@]} -gt 0 ]]; do
+    waiting=()
+    for item in "${queue[@]}"; do
+      read -r r n tested <<<"$item"
+      case "$(pr_state "$r" "$n" || echo waiting)" in
+        clean) merge_pr "$r" "$n" ;;
+        failed) say "CI-FAIL     $r #$n (left open)" ;;
+        nochecks)
+          # Checks register a few seconds after the PR opens; give them a minute.
+          if (( SECONDS - start < 60 )); then waiting+=("$item")
+          elif [[ "$tested" == true ]]; then merge_pr "$r" "$n"
+          else say "UNTESTED    $r #$n (no PR CI, no local test run; left open)"
+          fi ;;
+        *) waiting+=("$item") ;;
+      esac
+    done
+    queue=("${waiting[@]}")
+    [[ ${#queue[@]} -gt 0 ]] || break
+    if (( SECONDS - start > timeout )); then
+      for item in "${queue[@]}"; do
+        read -r r n _ <<<"$item"
+        say "TIMEOUT     $r #$n (checks still running after ${timeout}s; left open)"
+      done
+      break
     fi
-    if err="$(gh pr merge -R "$r" "$n" --squash --delete-branch 2>&1)"; then
-      echo "MERGED      $r #$n"; merged=$((merged+1)); merged_repos+=("$r")
-    else
-      echo "FAIL        $r #$n merge -> $(tr -d '\n' <<<"$err")"; left_open=$((left_open+1))
-    fi
+    sleep 20
   done
-elif ! $dry_run; then
-  left_open=${#queue[@]}
+fi
+
+count() { grep -c "^$1 " "$status_file" || true; }
+merged="$(count MERGED)"
+if $dry_run; then
+  left_open=0
+elif $do_merge; then
+  left_open=$(( $(count CI-FAIL) + $(count UNTESTED) + $(count TIMEOUT) + $(grep -c ' merge -> ' "$status_file" || true) ))
+else
+  left_open="$(wc -l <"$work/queue")"
 fi
 
 # Which local clones are now behind (same convention as merge-dependabot.sh).
-if [[ ${#merged_repos[@]} -gt 0 ]]; then
-  printf '%s\n' "${merged_repos[@]}" | sort -u >"$log_dir/bump-$stamp.log"
+if [[ "$merged" -gt 0 ]]; then
+  grep '^MERGED ' "$status_file" | awk '{print $2}' | sort -u >"$log_dir/bump-$stamp.log"
   echo "fetch these: $log_dir/bump-$stamp.log"
 fi
 
-echo "=== PRs opened: $bumped  merged: $merged  left open: $left_open  test-failed: $test_failed  stuck: $stuck ==="
+echo "=== PRs opened: $(count PR)  merged: $merged  left open: $left_open  test-failed: $(count TEST-FAIL)  stuck: $(count STUCK) ==="
