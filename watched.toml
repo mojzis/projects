@@ -19,3 +19,19 @@ dir = "~/git"
 [[repo]]
 name = "ideas"
 direction = "pull"  # changes land through PRs; local main only follows
+
+# changelog-chronicles org
+[[repo]]
+name = "changelog"
+owner = "changelog-chronicles"
+direction = "pull"  # changes land through PRs
+
+[[repo]]
+name = "changelog-chronicles.github.io"
+owner = "changelog-chronicles"
+direction = "both"  # built site, committed straight to main
+
+[[repo]]
+name = "changelog-data"
+owner = "changelog-chronicles"
+direction = "both"  # generated data, committed straight to main
