@@ -1,67 +1,59 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-17 15:08:55 | **Period:** Last 90 days | **Repos:** 34 | **Open PRs:** 13 | **Open issues:** 7
+**Generated:** 2026-11-17 19:16:33 | **Period:** Last 90 days | **Repos:** 35 | **Open PRs:** 15 | **Open issues:** 6
 
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
+## [projects](https://github.com/mojzis/projects)
 
-Rust | ★0 | 1 issues
-
-
-**Last commit:** `80106487` Resolve same-file base classes: inherited tests and self.<helper> credit (#36) (Mojzis, 2026-11-17 08:43:24+00:00)
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
+**Last commit:** `3e89756c` Bump pycoati to 0.2.15 (#30) (Mojzis, 2026-11-17 19:13:46+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+
+---
+
+
+## [orch](https://github.com/mojzis/orch)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/orch/)
+
+
+**Last commit:** `cefbf0f9` Bump pycoati to 0.2.15 (#6) (Mojzis, 2026-11-17 19:13:33+00:00)
+
 
 
 **CI:** PASS
 
 
 
-**Open issues (1):**
-
-- [#35](https://github.com/mojzis/pycoati/issues/35) Recognise AsyncMock await assertions and mock_calls/method_calls as mock API (0d)
-
-
-
 
 ---
 
 
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
+## [model-comparison](https://github.com/mojzis/model-comparison)
 
-Python | ★0 | 0 issues
-
-
-**Last commit:** `3bf6d5f9` Release v0.1.9 (mojzis, 2026-11-17 08:22:05+00:00)
+HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
 
 
-
-**CI: FAIL** (CI)
-
-
-**Open PRs (1):** [#11](https://github.com/mojzis/typer-agentic/pull/11)
-
-
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `61306fd6` Release v0.2.8 (mojzis, 2026-11-17 08:22:25+00:00)
+**Last commit:** `067914a9` AA snapshot 2026-11-17 (github-actions[bot], 2026-11-17 19:12:42+00:00)
 
 
 
 **CI:** PASS
 
 
+
+
+**Orphan branches (2):** `claude/nifty-thompson-7so8pc`, `tool-bump/gerenuk-0.5.5_madoqua-0.2.8_pycoati-0.2.12`
 
 
 ---
@@ -72,9 +64,13 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
 Python | ★0 | 0 issues
 
 
-**Last commit:** `99faa544` Release v0.1.6 (mojzis, 2026-11-17 08:22:19+00:00)
+**Last commit:** `6d839a7e` Bump pycoati to 0.2.15 (#14) (Mojzis, 2026-11-17 19:11:01+00:00)
 
 
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
 
 
 
@@ -87,8 +83,10 @@ Python | ★0 | 0 issues
 Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
-**Last commit:** `a555e1b6` Release v0.3.8 (mojzis, 2026-11-17 08:22:12+00:00)
+**Last commit:** `c4c242f5` Bump pycoati to 0.2.15 (#116) (Mojzis, 2026-11-17 19:10:55+00:00)
 
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
@@ -100,6 +98,215 @@ Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`, `wip/exe-vm-2026-11-15`
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `f1521a5e` Bump pycoati to 0.2.15 (#13) (Mojzis, 2026-11-17 19:10:48+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [happytube](https://github.com/mojzis/happytube)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
+
+
+**Last commit:** `495a2351` Bump pycoati to 0.2.15 (#19) (Mojzis, 2026-11-17 19:09:28+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#16](https://github.com/mojzis/happytube/pull/16)
+
+
+
+
+**Orphan branches (1):** `claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y`
+
+
+---
+
+
+## [comicforge](https://github.com/mojzis/comicforge)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `1cac9e70` Bump pycoati to 0.2.15 (#21) (Mojzis, 2026-11-17 19:08:13+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [clauding](https://github.com/mojzis/clauding)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/clauding/)
+
+
+**Last commit:** `9dd45015` Bump pycoati to 0.2.15 (#2) (Mojzis, 2026-11-17 19:08:06+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [catpin](https://github.com/mojzis/catpin)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `08fe9324` Bump pycoati to 0.2.15 (#3) (Mojzis, 2026-11-17 19:05:50+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `aed3bfdb` Release v0.1.10 (mojzis, 2026-11-17 17:26:48+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#12](https://github.com/mojzis/typer-agentic/pull/12)
+
+
+
+
+---
+
+
+## [trains-de](https://github.com/mojzis/trains-de)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
+
+
+**Last commit:** `3691681f` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#4) (Mojzis, 2026-11-14 18:15:24+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#5](https://github.com/mojzis/trains-de/pull/5)
+
+
+
+
+---
+
+
+## [saints-calendar](https://github.com/mojzis/saints-calendar)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/saints-calendar/)
+
+
+**Last commit:** `dd33a22f` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#11) (Mojzis, 2026-11-14 18:13:07+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#12](https://github.com/mojzis/saints-calendar/pull/12)
+
+
+
+
+---
+
+
+## [python-template](https://github.com/mojzis/python-template)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `003e26a2` Merge pull request #10 from mojzis/fix/check-exit-codes (Mojzis, 2026-11-17 18:53:31+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+**Orphan branches (1):** `claude/update-deps-clauding`
+
+
+---
+
+
+## [podcast-template](https://github.com/mojzis/podcast-template)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `487f0bfe` Pages: skip deploying in the template repository itself (Claude, 2026-11-17 18:58:27+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+Rust | ★0 | 0 issues
+
+
+**Last commit:** `5b7544f8` Release v0.2.15 (mojzis, 2026-11-17 18:42:52+00:00)
+
+
+
+**CI:** PASS
+
+
 
 
 ---
@@ -120,23 +327,6 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 **Orphan branches (1):** `claude/youthful-cerf-aha79n`
-
-
----
-
-
-## [imgen](https://github.com/mojzis/imgen)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `12816348` Release v0.1.5 (mojzis, 2026-11-17 08:21:40+00:00)
-
-
-
-**CI:** PASS
-
-
 
 
 ---
@@ -327,23 +517,6 @@ HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `76db3d34` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#29) (Mojzis, 2026-11-14 18:10:52+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-
----
-
-
 ## [sketchpy](https://github.com/mojzis/sketchpy)
 
 Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
@@ -385,23 +558,6 @@ Python | ★0 | 0 issues
 ---
 
 
-## [orch](https://github.com/mojzis/orch)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/orch/)
-
-
-**Last commit:** `7671935c` Merge pull request #5 from mojzis/central-home (Mojzis, 2026-11-15 19:59:13+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
 ## [ajina](https://github.com/mojzis/ajina)
 
 HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
@@ -417,137 +573,6 @@ HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
 
 
 **Orphan branches (1):** `wip/exe-vm-2026-11-15`
-
-
----
-
-
-## [trains-de](https://github.com/mojzis/trains-de)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/trains-de/)
-
-
-**Last commit:** `3691681f` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#4) (Mojzis, 2026-11-14 18:15:24+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [saints-calendar](https://github.com/mojzis/saints-calendar)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/saints-calendar/)
-
-
-**Last commit:** `dd33a22f` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#11) (Mojzis, 2026-11-14 18:13:07+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [python-template](https://github.com/mojzis/python-template)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `4edbfb91` Bump biston to 0.7.6, dermestes to 0.1.3, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#9) (Mojzis, 2026-11-14 18:11:59+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
-**Orphan branches (1):** `claude/update-deps-clauding`
-
-
----
-
-
-## [model-comparison](https://github.com/mojzis/model-comparison)
-
-HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
-
-
-**Last commit:** `60b3c4bf` AA snapshot 2026-11-14 (github-actions[bot], 2026-11-14 18:09:49+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
-**Orphan branches (2):** `claude/nifty-thompson-7so8pc`, `tool-bump/gerenuk-0.5.5_madoqua-0.2.8_pycoati-0.2.12`
-
-
----
-
-
-## [happytube](https://github.com/mojzis/happytube)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
-
-
-**Last commit:** `b3a64f6d` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#18) (Mojzis, 2026-11-14 18:06:21+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#16](https://github.com/mojzis/happytube/pull/16)
-
-
-
-
-**Orphan branches (1):** `claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y`
-
-
----
-
-
-## [clauding](https://github.com/mojzis/clauding)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/clauding/)
-
-
-**Last commit:** `a7563add` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#1) (Mojzis, 2026-11-14 18:04:49+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [catpin](https://github.com/mojzis/catpin)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `99e060bf` Bump biston to 0.7.6, gerenuk to 0.5.6, madoqua to 0.2.11, pycoati to 0.2.13, ty-find to 0.5.4, zorilla to 0.2.5 (#2) (Mojzis, 2026-11-14 18:02:04+00:00)
-
-
-
-**CI:** PASS
-
-
 
 
 ---
