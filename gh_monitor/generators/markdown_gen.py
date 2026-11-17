@@ -22,7 +22,7 @@ def generate_markdown_report(report: MonitorReport, output_path: Path) -> None:
     template = env.get_template("report.md")
 
     markdown = template.render(
-        timestamp=report.generated_at.strftime("%Y-%m-%d %H:%M:%S"),
+        timestamp=report.generated_at.strftime("%Y-%m-%d %H:%M:%S %Z"),
         scan_days=report.scan_period_days,
         total_repos=report.total_repositories,
         total_prs=report.total_open_prs,

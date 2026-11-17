@@ -265,7 +265,7 @@ def monitor(
 
         # Generate report
         report = MonitorReport(
-            generated_at=datetime.now(),
+            generated_at=datetime.now().astimezone(),
             scan_period_days=days,
             repositories=repositories,
         )
