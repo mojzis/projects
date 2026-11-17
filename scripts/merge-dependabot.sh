@@ -10,7 +10,8 @@
 #
 #   <owner>        GitHub user/org (e.g. mojzis)
 #   --dry-run      List what would be merged; merge nothing
-#   [repo ...]     Optional explicit repo names; default = all of the owner's repos
+#   [repo ...]     Optional explicit repos (name or owner/name); default = the
+#                  owner's repos + extra-repos.txt
 #
 # Requires: gh (authenticated), jq.
 #
@@ -51,16 +52,22 @@ for arg in "$@"; do
   esac
 done
 
-# Default: every repo the owner has (matches what gh-monitor reports on).
+# Repos are owner/name from here on. Default: every repo the owner has (matches
+# what gh-monitor reports on) plus extra-repos.txt (repos in other orgs).
 if [[ ${#repos[@]} -eq 0 ]]; then
   mapfile -t repos < <(gh repo list "$owner" --no-archived --limit 1000 \
-    --json name --jq '.[].name')
+    --json nameWithOwner --jq '.[].nameWithOwner')
+  extra="$(dirname "${BASH_SOURCE[0]}")/../extra-repos.txt"
+  [[ -f "$extra" ]] && mapfile -t -O "${#repos[@]}" repos < <(grep -Ev '^\s*(#|$)' "$extra")
 fi
+for i in "${!repos[@]}"; do
+  [[ "${repos[$i]}" == */* ]] || repos[i]="$owner/${repos[$i]}"
+done
 
 ok=0; skip=0; fail=0; rebased=0
 merged_repos=()
 for r in "${repos[@]}"; do
-  prs=$(gh pr list -R "$owner/$r" --state open \
+  prs=$(gh pr list -R "$r" --state open \
         --json number,author,mergeStateStatus --limit 100 2>/dev/null \
         | jq -c '.[] | select(.author.login=="app/dependabot")')
   [[ -z "$prs" ]] && continue
@@ -72,17 +79,17 @@ for r in "${repos[@]}"; do
 
     if [[ "$state" == "CLEAN" ]]; then
       if $dry_run; then
-        echo "WOULD-MERGE $owner/$r #$n"
-      elif gh pr merge -R "$owner/$r" "$n" --squash --delete-branch 2>/tmp/dmerge.err; then
-        echo "OK          $owner/$r #$n"; ok=$((ok+1)); merged_repos+=("$r")
+        echo "WOULD-MERGE $r #$n"
+      elif gh pr merge -R "$r" "$n" --squash --delete-branch 2>/tmp/dmerge.err; then
+        echo "OK          $r #$n"; ok=$((ok+1)); merged_repos+=("$r")
       else
-        echo "FAIL        $owner/$r #$n -> $(tr -d '\n' </tmp/dmerge.err)"; fail=$((fail+1))
+        echo "FAIL        $r #$n -> $(tr -d '\n' </tmp/dmerge.err)"; fail=$((fail+1))
       fi
     elif [[ ( "$state" == "DIRTY" || "$state" == "UNKNOWN" ) ]] && $rebase_conflicts; then
-      gh pr comment -R "$owner/$r" "$n" --body "@dependabot rebase" >/dev/null
-      echo "REBASE      $owner/$r #$n (asked dependabot to rebase)"; rebased=$((rebased+1))
+      gh pr comment -R "$r" "$n" --body "@dependabot rebase" >/dev/null
+      echo "REBASE      $r #$n (asked dependabot to rebase)"; rebased=$((rebased+1))
     else
-      echo "SKIP        $owner/$r #$n ($state)"; skip=$((skip+1))
+      echo "SKIP        $r #$n ($state)"; skip=$((skip+1))
     fi
   done <<<"$prs"
 done

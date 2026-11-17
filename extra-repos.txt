@@ -1,0 +1,3 @@
+# Repos outside the main owner that our cross-repo scripts (bump-tools.sh,
+# merge-dependabot.sh) cover too, as owner/name. Added to the default repo list.
+changelog-chronicles/changelog

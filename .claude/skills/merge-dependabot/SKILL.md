@@ -75,6 +75,7 @@ scripts/merge-dependabot.sh <owner>                       # merge the now-CLEAN 
 
 ## Notes
 
+- Repos in other orgs (e.g. `changelog-chronicles/changelog`) are covered via `extra-repos.txt` (one `owner/name` per line), added to the default list.
 - Filters on author `app/dependabot` (the login `gh` reports for the Dependabot
   GitHub App).
 - Defaults to all of the owner's non-archived repos; pass repo names to scope it.
