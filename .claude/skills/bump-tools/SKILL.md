@@ -56,6 +56,7 @@ Judgment (a subagent, if many) is only for `TEST-FAIL` / `CI-FAIL`.
 
 ## Notes
 
+- Repos in other orgs (e.g. `changelog-chronicles/changelog`) are covered via `extra-repos.txt` (one `owner/name` per line), added to the default list.
 - Just-published release not picked up: PyPI's JSON API or uv's index cache can
   lag a minute; re-run.
 - Local clones under `~/git` are not touched; `logs/bump-<stamp>.log` lists the

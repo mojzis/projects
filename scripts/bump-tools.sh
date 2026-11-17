@@ -27,7 +27,8 @@
 #   --no-test     skip the local test run; the PR's CI is then the only gate,
 #                 so a repo without PR CI is left open, never merged untested
 #   --no-merge    open PRs but do not merge them
-#   [repo ...]    explicit repo names; default = all non-archived repos
+#   [repo ...]    explicit repos (name or owner/name); default = all non-archived
+#                 repos + extra-repos.txt
 #
 # Requires: gh (authenticated), jq, uv, curl.
 #
@@ -65,7 +66,7 @@ while [[ $# -gt 0 ]]; do
   shift
 done
 
-raw() { gh api -H "Accept: application/vnd.github.raw" "repos/$owner/$1/contents/$2" 2>/dev/null; }
+raw() { gh api -H "Accept: application/vnd.github.raw" "repos/$1/contents/$2" 2>/dev/null; }
 
 # version_lt A B: true when A sorts strictly before B.
 version_lt() {
@@ -107,7 +108,7 @@ set_floor() {
 has_dep() { grep -qP "^\s*\"$1(\[[^\]]*\])?\s*([<>=~!;,][^\"]*)?\",?\s*(#.*)?$"; }
 
 # --- tools and their latest versions -----------------------------------------
-mapfile -t tools < <(raw aesop content/tools.yaml \
+mapfile -t tools < <(raw "$owner/aesop" content/tools.yaml \
   | grep -oP 'pypi\.org/project/\K[^/\s"]+' | sort -u)
 [[ ${#tools[@]} -gt 0 ]] || { echo "no tools found in $owner/aesop content/tools.yaml" >&2; exit 1; }
 if [[ ${#only_tools[@]} -gt 0 ]]; then
@@ -124,10 +125,17 @@ for t in "${tools[@]}"; do
   echo "TOOL        $t ${latest[$t]}"
 done
 
+# Repos are owner/name from here on. Default: the owner's repos plus
+# extra-repos.txt (repos in other orgs, e.g. changelog-chronicles/changelog).
 if [[ ${#repos[@]} -eq 0 ]]; then
   mapfile -t repos < <(gh repo list "$owner" --no-archived --source --limit 1000 \
-    --json name --jq '.[].name' | sort)
+    --json nameWithOwner --jq '.[].nameWithOwner' | sort)
+  extra="$(dirname "${BASH_SOURCE[0]}")/../extra-repos.txt"
+  [[ -f "$extra" ]] && mapfile -t -O "${#repos[@]}" repos < <(grep -Ev '^\s*(#|$)' "$extra")
 fi
+for i in "${!repos[@]}"; do
+  [[ "${repos[$i]}" == */* ]] || repos[i]="$owner/${repos[$i]}"
+done
 
 work="$(mktemp -d)"
 trap 'rm -rf "$work"' EXIT
@@ -162,23 +170,23 @@ for r in "${repos[@]}"; do
   [[ ${#stale[@]} -gt 0 ]] || continue
   summary="$(IFS=,; echo "${notes[*]}" | sed 's/,/, /g')"
 
-  open_pr="$(gh pr list -R "$owner/$r" --state open --json number,headRefName \
+  open_pr="$(gh pr list -R "$r" --state open --json number,headRefName \
     --jq '[.[] | select(.headRefName | startswith("tool-bump/"))][0].number // empty')"
   if [[ -n "$open_pr" ]]; then
-    echo "PENDING     $owner/$r #$open_pr (open tool-bump PR; $summary)"
+    echo "PENDING     $r #$open_pr (open tool-bump PR; $summary)"
     queue+=("$r $open_pr false")
     continue
   fi
 
   if $dry_run; then
-    echo "WOULD-BUMP  $owner/$r: $summary"
+    echo "WOULD-BUMP  $r: $summary"
     continue
   fi
 
-  dir="$work/$r"
-  log="$log_dir/bump-$stamp-$r.log"
-  if ! gh repo clone "$owner/$r" "$dir" -- -q --depth 1 >"$log" 2>&1; then
-    echo "FAIL        $owner/$r clone failed ($log)"; continue
+  dir="$work/${r##*/}"
+  log="$log_dir/bump-$stamp-${r##*/}.log"
+  if ! gh repo clone "$r" "$dir" -- -q --depth 1 >"$log" 2>&1; then
+    echo "FAIL        $r clone failed ($log)"; continue
   fi
 
   upgrade_args=()
@@ -191,7 +199,7 @@ for r in "${repos[@]}"; do
   if git -C "$dir" ls-files --error-unmatch uv.lock >/dev/null 2>&1; then
     files+=(uv.lock)
     if ! (cd "$dir" && env -u VIRTUAL_ENV uv lock "${upgrade_args[@]}") >>"$log" 2>&1; then
-      echo "STUCK       $owner/$r uv lock failed ($log)"; stuck=$((stuck+1)); continue
+      echo "STUCK       $r uv lock failed ($log)"; stuck=$((stuck+1)); continue
     fi
     behind=()
     for t in "${stale[@]}"; do
@@ -199,13 +207,13 @@ for r in "${repos[@]}"; do
       [[ "$got" == "${latest[$t]}" ]] || behind+=("$t=$got")
     done
     if [[ ${#behind[@]} -gt 0 ]]; then
-      echo "STUCK       $owner/$r lock did not reach latest: ${behind[*]} (pin or exclude-newer?)"
+      echo "STUCK       $r lock did not reach latest: ${behind[*]} (pin or exclude-newer?)"
       stuck=$((stuck+1)); continue
     fi
   fi
 
   if git -C "$dir" diff --quiet -- "${files[@]}"; then
-    echo "NOOP        $owner/$r nothing changed ($summary)"; continue
+    echo "NOOP        $r nothing changed ($summary)"; continue
   fi
 
   tested=false
@@ -218,9 +226,9 @@ for r in "${repos[@]}"; do
       test_cmd=()
     fi
     if [[ ${#test_cmd[@]} -gt 0 ]]; then
-      echo "TEST        $owner/$r: ${test_cmd[*]}"
+      echo "TEST        $r: ${test_cmd[*]}"
       if ! (cd "$dir" && env -u VIRTUAL_ENV "${test_cmd[@]}") >>"$log" 2>&1; then
-        echo "TEST-FAIL   $owner/$r ($summary) -> $log"
+        echo "TEST-FAIL   $r ($summary) -> $log"
         test_failed=$((test_failed+1)); continue
       fi
       tested=true
@@ -239,14 +247,14 @@ for r in "${repos[@]}"; do
         && git checkout -q -b "$branch" \
         && git commit -q -m "$title" -- "${files[@]}" \
         && git push -q --force origin "$branch") >>"$log" 2>&1 \
-     && url="$(gh pr create -R "$owner/$r" --head "$branch" \
+     && url="$(gh pr create -R "$r" --head "$branch" \
                  --title "$title" --body "$body" 2>>"$log")"; then
     n="${url##*/}"
-    echo "PR          $owner/$r #$n: $summary"
+    echo "PR          $r #$n: $summary"
     bumped=$((bumped+1))
     queue+=("$r $n $tested")
   else
-    echo "FAIL        $owner/$r push/PR failed ($log)"
+    echo "FAIL        $r push/PR failed ($log)"
   fi
   rm -rf "$dir"
 done
@@ -257,7 +265,7 @@ done
 has_checks() {
   local i count
   for i in 1 2 3 4 5 6; do
-    count="$(gh pr view -R "$owner/$1" "$2" --json statusCheckRollup --jq '.statusCheckRollup | length')"
+    count="$(gh pr view -R "$1" "$2" --json statusCheckRollup --jq '.statusCheckRollup | length')"
     [[ "$count" -gt 0 ]] && return 0
     sleep 10
   done
@@ -268,17 +276,17 @@ if $do_merge && ! $dry_run; then
   for item in "${queue[@]}"; do
     read -r r n tested <<<"$item"
     if has_checks "$r" "$n"; then
-      if ! gh pr checks -R "$owner/$r" "$n" --watch --fail-fast --interval 15 >/dev/null 2>&1; then
-        echo "CI-FAIL     $owner/$r #$n (left open)"; left_open=$((left_open+1)); continue
+      if ! gh pr checks -R "$r" "$n" --watch --fail-fast --interval 15 >/dev/null 2>&1; then
+        echo "CI-FAIL     $r #$n (left open)"; left_open=$((left_open+1)); continue
       fi
     elif [[ "$tested" != true ]]; then
-      echo "UNTESTED    $owner/$r #$n (no PR CI, no local test run; left open)"
+      echo "UNTESTED    $r #$n (no PR CI, no local test run; left open)"
       left_open=$((left_open+1)); continue
     fi
-    if err="$(gh pr merge -R "$owner/$r" "$n" --squash --delete-branch 2>&1)"; then
-      echo "MERGED      $owner/$r #$n"; merged=$((merged+1)); merged_repos+=("$r")
+    if err="$(gh pr merge -R "$r" "$n" --squash --delete-branch 2>&1)"; then
+      echo "MERGED      $r #$n"; merged=$((merged+1)); merged_repos+=("$r")
     else
-      echo "FAIL        $owner/$r #$n merge -> $(tr -d '\n' <<<"$err")"; left_open=$((left_open+1))
+      echo "FAIL        $r #$n merge -> $(tr -d '\n' <<<"$err")"; left_open=$((left_open+1))
     fi
   done
 elif ! $dry_run; then
