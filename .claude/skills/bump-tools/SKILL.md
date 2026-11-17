@@ -54,10 +54,21 @@ tool versions.
 
 Judgment (a subagent, if many) is only for `TEST-FAIL` / `CI-FAIL`.
 
+## Order
+
+Tools are independent except `gerenuk → ty-find` (a `[project]` `>=` floor);
+everything else is a dev-dep leaf. Order matters only when a ty-find release
+breaks gerenuk: ty-find release → gerenuk fix + release → roll out both.
+
 ## Notes
 
 - Just-published release not picked up: PyPI's JSON API or uv's index cache can
-  lag a minute; re-run.
+  lag a minute; `uv cache clean <tool>`, re-run.
+- `STUCK` from `exclude-newer-package = { <tool> = "<date>" }` (e.g. parlint):
+  move that tool's date past the release.
+- `uv lock failed` with `Distribution not found at: file:///tmp/.../<sibling>`:
+  the repo has a `path = "../<sibling>"` dep (bookmaker → comicforge, cecil →
+  cutvid/imgen). Bump by hand with the siblings cloned next to it.
 - Local clones under `~/git` are not touched; `logs/bump-<stamp>.log` lists the
   repos to pull (`gh-monitor sync <owner>`).
 - Only root `pyproject.toml` is read; uv-workspace member floors are not bumped.
