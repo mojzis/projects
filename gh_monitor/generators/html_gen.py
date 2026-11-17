@@ -20,7 +20,7 @@ def generate_html_report(report: MonitorReport, output_path: Path) -> None:
     release_warnings = sum(1 for r in report.repositories if r.has_untagged_release_commits)
 
     html = template.render(
-        timestamp=report.generated_at.strftime("%Y-%m-%d %H:%M:%S"),
+        timestamp=report.generated_at.strftime("%Y-%m-%d %H:%M:%S %Z"),
         scan_days=report.scan_period_days,
         total_repos=report.total_repositories,
         total_prs=report.total_open_prs,

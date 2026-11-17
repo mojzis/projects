@@ -155,6 +155,7 @@ class TestMarkdownGenerator:
             # Check report header
             assert "GitHub Project Monitor Report" in content, "title missing"
             assert "Last 30 days" in content, "scan period missing"
+            assert "2025-01-15 14:00:00 UTC" in content, "timestamp timezone missing"
 
             # Check repository info
             assert "test-repo" in content, "repo name missing"
@@ -265,6 +266,7 @@ class TestHTMLGenerator:
             assert "<html" in content, "html open tag missing"
             assert "</html>" in content, "html close tag missing"
             assert "GitHub Project Monitor Report" in content, "title missing"
+            assert "2025-01-15 14:00:00 UTC" in content, "timestamp timezone missing"
 
             # Check repository info
             assert "test-owner/test-repo" in content, "repo full name missing"

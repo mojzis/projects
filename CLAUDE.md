@@ -325,6 +325,18 @@ gh api repos/OWNER/REPO/tags --paginate
 gh api "repos/OWNER/REPO/commits?sha=main&per_page=100"
 ```
 
+## Refresh the projects page after finishing work
+
+Whenever a piece of work started from this repo is finished (releases, Dependabot merges,
+tool bumps, CI fixes, code changes here, …), refresh https://mojzis.github.io/projects/:
+
+```bash
+gh workflow run monitor.yml --repo mojzis/projects
+```
+
+Do it once, as the last step, after all PRs are merged/tags pushed — not per repo. A push to
+`main` here also triggers it, so skip the manual run if the last step was such a push.
+
 ## Repos to ignore
 
 - **sketchpy** — ignore in all cross-repo work (Dependabot merges, releases, CI
