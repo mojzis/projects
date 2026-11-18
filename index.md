@@ -1,6 +1,62 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-17 22:15:25 UTC | **Period:** Last 90 days | **Repos:** 35 | **Open PRs:** 13 | **Open issues:** 6
+**Generated:** 2026-11-18 14:47:30 UTC | **Period:** Last 90 days | **Repos:** 35 | **Open PRs:** 13 | **Open issues:** 7
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `8f16af9e` Release v0.1.6 (mojzis, 2026-11-17 23:14:19+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [orch](https://github.com/mojzis/orch)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/orch/)
+
+
+**Last commit:** `6fb13a2e` Bump biston to 0.7.7, dermestes to 0.1.4, gerenuk to 0.5.7, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#7) (Mojzis, 2026-11-17 21:36:55+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#8](https://github.com/mojzis/orch/pull/8)
+
+
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `f9618448` Bump ty-find to 0.5.5 (#38) (Mojzis, 2026-11-17 21:49:48+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
 
 ---
 
@@ -42,28 +98,6 @@ HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/model-comparison/)
 ---
 
 
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `f9618448` Bump ty-find to 0.5.5 (#38) (Mojzis, 2026-11-17 21:49:48+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
-
-**Orphan branches (1):** `claude/youthful-cerf-aha79n`
-
-
----
-
-
 ## [braindump](https://github.com/mojzis/braindump)
 
 Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
@@ -74,26 +108,6 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
 **CI: FAIL** (CI)
-
-
-
-
----
-
-
-## [orch](https://github.com/mojzis/orch)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/orch/)
-
-
-**Last commit:** `6fb13a2e` Bump biston to 0.7.7, dermestes to 0.1.4, gerenuk to 0.5.7, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#7) (Mojzis, 2026-11-17 21:36:55+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/orch/pull/8)
 
 
 
@@ -218,25 +232,6 @@ Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 ---
 
 
-## [imgen](https://github.com/mojzis/imgen)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `99847abf` Bump biston to 0.7.7, gerenuk to 0.5.7, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#14) (Mojzis, 2026-11-17 21:04:42+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-
-
----
-
-
 ## [happytube](https://github.com/mojzis/happytube)
 
 Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
@@ -339,7 +334,7 @@ Python | ★0 | 0 issues
 
 
 
-**CI:** PASS
+**CI:** UNKNOWN
 
 
 
@@ -386,7 +381,7 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 ## [ty-find](https://github.com/mojzis/ty-find)
 
-Rust | ★3 | 2 issues | [Pages](https://mojzis.github.io/ty-find/)
+Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Last commit:** `27a61b1d` Release v0.5.5 (mojzis, 2026-11-17 08:21:25+00:00)
@@ -400,10 +395,11 @@ Rust | ★3 | 2 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 
-**Open issues (2):**
+**Open issues (3):**
 
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (152d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (152d)
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (0d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (153d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (153d)
 
 
 
@@ -429,8 +425,8 @@ Rust | ★0 | 2 issues
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (65d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (65d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (66d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (66d)
 
 
 
@@ -453,7 +449,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (139d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (140d)
 
 
 
@@ -682,7 +678,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (140d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (141d)
 
 
 
