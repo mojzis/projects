@@ -1,6 +1,62 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-18 14:47:30 UTC | **Period:** Last 90 days | **Repos:** 35 | **Open PRs:** 13 | **Open issues:** 7
+**Generated:** 2026-11-19 14:54:42 UTC | **Period:** Last 90 days | **Repos:** 36 | **Open PRs:** 13 | **Open issues:** 8
+
+---
+
+
+## [deedum](https://github.com/mojzis/deedum)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `79a73e8e` deedum, first cut (#1) (Mojzis, 2026-11-19 10:32:57+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `86af356a` Add a 'How it works' docs page covering the run and the four checks (#16) (Mojzis, 2026-11-18 16:08:59+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+
+**Orphan branches (1):** `claude/nifty-fermat-pg64gg`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `096eb37a` Report timestamp shows timezone; rule: refresh projects page after finished work (#36) (Mojzis, 2026-11-17 22:12:27+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
 
 ---
 
@@ -24,7 +80,7 @@ Python | ★0 | 0 issues
 
 ## [orch](https://github.com/mojzis/orch)
 
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/orch/)
+Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 
 
 **Last commit:** `6fb13a2e` Bump biston to 0.7.7, dermestes to 0.1.4, gerenuk to 0.5.7, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#7) (Mojzis, 2026-11-17 21:36:55+00:00)
@@ -35,6 +91,12 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/orch/)
 
 
 **Open PRs (1):** [#8](https://github.com/mojzis/orch/pull/8)
+
+
+
+**Open issues (1):**
+
+- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (0d)
 
 
 
@@ -54,23 +116,6 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 
 
 **CI:** PASS
-
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `096eb37a` Report timestamp shows timezone; rule: refresh projects page after finished work (#36) (Mojzis, 2026-11-17 22:12:27+00:00)
-
-
-
-**CI:** UNKNOWN
 
 
 
@@ -359,26 +404,6 @@ Rust | ★0 | 0 issues
 ---
 
 
-## [dermestes](https://github.com/mojzis/dermestes)
-
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `d5b1bc96` Release v0.1.4 (mojzis, 2026-11-17 08:21:34+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
-**Orphan branches (1):** `claude/nifty-fermat-pg64gg`
-
-
----
-
-
 ## [ty-find](https://github.com/mojzis/ty-find)
 
 Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
@@ -397,9 +422,9 @@ Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (3):**
 
-- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (0d)
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (153d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (153d)
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (1d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (154d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (154d)
 
 
 
@@ -425,8 +450,8 @@ Rust | ★0 | 2 issues
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (66d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (66d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (67d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (67d)
 
 
 
@@ -449,7 +474,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (140d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (141d)
 
 
 
@@ -678,7 +703,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (141d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (142d)
 
 
 
