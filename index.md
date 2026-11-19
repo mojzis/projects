@@ -1,16 +1,73 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-19 14:54:42 UTC | **Period:** Last 90 days | **Repos:** 36 | **Open PRs:** 13 | **Open issues:** 8
+**Generated:** 2026-11-19 21:45:22 UTC | **Period:** Last 90 days | **Repos:** 36 | **Open PRs:** 14 | **Open issues:** 8
 
 ---
 
 
-## [deedum](https://github.com/mojzis/deedum)
+## [comicforge](https://github.com/mojzis/comicforge)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
+
+
+**Last commit:** `ac3bd0fe` Release v0.2.9 (mojzis, 2026-11-19 21:39:13+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `7371bf58` Release v0.3.9 (mojzis, 2026-11-19 21:39:06+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+
+**Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`, `wip/exe-vm-2026-11-15`
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
 
 Python | ★0 | 0 issues
 
 
-**Last commit:** `79a73e8e` deedum, first cut (#1) (Mojzis, 2026-11-19 10:32:57+00:00)
+**Last commit:** `ac5b4db7` Release v0.1.11 (mojzis, 2026-11-19 21:38:59+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `facfc5b0` Release v0.5.8 (mojzis, 2026-11-19 21:38:53+00:00)
 
 
 
@@ -27,10 +84,8 @@ Python | ★0 | 0 issues
 Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 
 
-**Last commit:** `86af356a` Add a 'How it works' docs page covering the run and the four checks (#16) (Mojzis, 2026-11-18 16:08:59+00:00)
+**Last commit:** `771e6341` Release v0.1.5 (mojzis, 2026-11-19 21:38:42+00:00)
 
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
@@ -44,29 +99,12 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 ---
 
 
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `096eb37a` Report timestamp shows timezone; rule: refresh projects page after finished work (#36) (Mojzis, 2026-11-17 22:12:27+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-
----
-
-
-## [imgen](https://github.com/mojzis/imgen)
+## [lepisma](https://github.com/mojzis/lepisma)
 
 Python | ★0 | 0 issues
 
 
-**Last commit:** `8f16af9e` Release v0.1.6 (mojzis, 2026-11-17 23:14:19+00:00)
+**Last commit:** `8e04c140` Release v0.1.7 (mojzis, 2026-11-19 21:38:31+00:00)
 
 
 
@@ -90,7 +128,7 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 **CI:** PASS
 
 
-**Open PRs (1):** [#8](https://github.com/mojzis/orch/pull/8)
+**Open PRs (2):** [#10](https://github.com/mojzis/orch/pull/10), [#8](https://github.com/mojzis/orch/pull/8)
 
 
 
@@ -104,15 +142,47 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 ---
 
 
-## [gerenuk](https://github.com/mojzis/gerenuk)
+## [projects](https://github.com/mojzis/projects)
 
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `f9618448` Bump ty-find to 0.5.5 (#38) (Mojzis, 2026-11-17 21:49:48+00:00)
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
+**Last commit:** `096eb37a` Report timestamp shows timezone; rule: refresh projects page after finished work (#36) (Mojzis, 2026-11-17 22:12:27+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
+
+---
+
+
+## [deedum](https://github.com/mojzis/deedum)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `79a73e8e` deedum, first cut (#1) (Mojzis, 2026-11-19 10:32:57+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [imgen](https://github.com/mojzis/imgen)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `8f16af9e` Release v0.1.6 (mojzis, 2026-11-17 23:14:19+00:00)
+
 
 
 **CI:** PASS
@@ -153,25 +223,6 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 
 **CI: FAIL** (CI)
-
-
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `81c92a18` Bump biston to 0.7.7, gerenuk to 0.5.7, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#13) (Mojzis, 2026-11-17 21:37:28+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
 
 
 
@@ -233,50 +284,6 @@ Python | ★0 | 0 issues
 ---
 
 
-## [lepisma](https://github.com/mojzis/lepisma)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `ebd336cb` Bump biston to 0.7.7, dermestes to 0.1.4, gerenuk to 0.5.7, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#15) (Mojzis, 2026-11-17 21:36:42+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `85c0cdfb` Bump biston to 0.7.7, gerenuk to 0.5.7, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#117) (Mojzis, 2026-11-17 21:36:25+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-
-**Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`, `wip/exe-vm-2026-11-15`
-
-
----
-
-
 ## [happytube](https://github.com/mojzis/happytube)
 
 Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
@@ -295,25 +302,6 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/happytube/)
 
 
 **Orphan branches (1):** `claude/create-plans-directory-011CUxT5BqRSHhhftYNsbD1y`
-
-
----
-
-
-## [comicforge](https://github.com/mojzis/comicforge)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/comicforge/)
-
-
-**Last commit:** `2e500d77` Bump biston to 0.7.7, gerenuk to 0.5.7, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#22) (Mojzis, 2026-11-17 21:02:07+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
 
 
 ---
