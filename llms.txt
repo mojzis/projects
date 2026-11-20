@@ -1,17 +1,36 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-20 13:13:20 UTC | **Period:** Last 90 days | **Repos:** 36 | **Open PRs:** 14 | **Open issues:** 8
+**Generated:** 2026-11-20 14:35:03 UTC | **Period:** Last 90 days | **Repos:** 36 | **Open PRs:** 14 | **Open issues:** 8
+
+---
+
+
+## [aesop](https://github.com/mojzis/aesop)
+
+CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+
+
+**Last commit:** `2e617607` Link pycoati's new docs site (#7) (Mojzis, 2026-11-20 13:57:26+00:00)
+
+
+
+**CI:** PASS
+
+
+
 
 ---
 
 
 ## [pycoati](https://github.com/mojzis/pycoati)
 
-Rust | ★0 | 0 issues
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/pycoati/)
 
 
-**Last commit:** `67031677` Release v0.2.16 (mojzis, 2026-11-20 13:10:03+00:00)
+**Last commit:** `da1571df` Docs site: mdBook on GitHub Pages, in the aesop theme (#39) (Mojzis, 2026-11-20 13:57:17+00:00)
 
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
@@ -347,23 +366,6 @@ Python | ★0 | 0 issues
 
 
 **Last commit:** `9e117822` Bump biston to 0.7.7, gerenuk to 0.5.7, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#4) (Mojzis, 2026-11-17 20:59:45+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [aesop](https://github.com/mojzis/aesop)
-
-CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
-
-
-**Last commit:** `1c2917c3` Bump biston to 0.7.7, gerenuk to 0.5.7, introspy to 0.3.8, madoqua to 0.2.12, ty-find to 0.5.5, zorilla to 0.2.6 (#6) (Mojzis, 2026-11-17 20:56:19+00:00)
 
 
 
