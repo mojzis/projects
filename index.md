@@ -1,6 +1,40 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-19 21:45:22 UTC | **Period:** Last 90 days | **Repos:** 36 | **Open PRs:** 14 | **Open issues:** 8
+**Generated:** 2026-11-20 13:13:20 UTC | **Period:** Last 90 days | **Repos:** 36 | **Open PRs:** 14 | **Open issues:** 8
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+Rust | ★0 | 0 issues
+
+
+**Last commit:** `67031677` Release v0.2.16 (mojzis, 2026-11-20 13:10:03+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `096eb37a` Report timestamp shows timezone; rule: refresh projects page after finished work (#36) (Mojzis, 2026-11-17 22:12:27+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
 
 ---
 
@@ -134,24 +168,7 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 
 **Open issues (1):**
 
-- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (0d)
-
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `096eb37a` Report timestamp shows timezone; rule: refresh projects page after finished work (#36) (Mojzis, 2026-11-17 22:12:27+00:00)
-
-
-
-**CI:** UNKNOWN
+- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (1d)
 
 
 
@@ -375,23 +392,6 @@ Python | ★0 | 0 issues
 ---
 
 
-## [pycoati](https://github.com/mojzis/pycoati)
-
-Rust | ★0 | 0 issues
-
-
-**Last commit:** `5b7544f8` Release v0.2.15 (mojzis, 2026-11-17 18:42:52+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
 ## [ty-find](https://github.com/mojzis/ty-find)
 
 Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
@@ -410,9 +410,9 @@ Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (3):**
 
-- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (1d)
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (154d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (154d)
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (2d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (155d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (155d)
 
 
 
@@ -438,8 +438,8 @@ Rust | ★0 | 2 issues
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (67d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (67d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (68d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (68d)
 
 
 
@@ -462,7 +462,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (141d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (142d)
 
 
 
@@ -691,7 +691,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (142d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (143d)
 
 
 
