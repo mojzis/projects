@@ -401,6 +401,8 @@ def _print_release_report(report: ReleaseReport, dry_run: bool) -> None:
 
     if not any(results for results, *_ in sections):
         console.print("[dim]No repositories with untagged release commits found.[/dim]")
+    if report.site_rebuild:
+        console.print(f"[dim]Site: {report.site_rebuild}[/dim]")
 
 
 @app.command()

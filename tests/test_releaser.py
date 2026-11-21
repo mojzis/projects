@@ -9,7 +9,7 @@ from gh_monitor.models import (
     ReleaseReport,
     ReleaseResult,
 )
-from gh_monitor.releaser import GitReleaser
+from gh_monitor.releaser import RELNOTES, SITE_REPO, SITE_WORKFLOW, GitReleaser
 
 CARGO_TOML = '[package]\nname = "demo"\nversion = "{v}"\n'
 PYPROJECT_TOML = '[project]\nname = "demo"\nversion = "{v}"\n'
@@ -357,3 +357,85 @@ class TestReleaseAll:
         with patch.object(releaser, "find_candidates", return_value=[]):
             report = releaser.release_all()
         assert report.released == [] and report.skipped == []
+
+
+class TestReleaseNotes:
+    """relnotes check before the bump, aesop deploy after a release."""
+
+    def _clone_with_notes(self, version: str):
+        base = _clone_writes_manifest("pyproject.toml", version)
+
+        def side_effect(args, cwd=None):
+            base(args, cwd)
+            if args[0] == "clone":
+                (Path(args[2]) / "release-notes").mkdir()
+            return True, ""
+
+        return side_effect
+
+    def test_malformed_notes_skip_the_repo_before_bumping(self):
+        releaser = GitReleaser("owner", assume_yes=True)
+        ran = []
+
+        def run(args, cwd):
+            ran.append(args)
+            return False, "release-notes/x.md: name must be ..."
+
+        with (
+            patch.object(releaser, "_run_git", side_effect=self._clone_with_notes("0.1.0")),
+            patch.object(releaser, "_run", side_effect=run),
+            patch("gh_monitor.releaser.shutil.which", side_effect=_installed("uv")),
+        ):
+            result = releaser._release_repo("demo", "url")
+
+        assert result.action == ReleaseAction.SKIPPED_ERROR
+        assert result.message.startswith("Malformed release notes: release-notes/x.md")
+        assert ran == [[*RELNOTES, "check"]]  # no bump attempted
+
+    def test_repo_without_notes_dir_skips_the_check(self):
+        releaser = GitReleaser("owner", dry_run=True)
+        ran = []
+
+        def run(args, cwd):
+            ran.append(args)
+            (Path(cwd) / "pyproject.toml").write_text(PYPROJECT_TOML.format(v="0.1.1"))
+            return True, ""
+
+        with (
+            patch.object(
+                releaser, "_run_git", side_effect=_clone_writes_manifest("pyproject.toml", "0.1.0")
+            ),
+            patch.object(releaser, "_run", side_effect=run),
+            patch("gh_monitor.releaser.shutil.which", side_effect=_installed("uv")),
+        ):
+            result = releaser._release_repo("demo", "url")
+
+        assert result.action == ReleaseAction.PLANNED
+        assert ran == [["uv", "version", "--bump", "patch"]]
+
+    def test_site_rebuild_triggered_only_when_something_released(self):
+        releaser = GitReleaser("owner")
+        outcomes = iter([ReleaseAction.RELEASED, ReleaseAction.SKIPPED_ERROR])
+        with (
+            patch.object(releaser, "find_candidates", return_value=[{"name": "a", "url": "u"}]),
+            patch.object(
+                releaser,
+                "_release_repo",
+                side_effect=lambda name, url: ReleaseResult(name, next(outcomes), "m"),
+            ),
+            patch.object(releaser, "_run", return_value=(True, "")) as run,
+        ):
+            released = releaser.release_all()
+            skipped = releaser.release_all()
+
+        run.assert_called_once()
+        assert run.call_args.args[0] == [
+            "gh", "workflow", "run", SITE_WORKFLOW, "--repo", f"owner/{SITE_REPO}"
+        ]  # fmt: skip
+        assert released.site_rebuild == f"Triggered owner/{SITE_REPO} {SITE_WORKFLOW}"
+        assert skipped.site_rebuild is None
+
+    def test_failed_site_rebuild_is_reported_not_raised(self):
+        releaser = GitReleaser("owner")
+        with patch.object(releaser, "_run", return_value=(False, "HTTP 404")):
+            assert releaser.trigger_site_rebuild().endswith("HTTP 404")

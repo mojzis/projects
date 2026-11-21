@@ -18,6 +18,13 @@ and untagged commits on ``main``) this:
 4. Commits the bump, tags ``vX.Y.Z`` and pushes, which triggers the release
    workflow (it runs on tag push).
 
+Release notes (relnotes, https://github.com/mojzis/relnotes): a repo with a
+``release-notes/`` directory has its notes validated with ``relnotes check``
+before the bump; a malformed note skips the repo, since the release workflow
+builds the GitHub release body from them. After a run that released anything,
+the aesop site's deploy workflow is triggered so its news section picks up the
+new notes.
+
 Nothing is written when ``dry_run`` is set: the bump is computed in the temp
 clone to preview the exact new version, then discarded.
 """
@@ -40,6 +47,14 @@ _MANIFESTS: dict[ProjectType, str] = {
 
 # Make cargo-release edit files without prompting (it is a dry run otherwise).
 _CARGO_RELEASE_FLAGS = ["--execute", "--no-confirm"]
+
+# relnotes validates the release-notes/ files; it is not on PyPI, so run it from GitHub.
+RELNOTES = ["uvx", "--from", "git+https://github.com/mojzis/relnotes", "relnotes"]
+NOTES_DIR = "release-notes"
+
+# The site that shows every tool's release notes; its deploy workflow pulls them.
+SITE_REPO = "aesop"
+SITE_WORKFLOW = "deploy.yml"
 
 
 def _missing_tool(project_type: ProjectType, repo_path: Path) -> str:
@@ -211,6 +226,16 @@ class GitReleaser:
                     message="No Cargo.toml or pyproject.toml found",
                 )
 
+            if (repo_path / NOTES_DIR).is_dir():
+                ok, out = self._run([*RELNOTES, "check"], cwd=repo_path)
+                if not ok:
+                    return ReleaseResult(
+                        repo_name=repo_name,
+                        action=ReleaseAction.SKIPPED_ERROR,
+                        message=f"Malformed release notes: {out}",
+                        project_type=project_type,
+                    )
+
             bump_cmds = self._resolve_bump_cmds(project_type, repo_path)
             if bump_cmds is None:
                 return ReleaseResult(
@@ -348,4 +373,20 @@ class GitReleaser:
             if progress_callback:
                 progress_callback(int((i + 1) / total * 100))
 
+        if report.released:
+            report.site_rebuild = self.trigger_site_rebuild()
         return report
+
+    def trigger_site_rebuild(self) -> str:
+        """Start the aesop deploy so its news shows the new releases' notes.
+
+        The tags are already pushed, so the site's pull sees them even while
+        the tools' release workflows are still building.
+        """
+        site = f"{self.owner}/{SITE_REPO}"
+        ok, out = self._run(
+            ["gh", "workflow", "run", SITE_WORKFLOW, "--repo", site], cwd=Path.cwd()
+        )
+        if ok:
+            return f"Triggered {site} {SITE_WORKFLOW}"
+        return f"Could not trigger {site} {SITE_WORKFLOW}: {out}"
