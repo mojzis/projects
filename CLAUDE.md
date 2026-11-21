@@ -187,6 +187,12 @@ repos are skipped** (`isTemplate`) — e.g. `rust-template` ships a `release.yml
 projects created from it inherit one. For each candidate `GitReleaser`:
 
 - Clones the repo into a throwaway temp dir (no dependency on `~/git` clones).
+- If the repo has `release-notes/`, runs `relnotes check` (`RELNOTES` in `releaser.py`,
+  [relnotes](https://github.com/mojzis/relnotes)) first; a malformed note skips the repo
+  (`SKIPPED_ERROR`), because the release workflow builds the GitHub release body from
+  the notes. After a run that released anything, `gh workflow run deploy.yml --repo
+  <owner>/aesop` rebuilds the aesop site so its news shows the new notes
+  (`ReleaseReport.site_rebuild`, printed as "Site: …").
 - Detects the project type — **`Cargo.toml` takes precedence over
   `pyproject.toml`** (some Rust repos ship a `pyproject.toml` too).
 - Reads the current/new version from the manifest, handling Cargo **workspaces**:

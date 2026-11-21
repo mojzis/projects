@@ -290,6 +290,7 @@ class ReleaseReport:
     planned: list[ReleaseResult] = field(default_factory=list)
     skipped: list[ReleaseResult] = field(default_factory=list)
     cancelled: list[ReleaseResult] = field(default_factory=list)
+    site_rebuild: str | None = None  # outcome of triggering the aesop deploy
 
     def add_result(self, result: ReleaseResult) -> None:
         """Add a release result to the appropriate list."""
