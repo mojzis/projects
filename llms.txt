@@ -1,6 +1,23 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-20 14:35:03 UTC | **Period:** Last 90 days | **Repos:** 36 | **Open PRs:** 14 | **Open issues:** 8
+**Generated:** 2026-11-21 13:54:00 UTC | **Period:** Last 90 days | **Repos:** 36 | **Open PRs:** 16 | **Open issues:** 8
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `654c9903` review mikulas-lode-kterym-nic-nechybelo 38c61ce (mojzis, 2026-11-21 11:52:43+00:00)
+
+
+
+**CI:** PASS
+
+
+
 
 ---
 
@@ -15,6 +32,53 @@ CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 
 
 **CI:** PASS
+
+
+**Open PRs (1):** [#8](https://github.com/mojzis/aesop/pull/8)
+
+
+
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/zorilla/)
+
+
+**Last commit:** `bf3b8558` Release v0.2.6 (mojzis, 2026-11-17 08:21:16+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#48](https://github.com/mojzis/zorilla/pull/48)
+
+
+
+**Open issues (2):**
+
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (69d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (69d)
+
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `096eb37a` Report timestamp shows timezone; rule: refresh projects page after finished work (#36) (Mojzis, 2026-11-17 22:12:27+00:00)
+
+
+
+**CI:** UNKNOWN
 
 
 
@@ -34,23 +98,6 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/pycoati/)
 
 
 **CI:** PASS
-
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `096eb37a` Report timestamp shows timezone; rule: refresh projects page after finished work (#36) (Mojzis, 2026-11-17 22:12:27+00:00)
-
-
-
-**CI:** UNKNOWN
 
 
 
@@ -187,7 +234,7 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 
 **Open issues (1):**
 
-- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (1d)
+- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (2d)
 
 
 
@@ -412,38 +459,14 @@ Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (3):**
 
-- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (2d)
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (155d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (155d)
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (3d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (156d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (156d)
 
 
 
 
 **Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
-
-
----
-
-
-## [zorilla](https://github.com/mojzis/zorilla)
-
-Rust | ★0 | 2 issues
-
-
-**Last commit:** `bf3b8558` Release v0.2.6 (mojzis, 2026-11-17 08:21:16+00:00)
-
-
-
-**CI:** PASS
-
-
-
-**Open issues (2):**
-
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (68d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (68d)
-
-
 
 
 ---
@@ -464,7 +487,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (142d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (143d)
 
 
 
@@ -515,23 +538,6 @@ JavaScript | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 **Last commit:** `16b8cd72` Bump the minor-and-patch group with 4 updates (#16) (dependabot[bot], 2026-11-17 08:16:05+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `6f3d324b` review mikulas-lode-kterym-nic-nechybelo d1abbc4-dirty (mojzis, 2026-11-17 07:22:59+00:00)
 
 
 
@@ -693,7 +699,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (143d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (144d)
 
 
 
