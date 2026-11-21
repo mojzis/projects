@@ -48,8 +48,7 @@ _MANIFESTS: dict[ProjectType, str] = {
 # Make cargo-release edit files without prompting (it is a dry run otherwise).
 _CARGO_RELEASE_FLAGS = ["--execute", "--no-confirm"]
 
-# relnotes validates the release-notes/ files. Switch to ["uvx", "relnotes@latest"]
-# once it is on PyPI.
+# relnotes validates the release-notes/ files; it is not on PyPI, so run it from GitHub.
 RELNOTES = ["uvx", "--from", "git+https://github.com/mojzis/relnotes", "relnotes"]
 NOTES_DIR = "release-notes"
 
