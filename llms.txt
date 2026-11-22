@@ -1,28 +1,20 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-21 21:22:34 UTC | **Period:** Last 90 days | **Repos:** 37 | **Open PRs:** 18 | **Open issues:** 8
+**Generated:** 2026-11-22 13:46:27 UTC | **Period:** Last 90 days | **Repos:** 37 | **Open PRs:** 18 | **Open issues:** 8
 
 ---
 
 
-## [biston](https://github.com/mojzis/biston)
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
 
-Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `6f9517ab` Release notes with relnotes (#55) (Mojzis, 2026-11-21 21:20:34+00:00)
+HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
 
 
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** UNKNOWN
+**Last commit:** `6d3fed62` review mikulas-lode-kterym-nic-nechybelo ad66fdf-dirty (mojzis, 2026-11-22 10:02:04+00:00)
 
 
 
-**Open issues (1):**
-
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (143d)
+**CI:** PASS
 
 
 
@@ -30,20 +22,89 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 ---
 
 
-## [madoqua](https://github.com/mojzis/madoqua)
+## [aesop](https://github.com/mojzis/aesop)
 
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 
 
-**Last commit:** `071b6ee3` Release notes with relnotes (#26) (Mojzis, 2026-11-21 21:20:30+00:00)
+**Last commit:** `4d9c9322` Show the tools' release notes: latest 3, per-tool, /news/ with filter, Atom feed (#9) (Mojzis, 2026-11-21 21:20:22+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#10](https://github.com/mojzis/aesop/pull/10), [#8](https://github.com/mojzis/aesop/pull/8)
+
+
+
+
+---
+
+
+## [sketchpy](https://github.com/mojzis/sketchpy)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
+
+
+**Last commit:** `6a43c8d8` Pin setup-uv to v10.3.3 (no floating v10 tag) (mojzis, 2026-10-28 20:24:42+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (7):** [#73](https://github.com/mojzis/sketchpy/pull/73), [#72](https://github.com/mojzis/sketchpy/pull/72), [#71](https://github.com/mojzis/sketchpy/pull/71), [#70](https://github.com/mojzis/sketchpy/pull/70), [#68](https://github.com/mojzis/sketchpy/pull/68), [#67](https://github.com/mojzis/sketchpy/pull/67), [#65](https://github.com/mojzis/sketchpy/pull/65)
+
+
+
+
+**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
+
+
+---
+
+
+## [newsparser](https://github.com/mojzis/newsparser)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/newsparser/)
+
+
+**Last commit:** `a05e9acf` Evaluator: move to Claude Haiku 5.5 / Sonnet 5.5, record actual model (mojzis, 2026-11-21 21:40:29+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+**Orphan branches (1):** `wip/2026-09-19`
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `ced6f0a9` Release notes with relnotes (#118) (Mojzis, 2026-11-21 21:22:38+00:00)
 
 
 > ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+
+**Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`, `wip/exe-vm-2026-11-15`
 
 
 ---
@@ -66,101 +127,18 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 ---
 
 
-## [aesop](https://github.com/mojzis/aesop)
-
-CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
-
-
-**Last commit:** `4d9c9322` Show the tools' release notes: latest 3, per-tool, /news/ with filter, Atom feed (#9) (Mojzis, 2026-11-21 21:20:22+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/aesop/pull/8)
-
-
-
-
----
-
-
-## [newsparser](https://github.com/mojzis/newsparser)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/newsparser/)
-
-
-**Last commit:** `2ba3dc1b` Daily schedule: scripts/daily.sh publishes to gh-pages; fix evaluator JSON fences, optional R2, HN source for mcp, refreshed site design (mojzis, 2026-11-21 21:20:10+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
-**Orphan branches (1):** `wip/2026-09-19`
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `7371bf58` Release v0.3.9 (mojzis, 2026-11-19 21:39:06+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-**Open PRs (3):** [#118](https://github.com/mojzis/introspect/pull/118), [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-
-**Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`, `wip/exe-vm-2026-11-15`
-
-
----
-
-
-## [relnotes](https://github.com/mojzis/relnotes)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `ae2e31a7` CLAUDE.md: no PyPI wording (mojzis, 2026-11-21 21:15:53+00:00)
-
-
-> ⚠️ **Untagged release:** main has 4 commits without a tag.
-
-
-**CI:** PASS
-
-
-
-
----
-
-
 ## [lepisma](https://github.com/mojzis/lepisma)
 
 Python | ★0 | 0 issues
 
 
-**Last commit:** `8e04c140` Release v0.1.7 (mojzis, 2026-11-19 21:38:31+00:00)
+**Last commit:** `bf57598b` Release notes with relnotes (#17) (Mojzis, 2026-11-21 21:21:05+00:00)
 
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
 **CI:** PASS
-
-
-**Open PRs (1):** [#17](https://github.com/mojzis/lepisma/pull/17)
 
 
 
@@ -198,7 +176,7 @@ Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 > ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 **Open PRs (1):** [#143](https://github.com/mojzis/ty-find/pull/143)
@@ -207,9 +185,9 @@ Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (3):**
 
-- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (3d)
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (156d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (156d)
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (4d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (157d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (157d)
 
 
 
@@ -231,7 +209,7 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/pycoati/)
 > ⚠️ **Untagged release:** main has 2 commits without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -250,7 +228,7 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 > ⚠️ **Untagged release:** main has 1 commit without a tag.
 
 
-**CI:** UNKNOWN
+**CI:** PASS
 
 
 
@@ -278,8 +256,8 @@ Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/zorilla/)
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (69d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (69d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (70d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (70d)
 
 
 
@@ -309,13 +287,59 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
 ---
 
 
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+## [biston](https://github.com/mojzis/biston)
 
-HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 
-**Last commit:** `654c9903` review mikulas-lode-kterym-nic-nechybelo 38c61ce (mojzis, 2026-11-21 11:52:43+00:00)
+**Last commit:** `6f9517ab` Release notes with relnotes (#55) (Mojzis, 2026-11-21 21:20:34+00:00)
 
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+**Open issues (1):**
+
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (144d)
+
+
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `071b6ee3` Release notes with relnotes (#26) (Mojzis, 2026-11-21 21:20:30+00:00)
+
+
+> ⚠️ **Untagged release:** main has 1 commit without a tag.
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [relnotes](https://github.com/mojzis/relnotes)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `ae2e31a7` CLAUDE.md: no PyPI wording (mojzis, 2026-11-21 21:15:53+00:00)
+
+
+> ⚠️ **Untagged release:** main has 4 commits without a tag.
 
 
 **CI:** PASS
@@ -378,7 +402,7 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 
 **Open issues (1):**
 
-- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (2d)
+- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (3d)
 
 
 
@@ -622,29 +646,6 @@ JavaScript | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 ---
 
 
-## [sketchpy](https://github.com/mojzis/sketchpy)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
-
-
-**Last commit:** `6a43c8d8` Pin setup-uv to v10.3.3 (no floating v10 tag) (mojzis, 2026-10-28 20:24:42+00:00)
-
-
-
-**CI: FAIL** (Run Tests)
-
-
-**Open PRs (6):** [#72](https://github.com/mojzis/sketchpy/pull/72), [#71](https://github.com/mojzis/sketchpy/pull/71), [#70](https://github.com/mojzis/sketchpy/pull/70), [#68](https://github.com/mojzis/sketchpy/pull/68), [#67](https://github.com/mojzis/sketchpy/pull/67), [#65](https://github.com/mojzis/sketchpy/pull/65)
-
-
-
-
-**Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
 ## [ajina](https://github.com/mojzis/ajina)
 
 HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
@@ -735,7 +736,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (144d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (145d)
 
 
 
