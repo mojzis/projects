@@ -1,6 +1,137 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-23 16:47:46 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 44 | **Open issues:** 8
+**Generated:** 2026-11-24 16:43:34 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 45 | **Open issues:** 8
+
+---
+
+
+## [newsparser](https://github.com/mojzis/newsparser)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/newsparser/)
+
+
+**Last commit:** `a05e9acf` Evaluator: move to Claude Haiku 5.5 / Sonnet 5.5, record actual model (mojzis, 2026-11-21 21:40:29+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+**Orphan branches (1):** `wip/2026-09-19`
+
+
+---
+
+
+## [planes](https://github.com/mojzis/planes)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/planes/)
+
+
+**Last commit:** `5882f6ec` Folding video: the Arrow animated from the fold model (mojzis, 2026-11-23 22:45:54+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [typer-agentic](https://github.com/mojzis/typer-agentic)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `ac5b4db7` Release v0.1.11 (mojzis, 2026-11-19 21:38:59+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#14](https://github.com/mojzis/typer-agentic/pull/14)
+
+
+
+
+---
+
+
+## [aesop](https://github.com/mojzis/aesop)
+
+CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
+
+
+**Last commit:** `468b15b1` Merge pull request #12 from mojzis/claude/stoic-davinci-rjib9s (Mojzis, 2026-11-23 22:20:27+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `979a741f` review mikulas-lode-kterym-nic-nechybelo e61020f (mojzis, 2026-11-23 21:59:49+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [talkshape](https://github.com/mojzis/talkshape)
+
+JavaScript | ★0 | 0 issues
+
+
+**Last commit:** `2b4badf6` Bump the minor-and-patch group in /server with 2 updates (#22) (dependabot[bot], 2026-11-17 08:18:14+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#23](https://github.com/mojzis/talkshape/pull/23)
+
+
+
+
+**Orphan branches (1):** `wip/exe-vm-2026-11-15`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5003a21` release: check release notes before the bump, rebuild aesop after (#37) (Mojzis, 2026-11-21 21:20:26+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
 
 ---
 
@@ -25,8 +156,8 @@ Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/zorilla/)
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (71d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (71d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (72d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (72d)
 
 
 
@@ -74,9 +205,9 @@ Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (3):**
 
-- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (5d)
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (158d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (158d)
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (6d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (159d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (159d)
 
 
 
@@ -194,7 +325,7 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 
 **Open issues (1):**
 
-- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (4d)
+- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (5d)
 
 
 
@@ -267,29 +398,9 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (145d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (146d)
 
 
-
-
----
-
-
-## [newsparser](https://github.com/mojzis/newsparser)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/newsparser/)
-
-
-**Last commit:** `a05e9acf` Evaluator: move to Claude Haiku 5.5 / Sonnet 5.5, record actual model (mojzis, 2026-11-21 21:40:29+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
-**Orphan branches (1):** `wip/2026-09-19`
 
 
 ---
@@ -330,26 +441,6 @@ JavaScript | ★0 | 0 issues | [Pages](https://mojzis.github.io/bounceflow/)
 
 
 **Open PRs (1):** [#17](https://github.com/mojzis/bounceflow/pull/17)
-
-
-
-
----
-
-
-## [planes](https://github.com/mojzis/planes)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/planes/)
-
-
-**Last commit:** `8ec5943f` One file per plane (#7) (Mojzis, 2026-11-22 19:39:23+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#8](https://github.com/mojzis/planes/pull/8)
 
 
 
@@ -400,57 +491,6 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/clauding/)
 
 
 **Last commit:** `ed432a66` Session handoff: trigger on hand-back, keep it short and clean (#4) (Mojzis, 2026-11-22 19:53:35+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [aesop](https://github.com/mojzis/aesop)
-
-CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
-
-
-**Last commit:** `7b149dda` Add og:image group plates for home, setup, guide and news; art style guide (#11) (Mojzis, 2026-11-22 14:16:55+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5003a21` release: check release notes before the bump, rebuild aesop after (#37) (Mojzis, 2026-11-21 21:20:26+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
-
-
----
-
-
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `6d3fed62` review mikulas-lode-kterym-nic-nechybelo ad66fdf-dirty (mojzis, 2026-11-22 10:02:04+00:00)
 
 
 
@@ -515,23 +555,6 @@ Python | ★0 | 0 issues
 
 
 > ⚠️ **Untagged release:** main has 4 commits without a tag.
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [typer-agentic](https://github.com/mojzis/typer-agentic)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `ac5b4db7` Release v0.1.11 (mojzis, 2026-11-19 21:38:59+00:00)
-
 
 
 **CI:** PASS
@@ -673,26 +696,6 @@ Python | ★0 | 0 issues
 ---
 
 
-## [talkshape](https://github.com/mojzis/talkshape)
-
-JavaScript | ★0 | 0 issues
-
-
-**Last commit:** `2b4badf6` Bump the minor-and-patch group in /server with 2 updates (#22) (dependabot[bot], 2026-11-17 08:18:14+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
-**Orphan branches (1):** `wip/exe-vm-2026-11-15`
-
-
----
-
-
 ## [ajina](https://github.com/mojzis/ajina)
 
 HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/ajina/)
@@ -757,7 +760,7 @@ JavaScript | ★0 | 0 issues | [Pages](https://mojzis.github.io/logogame/)
 
 
 
-**CI:** PASS
+**CI: FAIL** (npm_and_yarn in /. - Update #1725513631)
 
 
 
@@ -783,7 +786,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (146d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (147d)
 
 
 
