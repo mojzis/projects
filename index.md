@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-24 16:43:34 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 45 | **Open issues:** 8
+**Generated:** 2026-11-25 16:28:20 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 45 | **Open issues:** 8
 
 ---
 
@@ -20,6 +20,40 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/newsparser/)
 
 
 **Orphan branches (1):** `wip/2026-09-19`
+
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `7732c878` review mikulas-lode-kterym-nic-nechybelo f302081 (mojzis, 2026-11-25 01:15:46+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5003a21` release: check release notes before the bump, rebuild aesop after (#37) (Mojzis, 2026-11-21 21:20:26+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
 
 
 ---
@@ -79,23 +113,6 @@ CSS | ★0 | 0 issues | [Pages](https://mojzis.github.io/aesop/)
 ---
 
 
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `979a741f` review mikulas-lode-kterym-nic-nechybelo e61020f (mojzis, 2026-11-23 21:59:49+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
 ## [talkshape](https://github.com/mojzis/talkshape)
 
 JavaScript | ★0 | 0 issues
@@ -114,23 +131,6 @@ JavaScript | ★0 | 0 issues
 
 
 **Orphan branches (1):** `wip/exe-vm-2026-11-15`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5003a21` release: check release notes before the bump, rebuild aesop after (#37) (Mojzis, 2026-11-21 21:20:26+00:00)
-
-
-
-**CI:** UNKNOWN
-
-
 
 
 ---
@@ -156,8 +156,8 @@ Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/zorilla/)
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (72d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (72d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (73d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (73d)
 
 
 
@@ -187,7 +187,7 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 
 ## [ty-find](https://github.com/mojzis/ty-find)
 
-Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
+Rust | ★4 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 
 **Last commit:** `710df39c` Release notes with relnotes (#159) (Mojzis, 2026-11-21 21:20:56+00:00)
@@ -205,9 +205,9 @@ Rust | ★3 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (3):**
 
-- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (6d)
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (159d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (159d)
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (7d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (160d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (160d)
 
 
 
@@ -293,8 +293,6 @@ Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
 **Last commit:** `cad125a9` Release notes with relnotes (#39) (Mojzis, 2026-11-21 21:20:47+00:00)
 
 
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
 
 **CI:** PASS
 
@@ -325,7 +323,7 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 
 **Open issues (1):**
 
-- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (5d)
+- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (6d)
 
 
 
@@ -358,7 +356,7 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 ## [pycoati](https://github.com/mojzis/pycoati)
 
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/pycoati/)
+Rust | ★1 | 0 issues | [Pages](https://mojzis.github.io/pycoati/)
 
 
 **Last commit:** `38aae315` Release notes with relnotes (#40) (Mojzis, 2026-11-21 21:20:52+00:00)
@@ -398,7 +396,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (146d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (147d)
 
 
 
@@ -786,7 +784,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (147d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (148d)
 
 
 
