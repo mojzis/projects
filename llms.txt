@@ -1,6 +1,230 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-25 16:28:20 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 45 | **Open issues:** 8
+**Generated:** 2026-11-26 16:00:58 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 45 | **Open issues:** 8
+
+---
+
+
+## [zorilla](https://github.com/mojzis/zorilla)
+
+Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/zorilla/)
+
+
+**Last commit:** `23df6eaf` Release v0.2.7 (mojzis, 2026-11-26 09:52:19+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (3):** [#52](https://github.com/mojzis/zorilla/pull/52), [#50](https://github.com/mojzis/zorilla/pull/50), [#48](https://github.com/mojzis/zorilla/pull/48)
+
+
+
+**Open issues (2):**
+
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (74d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (74d)
+
+
+
+
+---
+
+
+## [relnotes](https://github.com/mojzis/relnotes)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `d4b15cc5` Release v0.1.1 (mojzis, 2026-11-26 09:53:30+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+---
+
+
+## [introspect](https://github.com/mojzis/introspect)
+
+Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+
+
+**Last commit:** `12f2af35` Release v0.3.10 (mojzis, 2026-11-26 09:53:23+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+
+**Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`, `wip/exe-vm-2026-11-15`
+
+
+---
+
+
+## [madoqua](https://github.com/mojzis/madoqua)
+
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
+
+
+**Last commit:** `16dbbac7` Release v0.2.13 (mojzis, 2026-11-26 09:53:17+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#27](https://github.com/mojzis/madoqua/pull/27)
+
+
+
+
+---
+
+
+## [biston](https://github.com/mojzis/biston)
+
+Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
+
+
+**Last commit:** `07f95308` Release v0.7.8 (mojzis, 2026-11-26 09:53:07+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#56](https://github.com/mojzis/biston/pull/56)
+
+
+
+**Open issues (1):**
+
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (148d)
+
+
+
+
+---
+
+
+## [pycoati](https://github.com/mojzis/pycoati)
+
+Rust | ★1 | 0 issues | [Pages](https://mojzis.github.io/pycoati/)
+
+
+**Last commit:** `5d492d68` Release v0.2.17 (mojzis, 2026-11-26 09:52:57+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#41](https://github.com/mojzis/pycoati/pull/41)
+
+
+
+
+---
+
+
+## [gerenuk](https://github.com/mojzis/gerenuk)
+
+Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
+
+
+**Last commit:** `87b34472` Release v0.5.9 (mojzis, 2026-11-26 09:52:48+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#40](https://github.com/mojzis/gerenuk/pull/40)
+
+
+
+
+---
+
+
+## [dermestes](https://github.com/mojzis/dermestes)
+
+Rust | ★2 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
+
+
+**Last commit:** `43d2e4ea` Release v0.1.6 (mojzis, 2026-11-26 09:52:38+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (1):** [#18](https://github.com/mojzis/dermestes/pull/18)
+
+
+
+
+**Orphan branches (1):** `claude/nifty-fermat-pg64gg`
+
+
+---
+
+
+## [ty-find](https://github.com/mojzis/ty-find)
+
+Rust | ★4 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
+
+
+**Last commit:** `2c6947ab` Release v0.5.6 (mojzis, 2026-11-26 09:52:29+00:00)
+
+
+
+**CI:** PASS
+
+
+**Open PRs (2):** [#160](https://github.com/mojzis/ty-find/pull/160), [#143](https://github.com/mojzis/ty-find/pull/143)
+
+
+
+**Open issues (3):**
+
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (8d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (161d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (161d)
+
+
+
+
+**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
+
+
+---
+
+
+## [lepisma](https://github.com/mojzis/lepisma)
+
+Python | ★0 | 0 issues
+
+
+**Last commit:** `c3a951af` Release v0.1.8 (mojzis, 2026-11-26 09:52:10+00:00)
+
+
+
+**CI:** PASS
+
+
+
 
 ---
 
@@ -25,23 +249,6 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/newsparser/)
 ---
 
 
-## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
-
-HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
-
-
-**Last commit:** `7732c878` review mikulas-lode-kterym-nic-nechybelo f302081 (mojzis, 2026-11-25 01:15:46+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
----
-
-
 ## [projects](https://github.com/mojzis/projects)
 
 Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
@@ -52,6 +259,23 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
 
 
 **CI:** UNKNOWN
+
+
+
+
+---
+
+
+## [bookmaker-review](https://github.com/mojzis/bookmaker-review)
+
+HTML | ★0 | 0 issues | [Pages](https://mojzis.github.io/bookmaker-review/)
+
+
+**Last commit:** `7732c878` review mikulas-lode-kterym-nic-nechybelo f302081 (mojzis, 2026-11-25 01:15:46+00:00)
+
+
+
+**CI:** PASS
 
 
 
@@ -136,35 +360,6 @@ JavaScript | ★0 | 0 issues
 ---
 
 
-## [zorilla](https://github.com/mojzis/zorilla)
-
-Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/zorilla/)
-
-
-**Last commit:** `5ab6792b` Release notes with relnotes (#49) (Mojzis, 2026-11-21 21:20:43+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (3):** [#51](https://github.com/mojzis/zorilla/pull/51), [#50](https://github.com/mojzis/zorilla/pull/50), [#48](https://github.com/mojzis/zorilla/pull/48)
-
-
-
-**Open issues (2):**
-
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (73d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (73d)
-
-
-
-
----
-
-
 ## [braindump](https://github.com/mojzis/braindump)
 
 Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
@@ -180,39 +375,6 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/braindump/)
 **Open PRs (10):** [#116](https://github.com/mojzis/braindump/pull/116), [#115](https://github.com/mojzis/braindump/pull/115), [#114](https://github.com/mojzis/braindump/pull/114), [#113](https://github.com/mojzis/braindump/pull/113), [#112](https://github.com/mojzis/braindump/pull/112), [#111](https://github.com/mojzis/braindump/pull/111), [#110](https://github.com/mojzis/braindump/pull/110), [#109](https://github.com/mojzis/braindump/pull/109), [#108](https://github.com/mojzis/braindump/pull/108), [#107](https://github.com/mojzis/braindump/pull/107)
 
 
-
-
----
-
-
-## [ty-find](https://github.com/mojzis/ty-find)
-
-Rust | ★4 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
-
-
-**Last commit:** `710df39c` Release notes with relnotes (#159) (Mojzis, 2026-11-21 21:20:56+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#160](https://github.com/mojzis/ty-find/pull/160), [#143](https://github.com/mojzis/ty-find/pull/143)
-
-
-
-**Open issues (3):**
-
-- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (7d)
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (160d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (160d)
-
-
-
-
-**Orphan branches (3):** `bumpver`, `claude/inspiring-planck-oq7q47`, `claude/inspiring-thompson-b63rfp`
 
 
 ---
@@ -240,31 +402,6 @@ Rust | ★0 | 0 issues
 ---
 
 
-## [dermestes](https://github.com/mojzis/dermestes)
-
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/dermestes/)
-
-
-**Last commit:** `5b6e1399` Release notes with relnotes (#17) (Mojzis, 2026-11-21 21:20:39+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#18](https://github.com/mojzis/dermestes/pull/18)
-
-
-
-
-**Orphan branches (1):** `claude/nifty-fermat-pg64gg`
-
-
----
-
-
 ## [imgen](https://github.com/mojzis/imgen)
 
 Python | ★0 | 0 issues
@@ -278,26 +415,6 @@ Python | ★0 | 0 issues
 
 
 **Open PRs (1):** [#16](https://github.com/mojzis/imgen/pull/16)
-
-
-
-
----
-
-
-## [gerenuk](https://github.com/mojzis/gerenuk)
-
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/gerenuk/)
-
-
-**Last commit:** `cad125a9` Release notes with relnotes (#39) (Mojzis, 2026-11-21 21:20:47+00:00)
-
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#40](https://github.com/mojzis/gerenuk/pull/40)
 
 
 
@@ -323,7 +440,7 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 
 **Open issues (1):**
 
-- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (6d)
+- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (7d)
 
 
 
@@ -349,78 +466,6 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/sketchpy/)
 
 
 **Orphan branches (1):** `claude/publish-sketchpy-library-011CUxV7pkDj4H4SG7VjvoG8`
-
-
----
-
-
-## [pycoati](https://github.com/mojzis/pycoati)
-
-Rust | ★1 | 0 issues | [Pages](https://mojzis.github.io/pycoati/)
-
-
-**Last commit:** `38aae315` Release notes with relnotes (#40) (Mojzis, 2026-11-21 21:20:52+00:00)
-
-
-> ⚠️ **Untagged release:** main has 2 commits without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#41](https://github.com/mojzis/pycoati/pull/41)
-
-
-
-
----
-
-
-## [biston](https://github.com/mojzis/biston)
-
-Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
-
-
-**Last commit:** `6f9517ab` Release notes with relnotes (#55) (Mojzis, 2026-11-21 21:20:34+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#56](https://github.com/mojzis/biston/pull/56)
-
-
-
-**Open issues (1):**
-
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (147d)
-
-
-
-
----
-
-
-## [madoqua](https://github.com/mojzis/madoqua)
-
-Rust | ★0 | 0 issues | [Pages](https://mojzis.github.io/madoqua/)
-
-
-**Last commit:** `071b6ee3` Release notes with relnotes (#26) (Mojzis, 2026-11-21 21:20:30+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (1):** [#27](https://github.com/mojzis/madoqua/pull/27)
-
-
 
 
 ---
@@ -490,69 +535,6 @@ Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/clauding/)
 
 **Last commit:** `ed432a66` Session handoff: trigger on hand-back, keep it short and clean (#4) (Mojzis, 2026-11-22 19:53:35+00:00)
 
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [introspect](https://github.com/mojzis/introspect)
-
-Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
-
-
-**Last commit:** `ced6f0a9` Release notes with relnotes (#118) (Mojzis, 2026-11-21 21:22:38+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-**Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
-
-
-
-
-**Orphan branches (5):** `claude/pypi-description-missing-9i4win`, `claude/terminal-ui-redesign`, `claude/tokenscape-v1`, `ideas`, `wip/exe-vm-2026-11-15`
-
-
----
-
-
-## [lepisma](https://github.com/mojzis/lepisma)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `bf57598b` Release notes with relnotes (#17) (Mojzis, 2026-11-21 21:21:05+00:00)
-
-
-> ⚠️ **Untagged release:** main has 1 commit without a tag.
-
-
-**CI:** PASS
-
-
-
-
----
-
-
-## [relnotes](https://github.com/mojzis/relnotes)
-
-Python | ★0 | 0 issues
-
-
-**Last commit:** `ae2e31a7` CLAUDE.md: no PyPI wording (mojzis, 2026-11-21 21:15:53+00:00)
-
-
-> ⚠️ **Untagged release:** main has 4 commits without a tag.
 
 
 **CI:** PASS
@@ -784,7 +766,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (148d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (149d)
 
 
 
