@@ -1,6 +1,43 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-26 16:00:58 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 45 | **Open issues:** 8
+**Generated:** 2026-11-27 15:48:39 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 45 | **Open issues:** 9
+
+---
+
+
+## [newsparser](https://github.com/mojzis/newsparser)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/newsparser/)
+
+
+**Last commit:** `a05e9acf` Evaluator: move to Claude Haiku 5.5 / Sonnet 5.5, record actual model (mojzis, 2026-11-21 21:40:29+00:00)
+
+
+
+**CI:** PASS
+
+
+
+
+**Orphan branches (1):** `wip/2026-09-19`
+
+
+---
+
+
+## [projects](https://github.com/mojzis/projects)
+
+Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
+
+
+**Last commit:** `b5003a21` release: check release notes before the bump, rebuild aesop after (#37) (Mojzis, 2026-11-21 21:20:26+00:00)
+
+
+
+**CI:** UNKNOWN
+
+
+
 
 ---
 
@@ -23,8 +60,8 @@ Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/zorilla/)
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (74d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (74d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (75d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (75d)
 
 
 
@@ -51,7 +88,7 @@ Python | ★0 | 0 issues
 
 ## [introspect](https://github.com/mojzis/introspect)
 
-Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
+Python | ★3 | 1 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Last commit:** `12f2af35` Release v0.3.10 (mojzis, 2026-11-26 09:53:23+00:00)
@@ -62,6 +99,12 @@ Python | ★3 | 0 issues | [Pages](https://mojzis.github.io/introspect/)
 
 
 **Open PRs (2):** [#85](https://github.com/mojzis/introspect/pull/85), [#48](https://github.com/mojzis/introspect/pull/48)
+
+
+
+**Open issues (1):**
+
+- [#119](https://github.com/mojzis/introspect/issues/119) materialize fails on recent Claude Code logs: wide nested fields make read_json_auto collapse to MAP (or OOM) (0d)
 
 
 
@@ -110,7 +153,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (148d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (149d)
 
 
 
@@ -199,9 +242,9 @@ Rust | ★4 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (3):**
 
-- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (8d)
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (161d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (161d)
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (9d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (162d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (162d)
 
 
 
@@ -222,43 +265,6 @@ Python | ★0 | 0 issues
 
 
 **CI:** PASS
-
-
-
-
----
-
-
-## [newsparser](https://github.com/mojzis/newsparser)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/newsparser/)
-
-
-**Last commit:** `a05e9acf` Evaluator: move to Claude Haiku 5.5 / Sonnet 5.5, record actual model (mojzis, 2026-11-21 21:40:29+00:00)
-
-
-
-**CI:** PASS
-
-
-
-
-**Orphan branches (1):** `wip/2026-09-19`
-
-
----
-
-
-## [projects](https://github.com/mojzis/projects)
-
-Python | ★0 | 0 issues | [Pages](https://mojzis.github.io/projects/)
-
-
-**Last commit:** `b5003a21` release: check release notes before the bump, rebuild aesop after (#37) (Mojzis, 2026-11-21 21:20:26+00:00)
-
-
-
-**CI:** UNKNOWN
 
 
 
@@ -440,7 +446,7 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 
 **Open issues (1):**
 
-- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (7d)
+- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (8d)
 
 
 
@@ -766,7 +772,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (149d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (150d)
 
 
 
