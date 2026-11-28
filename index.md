@@ -1,6 +1,6 @@
 # GitHub Project Monitor Report
 
-**Generated:** 2026-11-27 15:48:39 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 45 | **Open issues:** 9
+**Generated:** 2026-11-28 14:44:12 UTC | **Period:** Last 90 days | **Repos:** 38 | **Open PRs:** 45 | **Open issues:** 9
 
 ---
 
@@ -60,8 +60,8 @@ Rust | ★0 | 2 issues | [Pages](https://mojzis.github.io/zorilla/)
 
 **Open issues (2):**
 
-- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (75d)
-- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (75d)
+- [#26](https://github.com/mojzis/zorilla/issues/26) Investigate suppression clutter and document stable multiline placement (76d)
+- [#23](https://github.com/mojzis/zorilla/issues/23) ZR004: make assertion-count policy practical for cohesive contract tests (76d)
 
 
 
@@ -104,7 +104,7 @@ Python | ★3 | 1 issues | [Pages](https://mojzis.github.io/introspect/)
 
 **Open issues (1):**
 
-- [#119](https://github.com/mojzis/introspect/issues/119) materialize fails on recent Claude Code logs: wide nested fields make read_json_auto collapse to MAP (or OOM) (0d)
+- [#119](https://github.com/mojzis/introspect/issues/119) materialize fails on recent Claude Code logs: wide nested fields make read_json_auto collapse to MAP (or OOM) (1d)
 
 
 
@@ -153,7 +153,7 @@ Rust | ★0 | 1 issues | [Pages](https://mojzis.github.io/biston/)
 
 **Open issues (1):**
 
-- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (149d)
+- [#26](https://github.com/mojzis/biston/issues/26) Inline suppression must be on a standalone line (150d)
 
 
 
@@ -242,9 +242,9 @@ Rust | ★4 | 3 issues | [Pages](https://mojzis.github.io/ty-find/)
 
 **Open issues (3):**
 
-- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (9d)
-- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (162d)
-- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (162d)
+- [#158](https://github.com/mojzis/ty-find/issues/158) RUSTSEC-2026-0543: chrono is unmaintained (10d)
+- [#126](https://github.com/mojzis/ty-find/issues/126) `--format json|csv|paths` emits English prose on "not found" instead of valid empty output (163d)
+- [#125](https://github.com/mojzis/ty-find/issues/125) `tyf` exits 0 when no symbol is found — inconsistent with `grep` / Unix convention (163d)
 
 
 
@@ -446,7 +446,7 @@ Python | ★0 | 1 issues | [Pages](https://mojzis.github.io/orch/)
 
 **Open issues (1):**
 
-- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (8d)
+- [#9](https://github.com/mojzis/orch/issues/9) QA checks assume bash; break when the session shell is zsh (9d)
 
 
 
@@ -772,7 +772,7 @@ Rust | ★0 | 1 issues
 
 **Open issues (1):**
 
-- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (150d)
+- [#7](https://github.com/mojzis/tyreach/issues/7) RUSTSEC-2026-0190: Unsoundness in `Error::downcast_mut()` (151d)
 
 
 
